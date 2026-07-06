@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GA4 Direct Test - Hero Handyman Pro</title>
+  
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJ5BB21HXV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SJ5BB21HXV');
+    
+    console.log('🎯 GA4 script loaded, gtag initialized');
+  </script>
+  
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .test-form {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #0f766e;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      color: #666;
+      margin-bottom: 30px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    button {
+      background: #0f766e;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    button:hover {
+      background: #0d5f58;
+    }
+    .status {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 4px;
+      display: none;
+    }
+    .status.success {
+      background: #d1fae5;
+      color: #065f46;
+      border: 1px solid #10b981;
+    }
+    .status.error {
+      background: #fee2e2;
+      color: #991b1b;
+      border: 1px solid #ef4444;
+    }
+    .console-log {
+      background: #1e293b;
+      color: #e2e8f0;
+      padding: 20px;
+      border-radius: 4px;
+      margin-top: 20px;
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+    .log-entry {
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="test-form">
+    <h1>🧪 GA4 Direct Test</h1>
+    <p class="subtitle">This page tests GA4 generate_lead event WITHOUT React</p>
+    
+    <form id="testForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Your Phone" required>
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Submit Test Form</button>
+    </form>
+    
+    <div id="status" class="status"></div>
+    
+    <div class="console-log" id="consoleLog">
+      <div class="log-entry">📋 Console logs will appear here...</div>
+    </div>
+  </div>
+
+  <script>
+    // Custom console logger
+    const logDiv = document.getElementById('consoleLog');
+    const originalLog = console.log;
+    
+    function addLog(message, type = 'log') {
+      const entry = document.createElement('div');
+      entry.className = 'log-entry';
+      entry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+      logDiv.appendChild(entry);
+      logDiv.scrollTop = logDiv.scrollHeight;
+      originalLog(message);
+    }
+    
+    console.log = addLog;
+    
+    // Wait for gtag to be ready
+    let gtagReady = false;
+    const checkGtag = setInterval(() => {
+      if (typeof window.gtag === 'function') {
+        gtagReady = true;
+        console.log('✅ window.gtag is ready');
+        clearInterval(checkGtag);
+      }
+    }, 100);
+    
+    // Form submission handler
+    document.getElementById('testForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      console.log('📤 Form submitted!');
+      
+      const formData = new FormData(e.target);
+      const data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        phone: formData.get('phone'),
+        message: formData.get('message')
+      };
+      
+      console.log('📋 Form data:', JSON.stringify(data));
+      
+      // Check if gtag is available
+      if (typeof window.gtag === 'function') {
+        console.log('✅ window.gtag is available');
+        
+        try {
+          // Send GA4 event
+          window.gtag('event', 'generate_lead', {
+            event_category: 'Contact Form',
+            event_label: 'Direct Test Page',
+            value: 1
+          });
+          
+          console.log('🎯 GA4 generate_lead event sent via gtag()');
+          console.log('   - event_category: Contact Form');
+          console.log('   - event_label: Direct Test Page');
+          console.log('   - value: 1');
+          
+          // Show success message
+          const statusDiv = document.getElementById('status');
+          statusDiv.className = 'status success';
+          statusDiv.style.display = 'block';
+          statusDiv.innerHTML = `
+            <strong>✅ Success!</strong><br>
+            Form submitted and GA4 event sent.<br>
+            Check GA4 Real-Time report for "generate_lead" event.
+          `;
+          
+          // Reset form
+          e.target.reset();
+          
+        } catch (error) {
+          console.log('❌ Error sending GA4 event:', error.message);
+          
+          const statusDiv = document.getElementById('status');
+          statusDiv.className = 'status error';
+          statusDiv.style.display = 'block';
+          statusDiv.textContent = 'Error: ' + error.message;
+        }
+        
+      } else {
+        console.log('❌ window.gtag is NOT available');
+        console.log('   typeof window.gtag:', typeof window.gtag);
+        
+        const statusDiv = document.getElementById('status');
+        statusDiv.className = 'status error';
+        statusDiv.style.display = 'block';
+        statusDiv.textContent = 'Error: gtag is not available';
+      }
+    });
+    
+    console.log('🚀 Test page loaded');
+    console.log('📍 Current URL:', window.location.href);
+    console.log('⏳ Waiting for gtag to initialize...');
+  </script>
+</body>
+</html>

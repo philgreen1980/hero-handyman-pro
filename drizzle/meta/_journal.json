@@ -1,0 +1,34 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1765468229850,
+      "tag": "0000_illegal_starbolt",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1765468298376,
+      "tag": "0001_curvy_sersi",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1765656927942,
+      "tag": "0002_fluffy_bloodaxe",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1768585737030,
+      "tag": "0003_shallow_marauders",
+      "breakpoints": true
+    }
+  ]
+}

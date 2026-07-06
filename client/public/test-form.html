@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Test</title>
+</head>
+<body>
+  <h1>Simple Form Test</h1>
+  
+  <form id="testForm">
+    <label>Name: <input type="text" name="name" required /></label><br/>
+    <label>Email: <input type="email" name="email" required /></label><br/>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('testForm');
+    console.log('Form element:', form);
+    
+    form.addEventListener('submit', async (e) => {
+      console.log('Form submit event fired!');
+      e.preventDefault();
+      
+      const formData = new FormData(e.target);
+      const data = {
+        name: formData.get('name'),
+        email: formData.get('email')
+      };
+      
+      console.log('Form data:', data);
+      
+      try {
+        console.log('Sending POST to /api/contact');
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: data.name,
+            email: data.email,
+            phone: '555-1234',
+            city: 'Test City',
+            service: 'test',
+            message: 'Test message'
+          })
+        });
+        
+        console.log('Response status:', response.status);
+        const result = await response.json();
+        console.log('Response data:', result);
+        
+        alert('Success! Check console for details.');
+      } catch (error) {
+        console.error('Error:', error);
+        alert('Error: ' + error.message);
+      }
+    });
+    
+    console.log('Event listener attached');
+  </script>
+</body>
+</html>
