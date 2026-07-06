@@ -2,18 +2,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DrywallRepairChesterfield() {
-  const seoData = {
-    title: "Drywall Repair Chesterfield MO | Hero Handyman Pro",
-    description: "Professional drywall repair in Chesterfield MO. Hole repair, patching, ceiling drywall, water damage, and same-day repairs. Call Hero Handyman Pro at 800-741-6056.",
-    keywords: "drywall repair Chesterfield MO, drywall patching Chesterfield, ceiling repair Chesterfield MO, water damaged drywall Chesterfield",
-    canonicalUrl: "https://herohandymanpro.com/drywall-repair-chesterfield-mo"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -33,7 +27,7 @@ export default function DrywallRepairChesterfield() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -138,7 +132,7 @@ export default function DrywallRepairChesterfield() {
                   800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="w-full border-2 border-white text-white hover:bg-white/10 rounded-full py-6 text-lg font-semibold">
                   Request a Free Quote Online
                 </Button>

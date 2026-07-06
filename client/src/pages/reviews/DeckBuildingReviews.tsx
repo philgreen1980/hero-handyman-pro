@@ -4,16 +4,10 @@ import { Star, Quote, Phone, ArrowLeft } from "lucide-react";
 import SEO from "@/components/SEO";
 import { ReviewSchema } from "@/components/ReviewSchema";
 import { trackPhoneClick, trackCTAClick } from "@/lib/analytics";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DeckBuildingReviews() {
-  const seoData = {
-    title: "Deck Building Reviews | Customer Testimonials | Hero Handyman Pro",
-    description: "Read real customer reviews of our deck building services. See why homeowners trust Hero Handyman Pro for professional deck building in St. Louis & Metro East.",
-    keywords: "deck building reviews, deck building testimonials, deck building reviews St. Louis",
-    canonicalUrl: "https://herohandymanpro.com/reviews/deck-building/"
-  };
-
-  const reviews = [
+  const seo = useSeoRoute();  const reviews = [
     {
       name: "Sarah M.",
       location: "O'Fallon, IL",
@@ -66,7 +60,7 @@ export default function DeckBuildingReviews() {
 
   return (
     <div className="min-h-screen bg-white">
-      <SEO {...seoData} />
+      <SEO {...seo} />
       <ReviewSchema 
         serviceName="Deck Building & Construction"
         serviceUrl="/reviews/deck-building/"

@@ -2,16 +2,10 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DoorInstallationBallwin() {
-  const seoData = {
-    title: "Door Installation Ballwin MO | Interior & Exterior Doors",
-    description: "Expert door installation and replacement in Ballwin MO. Interior doors, exterior doors, storm doors, and door frame repair. Call Hero Handyman Pro at 800-741-6056.",
-    keywords: "door installation Ballwin MO, door replacement Ballwin, exterior door Ballwin MO, interior door installation Ballwin",
-    canonicalUrl: "https://herohandymanpro.com/door-installation-ballwin-mo"
-  };
-
-  const services = [
+  const seo = useSeoRoute();  const services = [
     {
       title: "Interior Door Installation",
       desc: "Replace hollow-core doors with solid-core upgrades, install new bedroom and bathroom doors, or swap out builder-grade hardware for something more substantial. Ballwin's 1980s–2000s construction era means many homes still have original hollow-core doors that are overdue for an upgrade.",
@@ -36,7 +30,7 @@ export default function DoorInstallationBallwin() {
 
   return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -56,7 +50,7 @@ export default function DoorInstallationBallwin() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -113,7 +107,7 @@ export default function DoorInstallationBallwin() {
                 Ballwin is one of St. Louis County's most established West County communities, with a housing stock that spans several decades. Homes along Kehrs Mill Road and near the Ballwin Athletic Complex tend to be 1980s–1990s construction where original exterior doors are reaching the end of their service life. Newer subdivisions off Clayton Road have more recent builds where interior door upgrades are the more common request.
               </p>
               <p className="text-gray-600 mb-6">
-                Phil has been installing and repairing doors in Ballwin and West County for over 30 years. He does the work himself — no subcontractors — and takes the time to ensure every door is plumb, properly shimmed, and sealed before he leaves.
+                Phil has been installing and repairing doors in Ballwin and West County for over 35 years. He does the work himself — no subcontractors — and takes the time to ensure every door is plumb, properly shimmed, and sealed before he leaves.
               </p>
               <div className="space-y-3">
                 {[
@@ -140,7 +134,7 @@ export default function DoorInstallationBallwin() {
                   800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="w-full border-2 border-white text-white hover:bg-white/10 rounded-full py-6 text-lg font-semibold">
                   Request a Free Quote Online
                 </Button>
@@ -218,7 +212,7 @@ export default function DoorInstallationBallwin() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                 Get a Free Quote
               </Button>

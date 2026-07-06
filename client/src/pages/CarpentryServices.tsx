@@ -2,16 +2,10 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star, MapPin } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function CarpentryServices() {
-  const seoData = {
-    title: "Carpentry Services Near Me | Trim, Exterior & Custom Carpentry",
-    description: "Professional carpentry services including trim repair, exterior carpentry, framing repairs, cabinet adjustments, and custom built-ins. Serving Edwardsville, O'Fallon, Chesterfield, and the greater St. Louis area. Call 800-741-6056.",
-    keywords: "carpentry services near me, exterior carpentry near me, trim repair near me, custom carpentry, framing repair, cabinet repair, handyman carpentry",
-    canonicalUrl: "https://herohandymanpro.com/carpentry-services"
-  };
-
-  const services = [
+  const seo = useSeoRoute();  const services = [
     {
       title: "Trim Repair & Installation",
       desc: "Baseboards, door casings, window trim, crown molding, and chair rail — we repair, replace, and install all types of interior and exterior trim. Whether a section is damaged, missing, or you're updating the look of a room, we cut and fit trim with precision so joints are tight and profiles match. Many older Metro East and West County homes have original wood trim with character worth preserving — we can repair and splice damaged sections rather than replacing entire runs."
@@ -62,7 +56,7 @@ export default function CarpentryServices() {
 
   return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -73,7 +67,7 @@ export default function CarpentryServices() {
               Professional Carpentry Services Near You
             </h1>
             <p className="text-gray-300 text-lg mb-8">
-              Trim repair, exterior carpentry, framing repairs, cabinet adjustments, and custom built-ins — delivered with the craftsmanship that homeowners across Metro East Illinois and West St. Louis County have trusted for over 30 years.
+              Trim repair, exterior carpentry, framing repairs, cabinet adjustments, and custom built-ins — delivered with the craftsmanship that homeowners across Metro East Illinois and West St. Louis County have trusted for over 35 years.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="tel:800-741-6056">
@@ -82,7 +76,7 @@ export default function CarpentryServices() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -131,7 +125,7 @@ export default function CarpentryServices() {
                 Carpentry work is visible every day. Poorly fitted trim, misaligned cabinet doors, and rough cuts are constant reminders of work done in a hurry. When someone searches <em>"carpentry services near me"</em> or <em>"exterior carpentry near me,"</em> they're usually looking for someone who takes pride in the craft — not just a quick patch job.
               </p>
               <p className="text-gray-600 mb-6">
-                Phil, the owner of Hero Handyman Pro, has been doing carpentry work in the Metro East and West St. Louis County for over 30 years. He knows the older homes in this region — the original wood profiles, the common rot patterns, the framing quirks — and he brings that knowledge to every job.
+                Phil, the owner of Hero Handyman Pro, has been doing carpentry work in the Metro East and West St. Louis County for over 35 years. He knows the older homes in this region — the original wood profiles, the common rot patterns, the framing quirks — and he brings that knowledge to every job.
               </p>
               <ul className="space-y-3">
                 {commonProjects.map((project, i) => (
@@ -226,9 +220,9 @@ export default function CarpentryServices() {
             <span className="text-gray-300">|</span>
             <Link href="/door-installation"><span className="text-teal-700 hover:underline cursor-pointer">Door Installation & Repair</span></Link>
             <span className="text-gray-300">|</span>
-            <Link href="/gbp/edwardsville"><span className="text-teal-700 hover:underline cursor-pointer">Edwardsville Handyman Services</span></Link>
+            <Link href="/service-areas/edwardsville-handyman-services/"><span className="text-teal-700 hover:underline cursor-pointer">handyman Edwardsville IL</span></Link>
             <span className="text-gray-300">|</span>
-            <Link href="/gbp/ofallon"><span className="text-teal-700 hover:underline cursor-pointer">O'Fallon Handyman Services</span></Link>
+            <Link href="/handyman-belleville-il"><span className="text-teal-700 hover:underline cursor-pointer">handyman Belleville IL</span></Link>
             <span className="text-gray-300">|</span>
             <Link href="/handyman-near-me"><span className="text-teal-700 hover:underline cursor-pointer">Handyman Near Me</span></Link>
             <span className="text-gray-300">|</span>
@@ -251,7 +245,7 @@ export default function CarpentryServices() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-teal-700 rounded-full px-8 py-6 text-lg font-bold transition-colors">
                 Get a Free Quote
               </Button>

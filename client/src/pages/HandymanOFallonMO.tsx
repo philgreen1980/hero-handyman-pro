@@ -2,15 +2,41 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star, Shield, Clock, Wrench, Home, DoorOpen, Hammer } from "lucide-react";
 import SEO from "@/components/SEO";
+import { FAQAccordion } from "@/components/FAQAccordion";
+
+import { useSeoRoute } from '@/hooks/useSeoRoute';
+const faqs = [
+  {
+    question: "How much does a handyman cost in O'Fallon, MO?",
+    answer: "Most handyman jobs in O'Fallon MO run between $150 and $650 depending on scope. Simple repairs like drywall patching or door adjustments typically fall in the $150–$300 range. Larger projects like deck board replacement or full door installation are usually $350–$750+. We provide free estimates so you know the cost before any work begins.",
+  },
+  {
+    question: "Do you offer same-day handyman service in O'Fallon, MO?",
+    answer: "Yes — we offer same-day and next-day availability for most repairs in O'Fallon MO. For urgent repairs, call us directly at 800-741-6056 and we'll do our best to get to you quickly.",
+  },
+  {
+    question: "Are you licensed and insured to work in Missouri?",
+    answer: "Yes. Hero Handyman Pro is fully insured for residential work in Missouri and Illinois. We carry general liability insurance on every job, so you're protected if anything unexpected happens.",
+  },
+  {
+    question: "What areas of O'Fallon, MO do you serve?",
+    answer: "We serve all of O'Fallon MO including Winghaven, Hawk Ridge, Highway K neighborhoods, and surrounding St. Charles County communities including St. Peters, Wentzville, and Lake St. Louis.",
+  },
+  {
+    question: "Can you handle multiple repairs in one visit in O'Fallon, MO?",
+    answer: "Absolutely — our Honey-Do List Knockout package is designed exactly for that. We batch multiple small repairs into one efficient visit so you're not paying multiple trip charges for each item on your list.",
+  },
+  {
+    question: "Do you repair decks in O'Fallon, MO?",
+    answer: "Yes. Deck repair is one of our most common requests in O'Fallon MO. St. Charles County's clay-heavy soils and freeze-thaw cycles accelerate post movement and board warping. We inspect for soft spots, replace compromised boards and posts, and reinforce railings to bring your deck back to safe condition.",
+  },
+];
 
 export default function HandymanOFallonMO() {
+  const seo = useSeoRoute();
   return (
     <div className="flex flex-col">
-      <SEO
-        title="Handyman Services in O'Fallon MO | Home Repairs & Carpentry"
-        description="Reliable handyman services in O'Fallon MO for drywall, doors, decks, and carpentry. Licensed, insured, and serving St. Charles County homeowners. Call 800-741-6056."
-        canonicalUrl="https://herohandymanpro.com/handyman-ofallon-mo"
-      />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#1f2937] via-[#020617] to-[#020617] text-white py-16 md:py-24 px-6">
@@ -30,7 +56,7 @@ export default function HandymanOFallonMO() {
                   Call Now: 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-10 py-7 text-lg font-semibold border-2 border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -203,7 +229,7 @@ export default function HandymanOFallonMO() {
                 {[
                   { title: "Respectful of Your Home", desc: "We protect floors, clean up completely, and treat your home as if it were our own." },
                   { title: "Accurate Estimates", desc: "No surprise charges. You know the cost before we start." },
-                  { title: "Experienced Craftsmen", desc: "30+ years of hands-on experience across all residential repair types." },
+                  { title: "Experienced Craftsmen", desc: "35+ years of hands-on experience across all residential repair types." },
                   { title: "Serving St. Charles County", desc: "We regularly work throughout O'Fallon MO, St. Peters, Wentzville, and surrounding communities." },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4">
@@ -229,7 +255,7 @@ export default function HandymanOFallonMO() {
                   800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="w-full border-2 border-white text-white hover:bg-white/10 rounded-full py-6 text-lg font-semibold">
                   Get a Free Quote Online
                 </Button>
@@ -263,6 +289,31 @@ export default function HandymanOFallonMO() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-6 bg-[#f9fafb] border-t border-[#e5e7eb]">
+        <div className="max-w-[780px] mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-[#0b1220] mb-3">Frequently Asked Questions</h2>
+            <p className="text-[#4b5563]">Common questions from O'Fallon MO homeowners</p>
+          </div>
+          <FAQAccordion faqs={faqs} />
+        </div>
+      </section>
+
+      {/* FAQPage Schema */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(item => ({
+          "@type": "Question",
+          "name": item.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": item.answer,
+          },
+        })),
+      })}} />
 
       {/* Internal Links Section */}
       <section className="py-12 px-6 bg-white border-t border-[#e5e7eb]">

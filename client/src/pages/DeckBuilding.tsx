@@ -3,18 +3,12 @@ import { Button } from "@/components/ui/button";
 import { Phone, CheckCircle, Clock, Shield, Star } from "lucide-react";
 import SEO from "@/components/SEO";
 import { trackPhoneClick, trackCTAClick } from "@/lib/analytics";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DeckBuilding() {
-  const seoData = {
-    title: "Deck Builders St. Louis | Custom Deck Construction & Building",
-    description: "Professional deck builders in St. Louis & Metro East. Custom deck construction, composite decks, wood decks, multi-level decks. Licensed, insured, lifetime labor warranty. Call 800-741-6056",
-    keywords: "deck builders, deck construction, deck building, custom deck, composite deck, wood deck, deck builders near me, St Louis deck builders, Metro East deck construction",
-    canonicalUrl: "https://herohandymanpro.com/handyman-services/deck-building/"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="min-h-screen bg-white">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-teal-700 to-teal-900 text-white py-16 px-6">
@@ -261,7 +255,7 @@ export default function DeckBuilding() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Expert Craftsmanship</h3>
               <p className="text-gray-600">
-                30+ years of deck building experience. We build structurally sound, beautiful decks that last for decades with proper care.
+                35+ years of deck building experience. We build structurally sound, beautiful decks that last for decades with proper care.
               </p>
             </div>
 

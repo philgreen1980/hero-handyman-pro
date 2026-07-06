@@ -1,0 +1,1 @@
+ALTER TABLE `estimator_leads` ADD `status` varchar(20) DEFAULT 'new' NOT NULL;

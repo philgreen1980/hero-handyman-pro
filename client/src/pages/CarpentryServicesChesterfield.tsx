@@ -2,18 +2,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function CarpentryServicesChesterfield() {
-  const seoData = {
-    title: "Carpentry Services Chesterfield MO | Trim, Repairs & Custom Work",
-    description: "Professional carpentry services in Chesterfield MO. Trim repair, framing repairs, cabinet adjustments, and custom carpentry. Call Hero Handyman Pro at 800-741-6056.",
-    keywords: "carpentry services Chesterfield MO, trim repair Chesterfield, cabinet repair Chesterfield MO, custom carpentry Chesterfield",
-    canonicalUrl: "https://herohandymanpro.com/carpentry-services-chesterfield-mo"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -33,7 +27,7 @@ export default function CarpentryServicesChesterfield() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -138,7 +132,7 @@ export default function CarpentryServicesChesterfield() {
                   800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="w-full border-2 border-white text-white hover:bg-white/10 rounded-full py-6 text-lg font-semibold">
                   Request a Free Quote Online
                 </Button>

@@ -2,8 +2,11 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Shield, Sparkles } from "lucide-react";
 import SEO from "@/components/SEO";
+import PageBreadcrumb from "@/components/PageBreadcrumb";
 
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 export default function PorchRepairService() {
+  const seo = useSeoRoute();
   const problems = [
     "Rotten porch posts and beams",
     "Loose or missing railings",
@@ -26,11 +29,12 @@ export default function PorchRepairService() {
 
   return (
     <div className="flex flex-col">
-      <SEO 
-        title="Porch Repair & Restoration | Hero Handyman Pro"
-        description="Professional porch repair in St. Louis & Metro East. Fix rotten posts, loose railings, soft boards, and uneven steps. Safety-focused repairs that restore your porch's beauty and structural integrity."
-        canonicalUrl="https://herohandymanpro.com/handyman-services/porch-repair/"
-      />
+      <PageBreadcrumb crumbs={[
+    { label: "Home", href: "/" },
+    { label: "Services", href: "/handyman-services/" },
+    { label: "Porch Repair" }
+  ]} />
+      <SEO {...seo} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#1f2937] via-[#020617] to-[#020617] text-white py-14 md:py-20 px-6">
         <div className="max-w-[1120px] mx-auto text-center">
@@ -107,7 +111,7 @@ export default function PorchRepairService() {
                     </li>
                   ))}
                 </ul>
-                <Link href="/contact/">
+                <Link href="/#contact">
                   <Button className="bg-white text-[#ff5b00] hover:bg-white/90 rounded-full px-6 font-semibold w-full">
                     Discuss Enhancement Options
                   </Button>
@@ -264,7 +268,7 @@ export default function PorchRepairService() {
                 Book Porch Repair
               </Button>
             </Link>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                 Request Inspection
               </Button>

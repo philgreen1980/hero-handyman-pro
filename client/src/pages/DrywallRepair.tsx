@@ -2,16 +2,10 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star, MapPin } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DrywallRepair() {
-  const seoData = {
-    title: "Drywall Repair Services | Hole Repair, Patching & Ceiling Repairs",
-    description: "Professional drywall repair including hole patching, ceiling drywall repair, and textured drywall fixes. Serving Edwardsville, O'Fallon, and West St. Louis County.",
-    keywords: "drywall repair near me, drywall hole repair, drywall patch repair, ceiling drywall repair, water damaged drywall, textured drywall repair",
-    canonicalUrl: "https://herohandymanpro.com/drywall-repair"
-  };
-
-  const services = [
+  const seo = useSeoRoute();  const services = [
     {
       title: "Drywall Hole Repair",
       desc: "From small nail holes to large punched-through sections, we patch and finish drywall holes of all sizes. Common causes include doorknobs, furniture impacts, plumbing access cuts, and accidental damage. We match your existing texture so repairs are virtually invisible."
@@ -62,7 +56,7 @@ export default function DrywallRepair() {
 
   return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -82,7 +76,7 @@ export default function DrywallRepair() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -235,12 +229,114 @@ export default function DrywallRepair() {
         </div>
       </section>
 
+      {/* Repair vs Replacement */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-[1120px] mx-auto">
+          <h2 className="text-3xl font-bold mb-4 text-gray-900">Should I Repair or Replace Damaged Drywall?</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-teal-50 rounded-2xl p-8 border border-teal-100">
+              <h3 className="font-bold text-xl text-teal-800 mb-4">✓ Repair Is Usually the Right Choice When:</h3>
+              <ul className="space-y-3 text-gray-700 text-sm">
+                <li className="flex gap-2"><Check className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" /><span>The damage is localized — a single hole, crack, or stained area</span></li>
+                <li className="flex gap-2"><Check className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" /><span>The water source has been fixed and the drywall is dry (not soft or crumbling)</span></li>
+                <li className="flex gap-2"><Check className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" /><span>Settlement cracks are hairline and not actively widening</span></li>
+                <li className="flex gap-2"><Check className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" /><span>The texture can be matched to blend with the surrounding wall</span></li>
+                <li className="flex gap-2"><Check className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" /><span>Nail pops, dings, or scuffs are surface-level only</span></li>
+              </ul>
+            </div>
+            <div className="bg-orange-50 rounded-2xl p-8 border border-orange-100">
+              <h3 className="font-bold text-xl text-orange-800 mb-4">⚠ Replacement May Be Needed When:</h3>
+              <ul className="space-y-3 text-gray-700 text-sm">
+                <li className="flex gap-2"><span className="text-orange-500 font-bold mt-0.5 flex-shrink-0">→</span><span>Drywall is soft, crumbling, or shows visible mold growth from prolonged moisture</span></li>
+                <li className="flex gap-2"><span className="text-orange-500 font-bold mt-0.5 flex-shrink-0">→</span><span>Structural cracks run floor-to-ceiling or are wider than ¼ inch — may indicate foundation issues</span></li>
+                <li className="flex gap-2"><span className="text-orange-500 font-bold mt-0.5 flex-shrink-0">→</span><span>Repeated water damage in the same area despite repairs — the underlying issue isn't resolved</span></li>
+                <li className="flex gap-2"><span className="text-orange-500 font-bold mt-0.5 flex-shrink-0">→</span><span>Large sections of ceiling are sagging or separating from the framing</span></li>
+                <li className="flex gap-2"><span className="text-orange-500 font-bold mt-0.5 flex-shrink-0">→</span><span>The damage covers more than 30–40% of a wall panel — patching becomes less cost-effective</span></li>
+              </ul>
+            </div>
+          </div>
+          <p className="text-gray-600 mt-6 text-sm">
+            Not sure which situation you're in? <a href="tel:800-741-6056" className="text-teal-700 font-semibold hover:underline">Call us at 800-741-6056</a> — we'll give you an honest assessment. If it can be repaired, we'll repair it. We never upsell replacement when a patch will do the job.
+          </p>
+        </div>
+      </section>
+
+      {/* What to Expect */}
+      <section className="py-16 px-6 bg-gray-50">
+        <div className="max-w-[1120px] mx-auto">
+          <h2 className="text-3xl font-bold mb-3 text-gray-900">What to Expect When You Book Drywall Repair</h2>
+          <p className="text-gray-600 mb-10 max-w-2xl">We make the process straightforward from first contact to final walkthrough. Here's how it works:</p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              { step: "1", title: "Contact & Photos", desc: "Call, text, or fill out our contact form. Send a few photos of the damage — we can usually give you a ballpark estimate before we even visit. Most drywall repairs are quoted same-day." },
+              { step: "2", title: "Scheduling", desc: "We offer same-day and next-day appointments across Metro East Illinois and West St. Louis County. We give you a specific arrival window — not a 4-hour guessing game." },
+              { step: "3", title: "Assessment On-Site", desc: "Phil will inspect the damage, confirm the repair scope, and give you a firm written quote before any work begins. No surprises." },
+              { step: "4", title: "Repair & Texture Match", desc: "We complete the patch, apply joint compound in multiple coats as needed, sand smooth, and apply texture to match your existing wall. Most repairs are completed in a single visit." },
+              { step: "5", title: "Priming & Paint-Ready", desc: "We prime the repaired area so it's ready for paint. If you'd like us to paint to match, just ask — we can often do that in the same visit." },
+              { step: "6", title: "Cleanup & Walkthrough", desc: "We protect your floors and furniture throughout the job, and clean up completely when we're done. We'll walk you through the repair before we leave to make sure you're satisfied." },
+            ].map((item, i) => (
+              <div key={i} className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
+                <div className="w-10 h-10 bg-teal-700 text-white rounded-full flex items-center justify-center font-bold text-lg mb-4">{item.step}</div>
+                <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
+                <p className="text-gray-600 text-sm">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Project Examples */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-[1120px] mx-auto">
+          <h2 className="text-3xl font-bold mb-3 text-gray-900">Recent Drywall Repair Projects</h2>
+          <p className="text-gray-600 mb-10 max-w-2xl">Real jobs completed by Hero Handyman Pro for homeowners across Metro East Illinois and West St. Louis County.</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                city: "O'Fallon, IL",
+                title: "Water-Damaged Ceiling Repair",
+                desc: "A homeowner in O'Fallon contacted us after a second-floor bathroom leak caused water staining and soft spots on the first-floor ceiling. We removed the damaged drywall section, confirmed the plumbing repair was complete, treated the framing with antimicrobial primer, installed new drywall, applied knockdown texture to match the surrounding ceiling, and repainted the entire ceiling panel. The repair was completed in one day and is completely invisible."
+              },
+              {
+                city: "Edwardsville, IL",
+                title: "Settlement Cracks — Older Ranch Home",
+                desc: "An Edwardsville homeowner had multiple hairline cracks running from door corners and window frames — classic signs of normal foundation settling common in older ranch homes throughout Madison County. We opened each crack slightly, filled with flexible joint compound, applied fiberglass mesh tape, feathered the mud over a wide area, and matched the existing skip-trowel texture. The homeowner was preparing the home for sale and needed the repairs to pass inspection."
+              },
+              {
+                city: "Collinsville, IL",
+                title: "Large Hole from HVAC Access",
+                desc: "An HVAC contractor had cut a 14×18 inch access hole in a Collinsville living room wall to reach ductwork. The homeowner needed it closed before a family event. We installed a backing board, cut and fit new drywall, taped and mudded in three coats, and matched the orange peel texture that's common in 1990s-era homes throughout the Collinsville area. The repair was completed in a single afternoon visit."
+              },
+              {
+                city: "Belleville, IL",
+                title: "Nail Pops & Hairline Cracks",
+                desc: "A Belleville homeowner had 15–20 nail pops scattered across bedroom ceilings and walls — a common issue in homes built in the 1980s when drywall screws weren't yet standard. We re-secured each nail, countersunk a screw alongside it, filled and feathered the dimples, and spot-primed. We also addressed a series of hairline cracks along the ceiling perimeter that had developed from seasonal expansion and contraction common in the Midwest climate."
+              },
+              {
+                city: "Glen Carbon, IL",
+                title: "Doorknob Impact Hole",
+                desc: "A Glen Carbon family had a doorknob punch-through in a hallway wall — a very common repair in homes with young kids. The hole was about 3 inches in diameter. We installed a California patch (a clean, professional method that requires no backing board for smaller holes), applied two coats of joint compound, sanded smooth, and matched the existing knockdown texture. The entire repair took under 90 minutes and was paint-ready the same day."
+              },
+            ].map((project, i) => (
+              <div key={i} className="border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-2 mb-3">
+                  <MapPin className="w-4 h-4 text-teal-600" />
+                  <span className="text-xs font-semibold text-teal-700 uppercase tracking-wide">{project.city}</span>
+                </div>
+                <h3 className="font-bold text-gray-900 mb-3">{project.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{project.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us */}
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-[1120px] mx-auto">
           <h2 className="text-3xl font-bold mb-4 text-gray-900">Why Homeowners Choose Hero Handyman Pro for Drywall Repair</h2>
           <p className="text-gray-600 mb-8 max-w-2xl">
-            We're a local handyman service based in the Metro East — not a national franchise. When you call us, you're talking to Phil, the owner, who has been doing drywall and home repairs in the greater St. Louis area for over 30 years.
+            We're a local handyman service based in the Metro East — not a national franchise. When you call us, you're talking to Phil, the owner, who has been doing drywall and home repairs in the greater St. Louis area for over 35 years.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             {[
@@ -268,17 +364,39 @@ export default function DrywallRepair() {
       {/* Internal Links */}
       <section className="py-12 px-6 bg-white border-t border-gray-100">
         <div className="max-w-[1120px] mx-auto">
-          <h3 className="font-semibold text-gray-800 mb-4">Related Services</h3>
-          <div className="flex flex-wrap gap-3 text-sm">
-            <Link href="/handyman-services/drywall-repair/"><span className="text-teal-700 hover:underline cursor-pointer">Drywall & Ceiling Repair Service Page</span></Link>
-            <span className="text-gray-300">|</span>
-            <Link href="/gbp/edwardsville"><span className="text-teal-700 hover:underline cursor-pointer">Edwardsville Handyman Services</span></Link>
-            <span className="text-gray-300">|</span>
-            <Link href="/gbp/ofallon"><span className="text-teal-700 hover:underline cursor-pointer">O'Fallon Handyman Services</span></Link>
-            <span className="text-gray-300">|</span>
-            <Link href="/handyman-near-me"><span className="text-teal-700 hover:underline cursor-pointer">Handyman Near Me</span></Link>
-            <span className="text-gray-300">|</span>
-            <Link href="/"><span className="text-teal-700 hover:underline cursor-pointer">Hero Handyman Pro Home</span></Link>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div>
+              <h3 className="font-semibold text-gray-800 mb-3 text-sm uppercase tracking-wide">Related Services</h3>
+              <div className="flex flex-col gap-2 text-sm">
+                <Link href="/handyman-services/drywall-repair/"><span className="text-teal-700 hover:underline cursor-pointer">Drywall & Ceiling Repair</span></Link>
+                <Link href="/handyman-services/home-repair-services/"><span className="text-teal-700 hover:underline cursor-pointer">General Home Repairs & Punch Lists</span></Link>
+                <Link href="/handyman-services/trim-carpentry/"><span className="text-teal-700 hover:underline cursor-pointer">Interior Trim & Finish Carpentry</span></Link>
+                <Link href="/handyman-services/door-repair/"><span className="text-teal-700 hover:underline cursor-pointer">Door Repair & Replacement</span></Link>
+                <Link href="/handyman-service-packages"><span className="text-teal-700 hover:underline cursor-pointer">Home Repair Service Packages</span></Link>
+                <Link href="/handyman-services/"><span className="text-teal-700 hover:underline cursor-pointer">All Handyman Services</span></Link>
+              </div>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-800 mb-3 text-sm uppercase tracking-wide">Service Areas</h3>
+              <div className="flex flex-col gap-2 text-sm">
+                <Link href="/service-areas/ofallon-handyman-services/"><span className="text-teal-700 hover:underline cursor-pointer">Drywall Repair in O'Fallon, IL</span></Link>
+                <Link href="/service-areas/edwardsville-handyman-services/"><span className="text-teal-700 hover:underline cursor-pointer">Drywall Repair in Edwardsville, IL</span></Link>
+                <Link href="/service-areas/belleville-handyman-services/"><span className="text-teal-700 hover:underline cursor-pointer">Drywall Repair in Belleville, IL</span></Link>
+                <Link href="/service-areas/collinsville-handyman-services/"><span className="text-teal-700 hover:underline cursor-pointer">Drywall Repair in Collinsville, IL</span></Link>
+                <Link href="/handyman-shiloh-il/"><span className="text-teal-700 hover:underline cursor-pointer">Drywall Repair in Shiloh, IL</span></Link>
+                <Link href="/service-areas/"><span className="text-teal-700 hover:underline cursor-pointer">All Service Areas</span></Link>
+              </div>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-800 mb-3 text-sm uppercase tracking-wide">Helpful Articles</h3>
+              <div className="flex flex-col gap-2 text-sm">
+                <Link href="/blog/drywall-repair-cost-ofallon-il/"><span className="text-teal-700 hover:underline cursor-pointer">How Much Does Drywall Repair Cost in O'Fallon?</span></Link>
+                <Link href="/blog/winter-home-repairs-illinois/"><span className="text-teal-700 hover:underline cursor-pointer">Most Common Home Repairs After Winter</span></Link>
+                <Link href="/blog/home-maintenance-tips-metro-east-il/"><span className="text-teal-700 hover:underline cursor-pointer">Home Maintenance Tips for Metro East IL</span></Link>
+                <Link href="/blog/2026-handyman-costs-metro-east-il/"><span className="text-teal-700 hover:underline cursor-pointer">2026 Handyman Costs in Metro East IL</span></Link>
+                <Link href="/projects/"><span className="text-teal-700 hover:underline cursor-pointer">View Completed Projects</span></Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -297,7 +415,7 @@ export default function DrywallRepair() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-teal-700 rounded-full px-8 py-6 text-lg font-bold transition-colors">
                 Get a Free Quote
               </Button>

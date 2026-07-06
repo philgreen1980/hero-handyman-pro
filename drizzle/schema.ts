@@ -137,3 +137,58 @@ export const membershipSavings = mysqlTable("membershipSavings", {
 
 export type MembershipSaving = typeof membershipSavings.$inferSelect;
 export type InsertMembershipSaving = typeof membershipSavings.$inferInsert;
+/**
+ * Estimator leads — submitted via the Project Cost Estimator tool
+ */
+export const estimatorLeads = mysqlTable("estimator_leads", {
+  id: int("id").autoincrement().primaryKey(),
+  // Contact info
+  name: varchar("name", { length: 255 }).notNull(),
+  phone: varchar("phone", { length: 30 }).notNull(),
+  email: varchar("email", { length: 320 }).notNull(),
+  zip: varchar("zip", { length: 10 }).notNull(),
+  contactMethod: varchar("contactMethod", { length: 20 }).notNull(),
+  timeline: varchar("timeline", { length: 50 }),
+  description: text("description"),
+  // Project details
+  projectType: varchar("projectType", { length: 100 }).notNull(),
+  projectLabel: varchar("projectLabel", { length: 255 }).notNull(),
+  billableHoursLow: int("billableHoursLow").notNull(),
+  billableHoursHigh: int("billableHoursHigh").notNull(),
+  priceLow: int("priceLow").notNull(),
+  priceHigh: int("priceHigh").notNull(),
+  materialLow: int("materialLow").notNull(),
+  materialHigh: int("materialHigh").notNull(),
+  // Photos (JSON array of S3 URLs)
+  photoUrls: text("photoUrls"), // JSON string
+  // Lead status for admin pipeline tracking
+  status: varchar("status", { length: 20 }).default("new").notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+});
+export type EstimatorLead = typeof estimatorLeads.$inferSelect;
+export type InsertEstimatorLead = typeof estimatorLeads.$inferInsert;
+
+/**
+ * Contact submissions — durable record of every "Contact Us" and VA lead
+ * form submission. Previously these forms only fired an owner notification
+ * and were never saved anywhere, so a failed/misconfigured notification
+ * meant the lead was lost with no trace. Every submission is saved here
+ * first; the owner notification is now best-effort on top of that.
+ */
+export const contactSubmissions = mysqlTable("contact_submissions", {
+  id: int("id").autoincrement().primaryKey(),
+  source: varchar("source", { length: 30 }).notNull(), // 'contact' | 'va_lead'
+  name: varchar("name", { length: 255 }).notNull(),
+  email: varchar("email", { length: 320 }).notNull(),
+  phone: varchar("phone", { length: 30 }).notNull(),
+  city: varchar("city", { length: 100 }),
+  service: varchar("service", { length: 255 }),
+  photoUrl: text("photoUrl"),
+  message: text("message"),
+  isVeteran: mysqlEnum("isVeteran", ["yes", "no", "n_a"]).default("n_a").notNull(),
+  notificationSent: mysqlEnum("notificationSent", ["yes", "no"]).default("no").notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+});
+
+export type ContactSubmission = typeof contactSubmissions.$inferSelect;
+export type InsertContactSubmission = typeof contactSubmissions.$inferInsert;

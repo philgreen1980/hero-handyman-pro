@@ -2,18 +2,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DoorRepairBelleville() {
-  const seoData = {
-    title: "Door Repair & Installation Belleville IL | Hero Handyman Pro",
-    description: "Door repair and installation in Belleville IL — sticking doors, broken frames, entry door replacement, storm doors, and hardware. Call Hero Handyman Pro today.",
-    keywords: "door repair Belleville IL, door installation Belleville, entry door replacement Belleville, door frame repair Belleville IL, storm door installation Belleville",
-    canonicalUrl: "https://herohandymanpro.com/door-repair-belleville-il"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -33,7 +27,7 @@ export default function DoorRepairBelleville() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -198,7 +192,7 @@ export default function DoorRepairBelleville() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-teal-600 text-teal-600 hover:bg-teal-50">
                 Get a Free Quote
               </Button>

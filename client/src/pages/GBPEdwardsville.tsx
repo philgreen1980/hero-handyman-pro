@@ -1,19 +1,50 @@
 import { Link } from 'wouter';
 import { Phone, MapPin, Star, Clock, Shield, Award, Wrench, Hammer, DoorOpen } from 'lucide-react';
+import { SetPagePhone } from '@/contexts/PhoneContext';
 import { Button } from '@/components/ui/button';
 import { ServiceAreaMap } from '@/components/ServiceAreaMap';
 import { SeasonalPromoBanner } from '@/components/SeasonalPromoBanner';
 import LocalBusinessSchema from '@/components/LocalBusinessSchema';
 import { LocationFAQ } from '@/components/LocationFAQ';
 import SEO from '@/components/SEO';
-import { seoConfig } from '@/lib/seo-config';
+import LazyProjectGallery from '@/components/LazyProjectGallery';
+import type { ProjectPair } from '@/components/ProjectGallery';
+import { useSeoRoute } from '@/hooks/useSeoRoute';
+const edwardsvilleProjects: ProjectPair[] = [
+  {
+    beforeSrc: "/images/carpentry-before-belleville.webp",
+    afterSrc: "/images/carpentry-after-belleville.webp",
+    beforeAlt: "Damaged door casing trim with peeling paint – Belleville IL",
+    afterAlt: "Freshly repaired and painted door casing trim – Belleville IL",
+    caption: "Interior trim & carpentry repair",
+    city: "Belleville, IL",
+  },
+  {
+    beforeSrc: "/images/carpentry-before-collinsville.webp",
+    afterSrc: "/images/carpentry-after-collinsville.webp",
+    beforeAlt: "Rotted wooden privacy fence with missing boards – Collinsville IL",
+    afterAlt: "New cedar privacy fence boards installed – Collinsville IL",
+    caption: "Fence board replacement",
+    city: "Collinsville, IL",
+  },
+  {
+    beforeSrc: "/images/deck-before-glencarbonIL.webp",
+    afterSrc: "/images/deck-after-glencarbonIL.webp",
+    beforeAlt: "Severely rotted deck boards with holes and moss – Glen Carbon IL",
+    afterAlt: "New pressure-treated deck boards installed – Glen Carbon IL",
+    caption: "Deck board replacement",
+    city: "Glen Carbon, IL",
+  },
+];
 
 export default function GBPEdwardsville() {
+  const seo = useSeoRoute();
   return (
     <div className="min-h-screen">
-      <SEO {...seoConfig.gbpEdwardsville} />
+      <SetPagePhone phone="618-368-4335" display="(618) 368-4335" />
+      <SEO {...seo} />
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-teal-600 via-teal-700 to-teal-800 text-white py-20">
+      <section className="relative bg-gradient-to-br from-[#E85818] via-[#D42408] to-[#C01800] text-white py-20">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
@@ -25,12 +56,8 @@ export default function GBPEdwardsville() {
               Your Trusted Edwardsville Handyman
             </h1>
             
-            <p className="text-xl md:text-2xl mb-4 text-teal-50">
-              Hero Handyman Pro (formerly Rapid Repair Pro)
-            </p>
-            
-            <p className="text-lg mb-8 text-teal-100 max-w-2xl mx-auto">
-              Professional home repair and remodeling services for Edwardsville, Glen Carbon, Collinsville, and surrounding Metro East communities.
+            <p className="text-lg mb-8 text-orange-100 max-w-2xl mx-auto">
+              Reliable handyman service for Edwardsville, Glen Carbon, Collinsville, and surrounding Metro East communities. Small jobs welcome — drywall, doors, decks, carpentry, and fixtures. Fast home repairs with same-week availability when possible.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -55,7 +82,7 @@ export default function GBPEdwardsville() {
                 ))}
               </div>
               <span className="text-white font-semibold">4.9 Stars</span>
-              <span className="text-teal-100">(237 Google Reviews)</span>
+              <span className="text-orange-100">(237 Google Reviews)</span>
             </div>
           </div>
         </div>
@@ -67,10 +94,10 @@ export default function GBPEdwardsville() {
           <SeasonalPromoBanner
             city="Edwardsville"
             promotion={{
-              title: "Winter Comfort Package",
-              description: "Bundle and save! Get 20% off when you combine 2+ services: drywall repair, door installation, or ceiling fan installation.",
-              discount: "20% OFF",
-              validUntil: "March 15, 2025"
+              title: "Spring & Summer Home Repair Specials",
+              description: "Get your home ready for the season with professional handyman services from Hero Handyman Pro. From drywall repairs and door replacements to deck repairs and punch-list projects, we make home repair easy.",
+              discount: "Free Est.",
+              validUntil: "August 31, 2026"
             }}
           />
         </div>
@@ -81,8 +108,8 @@ export default function GBPEdwardsville() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="flex flex-col items-center text-center">
-              <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mb-4">
-                <Shield className="w-8 h-8 text-teal-600" />
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                <Shield className="w-8 h-8 text-[#E85818]" />
               </div>
               <h3 className="font-semibold text-lg mb-2">35+ Years Experience</h3>
               <p className="text-gray-600">Trusted expertise in home repairs</p>
@@ -97,8 +124,8 @@ export default function GBPEdwardsville() {
             </div>
             
             <div className="flex flex-col items-center text-center">
-              <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mb-4">
-                <Award className="w-8 h-8 text-teal-600" />
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                <Award className="w-8 h-8 text-[#E85818]" />
               </div>
               <h3 className="font-semibold text-lg mb-2">Top-Rated Service</h3>
               <p className="text-gray-600">4.9-star Google rating</p>
@@ -117,29 +144,29 @@ export default function GBPEdwardsville() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
               <div className="bg-white border border-gray-200 rounded-lg p-6">
-                <h3 className="font-semibold text-lg mb-3 text-teal-700">Home Repairs</h3>
+                <h3 className="font-semibold text-lg mb-3 text-[#E85818]">Home Repairs</h3>
                 <ul className="space-y-2 text-gray-700">
-                  <li>• <Link href="/drywall-repair-edwardsville-il"><span className="text-teal-700 hover:underline cursor-pointer">Drywall repair & patching</span></Link></li>
-                  <li>• <Link href="/door-repair-edwardsville-il"><span className="text-teal-700 hover:underline cursor-pointer">Door repair & installation</span></Link></li>
-                  <li>• Window repair & replacement</li>
-                  <li>• <Link href="/deck-repair-edwardsville-il"><span className="text-teal-700 hover:underline cursor-pointer">Deck repair & maintenance</span></Link></li>
+                  <li>• <Link href="/drywall-repair-edwardsville-il"><span className="text-[#E85818] hover:underline cursor-pointer">Drywall repair & patching</span></Link></li>
+                  <li>• <Link href="/door-repair-edwardsville-il"><span className="text-[#E85818] hover:underline cursor-pointer">Door repair & installation</span></Link></li>
+                  <li>• <Link href="/service-areas/window-installation-edwardsville-il/"><span className="text-[#E85818] hover:underline cursor-pointer">Window repair & replacement</span></Link></li>
+                  <li>• <Link href="/deck-repair-edwardsville-il"><span className="text-[#E85818] hover:underline cursor-pointer">Deck repair & maintenance</span></Link></li>
                 </ul>
               </div>
               
               <div className="bg-white border border-gray-200 rounded-lg p-6">
-                <h3 className="font-semibold text-lg mb-3 text-teal-700">Remodeling</h3>
+                <h3 className="font-semibold text-lg mb-3 text-[#E85818]">Remodeling</h3>
                 <ul className="space-y-2 text-gray-700">
-                  <li>• Bathroom remodeling</li>
+                  <li>• <Link href="/service-areas/bathroom-remodeling-edwardsville-il/"><span className="text-[#E85818] hover:underline cursor-pointer">Bathroom remodeling</span></Link></li>
                   <li>• Kitchen remodeling</li>
                   <li>• Basement finishing</li>
-                  <li>• Deck construction</li>
+                  <li>• <Link href="/service-areas/deck-building-edwardsville-il/"><span className="text-[#E85818] hover:underline cursor-pointer">Deck construction</span></Link></li>
                 </ul>
               </div>
               
               <div className="bg-white border border-gray-200 rounded-lg p-6">
-                <h3 className="font-semibold text-lg mb-3 text-teal-700">Carpentry</h3>
+                <h3 className="font-semibold text-lg mb-3 text-[#E85818]">Carpentry</h3>
                 <ul className="space-y-2 text-gray-700">
-                  <li>• <Link href="/carpentry-services-edwardsville-il"><span className="text-teal-700 hover:underline cursor-pointer">Trim & molding installation</span></Link></li>
+                  <li>• <Link href="/carpentry-services-edwardsville-il"><span className="text-[#E85818] hover:underline cursor-pointer">Trim & molding installation</span></Link></li>
                   <li>• Custom shelving</li>
                   <li>• Cabinet installation</li>
                   <li>• Structural repairs</li>
@@ -147,7 +174,7 @@ export default function GBPEdwardsville() {
               </div>
               
               <div className="bg-white border border-gray-200 rounded-lg p-6">
-                <h3 className="font-semibold text-lg mb-3 text-teal-700">Electrical & Plumbing</h3>
+                <h3 className="font-semibold text-lg mb-3 text-[#E85818]">Electrical & Plumbing</h3>
                 <ul className="space-y-2 text-gray-700">
                   <li>• Ceiling fan installation</li>
                   <li>• Light fixture installation</li>
@@ -159,7 +186,7 @@ export default function GBPEdwardsville() {
 
             <div className="text-center">
               <Link href="/#contact?city=Edwardsville">
-                <Button size="lg" className="bg-teal-600 hover:bg-teal-700 text-white">
+                <Button size="lg" className="bg-[#E85818] hover:bg-[#E85818] text-white">
                   Request Free Estimate
                 </Button>
               </Link>
@@ -205,6 +232,13 @@ export default function GBPEdwardsville() {
           </div>
         </div>
       </section>
+
+      {/* Before/After Project Gallery */}
+      <LazyProjectGallery
+        projects={edwardsvilleProjects}
+        title="Recent Projects Near Edwardsville"
+        subtitle="Before-and-after results from homes in Edwardsville, Glen Carbon, and Collinsville."
+      />
 
       {/* Testimonials Section */}
       <section className="py-16 bg-white">
@@ -322,43 +356,43 @@ export default function GBPEdwardsville() {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <Link href="/drywall-repair-edwardsville-il">
-                <div className="group border border-gray-200 rounded-2xl p-6 hover:border-teal-600 hover:shadow-md transition-all cursor-pointer h-full">
-                  <div className="bg-teal-50 rounded-full p-3 w-fit mb-4 group-hover:bg-teal-100 transition-colors">
-                    <Wrench className="h-6 w-6 text-teal-700" />
+                <div className="group border border-gray-200 rounded-2xl p-6 hover:border-[#E85818] hover:shadow-md transition-all cursor-pointer h-full">
+                  <div className="bg-orange-50 rounded-full p-3 w-fit mb-4 group-hover:bg-orange-100 transition-colors">
+                    <Wrench className="h-6 w-6 text-[#E85818]" />
                   </div>
-                  <h3 className="font-bold text-lg text-gray-900 mb-2 group-hover:text-teal-700 transition-colors">Drywall Repair</h3>
+                  <h3 className="font-bold text-lg text-gray-900 mb-2 group-hover:text-[#E85818] transition-colors">Drywall Repair</h3>
                   <p className="text-gray-500 text-sm mb-4">Holes, cracks, water damage, and ceiling repairs — patched and finished to match your existing texture.</p>
-                  <span className="text-teal-700 font-semibold text-sm">View Drywall Repair →</span>
+                  <span className="text-[#E85818] font-semibold text-sm">View Drywall Repair →</span>
                 </div>
               </Link>
               <Link href="/deck-repair-edwardsville-il">
-                <div className="group border border-gray-200 rounded-2xl p-6 hover:border-teal-600 hover:shadow-md transition-all cursor-pointer h-full">
-                  <div className="bg-teal-50 rounded-full p-3 w-fit mb-4 group-hover:bg-teal-100 transition-colors">
-                    <Hammer className="h-6 w-6 text-teal-700" />
+                <div className="group border border-gray-200 rounded-2xl p-6 hover:border-[#E85818] hover:shadow-md transition-all cursor-pointer h-full">
+                  <div className="bg-orange-50 rounded-full p-3 w-fit mb-4 group-hover:bg-orange-100 transition-colors">
+                    <Hammer className="h-6 w-6 text-[#E85818]" />
                   </div>
-                  <h3 className="font-bold text-lg text-gray-900 mb-2 group-hover:text-teal-700 transition-colors">Deck Repair</h3>
+                  <h3 className="font-bold text-lg text-gray-900 mb-2 group-hover:text-[#E85818] transition-colors">Deck Repair</h3>
                   <p className="text-gray-500 text-sm mb-4">Rotted boards, loose railings, structural damage, and deck staining — restored to safe, solid condition.</p>
-                  <span className="text-teal-700 font-semibold text-sm">View Deck Repair →</span>
+                  <span className="text-[#E85818] font-semibold text-sm">View Deck Repair →</span>
                 </div>
               </Link>
               <Link href="/door-repair-edwardsville-il">
-                <div className="group border border-gray-200 rounded-2xl p-6 hover:border-teal-600 hover:shadow-md transition-all cursor-pointer h-full">
-                  <div className="bg-teal-50 rounded-full p-3 w-fit mb-4 group-hover:bg-teal-100 transition-colors">
-                    <DoorOpen className="h-6 w-6 text-teal-700" />
+                <div className="group border border-gray-200 rounded-2xl p-6 hover:border-[#E85818] hover:shadow-md transition-all cursor-pointer h-full">
+                  <div className="bg-orange-50 rounded-full p-3 w-fit mb-4 group-hover:bg-orange-100 transition-colors">
+                    <DoorOpen className="h-6 w-6 text-[#E85818]" />
                   </div>
-                  <h3 className="font-bold text-lg text-gray-900 mb-2 group-hover:text-teal-700 transition-colors">Door Repair</h3>
+                  <h3 className="font-bold text-lg text-gray-900 mb-2 group-hover:text-[#E85818] transition-colors">Door Repair</h3>
                   <p className="text-gray-500 text-sm mb-4">Sticking doors, broken hardware, damaged frames, and storm door repairs — fixed right the first time.</p>
-                  <span className="text-teal-700 font-semibold text-sm">View Door Repair →</span>
+                  <span className="text-[#E85818] font-semibold text-sm">View Door Repair →</span>
                 </div>
               </Link>
               <Link href="/carpentry-services-edwardsville-il">
-                <div className="group border border-gray-200 rounded-2xl p-6 hover:border-teal-600 hover:shadow-md transition-all cursor-pointer h-full">
-                  <div className="bg-teal-50 rounded-full p-3 w-fit mb-4 group-hover:bg-teal-100 transition-colors">
-                    <Wrench className="h-6 w-6 text-teal-700" />
+                <div className="group border border-gray-200 rounded-2xl p-6 hover:border-[#E85818] hover:shadow-md transition-all cursor-pointer h-full">
+                  <div className="bg-orange-50 rounded-full p-3 w-fit mb-4 group-hover:bg-orange-100 transition-colors">
+                    <Wrench className="h-6 w-6 text-[#E85818]" />
                   </div>
-                  <h3 className="font-bold text-lg text-gray-900 mb-2 group-hover:text-teal-700 transition-colors">Carpentry Services</h3>
+                  <h3 className="font-bold text-lg text-gray-900 mb-2 group-hover:text-[#E85818] transition-colors">Carpentry Services</h3>
                   <p className="text-gray-500 text-sm mb-4">Trim repair, exterior carpentry, cabinet adjustments, and custom built-in repairs for Edwardsville homes.</p>
-                  <span className="text-teal-700 font-semibold text-sm">View Carpentry Services →</span>
+                  <span className="text-[#E85818] font-semibold text-sm">View Carpentry Services →</span>
                 </div>
               </Link>
             </div>
@@ -366,14 +400,14 @@ export default function GBPEdwardsville() {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-br from-teal-600 to-teal-700 text-white">
+      <section className="py-16 bg-gradient-to-br from-[#E85818] to-[#D42408] text-white">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Ready to Get Started?
             </h2>
-            <p className="text-xl mb-8 text-teal-50">
-              Call us today for a free estimate on your Edwardsville home repair or remodeling project.
+            <p className="text-xl mb-8 text-orange-50">
+              Have a small repair or punch-list project? Call Hero Handyman Pro at 800-741-6056 or request a free quote. Reliable handyman service with same-week availability when possible.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:618-368-4335">

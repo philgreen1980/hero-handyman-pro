@@ -4,8 +4,11 @@ import { Button } from "@/components/ui/button";
 import { Check, Phone, Wrench, Home, Clock, Shield, MessageSquare, Star, Hammer, DoorOpen } from "lucide-react";
 import SEO from '@/components/SEO';
 import { FAQAccordion } from "@/components/FAQAccordion";
+import PageBreadcrumb from "@/components/PageBreadcrumb";
 
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 export default function CollinsvilleHandyman() {
+  const seo = useSeoRoute();
   const whyChooseUs = [
     { icon: Home, text: "Local, professional techs serving Collinsville families" },
     { icon: Wrench, text: "Experienced in decks, carpentry, drywall, doors, and home repairs" },
@@ -15,69 +18,86 @@ export default function CollinsvilleHandyman() {
   ];
 
   const neighborhoods = [
-    "Downtown Collinsville and historic districts",
-    "Areas near Cahokia Mounds",
-    "Neighborhoods along I-55, I-70, and I-255",
-    "Communities near Splash City Waterpark",
-    "Residential areas near Fairmount Park",
-    "Neighborhoods near the World's Largest Catsup Bottle",
-    "New developments and established communities"
+    "Downtown Collinsville and historic neighborhoods near Main Street",
+    "Residential areas near Cahokia Mounds State Historic Site",
+    "Communities along Beltline Road and Vandalia Street",
+    "Neighborhoods near Splash City Waterpark and Fairmount Park",
+    "Homes along I-55, I-70, and I-255 corridors",
+    "Maryville and Collinsville border communities",
+    "Newer developments off Troy Road and Horseshoe Lake Road",
+    "Neighborhoods near Collinsville High School and YMCA"
   ];
 
   const testimonials = [
     {
-      text: "Hero Handyman did an excellent job repairing our deck. Professional, on time, and reasonably priced.",
-      author: "Collinsville Homeowner"
+      text: "Hero Handyman repaired our deck in Collinsville and it looks great. They replaced the soft boards, fixed the railing, and stained everything to match. Professional, on time, and fair pricing.",
+      author: "Robert T., Collinsville IL",
+      service: "Deck Repair"
     },
     {
-      text: "They fixed several issues around our home quickly and efficiently. Highly recommend!",
-      author: "Collinsville Homeowner"
+      text: "They fixed several issues around our home in one visit — drywall patch, a sticking door, and a ceiling fan installation. Efficient, clean, and highly professional.",
+      author: "Michelle K., Collinsville IL",
+      service: "Home Repairs"
     },
     {
-      text: "Great service from start to finish. Will definitely use them again for future projects.",
-      author: "Collinsville Homeowner"
+      text: "Great service from start to finish. Phil's team replaced our front door and the difference in security and energy efficiency is noticeable. Will definitely use them again.",
+      author: "David L., Collinsville IL",
+      service: "Door Installation"
     }
   ];
 
   const faqs = [
     {
       question: "Do you provide free estimates in Collinsville?",
-      answer: "Yes, we provide clear, upfront estimates. Many projects can be estimated from photos, and we're happy to schedule an in-home visit for more complex work."
+      answer: "Yes, we provide clear, upfront estimates. Many projects can be estimated from photos, and we're happy to schedule an in-home visit for more complex work. There's no obligation and no pressure."
     },
     {
-      question: "How quickly can you start my project?",
-      answer: "We often have same-day or next-day availability in Collinsville. Contact us and we'll let you know our earliest opening."
+      question: "How quickly can you start my project in Collinsville?",
+      answer: "We often have same-day or next-day availability in Collinsville. Contact us and we'll let you know our earliest opening. For urgent repairs, call us directly at 800-741-6056."
     },
     {
       question: "What size projects do you handle?",
-      answer: "We handle everything from single repairs to comprehensive punch lists and larger projects like deck construction and exterior carpentry."
+      answer: "We handle everything from single repairs to comprehensive punch lists and larger projects like deck construction and exterior carpentry. No job is too small as long as we can schedule it efficiently."
     },
     {
       question: "Are you insured and licensed?",
-      answer: "Yes, Hero Handyman is fully insured and licensed. Your home and property are always protected when we work."
+      answer: "Yes, Hero Handyman Pro is fully insured for general liability and property damage. Our technicians are background-checked and trained to treat your home with care."
+    },
+    {
+      question: "How much does handyman service cost in Collinsville, IL?",
+      answer: "Pricing depends on the scope of work. Minor repairs like drywall patches or door adjustments typically run $150\u2013$350. Larger projects like deck repair or door replacement are quoted individually. We always provide written estimates before starting any work."
+    },
+    {
+      question: "What are the most common repairs you do in Collinsville?",
+      answer: "Deck repair, drywall patching, and door work are our most frequent calls in Collinsville. Homes near Cahokia Mounds and the older neighborhoods off Vandalia Street often need trim carpentry and drywall repairs, while newer developments off Beltline Road frequently need deck maintenance and fixture installations."
+    },
+    {
+      question: "Do you serve Maryville and nearby communities too?",
+      answer: "Yes. We serve Collinsville and surrounding communities including Maryville, Troy, and the Collinsville-Edwardsville corridor. If you're not sure whether we cover your address, just reach out and we'll confirm."
     }
   ];
 
   return (
     <div className="flex flex-col">
-      <SEO 
-        title="Trusted Handyman in Collinsville IL | Fast Home Repairs"
-        description="Local handyman services in Collinsville for drywall, doors, carpentry, decks, and home repairs. Fast response and professional workmanship."
-        canonicalUrl="https://herohandymanpro.com/service-areas/collinsville-handyman-services/"
-      />
+      <PageBreadcrumb crumbs={[
+    { label: "Home", href: "/" },
+    { label: "Service Areas", href: "/service-areas/" },
+    { label: "Collinsville, IL" }
+  ]} />
+      <SEO {...seo} />
       <LocalBusinessSchema city="Collinsville" state="IL" pageUrl="/service-areas/collinsville-handyman-services/" />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#1f2937] via-[#020617] to-[#020617] text-white py-16 md:py-24 px-6">
         <div className="max-w-[1120px] mx-auto">
           <div className="text-center mb-8">
             <h1 className="text-4xl md:text-5xl lg:text-[3.75rem] font-bold leading-tight mb-4">
-              Handyman Services in Collinsville, IL
+              Collinsville IL Handyman — Fast Home Repairs & Small Projects
             </h1>
             <p className="text-[#ff5b00] text-xl md:text-2xl font-semibold mb-6">
               Trusted, Professional Home Repairs for Collinsville Homeowners
             </p>
             <p className="text-[#e5e7eb] text-lg md:text-xl max-w-3xl mx-auto mb-8">
-              Hero Handyman is your reliable local handyman serving Collinsville, IL. From small repairs to larger home improvement projects, we deliver quality workmanship, clear communication, and dependable service every time.
+              From the established neighborhoods near downtown Collinsville to newer developments along I-55 and I-70, homeowners throughout Madison County trust Hero Handyman Pro for deck repair, drywall work, door installation, and general home maintenance. Collinsville's mix of mid-century homes near Cahokia Mounds and newer subdivisions off Beltline Road means we see a wide range of repair needs here — and we're equipped for all of them.
             </p>
           </div>
 
@@ -107,10 +127,19 @@ export default function CollinsvilleHandyman() {
             </a>
             <Link href="/booking/">
               <Button variant="outline" className="rounded-full px-10 py-7 text-lg font-semibold border-2 border-white text-white hover:bg-white/10">
-                Book Online
+                Book Your Handyman Service
               </Button>
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Hyper-Local Intro */}
+      <section className="py-10 px-6 bg-white border-b border-[#e5e7eb]">
+        <div className="max-w-[1120px] mx-auto">
+          <p className="text-[#374151] text-lg leading-relaxed">
+            From historic homes near downtown Collinsville to newer residential neighborhoods throughout the Metro East area, homeowners rely on Hero Handyman Pro for dependable repairs, <a href="/handyman-services/carpentry/" className="text-[#ff5b00] hover:underline font-medium">carpentry work</a>, <a href="/handyman-services/drywall-repair/" className="text-[#ff5b00] hover:underline font-medium">drywall repair</a>, and home improvement services completed professionally and efficiently.
+          </p>
         </div>
       </section>
 
@@ -122,7 +151,7 @@ export default function CollinsvilleHandyman() {
               Why Collinsville Homeowners Choose Hero Handyman
             </h2>
             <p className="text-[#4b5563] text-lg max-w-3xl mx-auto">
-              Hero Handyman Pro is built on trust, quality, and professionalism. Collinsville families choose us because we treat every home like our own—showing up on time, communicating clearly, and delivering work we're proud of.
+              Hero Handyman Pro is built on trust, quality, and professionalism. We've worked in Collinsville for years and understand the housing stock here — from the mid-century homes near Cahokia Mounds to the newer builds off Beltline Road and the established neighborhoods along Vandalia Street. That local knowledge means faster estimates, better material choices, and repairs that hold up in Madison County's climate.
             </p>
           </div>
 
@@ -141,7 +170,7 @@ export default function CollinsvilleHandyman() {
 
           <div className="bg-gradient-to-br from-[#ff5b00] to-[#f97316] rounded-2xl p-8 text-white">
             <p className="text-lg leading-relaxed">
-              We proudly serve neighborhoods throughout Collinsville—from downtown and historic districts near Cahokia Mounds to residential areas along major highways and communities near Splash City Waterpark. If you're in or near Collinsville, we're already working in your area.
+              We're a Metro East team that works in Collinsville every week — not a national call center dispatching strangers. Whether you're near downtown Collinsville, off Beltline Road, near Cahokia Mounds, or in one of the communities along I-55, we're already in your area regularly. That means faster scheduling, no travel surcharges, and a team that knows your neighborhood.
             </p>
           </div>
         </div>
@@ -210,6 +239,14 @@ export default function CollinsvilleHandyman() {
                 <li className="flex items-start gap-3 text-[#374151]">
                   <Check className="h-5 w-5 text-[#ff5b00] mt-0.5 flex-shrink-0" />
                   <span>Weatherstripping and draft protection</span>
+                </li>
+                <li className="flex items-start gap-3 text-[#374151]">
+                  <Check className="h-5 w-5 text-[#ff5b00] mt-0.5 flex-shrink-0" />
+                  <span><Link href="/blog/door-repair-cost-ofallon-il/" className="text-[#ff5b00] hover:underline">How much does door repair cost?</Link> — 2026 pricing guide for Metro East IL</span>
+                </li>
+                <li className="flex items-start gap-3 text-[#374151]">
+                  <Check className="h-5 w-5 text-[#ff5b00] mt-0.5 flex-shrink-0" />
+                  <span><Link href="/blog/window-repair-cost-ofallon-il/" className="text-[#ff5b00] hover:underline">How much does window repair cost?</Link> — 2026 pricing guide for Metro East IL</span>
                 </li>
               </ul>
             </div>
@@ -327,6 +364,60 @@ export default function CollinsvilleHandyman() {
         </div>
       </section>
 
+      {/* Phil EEAT Section */}
+      <section className="py-16 px-6 bg-[#f9fafb]">
+        <div className="max-w-[1120px] mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#0b1220]">
+                Meet Phil Green
+              </h2>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="inline-flex items-center gap-1.5 bg-[#ff5b00]/10 text-[#ff5b00] text-xs font-bold px-3 py-1.5 rounded-full border border-[#ff5b00]/20">
+                  ★ Veteran-Owned
+                </span>
+                <span className="inline-flex items-center gap-1.5 bg-[#0b1220]/5 text-[#0b1220] text-xs font-bold px-3 py-1.5 rounded-full border border-[#0b1220]/10">
+                  35+ Years Experience
+                </span>
+                <span className="inline-flex items-center gap-1.5 bg-[#0b1220]/5 text-[#0b1220] text-xs font-bold px-3 py-1.5 rounded-full border border-[#0b1220]/10">
+                  Licensed & Insured
+                </span>
+              </div>
+              <p className="text-[#4b5563] text-lg mb-4">
+                Hero Handyman Pro was founded by Coast Guard veteran and longtime remodeling professional Phil Green. After decades working in construction, remodeling, project management, and home repair, Phil built Hero Handyman Pro to solve one of the biggest frustrations homeowners face: unreliable contractors who don't communicate, don't show up, or don't finish the job properly.
+              </p>
+              <p className="text-[#4b5563] text-lg mb-4">
+                With more than 35 years of hands-on experience, Phil and the Hero Handyman Pro team focus on dependable communication, professional craftsmanship, and making home repair easy for busy homeowners throughout Collinsville and the Metro East area.
+              </p>
+              <p className="text-[#4b5563] text-lg">
+                We're not a franchise or a national call center. We're a local Metro East team that works in Collinsville every week — background-checked, insured, and committed to treating every home with respect.
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl p-8 border border-[#e5e7eb] shadow-sm">
+              <h3 className="text-xl font-bold text-[#0b1220] mb-6">Homeowner Tips for Collinsville Homes</h3>
+              <div className="space-y-5">
+                <div>
+                  <h4 className="font-bold text-[#0b1220] mb-1">Mid-century homes need careful drywall matching</h4>
+                  <p className="text-[#4b5563] text-sm">Many homes near Cahokia Mounds and downtown Collinsville have original plaster or older textured drywall. Our team has experience with multiple texture types — we'll blend the repair so it's invisible. See our <Link href="/handyman-services/drywall-repair/" className="text-[#ff5b00] hover:underline">drywall repair service</Link>.</p>
+                </div>
+                <div>
+                  <h4 className="font-bold text-[#0b1220] mb-1">Inspect your deck before summer</h4>
+                  <p className="text-[#4b5563] text-sm">Collinsville's hot summers and cold winters accelerate wood decay. Check for soft spots and wobbly railings each spring. Early <Link href="/handyman-services/deck-repair/" className="text-[#ff5b00] hover:underline">deck repair</Link> costs far less than full replacement and keeps your family safe.</p>
+                </div>
+                <div>
+                  <h4 className="font-bold text-[#0b1220] mb-1">Sticking doors are common in older homes</h4>
+                  <p className="text-[#4b5563] text-sm">Older homes settle over time, causing door frames to shift. If your doors stick or don't latch properly, it's usually a quick fix. Most <Link href="/handyman-services/door-repair/" className="text-[#ff5b00] hover:underline">door repairs</Link> take under two hours and make a big difference in comfort and security.</p>
+                </div>
+                <div>
+                  <h4 className="font-bold text-[#0b1220] mb-1">Bundle repairs to save on trip fees</h4>
+                  <p className="text-[#4b5563] text-sm">Our <Link href="/handyman-service-packages/" className="text-[#ff5b00] hover:underline">service packages</Link> and <Link href="/membership/" className="text-[#ff5b00] hover:underline">membership plan</Link> let you bundle multiple small repairs into one visit, saving on scheduling fees and getting everything done at once.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-[1120px] mx-auto">
@@ -407,6 +498,91 @@ export default function CollinsvilleHandyman() {
         </div>
       </section>
 
+      {/* FAQPage Schema */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you provide free estimates in Collinsville?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we provide clear, upfront estimates. Many projects can be estimated from photos, and we're happy to schedule an in-home visit for more complex work."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How quickly can you start my project in Collinsville?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We often have same-day or next-day availability in Collinsville. Contact us and we'll let you know our earliest opening."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What size projects do you handle in Collinsville?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We handle everything from single repairs to comprehensive punch lists and larger projects like deck construction and exterior carpentry."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are you insured and licensed to work in Collinsville, IL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Hero Handyman Pro is fully insured and licensed for residential work in Illinois and Missouri. Your home and property are always protected when we work."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does a handyman cost in Collinsville, IL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most handyman jobs in Collinsville run between $150 and $500 depending on the scope. Simple repairs like drywall patching or door adjustments typically fall in the $150\u2013$250 range. We provide free estimates so you know the cost before any work begins."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you repair decks in Collinsville, IL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Deck repair is one of our most common requests in Collinsville. We replace rotted boards, fix wobbly railings, repair structural issues, and restore your deck to safe condition. Call 800-741-6056 for a free deck inspection."
+            }
+          }
+        ]
+      })}} />
+
+      {/* Cross-City Links */}
+      <section className="py-12 px-6 bg-[#f9fafb] border-t border-gray-200">
+        <div className="max-w-[1120px] mx-auto">
+          <h2 className="text-2xl font-bold text-[#0b1220] mb-3">Also Serving Nearby Metro East Communities</h2>
+          <p className="text-gray-600 mb-6 max-w-3xl">
+            Hero Handyman Pro serves all of Metro East Illinois. We work regularly in <Link href="/service-areas/ofallon-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">O'Fallon</Link> for home maintenance near Scott Air Force Base, in <Link href="/service-areas/edwardsville-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Edwardsville</Link> for deck repairs near SIUE, and in <Link href="/service-areas/belleville-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Belleville</Link> for drywall and door repairs in the historic homes near the courthouse square. We also cover <Link href="/service-areas/glen-carbon-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Glen Carbon</Link>, <Link href="/service-areas/shiloh-il-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Shiloh</Link>, <Link href="/service-areas/swansea-il-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Swansea</Link>, and <Link href="/service-areas/fairview-heights-il-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Fairview Heights</Link>.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { name: "O'Fallon, IL", href: "/service-areas/ofallon-handyman-services/" },
+              { name: "Edwardsville, IL", href: "/service-areas/edwardsville-handyman-services/" },
+              { name: "Belleville, IL", href: "/service-areas/belleville-handyman-services/" },
+              { name: "Collinsville, IL", href: "/service-areas/collinsville-handyman-services/" },
+              { name: "Glen Carbon, IL", href: "/service-areas/glen-carbon-handyman-services/" },
+              { name: "Shiloh, IL", href: "/service-areas/shiloh-il-handyman-services/" },
+              { name: "Swansea, IL", href: "/service-areas/swansea-il-handyman-services/" },
+              { name: "Fairview Heights, IL", href: "/service-areas/fairview-heights-il-handyman-services/" },
+              { name: "View All Service Areas", href: "/service-areas/" },
+            ].map((area) => (
+              <Link key={area.name} href={area.href}>
+                <Button variant="outline" className="rounded-full border-gray-200 hover:border-[#ff5b00] hover:text-[#ff5b00] text-sm">
+                  {area.name}
+                </Button>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="py-16 px-6 bg-gradient-to-br from-[#1f2937] via-[#020617] to-[#020617] text-white">
         <div className="max-w-[1120px] mx-auto text-center">
@@ -425,7 +601,7 @@ export default function CollinsvilleHandyman() {
             </a>
             <Link href="/booking/">
               <Button variant="outline" className="rounded-full px-10 py-7 text-lg font-semibold border-2 border-white text-white hover:bg-white/10">
-                Book Online
+                Book Your Handyman Service
               </Button>
             </Link>
           </div>

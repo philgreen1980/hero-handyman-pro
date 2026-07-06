@@ -2,9 +2,9 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Phone, MapPin, Check } from "lucide-react";
 import SEO from '@/components/SEO';
-import { seoConfig } from '@/lib/seo-config';
-
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 export default function ServiceAreas() {
+  const seo = useSeoRoute();
   const cities = [
     {
       name: "O'Fallon, IL",
@@ -83,7 +83,7 @@ export default function ServiceAreas() {
 
   return (
     <div className="flex flex-col">
-      <SEO {...seoConfig.serviceAreas} />
+      <SEO {...seo} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#1f2937] via-[#020617] to-[#020617] text-white py-16 md:py-24 px-6">
         <div className="max-w-[1120px] mx-auto">
@@ -206,11 +206,11 @@ export default function ServiceAreas() {
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 mt-0.5 flex-shrink-0" />
-                  <span>Edwardsville, IL</span>
+                  <a href="/service-areas/edwardsville-handyman-services/" className="underline hover:no-underline">handyman Edwardsville IL</a>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 mt-0.5 flex-shrink-0" />
-                  <span>Belleville, IL</span>
+                  <a href="/handyman-belleville-il" className="underline hover:no-underline">handyman Belleville IL</a>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 mt-0.5 flex-shrink-0" />

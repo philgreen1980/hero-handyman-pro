@@ -5,12 +5,12 @@ import { ServiceAreaMap } from '@/components/ServiceAreaMap';
 import LocalBusinessSchema from '@/components/LocalBusinessSchema';
 import ServiceSchema from '@/components/ServiceSchema';
 import SEO from '@/components/SEO';
-import { seoConfig } from '@/lib/seo-config';
-
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 export default function WindowInstallationCollinsville() {
+  const seo = useSeoRoute();
   return (
     <div className="min-h-screen">
-      <SEO {...seoConfig.windowInstallationCollinsville} />
+      <SEO {...seo} />
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-teal-700 via-teal-600 to-teal-500 text-white py-20">
@@ -78,7 +78,7 @@ export default function WindowInstallationCollinsville() {
               </p>
               
               <p>
-                We've been installing energy-efficient replacement windows in Collinsville neighborhoods like Maryville, Caseyville, and Fairmont City for over 30 years. Our team knows the local building codes, understands the architectural styles common in Collinsville homes, and can recommend the best window solutions for your specific needs and budget.
+                We've been installing energy-efficient replacement windows in Collinsville neighborhoods like Maryville, Caseyville, and Fairmont City for over 35 years. Our team knows the local building codes, understands the architectural styles common in Collinsville homes, and can recommend the best window solutions for your specific needs and budget.
               </p>
               
               <p>
@@ -100,6 +100,63 @@ export default function WindowInstallationCollinsville() {
               <div className="bg-gray-50 rounded-lg p-6 text-center">
                 <div className="text-4xl font-bold text-teal-600 mb-2">70-80%</div>
                 <div className="text-sm text-gray-600">Average ROI on window replacement</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What's Included */}
+      <section className="py-16 bg-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">What's Included in Every Window Installation</h2>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Hero Handyman Pro handles every phase of the window replacement process. Phil starts by measuring each existing rough opening to confirm the correct replacement size, then removes the old window and disposes of it. He prepares the frame — addressing any rot, moisture damage, or out-of-square conditions before the new unit goes in. The new window is shimmed level and plumb, flashed properly to prevent water intrusion, and the cavity is insulated before the interior and exterior trim is finished. You're left with a clean, tight installation, not just a window dropped into a hole.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              For Collinsville homeowners replacing multiple windows, Phil can typically complete a whole-house installation in one to two days depending on the number of units and any frame repairs needed. The estimate will specify the timeline so you know what to expect before work begins.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-muted/20 rounded-lg p-6">
+                <h3 className="font-bold text-lg text-primary mb-4">Every Installation Includes</h3>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  {[
+                    "Measure existing rough openings",
+                    "Remove and haul away old windows",
+                    "Frame preparation and leveling",
+                    "New window installation with shimming",
+                    "Proper flashing and weatherproofing",
+                    "Insulation of frame cavity",
+                    "Interior and exterior trim finishing",
+                    "Full site cleanup",
+                  ].map(item => (
+                    <li key={item} className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-teal-600 flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="bg-muted/20 rounded-lg p-6">
+                <h3 className="font-bold text-lg text-primary mb-4">Window Types We Install</h3>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  {[
+                    "Double-hung (most common replacement)",
+                    "Single-hung windows",
+                    "Casement and awning windows",
+                    "Sliding windows",
+                    "Picture and fixed windows",
+                    "Bay and bow windows",
+                    "Garden windows",
+                    "Specialty and custom shapes",
+                  ].map(item => (
+                    <li key={item} className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-teal-600 flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>

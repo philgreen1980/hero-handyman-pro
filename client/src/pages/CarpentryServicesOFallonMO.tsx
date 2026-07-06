@@ -2,18 +2,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function CarpentryServicesOFallonMO() {
-  const seoData = {
-    title: "Carpentry Services O'Fallon MO | Trim, Wood Rot Repair & Finish Carpentry",
-    description: "Expert carpentry services in O'Fallon MO. Trim installation, wood rot repair, exterior carpentry, and finish work. Licensed & insured. Call 800-741-6056.",
-    keywords: "carpentry services O'Fallon MO, trim repair O'Fallon Missouri, wood rot repair O'Fallon, finish carpentry O'Fallon MO, carpenter O'Fallon",
-    canonicalUrl: "https://herohandymanpro.com/carpentry-services-ofallon-mo"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
         <div className="max-w-[1120px] mx-auto">
@@ -32,7 +26,7 @@ export default function CarpentryServicesOFallonMO() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -105,14 +99,14 @@ export default function CarpentryServicesOFallonMO() {
                 Trusted Carpentry Services in O'Fallon MO
               </h2>
               <p className="text-gray-600 mb-4">
-                O'Fallon homeowners in Winghaven, Hawk Ridge, Pheasant Point, and throughout St. Charles County trust Hero Handyman Pro for carpentry work that is precise, clean, and built to last. We bring 30+ years of hands-on carpentry experience to every project.
+                O'Fallon homeowners in Winghaven, Hawk Ridge, Pheasant Point, and throughout St. Charles County trust Hero Handyman Pro for carpentry work that is precise, clean, and built to last. We bring 35+ years of hands-on carpentry experience to every project.
               </p>
               <p className="text-gray-600 mb-6">
                 Whether you need a single baseboard section replaced or a full exterior trim restoration, we approach every job with the same attention to detail. We also handle pre-sale punch list repairs for O'Fallon homeowners preparing to list their homes.
               </p>
               <div className="space-y-3">
                 {[
-                  "30+ years of carpentry experience",
+                  "35+ years of carpentry experience",
                   "Precise cuts and clean, finished results",
                   "Pre-sale punch list repairs available",
                   "Serving all O'Fallon MO neighborhoods"
@@ -135,7 +129,7 @@ export default function CarpentryServicesOFallonMO() {
                   800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="w-full border-2 border-white text-white hover:bg-white/10 rounded-full py-6 text-lg font-semibold">
                   Request a Free Quote Online
                 </Button>

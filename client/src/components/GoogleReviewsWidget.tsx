@@ -15,7 +15,7 @@ interface GoogleReviewsWidgetProps {
 }
 
 export default function GoogleReviewsWidget({ 
-  placeId = "ChIJdQXl6KTR2IcRwNGissSH5ng", // Rapid Repair Pro place ID
+  placeId = "ChIJdQXl6KTR2IcRwNGissSH5ng", // Hero Handyman Pro Google place ID
   maxReviews = 6 
 }: GoogleReviewsWidgetProps) {
   const [reviews, setReviews] = useState<Review[]>([]);

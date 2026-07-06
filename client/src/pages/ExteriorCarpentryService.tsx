@@ -2,16 +2,40 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, AlertCircle, Wrench } from "lucide-react";
 import SEO from "@/components/SEO";
+import PageBreadcrumb from "@/components/PageBreadcrumb";
+import LazyProjectGallery from "@/components/LazyProjectGallery";
+import type { ProjectPair } from "@/components/ProjectGallery";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
+
+const carpentryProjects: ProjectPair[] = [
+  {
+    beforeSrc: "/images/carpentry-before-belleville.webp",
+    afterSrc: "/images/carpentry-after-belleville.webp",
+    beforeAlt: "Damaged door casing trim with peeling paint and open joints – Belleville IL",
+    afterAlt: "Freshly repaired and painted door casing trim – Belleville IL",
+    caption: "Interior trim & carpentry repair",
+    city: "Belleville, IL",
+  },
+  {
+    beforeSrc: "/images/carpentry-before-collinsville.webp",
+    afterSrc: "/images/carpentry-after-collinsville.webp",
+    beforeAlt: "Rotted and broken wooden privacy fence with missing boards – Collinsville IL",
+    afterAlt: "New cedar privacy fence boards installed and looking great – Collinsville IL",
+    caption: "Fence board replacement",
+    city: "Collinsville, IL",
+  },
+  {
+    beforeSrc: "/images/deck-before-glencarbonIL.webp",
+    afterSrc: "/images/deck-after-glencarbonIL.webp",
+    beforeAlt: "Severely rotted deck boards with holes and moss growth – Glen Carbon IL",
+    afterAlt: "New pressure-treated deck boards installed with stainless screws – Glen Carbon IL",
+    caption: "Deck board replacement",
+    city: "Glen Carbon, IL",
+  },
+];
 
 export default function ExteriorCarpentryService() {
-  const seoData = {
-    title: "Exterior Carpentry & Wood Rot Repair | St. Louis | Hero Handyman Pro",
-    description: "Expert exterior carpentry & wood rot repair in St. Louis. Fix trim, fascia, siding & porch damage. Stop rot before it spreads. Licensed, 30+ years experience!",
-    keywords: "exterior carpentry, wood rot repair, trim repair, fascia repair, siding repair, St Louis carpenter",
-    canonicalUrl: "https://herohandymanpro.com/handyman-services/exterior-carpentry"
-  };
-
-  const repairs = [
+  const seo = useSeoRoute();  const repairs = [
     "Trim and fascia replacement",
     "Siding repair",
     "Window and door trim",
@@ -34,7 +58,12 @@ export default function ExteriorCarpentryService() {
 
   return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <PageBreadcrumb crumbs={[
+    { label: "Home", href: "/" },
+    { label: "Services", href: "/handyman-services/" },
+    { label: "Exterior Carpentry" }
+  ]} />
+      <SEO {...seo} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#1f2937] via-[#020617] to-[#020617] text-white py-14 md:py-20 px-6">
         <div className="max-w-[1120px] mx-auto text-center">
@@ -246,6 +275,69 @@ export default function ExteriorCarpentryService() {
             <p className="text-gray-700">
               <strong>Composite and PVC trim</strong> costs 30-50% more initially but will never rot, warp, or need painting. For homes in O'Fallon, Edwardsville, Collinsville, and Belleville, we often recommend composite for high-moisture areas (porch columns, fascia near gutters) and wood for less exposed trim where cost is a bigger concern.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Before/After Project Gallery */}
+      <LazyProjectGallery
+        projects={carpentryProjects}
+        title="Recent Carpentry Projects in Your Area"
+        subtitle="Before-and-after results from carpentry and wood repair jobs across St. Louis & Metro East."
+      />
+
+      {/* What to Expect */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-[1120px] mx-auto">
+          <h2 className="text-3xl font-bold mb-3 text-gray-900">What to Expect When You Book Exterior Carpentry</h2>
+          <p className="text-gray-600 mb-10 max-w-2xl">From first call to finished repair — here's how exterior carpentry work goes with Hero Handyman Pro:</p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              { step: "1", title: "Call or Send Photos", desc: "Describe the issue or send a few photos of the damaged wood. We can often diagnose the extent of rot and give a ballpark estimate before visiting — saving you time and giving you a realistic cost expectation upfront." },
+              { step: "2", title: "On-Site Assessment", desc: "We probe suspect wood, check behind trim and fascia for hidden rot, and assess whether the damage is cosmetic or structural. Older homes in Metro East often have rot that extends further than the visible surface suggests." },
+              { step: "3", title: "Material Recommendation", desc: "We discuss wood vs. composite options based on your budget and the location of the repair. High-moisture areas (fascia near gutters, porch columns) benefit most from composite. We'll give you an honest recommendation, not an upsell." },
+              { step: "4", title: "Written Quote", desc: "You receive a firm written quote before any work begins. We break down materials and labor so you understand exactly what you're paying for. No surprises after the job." },
+              { step: "5", title: "Repair Day", desc: "We remove all damaged wood, treat any remaining surfaces with wood hardener or preservative, install new material, and prime or paint to match. Most exterior carpentry repairs are completed in a single day." },
+              { step: "6", title: "Cleanup & Walkthrough", desc: "All old wood, nails, and debris are removed and disposed of. We walk you through the completed repair and point out any adjacent areas to monitor in the future." },
+            ].map((item, i) => (
+              <div key={i} className="bg-gray-50 rounded-2xl border border-gray-200 p-6 shadow-sm">
+                <div className="w-10 h-10 bg-teal-700 text-white rounded-full flex items-center justify-center font-bold text-lg mb-4">{item.step}</div>
+                <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
+                <p className="text-gray-600 text-sm">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Homeowner Q&A */}
+      <section className="py-16 px-6 bg-gray-50">
+        <div className="max-w-[1120px] mx-auto">
+          <h2 className="text-3xl font-bold mb-10 text-gray-900">Common Homeowner Questions About Exterior Carpentry</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {[
+              {
+                q: "Why does exterior wood rot so quickly in Illinois?",
+                a: "The Metro East climate is tough on wood. Humid summers, wet springs, and freeze-thaw cycles in winter create ideal conditions for moisture to penetrate wood grain. Once water gets in, rot follows. The most vulnerable spots are areas where wood is close to soil, trapped behind gutters, or exposed to pooling water — like porch columns, fascia boards, and deck ledgers."
+              },
+              {
+                q: "Can I just paint over rotted wood?",
+                a: "No — and this is one of the most common mistakes homeowners make. Paint over rot just traps moisture inside and accelerates the decay. The only real fix is to remove the rotted material and replace it with sound wood or composite. We use wood hardener on partially soft wood to stabilize it before replacement where appropriate."
+              },
+              {
+                q: "How do I know if the rot is just cosmetic or structural?",
+                a: "Cosmetic rot affects the surface of trim, fascia, or siding but hasn't reached load-bearing components. Structural rot affects posts, beams, ledgers, or joists. The test is simple: probe the wood with a screwdriver. If it sinks in easily, the rot is deeper than it looks. We always probe suspect areas during our assessment before quoting."
+              },
+              {
+                q: "Should I repair or replace my porch columns?",
+                a: "If the rot is limited to the base of the column (the most common failure point), we can often repair just the base section and save the rest. If the column is hollow and the rot has traveled more than 12 inches up, full replacement is usually more cost-effective. We'll give you an honest assessment — not a recommendation designed to maximize our invoice."
+              },
+            ].map((item, i) => (
+              <div key={i} className="bg-white rounded-2xl border border-gray-200 p-6">
+                <h3 className="font-bold text-gray-900 mb-3">{item.q}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{item.a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

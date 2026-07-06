@@ -2,18 +2,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star, AlertTriangle } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DeckRepairGlenCarbon() {
-  const seoData = {
-    title: "Deck Repair Glen Carbon IL | Board Replacement, Rot Repair & Staining",
-    description: "Professional deck repair in Glen Carbon IL — rotted boards, loose railings, structural repairs, and deck staining. Hero Handyman Pro serves all of Madison County.",
-    keywords: "deck repair Glen Carbon IL, deck board replacement Glen Carbon, deck rot repair Glen Carbon, deck staining Glen Carbon IL, porch repair Glen Carbon",
-    canonicalUrl: "https://herohandymanpro.com/deck-repair-glen-carbon-il"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -33,7 +27,7 @@ export default function DeckRepairGlenCarbon() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -190,7 +184,7 @@ export default function DeckRepairGlenCarbon() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-teal-600 text-teal-600 hover:bg-teal-50">
                 Get a Free Quote
               </Button>

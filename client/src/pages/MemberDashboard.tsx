@@ -7,8 +7,10 @@ import { Check, Copy, DollarSign, Calendar, TrendingUp, AlertCircle, CheckCircle
 import SEO from "@/components/SEO";
 import { trpc } from "@/lib/trpc";
 import { Link } from "wouter";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function MemberDashboard() {
+  const seo = useSeoRoute();
   const [email, setEmail] = useState("");
   const [isLookingUp, setIsLookingUp] = useState(false);
   const [lookupComplete, setLookupComplete] = useState(false);
@@ -91,11 +93,7 @@ export default function MemberDashboard() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <SEO
-        title="Member Dashboard - View Your Membership & Savings"
-        description="Access your Hero Handyman Pro membership dashboard. View your membership status and track your savings from discounts and priority service."
-        keywords="member dashboard, membership status, handyman savings, priority service"
-      />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-teal-700 via-teal-800 to-cyan-900 text-white py-12 px-6">
@@ -356,7 +354,7 @@ export default function MemberDashboard() {
                 >
                   View Different Account
                 </Button>
-                <Link href="/contact/" className="flex-1">
+                <Link href="/#contact" className="flex-1">
                   <Button variant="outline" className="w-full">
                     Contact Support
                   </Button>

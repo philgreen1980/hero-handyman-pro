@@ -2,15 +2,65 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star, Shield, Clock, Wrench, Home, DoorOpen, Hammer } from "lucide-react";
 import SEO from "@/components/SEO";
+import { FAQAccordion } from "@/components/FAQAccordion";
+import PageBreadcrumb from "@/components/PageBreadcrumb";
+
+import { useSeoRoute } from '@/hooks/useSeoRoute';
+function scrollToContact(e?: React.MouseEvent) {
+  if (e) e.preventDefault();
+  const el = document.getElementById('contact');
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } else {
+    window.location.href = '/#contact';
+  }
+}
+
+const faqs = [
+  {
+    question: "How much does a handyman cost in Ballwin, MO?",
+    answer: "Most handyman jobs in Ballwin run between $150 and $600 depending on scope. Simple repairs like drywall patching or door adjustments typically fall in the $150–$300 range. Larger projects like deck board replacement or full door installation are usually $350–$700+. We provide free estimates so you know the cost before any work begins.",
+  },
+  {
+    question: "Do you offer same-day handyman service in Ballwin?",
+    answer: "Yes — we offer same-day and next-day availability for most repairs in Ballwin. For urgent repairs, call us directly at 800-741-6056 and we'll do our best to get to you quickly.",
+  },
+  {
+    question: "Are you licensed and insured to work in Missouri?",
+    answer: "Yes. Hero Handyman Pro is fully insured for residential work in Missouri and Illinois. We carry general liability insurance on every job, so you're protected if anything unexpected happens.",
+  },
+  {
+    question: "What areas of Ballwin do you serve?",
+    answer: "We serve all of Ballwin including Kehrs Mill Road, Manchester Road corridor, Ballwin Athletic Complex area, and surrounding West St. Louis County communities including Chesterfield, Ellisville, and Wildwood.",
+  },
+  {
+    question: "Can you handle multiple repairs in one visit in Ballwin?",
+    answer: "Absolutely — our Honey-Do List Knockout package is designed exactly for that. We batch multiple small repairs into one efficient visit so you're not paying multiple trip charges for each item.",
+  },
+  {
+    question: "Do you repair decks in Ballwin?",
+    answer: "Yes. Deck repair is one of our most common requests in Ballwin. Ballwin's wooded lots and shaded backyards accelerate wood decay, so we inspect for soft spots, replace compromised boards and posts, and reinforce railings to bring your deck back to safe condition.",
+  },
+  {
+    question: "Do you take small jobs in Ballwin?",
+    answer: "Yes — we specialize in small repairs and punch-list work that many contractors won't take. Whether it's a single drywall patch, a sticking door, or a short list of items before a move or home sale, we're set up to handle smaller projects efficiently and affordably.",
+  },
+  {
+    question: "How quickly can you schedule a repair in Ballwin?",
+    answer: "We aim for fast turnaround and can often schedule within a few days of your call. For urgent repairs, call us directly at 800-741-6056 and we'll do our best to fit you in quickly.",
+  },
+];
 
 export default function HandymanBallwinMO() {
+  const seo = useSeoRoute();
   return (
     <div className="flex flex-col">
-      <SEO
-        title="Handyman Services Ballwin MO | Hero Handyman Pro"
-        description="Trusted handyman services in Ballwin MO. Drywall repair, carpentry, door installation, and deck repairs. Call 800-741-6056 for a free quote today."
-        canonicalUrl="https://herohandymanpro.com/handyman-ballwin-mo"
-      />
+      <PageBreadcrumb crumbs={[
+    { label: "Home", href: "/" },
+    { label: "Service Areas", href: "/service-areas/" },
+    { label: "Ballwin, MO" }
+  ]} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#1f2937] via-[#020617] to-[#020617] text-white py-16 md:py-24 px-6">
@@ -18,10 +68,10 @@ export default function HandymanBallwinMO() {
           <div className="text-center mb-8">
             <p className="text-[#ff5b00] text-sm font-semibold uppercase tracking-widest mb-3">Serving Ballwin, MO</p>
             <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-tight mb-4">
-              Trusted Ballwin MO Handyman Services
+              Handyman Services in Ballwin, MO
             </h1>
             <p className="text-[#e5e7eb] text-lg md:text-xl max-w-3xl mx-auto mb-8">
-              Ballwin homeowners trust Hero Handyman Pro for dependable repairs and quality craftsmanship. Whether you need drywall patched after a renovation, new doors hung, a deck restored, or carpentry work completed, we show up on time and get it done right.
+              Hero Handyman Pro provides reliable handyman services for homeowners in Ballwin, MO. We specialize in small jobs, punch-list repairs, and fast home maintenance projects that need to be done right.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:800-741-6056">
@@ -30,11 +80,11 @@ export default function HandymanBallwinMO() {
                   Call Now: 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <a href="/#contact" onClick={scrollToContact}>
                 <Button variant="outline" className="rounded-full px-10 py-7 text-lg font-semibold border-2 border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -51,6 +101,40 @@ export default function HandymanBallwinMO() {
                 {badge.text}
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Small Jobs Welcome Section */}
+      <section className="py-14 px-6 bg-teal-700 text-white">
+        <div className="max-w-[1120px] mx-auto grid md:grid-cols-[3fr_2fr] gap-10 items-center">
+          <div>
+            <span className="text-teal-200 text-xs font-semibold uppercase tracking-widest">Our Specialty</span>
+            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">Small Jobs Welcome</h2>
+            <p className="text-teal-100 text-lg leading-relaxed mb-4">
+              We focus on the types of home repairs many contractors won't take — smaller projects that still matter. Whether it's a drywall patch, a sticking door, a rotted deck board, or a short punch list before a move or home sale, we show up, do the work right, and leave your home better than we found it.
+            </p>
+            <p className="text-teal-100 leading-relaxed">
+              We serve Ballwin and nearby areas including Chesterfield, Ellisville, Wildwood, and Des Peres. No job is too small — every repair gets the same quality attention as a larger project.
+            </p>
+          </div>
+          <div className="bg-white/10 rounded-2xl p-8">
+            <h3 className="font-bold text-xl mb-4">Common Small Jobs We Handle</h3>
+            <ul className="space-y-2">
+              {[
+                "Single drywall patch or hole repair",
+                "Door that sticks, drags, or won't latch",
+                "Rotted deck board or wobbly railing",
+                "Trim, baseboard, or casing repair",
+                "Ceiling fan or light fixture install",
+                "Pre-sale or move-in punch list repairs"
+              ].map((item, i) => (
+                <li key={i} className="flex items-center gap-2 text-teal-100 text-sm">
+                  <Check className="w-4 h-4 text-teal-300 flex-shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
@@ -183,11 +267,11 @@ export default function HandymanBallwinMO() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <a href="/#contact" onClick={scrollToContact}>
               <Button variant="outline" className="border-2 border-white text-white hover:bg-white/10 rounded-full px-10 py-7 text-lg font-semibold">
                 Get a Free Quote
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -206,7 +290,7 @@ export default function HandymanBallwinMO() {
               { title: "Carpentry Services", desc: "Trim installation, wood rot repair, exterior carpentry, and finish work in Ballwin.", href: "/carpentry-services-ballwin-mo" },
             ].map((service, i) => (
               <Link key={i} href={service.href}>
-                <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200 hover:border-[#ff5b00]/40 hover:shadow-md transition-all cursor-pointer h-full">
+                <div className="bg-[#f9fafb] rounded-2xl p-6 border border-[#e5e7eb] hover:border-[#ff5b00]/40 hover:shadow-md transition-all cursor-pointer h-full">
                   <h3 className="text-lg font-bold text-[#0b1220] mb-2">{service.title}</h3>
                   <p className="text-[#4b5563] text-sm mb-4">{service.desc}</p>
                   <span className="text-[#ff5b00] text-sm font-semibold">Learn more →</span>
@@ -217,25 +301,57 @@ export default function HandymanBallwinMO() {
         </div>
       </section>
 
+      {/* Trust Paragraph Section */}
+      <section className="py-14 px-6 bg-white border-t border-gray-100">
+        <div className="max-w-[780px] mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#0b1220] mb-4">Why Ballwin Homeowners Choose Hero Handyman Pro</h2>
+          <p className="text-[#4b5563] text-lg leading-relaxed">
+            We built this business around the jobs other contractors skip. Small repairs, punch-list items, quick fixes before a move — these are exactly what we do best. When you call Hero Handyman Pro in Ballwin, you get a skilled craftsman who shows up on time, communicates clearly, and gets the work done right the first time. We're fast, reliable, and we specialize in making your home's small problems disappear quickly.
+          </p>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-6 bg-[#f9fafb] border-t border-[#e5e7eb]">
+        <div className="max-w-[780px] mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-[#0b1220] mb-3">Frequently Asked Questions</h2>
+            <p className="text-[#4b5563]">Common questions from Ballwin homeowners</p>
+          </div>
+          <FAQAccordion faqs={faqs} />
+        </div>
+      </section>
+
+      {/* FAQPage Schema */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(item => ({
+          "@type": "Question",
+          "name": item.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": item.answer,
+          },
+        })),
+      })}} />
+
       {/* Internal Links Section */}
       <section className="py-12 px-6 bg-white border-t border-[#e5e7eb]">
         <div className="max-w-[1120px] mx-auto text-center">
           <h2 className="text-2xl font-bold mb-4 text-[#0b1220]">More Hero Handyman Pro Resources</h2>
           <p className="text-[#4b5563] mb-6">
-            Learn more about our services on our{" "}
-            <Link href="/" className="text-[#ff5b00] hover:underline font-medium">homepage</Link>,
-            or visit our{" "}
-            <Link href="/gbp/edwardsville" className="text-[#ff5b00] hover:underline font-medium">Edwardsville handyman services</Link>{" "}
-            page for Metro East coverage.
+            Explore more handyman services and nearby coverage areas.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
+              { label: "West St. Louis Handyman Services", href: "/gbp/des-peres-mo/" },
+              { label: "Handyman in Chesterfield, MO", href: "/handyman-chesterfield-mo" },
+              { label: "Handyman Near Me", href: "/handyman-near-me" },
+              { label: "All Handyman Services", href: "/handyman-services/" },
               { label: "Drywall Repair", href: "/drywall-repair-ballwin-mo" },
               { label: "Deck Repair", href: "/deck-repair-ballwin-mo" },
               { label: "Door Repair", href: "/door-repair-ballwin-mo" },
-              { label: "Door Installation", href: "/door-installation-ballwin-mo" },
-              { label: "Carpentry Services", href: "/carpentry-services-ballwin-mo" },
-              { label: "All Services", href: "/services/" },
             ].map((link) => (
               <Link key={link.href} href={link.href}>
                 <Button variant="outline" className="rounded-full border-[#ff5b00]/30 text-[#ff5b00] hover:bg-[#ff5b00]/5">

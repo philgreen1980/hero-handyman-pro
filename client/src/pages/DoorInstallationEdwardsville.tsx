@@ -2,18 +2,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DoorInstallationEdwardsville() {
-  const seoData = {
-    title: "Door Installation Edwardsville IL | Interior & Exterior Doors",
-    description: "Professional door installation and replacement in Edwardsville IL. Interior doors, exterior doors, storm doors, and door frame repair. Call Hero Handyman Pro at 800-741-6056.",
-    keywords: "door installation Edwardsville IL, door replacement Edwardsville, exterior door Edwardsville, storm door installation Edwardsville",
-    canonicalUrl: "https://herohandymanpro.com/door-installation-edwardsville-il"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -33,7 +27,7 @@ export default function DoorInstallationEdwardsville() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -179,7 +173,7 @@ export default function DoorInstallationEdwardsville() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-teal-700 rounded-full px-8 py-6 text-lg font-bold transition-colors">
                 Get a Free Quote
               </Button>

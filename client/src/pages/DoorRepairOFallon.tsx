@@ -2,18 +2,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star, AlertTriangle } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DoorRepairOFallon() {
-  const seoData = {
-    title: "Door Repair Near Me | O'Fallon IL Door Installation & Repair",
-    description: "O'Fallon IL door repair — interior, exterior & storm doors, alignment, hardware & replacement. Local handyman near you. Same-day available. Call 800-741-6056.",
-    keywords: "door repair O'Fallon IL, door repair O'Fallon, door alignment O'Fallon, storm door repair O'Fallon, door frame repair O'Fallon IL",
-    canonicalUrl: "https://herohandymanpro.com/door-repair-ofallon-il"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -33,7 +27,7 @@ export default function DoorRepairOFallon() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -135,7 +129,7 @@ export default function DoorRepairOFallon() {
             <div>
               <h2 className="text-3xl font-bold mb-4 text-gray-900">Why O'Fallon Homeowners Call Hero Handyman Pro</h2>
               <p className="text-gray-600 mb-6">
-                Phil, the owner of Hero Handyman Pro, has been repairing and installing doors in O'Fallon and the Metro East for over 30 years. He knows the neighborhoods here — the common settling patterns near Scott Air Force Base, the door brands popular in O'Fallon's 1990s–2000s construction boom, and the shortcuts that cause problems down the road.
+                Phil, the owner of Hero Handyman Pro, has been repairing and installing doors in O'Fallon and the Metro East for over 35 years. He knows the neighborhoods here — the common settling patterns near Scott Air Force Base, the door brands popular in O'Fallon's 1990s–2000s construction boom, and the shortcuts that cause problems down the road.
               </p>
               <div className="space-y-4">
                 {[
@@ -230,7 +224,7 @@ export default function DoorRepairOFallon() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-teal-700 rounded-full px-8 py-6 text-lg font-bold transition-colors">
                 Get a Free Quote
               </Button>

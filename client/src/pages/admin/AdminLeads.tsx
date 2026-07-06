@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'wouter';
 import { Download, Calendar, Mail, User, Filter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 
 interface Lead {
   id: number;
@@ -14,6 +15,7 @@ interface Lead {
 export default function AdminLeads() {
   const [leads, setLeads] = useState<Lead[]>([]);
   const [loading, setLoading] = useState(true);
+  const [unauthorized, setUnauthorized] = useState(false);
   const [filter, setFilter] = useState<string>('all');
   const [dateFilter, setDateFilter] = useState<string>('all');
 
@@ -24,6 +26,10 @@ export default function AdminLeads() {
   const fetchLeads = async () => {
     try {
       const response = await fetch('/api/leads');
+      if (response.status === 401 || response.status === 403) {
+        setUnauthorized(true);
+        return;
+      }
       const data = await response.json();
       setLeads(data);
     } catch (error) {
@@ -88,6 +94,21 @@ export default function AdminLeads() {
     }).length
   };
 
+  if (unauthorized) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+        <Card className="max-w-md w-full mx-4">
+          <CardContent className="pt-6 text-center">
+            <p className="text-gray-600 mb-4">Admin access required.</p>
+            <Link href="/admin/login">
+              <Button className="bg-teal-600 hover:bg-teal-700">Log In</Button>
+            </Link>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
+
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
@@ -102,9 +123,26 @@ export default function AdminLeads() {
   return (
     <div className="min-h-screen bg-gray-50 py-8">
       <div className="container">
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold mb-2">Lead Management</h1>
-          <p className="text-gray-600">View and manage all captured leads from your website</p>
+        <div className="mb-8 flex items-center justify-between">
+          <div>
+            <h1 className="text-3xl font-bold mb-2">Lead Management</h1>
+            <p className="text-gray-600">View and manage all captured leads from your website</p>
+          </div>
+          <div className="flex items-center gap-3">
+            <Link href="/admin/estimator-leads">
+              <Button variant="outline" size="sm">Estimator Leads</Button>
+            </Link>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={async () => {
+                await fetch('/api/admin/logout', { method: 'POST' });
+                window.location.href = '/admin/login';
+              }}
+            >
+              Log Out
+            </Button>
+          </div>
         </div>
 
         {/* Statistics Cards */}

@@ -1,12 +1,12 @@
 import { Link } from 'wouter';
 import { FileText, CheckSquare, Download, ArrowRight } from 'lucide-react';
 import SEO from '@/components/SEO';
-import { seoConfig } from '@/lib/seo-config';
-
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 export default function GuideLanding() {
+  const seo = useSeoRoute();
   return (
     <>
-      <SEO {...seoConfig['/guide']} />
+      <SEO {...seo} />
       
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-teal-600 to-teal-700 text-white">

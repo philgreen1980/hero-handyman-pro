@@ -7,12 +7,19 @@ import ServiceSchema from '@/components/ServiceSchema';
 import FAQSchema from '@/components/FAQSchema';
 import LeadMagnetForm from '@/components/LeadMagnetForm';
 import SEO from '@/components/SEO';
-import { seoConfig } from '@/lib/seo-config';
+import PageBreadcrumb from "@/components/PageBreadcrumb";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function WindowInstallationPage() {
+  const seo = useSeoRoute();
   return (
     <div className="min-h-screen">
-      <SEO {...seoConfig.windowInstallation} />
+      <PageBreadcrumb crumbs={[
+    { label: "Home", href: "/" },
+    { label: "Services", href: "/handyman-services/" },
+    { label: "Window Installation" }
+  ]} />
+      <SEO {...seo} />
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-teal-700 via-teal-600 to-teal-500 text-white py-20">
@@ -28,7 +35,7 @@ export default function WindowInstallationPage() {
             </h1>
             
             <p className="text-xl md:text-2xl mb-8 text-teal-50">
-              Energy-efficient window installation for your home. Reduce energy bills, improve comfort, and boost curb appeal. Licensed & insured with 30+ years experience.
+              Energy-efficient window installation for your home. Reduce energy bills, improve comfort, and boost curb appeal. Licensed & insured with 35+ years experience.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

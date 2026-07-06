@@ -3,9 +3,9 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Wrench, Home, Clock, Shield, MessageSquare, Star } from "lucide-react";
 import SEO from '@/components/SEO';
-import { seoConfig } from '@/lib/seo-config';
-
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 export default function StCharlesHandyman() {
+  const seo = useSeoRoute();
   const whyChooseUs = [
     { icon: Home, text: "Local professionals serving St. Charles families" },
     { icon: Wrench, text: "Experienced in decks, carpentry, drywall, doors, and all home repairs" },
@@ -60,7 +60,7 @@ export default function StCharlesHandyman() {
 
   return (
     <div className="flex flex-col">
-      <SEO {...seoConfig.stCharlesHandyman} />
+      <SEO {...seo} />
       <LocalBusinessSchema city="St. Charles" state="MO" pageUrl="/service-areas/st-charles-handyman-services/" />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#1f2937] via-[#020617] to-[#020617] text-white py-16 md:py-24 px-6">
@@ -206,6 +206,14 @@ export default function StCharlesHandyman() {
                 <li className="flex items-start gap-3 text-[#374151]">
                   <Check className="h-5 w-5 text-[#ff5b00] mt-0.5 flex-shrink-0" />
                   <span>Weatherstripping and draft protection</span>
+                </li>
+                <li className="flex items-start gap-3 text-[#374151]">
+                  <Check className="h-5 w-5 text-[#ff5b00] mt-0.5 flex-shrink-0" />
+                  <span><Link href="/blog/door-repair-cost-ofallon-il/" className="text-[#ff5b00] hover:underline">How much does door repair cost?</Link> — 2026 pricing guide for Metro East IL</span>
+                </li>
+                <li className="flex items-start gap-3 text-[#374151]">
+                  <Check className="h-5 w-5 text-[#ff5b00] mt-0.5 flex-shrink-0" />
+                  <span><Link href="/blog/window-repair-cost-ofallon-il/" className="text-[#ff5b00] hover:underline">How much does window repair cost?</Link> — 2026 pricing guide for Metro East IL</span>
                 </li>
               </ul>
             </div>

@@ -4,8 +4,10 @@ import { Phone, CheckCircle, Clock, Shield, Star } from "lucide-react";
 import SEO from "@/components/SEO";
 import FAQSchema from "@/components/FAQSchema";
 import { trackPhoneClick, trackCTAClick } from "@/lib/analytics";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function WindowInstallation() {
+  const seo = useSeoRoute();
   const faqs = [
     {
       question: "How much does window installation cost?",
@@ -31,18 +33,9 @@ export default function WindowInstallation() {
       question: "Can you match my existing window style?",
       answer: "Absolutely! We can match your existing window style, color, and grid pattern to maintain your home's aesthetic. Whether you're replacing one window or all of them, we ensure the new windows blend seamlessly with your home's architecture."
     }
-  ];
-
-  const seoData = {
-    title: "Window Installation & Replacement St. Louis | Expert Window Services",
-    description: "Professional window installation and replacement in St. Louis & Metro East. Energy-efficient windows, expert installation, lifetime labor warranty. Same-day quotes available. Call 800-741-6056",
-    keywords: "window installation, window replacement, window repair, window installation near me, window replacement near me, energy efficient windows, St Louis windows, Metro East window installation",
-    canonicalUrl: "https://herohandymanpro.com/handyman-services/window-installation/"
-  };
-
-  return (
+  ];  return (
     <div className="min-h-screen bg-white">
-      <SEO {...seoData} />
+      <SEO {...seo} />
       <FAQSchema faqs={faqs} pageUrl="/handyman-services/window-installation/" />
 
       {/* Hero Section */}
@@ -239,7 +232,7 @@ export default function WindowInstallation() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Expert Installation</h3>
               <p className="text-gray-600">
-                30+ years of experience installing windows of all types and sizes. We ensure proper fit, seal, and weatherproofing every time.
+                35+ years of experience installing windows of all types and sizes. We ensure proper fit, seal, and weatherproofing every time.
               </p>
             </div>
 
@@ -307,6 +300,143 @@ export default function WindowInstallation() {
             <Link href="/service-areas/st-louis-handyman-services/"><span className="px-4 py-2 bg-gray-100 rounded-full hover:bg-teal-100 cursor-pointer">St. Louis, MO</span></Link>
             <Link href="/service-areas/st-charles-handyman-services/"><span className="px-4 py-2 bg-gray-100 rounded-full hover:bg-teal-100 cursor-pointer">St. Charles, MO</span></Link>
             <Link href="/service-areas/fenton-handyman-services/"><span className="px-4 py-2 bg-gray-100 rounded-full hover:bg-teal-100 cursor-pointer">Fenton, MO</span></Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="py-16 px-6">
+        <div className="container max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
+            Window Installation & Repair Pricing
+          </h2>
+          <p className="text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto">
+            Transparent pricing for St. Louis and Metro East homeowners. Final price confirmed in writing before we start.
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            {[
+              { type: "Single Window Replacement", range: "$300 – $1,000", note: "Per window, includes installation and trim" },
+              { type: "Whole-Home Window Replacement", range: "$5,000 – $15,000", note: "10–15 windows; varies by size and material" },
+              { type: "Broken Glass Replacement", range: "$150 – $400", note: "Single pane; double-pane IGU replacement" },
+              { type: "Foggy/Seal Failure Repair", range: "$200 – $500", note: "IGU replacement without full frame" },
+              { type: "Window Balance Replacement", range: "$100 – $250", note: "Per window; fixes stuck or won't-stay-open windows" },
+              { type: "Weatherstripping & Caulking", range: "$75 – $200", note: "Per window; stops drafts and air leaks" },
+              { type: "Window Screen Repair", range: "$50 – $150", note: "Re-screening or frame repair" },
+              { type: "Storm Window Installation", range: "$200 – $500", note: "Per window; adds insulation layer" },
+              { type: "Egress Window (Basement)", range: "$1,500 – $3,500", note: "Includes well, cover, and framing" },
+            ].map((item, i) => (
+              <div key={i} className="bg-gray-50 rounded-xl p-5 border border-gray-200">
+                <h3 className="font-bold text-gray-900 text-sm mb-1">{item.type}</h3>
+                <p className="text-teal-700 font-bold text-lg mb-1">{item.range}</p>
+                <p className="text-gray-500 text-xs">{item.note}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-gray-500 text-sm">
+            * Prices are estimates. Final price confirmed before work begins. <Link href="/blog/window-repair-cost-ofallon-il/" className="text-teal-700 underline hover:text-teal-900">See our detailed Window Repair Cost Guide</Link> for more pricing breakdowns.
+          </p>
+        </div>
+      </section>
+
+      {/* Repair vs Replace */}
+      <section className="py-16 px-6 bg-gray-50">
+        <div className="container max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
+            Repair or Replace? Honest Advice.
+          </h2>
+          <p className="text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto">
+            Not every window problem requires full replacement. We'll tell you which option makes more financial sense.
+          </p>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white border-2 border-green-200 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                <span className="bg-green-100 text-green-700 text-xs font-bold px-2 py-1 rounded-full">REPAIR</span>
+                When repair makes sense
+              </h3>
+              <ul className="space-y-3">
+                {[
+                  "Broken single pane in an otherwise good frame",
+                  "Foggy IGU (seal failure) — replace just the glass unit",
+                  "Window won't stay open (balance spring replacement)",
+                  "Drafts from worn weatherstripping or failed caulk",
+                  "Stuck or hard-to-open window (hardware or paint)",
+                  "Screen damage (re-screen is fast and affordable)",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-2 text-gray-700 text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <p className="text-gray-500 text-sm mt-4 italic">Repair typically costs 60–80% less than full replacement when the frame is structurally sound.</p>
+            </div>
+            <div className="bg-white border-2 border-teal-200 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                <span className="bg-teal-100 text-teal-700 text-xs font-bold px-2 py-1 rounded-full">REPLACE</span>
+                When replacement makes sense
+              </h3>
+              <ul className="space-y-3">
+                {[
+                  "Frame is rotted, warped, or structurally compromised",
+                  "Window is 20+ years old with single-pane glass",
+                  "Multiple problems at once (frame + glass + hardware)",
+                  "Energy bills are high due to poor insulation",
+                  "You want to upgrade to Low-E or triple-pane glass",
+                  "Egress or code compliance requires a larger opening",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-2 text-gray-700 text-sm">
+                    <CheckCircle className="w-4 h-4 text-teal-700 flex-shrink-0 mt-0.5" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <p className="text-gray-500 text-sm mt-4 italic">Modern energy-efficient windows can reduce heating and cooling costs by 15–30% compared to old single-pane windows.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Local & Seasonal Context */}
+      <section className="py-16 px-6">
+        <div className="container max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
+            Window Issues Common in St. Louis & Metro East
+          </h2>
+          <p className="text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto">
+            Our climate creates specific window problems that we see regularly across the region.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6 mb-10">
+            {[
+              {
+                title: "Seal Failure (Foggy Glass)",
+                desc: "The freeze-thaw cycles of St. Louis winters stress IGU seals. When the seal fails, argon gas escapes and moisture gets between the panes, causing permanent fogging. This is the #1 window repair call we receive in Metro East.",
+                fix: "IGU replacement: $200–$500 per window"
+              },
+              {
+                title: "Wood Frame Rot",
+                desc: "Older Metro East and St. Louis homes (1950s–1980s) often have wood-frame windows. Summer humidity and winter rain accelerate rot at the sill and bottom rail. Caught early, rot can be repaired with epoxy filler. Advanced rot requires frame replacement.",
+                fix: "Rot repair: $150–$400 · Full frame: $400–$900"
+              },
+              {
+                title: "Stuck or Painted-Shut Windows",
+                desc: "Many older homes in the region have windows that were painted shut during renovations. This is a fire safety hazard. We can free stuck windows, replace broken balance springs, and restore smooth operation without full replacement.",
+                fix: "Window freeing + balance: $100–$250"
+              },
+            ].map((item, i) => (
+              <div key={i} className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">{item.title}</h3>
+                <p className="text-gray-600 text-sm mb-4">{item.desc}</p>
+                <p className="text-teal-700 font-semibold text-sm">{item.fix}</p>
+              </div>
+            ))}
+          </div>
+          <div className="bg-teal-50 border border-teal-200 rounded-xl p-6 text-center">
+            <p className="text-gray-700 mb-3">For detailed pricing on window repairs in O'Fallon and Metro East, see our comprehensive cost guide.</p>
+            <Link href="/blog/window-repair-cost-ofallon-il/">
+              <Button variant="outline" className="border-2 border-teal-700 text-teal-700 hover:bg-teal-700 hover:text-white rounded-full px-6">
+                Window Repair Cost Guide — O'Fallon IL
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

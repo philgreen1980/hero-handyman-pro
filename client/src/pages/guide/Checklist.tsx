@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import { Link } from 'wouter';
 import { Download, ArrowLeft, FileText, Printer } from 'lucide-react';
 import SEO from '@/components/SEO';
-import { seoConfig } from '@/lib/seo-config';
-
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 export default function Checklist() {
+  const seo = useSeoRoute();
   const [content, setContent] = useState('');
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function Checklist() {
 
   return (
     <>
-      <SEO {...seoConfig['/guide/checklist']} />
+      <SEO {...seo} />
       
       {/* Header */}
       <div className="bg-teal-600 text-white py-6 print:hidden">

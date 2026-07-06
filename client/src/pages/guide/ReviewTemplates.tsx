@@ -3,7 +3,9 @@ import { Link } from 'wouter';
 import { Download, ArrowLeft, Printer } from 'lucide-react';
 import SEO from '@/components/SEO';
 
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 export default function ReviewTemplates() {
+  const seo = useSeoRoute();
   const [content, setContent] = useState('');
 
   useEffect(() => {
@@ -28,11 +30,7 @@ export default function ReviewTemplates() {
 
   return (
     <>
-      <SEO 
-        title="Google Review Response Templates - Professional Responses | Hero Handyman Pro"
-        description="15 professional Google review response templates for handyman businesses. Handle positive, neutral, and negative reviews with these customizable templates."
-        canonicalUrl="/guide/review-templates"
-      />
+      <SEO {...seo} />
       
       {/* Header */}
       <div className="bg-teal-600 text-white py-6 print:hidden">

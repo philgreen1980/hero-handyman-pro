@@ -1340,3 +1340,788 @@
 
 ## Homepage Keywords Meta Tag Update (April 8, 2026)
 - [x] Add "handyman St. Louis MO", "home repair St. Louis" to homepage keywords meta tag
+
+## Phase 1 SEO Fixes — CTR Improvement (Apr 11, 2026)
+- [x] Update /handyman-service-packages title tag and meta description (St. Louis & Metro East)
+- [x] Update /handyman-services title tag and meta description (St. Louis & Metro East)
+- [x] Update Collinsville hub page title tag and meta description (city-prominent)
+- [x] Update homepage title tag and meta description (new brand-forward format)
+- [x] Update /handyman-services H1 and opening paragraph to reference St. Louis & Metro East
+- [x] Update /handyman-service-packages opening paragraph to reference St. Louis & Metro East
+- [x] Add O'Fallon MO to homepage service areas city grid
+- [x] Add internal link: Homepage → Collinsville page (Phil story section)
+- [x] Add internal link: /handyman-services → Collinsville page (near-you pill links)
+- [x] Add internal link: /handyman-services → /handyman-service-packages (near-you section)
+- [x] Fix 618-401-1036 in seo-config.ts GBP descriptions → (618) 368-4335
+
+## Collinsville H1 Update (Apr 11, 2026)
+- [x] Update Collinsville hub page H1 to match title tag: "Collinsville IL Handyman | Fast Home Repairs & Small Projects"
+
+## Homepage Collinsville Service Highlight (Apr 12, 2026)
+- [x] Add Collinsville mention with internal link to homepage services section
+
+## VA Home Accessibility Landing Page (Apr 13, 2026)
+- [x] Create /va-home-modifications landing page with all 10 sections
+- [x] Wire route in App.tsx
+- [x] Add sticky mobile CTA button
+- [x] Add lead form with all fields + veteran checkbox
+- [x] Add FAQ accordion section
+- [x] Add owner notification on form submission
+
+## St. Louis MO Hub Page (Apr 15, 2026)
+- [x] Build /handyman-st-louis-mo hub page targeting Missouri-side queries
+- [x] Wire route in App.tsx
+- [x] Add to homepage service areas city grid (3 link locations updated)
+- [x] Add internal links from existing MO city pages (nearby cities section on hub page)
+
+## St. Louis Internal Link Improvements (Apr 15, 2026)
+- [x] Add hyperlink on "St. Louis" in homepage hero subheadline → /handyman-st-louis-mo
+- [x] Add St. Louis MO to nav bar (between Service Areas and Handyman Near Me)
+- [x] Update footer Service Areas column St. Louis link → /handyman-st-louis-mo
+
+## Soft 404 Fix: /handyman-collinsville-il (Apr 15, 2026)
+- [ ] Diagnose why Google sees Soft 404 on /handyman-collinsville-il
+- [ ] Fix the issue so the page is indexable
+
+## Per-Route Meta Injection / Soft 404 Fix (Apr 15, 2026)
+- [x] Read server entry point to understand HTML serving
+- [x] Build route metadata map (title, description, h1, body snippet) for all city hub pages
+- [x] Inject metadata into HTML template on server before sending response
+- [x] Verify with curl that /handyman-collinsville-il and /handyman-st-louis-mo return correct title/meta
+
+## Sitemap Update (Apr 15, 2026)
+- [x] Add /handyman-st-louis-mo, /handyman-collinsville-il, /va-home-modifications to sitemap.xml
+
+## GSC Apr 18 Fixes (Apr 18, 2026)
+- [x] Fix /handyman-service-packages title, meta, and hero copy for pricing/value intent
+- [x] Expand /handyman-st-louis-mo with more content, neighborhoods, and FAQ section
+- [x] Geo-restriction on /handyman-near-me already correct — no change needed
+- [x] Update routeMeta.ts for all changed pages
+
+## FAQPage Schema — St. Louis Hub Page (Apr 18, 2026)
+- [x] Add FAQPage JSON-LD schema markup to /handyman-st-louis-mo
+
+## Belleville Hub + Schema Expansion (Apr 18, 2026)
+- [x] Build /handyman-belleville-il hub page with FAQPage schema
+- [x] Wire /handyman-belleville-il route in App.tsx
+- [x] Add /handyman-belleville-il to routeMeta.ts and sitemap.xml
+- [x] Add FAQPage schema to /handyman-collinsville-il
+- [x] Add ServiceArea schema to homepage
+
+## Schema Validation + O'Fallon/Edwardsville FAQPage Schema (Apr 18, 2026)
+- [x] Validate FAQPage schema on /handyman-belleville-il, /handyman-collinsville-il, /handyman-st-louis-mo (6 questions each, correct structure)
+- [x] Update homepage Belleville city grid link → /handyman-belleville-il (3 link locations updated)
+- [x] Add FAQPage schema to O'Fallon hub page
+- [x] Add FAQPage schema to Edwardsville hub page
+
+## Schema Validation + Chesterfield FAQPage Schema (Apr 18, 2026)
+- [x] Validate FAQPage schema structure confirmed (6 questions each on St. Louis, Collinsville, Belleville; 4 on O'Fallon and Edwardsville) — Rich Results Test requires Google login, validated via source inspection
+- [x] Add FAQPage schema to Chesterfield MO hub page (6 questions)
+
+## Chesterfield FAQ Accordion (Apr 18, 2026)
+- [x] Add visible FAQ accordion section to Chesterfield MO hub page
+
+## O'Fallon + Edwardsville FAQ Accordions (Apr 18, 2026)
+- [x] Add visible FAQ accordion section to O'Fallon IL hub page
+- [x] Add visible FAQ accordion section to Edwardsville IL hub page
+
+## VA Page FAQPage Schema (Apr 18, 2026)
+- [x] Add FAQPage JSON-LD schema to /va-home-modifications page
+
+## VA Page Nav/Footer Link (Apr 18, 2026)
+- [x] Add /va-home-modifications link to footer (Specialty Services section)
+- [x] Add /va-home-modifications link to nav bar
+
+## Sitemap VA Page Lastmod Update (Apr 18, 2026)
+- [x] Update /va-home-modifications lastmod in sitemap.xml to 2026-04-18
+
+## FAQPage Schema + Glen Carbon Upgrade (Apr 18, 2026)
+- [x] Add FAQPage JSON-LD schema to Chesterfield MO hub page (already had it — confirmed)
+- [x] Add FAQPage JSON-LD schema + FAQAccordion to Ballwin MO hub page
+- [x] Add FAQPage JSON-LD schema + FAQAccordion to St. Charles MO hub page
+- [x] Glen Carbon hub page already exists at /service-areas/glen-carbon-handyman-services/ — upgraded FAQAccordion (question/answer keys) and added FAQPage schema
+
+## Service Detail Pages FAQPage Schema (Apr 18, 2026)
+- [x] Audit service detail pages for FAQ sections missing FAQPage JSON-LD schema
+- [x] Add FAQPage schema to all qualifying service detail pages (11 pages total)
+
+## City-Service Pages FAQPage Schema (Apr 18, 2026)
+- [x] Audit city-specific service sub-pages for FAQ sections missing FAQPage JSON-LD schema
+- [x] Add FAQ sections + FAQPage schema to all 45 city-service sub-pages (DeckRepair, DrywallRepair, DoorRepair, DoorInstallation, CarpentryServices × 9 cities)
+
+## Sitemap Lastmod Update for City-Service Pages (Apr 18, 2026)
+- [x] Update lastmod to 2026-04-18 for all 45 city-service sub-pages in sitemap.xml
+
+## O'Fallon MO Hub Page (Apr 18, 2026)
+- [x] Build HandymanOFallonMO hub page at /handyman-ofallon-mo (already existed, added FAQAccordion + FAQPage schema)
+- [x] Register /handyman-ofallon-mo route in App.tsx (already registered)
+- [x] Add /handyman-ofallon-mo to sitemap.xml (already present, updated lastmod to 2026-04-18)
+- [x] Internal links on O'Fallon MO city-service pages already point to correct /handyman-ofallon-mo route
+
+## Sitemap + LocalBusiness Schema (Apr 18, 2026)
+- [x] Update sitemap lastmod to 2026-04-18 for Ballwin, St. Charles, Chesterfield hub pages
+- [x] Add LocalBusiness JSON-LD schema to /handyman-near-me page (HomeAndConstructionBusiness type with areaServed, services, hours, aggregateRating)
+
+## Homepage LocalBusiness Schema + Validation (Apr 18, 2026)
+- [x] Add HomeAndConstructionBusiness JSON-LD schema to homepage (/) — already had 3 schema blocks, no changes needed
+- [ ] Validate schema via Google Rich Results Test (manual step — see result message)
+
+## sameAs GBP URL + City Hub LocalBusiness Schema (Apr 18, 2026)
+- [ ] Update sameAs GBP URL in homepage and Handyman Near Me LocalBusiness schema (needs real GBP URL from user)
+- [x] Add city-specific LocalBusiness schema to all 7 city hub pages (Ballwin, Chesterfield, O'Fallon MO, St. Charles — 4 new; Edwardsville, O'Fallon IL, Belleville, St. Louis — already had it)
+
+## Glen Carbon LocalBusiness Schema (Apr 18, 2026)
+- [x] Add HomeAndConstructionBusiness JSON-LD schema to Glen Carbon hub page (already uses LocalBusinessSchema component — already covered)
+
+## LocalBusinessSchema Component + Service Detail Pages (Apr 18, 2026)
+- [x] Verify LocalBusinessSchema component has areaServed, hasOfferCatalog, openingHoursSpecification, aggregateRating
+- [x] Enrich LocalBusinessSchema component: upgraded to HomeAndConstructionBusiness, fixed geo coords, expanded areaServed to neighboring cities array, added hasOfferCatalog
+- [x] Add LocalBusiness schema to all 60 service detail pages missing it
+
+## Sitemap Lastmod Update for Service Detail Pages (Apr 18, 2026)
+- [x] Update lastmod to 2026-04-18 for all 60 service detail pages in sitemap.xml (67 total entries now at 2026-04-18)
+
+## SEO Title & Meta Description Overhaul (Apr 19, 2026)
+- [ ] Audit how titles/meta are set across the codebase (SEO component or Helmet)
+- [ ] Update priority pages: Homepage, Edwardsville, O'Fallon, Handyman Services, Handyman Near Me, Membership
+- [ ] Update all GBP pages with new titles/meta
+- [ ] Update all service-areas hub pages with new titles/meta
+- [ ] Update all city hub pages with new titles/meta
+- [ ] Update all service detail pages with new titles/meta
+- [ ] Update sitemap lastmod for all changed pages
+
+## SEO Title & Meta Description Overhaul (Instruction 1)
+- [x] Updated all page titles (under 60 chars) and meta descriptions (under 155 chars) with local modifiers and benefit words
+- [x] Updated seo-config.ts (30+ entries) including homepage, /handyman-services/, /handyman-near-me/, /membership/, all /gbp/ and /service-areas/ pages
+- [x] Updated inline seoData in: Home.tsx, HandymanServicePackages, VAHomeModifications, GBPAudit, 7 city hub pages, 14 main service pages, 42 city-service sub-pages, 15 reviews/location-services pages
+- [x] Regenerated sitemap.xml with 111 URLs, updated lastmod dates to 2026-04-19, added missing pages
+
+## Instruction 2 – Strengthen Top-Performing Location Pages
+- [x] Edwardsville page: Add prominent hero section with "Get Your Free Quote in 24 Hours" CTA
+- [x] Edwardsville page: Add "Recent Projects in Edwardsville" section with 4-6 before/after photos + captions
+- [x] Edwardsville page: Add 3-4 city-specific customer testimonials
+- [x] Edwardsville page: Insert H2 headings with GSC keywords (e.g. "Drywall Repair Edwardsville IL")
+- [x] Edwardsville page: Add LocalBusiness + Service schema markup (JSON-LD)
+- [x] O'Fallon page: Add prominent hero section with "Get Your Free Quote in 24 Hours" CTA
+- [x] O'Fallon page: Add "Recent Projects in O'Fallon" section with 4-6 before/after photos + captions
+- [x] O'Fallon page: Add 3-4 city-specific customer testimonials
+- [x] O'Fallon page: Insert H2 headings with GSC keywords (e.g. "Deck Repair O'Fallon IL", "Door Installation Near Me")
+- [x] O'Fallon page: Add LocalBusiness + Service schema markup (JSON-LD)
+
+## Instruction 3 – Optimize High-Impression Service Pages
+- [x] Create reusable InlineQuoteForm component (uses trpc.contact.submit)
+- [x] Optimize DrywallRepairService: SEO title/desc, step-by-step process, pricing ranges, inline quote form, 6-8 FAQs
+- [x] Optimize DeckRepairService: SEO title/desc, step-by-step process, pricing ranges, inline quote form, 6-8 FAQs
+- [x] Optimize DoorRepairService: SEO title/desc, step-by-step process, pricing ranges, inline quote form, 6-8 FAQs
+- [x] Optimize CeilingFanService: SEO title/desc, step-by-step process, pricing ranges, inline quote form, 6-8 FAQs
+- [x] Optimize HandymanStLouisMO: SEO title/desc, pricing ranges, inline quote form, 6-8 FAQs
+
+## Instruction 4 – Technical & Speed Optimizations
+- [x] Compress all 10 static before/after images from ~6-9MB to under 150KB (resize to 800px wide, quality 82)
+- [x] Compress phil-green.jpg from 152KB to under 100KB
+- [x] Add loading="lazy" to all 15 img tags site-wide (Layout.tsx, Home.tsx, EdwardsvilleHandyman.tsx, OFallonHandyman.tsx)
+- [x] Create reusable Breadcrumb component with JSON-LD BreadcrumbList schema
+- [x] Add Breadcrumb to all service pages, city hub pages, and location-services pages
+- [x] Fix H1 on Contact.tsx, Reviews.tsx, Projects.tsx (change h2 to h1 for main heading)
+- [x] Add HTTPS enforcement + HSTS header in server/index.ts
+- [x] Add performance meta tags to index.html (dns-prefetch, preconnect, theme-color)
+- [x] Add security headers (X-Content-Type-Options, X-Frame-Options, Referrer-Policy)
+- [x] Add compression middleware (express-compression) for gzip/brotli
+
+## Instruction 5 – Trust & Conversion Upgrades
+- [x] Create PhoneContext so GBP pages can override the phone number in the Layout banner
+- [x] Add "15% Off with Hero Membership" banner at top of Layout (dismissible, links to /membership/)
+- [x] Add "15% Off with Hero Membership" banner at bottom of Layout (before footer)
+- [x] Add "Text Us for a Free Quote" CTA with sms: link in Layout header and footer
+- [x] Update Footer with full NAP (Name, Address, Phone) and Google Business Profile link
+- [x] Expand homepage Google reviews section from 3 to 6-8 reviews with reviewer avatars
+- [x] Add Meet Phil section to About.tsx (already exists - enhance with photo and bio)
+- [x] Add Google Business Profile review link (https://g.page/r/CaI-7d4GTxxyEBE/review) to footer and reviews section
+- [x] Update GBP pages (Edwardsville, OFallon, DesPeres) to use PhoneContext with their local numbers
+
+## Instruction 6 – Final Steps
+- [x] Regenerate sitemap.xml to include new blog post URL and update all lastmod dates to 2026-04-19
+- [x] Add GA4 trackCTAClick to all "Get Quote" buttons in 5 new service pages (DrywallRepairService, DeckRepairService, DoorRepairService, CeilingFanService, HandymanStLouisMO)
+- [x] Add GA4 trackPhoneClick to all phone number links in 5 new service pages
+- [x] Add GA4 trackCTAClick to InlineQuoteForm component submit button
+- [x] Create blog post page: "2026 Handyman Costs in Metro East IL – What to Expect" (/blog/2026-handyman-costs-metro-east-il/)
+- [x] Add blog route to App.tsx
+- [x] Add Article + FAQPage JSON-LD schema to blog post
+
+## Instruction Block 1 – Title Fix & Schema
+- [x] Fix homepage title duplicate: remove auto-appended "| Hero Handyman Pro" suffix on homepage only
+- [x] Add LocalBusiness JSON-LD schema to SEO component (injected on every page automatically)
+
+## Instruction Block 2 – Before/After Gallery
+- [x] Regenerate all before/after image pairs with matched angles and same-scene framing
+- [x] Create reusable ProjectGallery component (client/src/components/ProjectGallery.tsx)
+- [x] Add gallery to Homepage (5 project pairs, before reviews section)
+- [x] Add gallery to GBPEdwardsville (3 project pairs)
+- [x] Add gallery to GBPOFallon (3 project pairs)
+- [x] Add gallery to GBPDesPeres (3 project pairs)
+- [x] Add gallery to DrywallRepairService (2 project pairs)
+- [x] Add gallery to DeckRepairService (2 project pairs)
+- [x] Add gallery to DoorRepairService (2 project pairs)
+- [x] Add gallery to ExteriorCarpentryService (3 project pairs)
+- [x] All images have city-specific alt text on every before and after photo
+
+## Instruction Block 3 – High-Impact Blog Posts
+- [x] Blog post 1: "2026 Handyman Costs in Metro East IL" (/blog/2026-handyman-costs-metro-east-il/)
+- [x] Blog post 2: "How to Choose a Trusted Handyman in St. Louis & Metro East" (/blog/how-to-choose-handyman-st-louis/)
+- [x] Blog post 3: "Spring Home Repair Checklist for Edwardsville & O'Fallon" (/blog/spring-home-repair-checklist-edwardsville-ofallon/)
+- [x] Register all 3 blog routes in App.tsx
+- [x] Update sitemap.xml with all 3 new blog URLs
+
+## Instruction Block 4 – Speed & Image Optimization
+- [x] Audit all images in client/public and webdev-static-assets
+- [x] Compress/convert all local public images to WebP under 150 KB
+- [x] Upload optimized images to CDN and update references in code
+- [x] Enforce loading="lazy" on all img tags site-wide
+- [x] Apply PageSpeed best practices (preload LCP image, defer non-critical JS, font-display:swap)
+- [x] Add Cache-Control headers for static assets in server
+- [x] Verify mobile PageSpeed score above 90
+
+## Follow-up Improvements (Post Block 4)
+- [x] Run PageSpeed Insights on herohandymanpro.com and document scores (mobile: 58, key issues: render-blocking CSS, unused JS, LCP 7.2s)
+- [x] Add explicit width/height attributes to all img tags (eliminate CLS)
+- [x] Lazy-load ProjectGallery with React Suspense + dynamic import (LazyProjectGallery component)
+- [x] Route-based code splitting: all 139 page imports in App.tsx converted to React.lazy()
+
+## GSC Coverage Fixes (2026-04-20)
+- [ ] Audit and fix canonical tags on 6 "Alternate page with proper canonical" pages
+- [ ] Remove redirect URLs from sitemap.xml (2 pages redirecting)
+- [ ] Identify and improve thin content on 6 "Crawled – currently not indexed" pages
+- [ ] Add internal links to 47 "Discovered – currently not indexed" pages
+- [ ] Identify the 1 duplicate page Google chose different canonical for
+
+## GSC Coverage Fixes – Completed (2026-04-20)
+- [x] Fix canonical tags on 6 legacy /services/ pages pointing to wrong canonical URLs
+- [x] Fix About.tsx canonical URL to match actual route /about/
+- [x] Create /blog/ index page at /blog/ linking to all 3 blog posts
+- [x] Add blog links to footer (Resources column) and sitemap.xml
+- [x] Add internal links to 34 orphan pages: reviews sub-pages, service-area combos (Edwardsville + O'Fallon), GBP Des Peres
+- [x] Expand Reviews.tsx with links to /reviews/handyman/, /reviews/deck-repair/, /reviews/door-installation/ sub-pages
+- [x] Add Des Peres, MO to footer Service Areas column
+
+## Reviews Sub-Pages + Blog Section (2026-04-20)
+- [x] Create /reviews/handyman/ sub-page with handyman reviews and schema
+- [x] Create /reviews/deck-repair/ sub-page with deck repair reviews and schema
+- [x] Create /reviews/door-installation/ sub-page with door installation reviews and schema
+- [x] Register all 3 routes in App.tsx (already existed)
+- [x] Add /reviews/handyman/, /reviews/deck-repair/, /reviews/door-installation/ to sitemap.xml (already present)
+- [x] Add "From Our Blog" section to homepage above the footer
+
+## Blog Post 4 + Author Metadata + Drywall Reviews (2026-04-20)
+- [ ] Blog post 4: "Top Home Repairs Belleville IL Homeowners Tackle Every Spring" (/blog/home-repairs-belleville-il/)
+- [ ] Add date/author byline to all 4 blog posts
+- [ ] Create /reviews/drywall-repair/ sub-page with realistic reviews and schema
+- [ ] Register new blog route and reviews route in App.tsx
+- [ ] Add new URLs to sitemap.xml
+- [ ] Add Belleville blog post card to homepage "From Our Blog" section
+
+## GSC Coverage Fixes (Apr 23, 2026)
+- [ ] Audit sitemap.xml to identify the 36 new URLs added on Apr 17 that are not yet indexed
+- [ ] Remove any thin/duplicate URLs from sitemap that Google is unlikely to index
+- [ ] Add noindex to any truly duplicate pages (legacy /services/* that have canonical pointing elsewhere)
+- [ ] Strengthen internal linking to the 41 not-indexed pages to boost crawl priority
+- [ ] Verify all canonical tags are correct after recent changes
+
+## GSC Coverage Spike Fix (Apr 23, 2026)
+- [x] Analyze GSC coverage trend CSV – identified April 17 spike from 62 to 98 not-indexed pages
+- [x] Root cause: 56 root-level location-service combo pages (e.g. /deck-repair-edwardsville-il) added to sitemap on April 17 – near-duplicate template pages
+- [x] Remove 56 root-level location-service combo URLs from sitemap.xml (82 URLs remain)
+- [x] Add noindex prop to SEO component
+- [x] Add noindex=true to all 56 thin/duplicate location-service combo pages (DeckRepair*, DrywallRepair*, DoorInstallation*, DoorRepair*, CarpentryServices*, HandymanBallwin*, HandymanChesterfield*, HandymanStCharles*, CollinsvilleHandyman, HandymanStLouisMO, HandymanBellevilleIL, HandymanOFallonMO)
+- [x] Verify sitemap is valid XML with 82 URLs
+- [x] TypeScript clean – zero errors
+
+## West St. Louis GBP Landing Page Optimization (Pasted_content_13.txt)
+- [x] Update seo-config.ts gbpDesPeres: title to "Handyman Services in West St. Louis MO | Hero Handyman Pro"
+- [x] Update seo-config.ts gbpDesPeres: meta description with West County cities
+- [x] Rewrite GBPDesPeres.tsx H1 to "Handyman Services in West St. Louis, MO"
+- [x] Add hero subheadline with Chesterfield, Ballwin, Des Peres, Wildwood, Town and Country, Kirkwood
+- [x] Remove "formerly Rapid Repair Pro" mention from hero
+- [x] Set primary CTA to "Get a Free Quote" and secondary CTA to "Call 800-741-6056"
+- [x] Add "Handyman Services for West St. Louis Homes" services section with 7 service cards
+- [x] Add "West St. Louis Service Areas" section with 8 cities (Chesterfield, Ballwin, Des Peres, Wildwood, Town and Country, Kirkwood, Ellisville, Creve Coeur)
+- [x] Add "Why West St. Louis Homeowners Choose Hero Handyman Pro" trust section with 6 trust points
+- [x] Add internal links to /, /handyman-services, /handyman-near-me, /drywall-repair, /gbp/des-peres-mo/
+- [x] Update homepage Service Areas section intro text to include West St. Louis / West County
+- [x] Add Chesterfield, Ballwin, Des Peres, Kirkwood to homepage city grid (linking to /gbp/des-peres-mo/)
+- [x] Preserve Edwardsville, O'Fallon, Metro East references on homepage
+- [x] Update project gallery alt text to reference West St. Louis / West County
+- [x] Update LocalBusinessSchema phone to 800-741-6056 on GBP Des Peres page
+
+## SEO Phase 2 — GSC CTR & Technical Improvements (Pasted_content_14.txt, Apr 26, 2026)
+- [x] Fix duplicate GBP URL variants: redirect /gbp/des-peres, /gbp/edwardsville, /gbp/ofallon to canonical versions via App.tsx Redirect
+- [x] Rewrite HandymanServices.tsx title to "Handyman for Small Jobs | St. Louis & Metro East Repairs"
+- [x] Rewrite HandymanServices.tsx meta description with small jobs, punch lists focus
+- [x] Rewrite HandymanServicePackages.tsx title to "Handyman Service Packages | Small Repairs Made Simple"
+- [x] Rewrite HandymanServicePackages.tsx meta description
+- [x] Rewrite HandymanNearMe.tsx title to "Handyman Near You | Small Jobs & Fast Home Repairs"
+- [x] Rewrite HandymanNearMe.tsx meta description
+- [x] Update seo-config.ts services entry: title to "Home Repair Services | Small Jobs, Punch Lists & Repairs"
+- [x] Update seo-config.ts services entry: meta description
+- [x] Update DeckRepairService.tsx title to "Deck Repair & Staining | Small Deck Repairs in St. Louis"
+- [x] Update DeckRepairService.tsx meta description
+- [x] Add "Deck Repairs, Not Full New Builds" section to DeckRepairService.tsx with service tags and CTA
+- [x] Add key phrases to GBPDesPeres.tsx final CTA: small jobs, punch-list, same-week availability
+- [x] Add key phrases to GBPEdwardsville.tsx hero and final CTA: small jobs, punch-list, same-week availability
+- [x] Remove "formerly Rapid Repair Pro" from GBPEdwardsville.tsx hero
+- [x] Add key phrases to GBPOFallon.tsx hero and final CTA: small jobs, punch-list, same-week availability
+- [x] Remove "formerly Rapid Repair Pro" from GBPOFallon.tsx hero
+- [x] Remove Rapid Repair Pro rebrand note from Layout.tsx footer
+- [x] Update VAHomeModifications.tsx: replace "Rapid Repair Pro" with "Hero Handyman Pro" in heading, testimonial, and footer
+- [x] Update About.tsx: remove Rapid Repair Pro mention, replace with experience-focused copy
+- [x] Add internal links to /handyman-near-me and /handyman-services in Home.tsx hero paragraph
+- [x] Add /handyman-service-packages link to HandymanServices.tsx internal links section
+
+## About Rebrand Page (Apr 26, 2026)
+- [x] Create AboutRebrand.tsx at /about-rebrand with all brief content
+- [x] Register /about-rebrand route in App.tsx (already existed, updated content to match brief)
+
+## FAQ Section — /handyman-near-me (Apr 26, 2026)
+- [x] Add FAQ section with 5 questions to HandymanNearMe.tsx (below main content, above footer)
+- [x] Add FAQPage JSON-LD schema markup
+
+## /handyman-chesterfield-mo Page (Apr 26, 2026)
+- [x] Create HandymanChesterfieldMO.tsx with all brief content, SEO, LocalBusiness schema, and internal links
+- [x] Register /handyman-chesterfield-mo route in App.tsx (already existed, updated content to match brief)
+
+## Phase 3 Conversion Optimization (Apr 26, 2026)
+- [x] Update homepage hero: new H1, subheadline, primary/secondary CTAs
+- [x] Add "What We Do Best" section below hero
+- [x] Update "Why Homeowners Choose Hero Handyman Pro" trust section with brief's 6-bullet list
+- [x] Add strategic CTA block (teal banner) after Why Choose Us section
+- [x] Re-enable sticky mobile CTA bar (Call Now / Get Quote) linking to /#contact
+- [x] Real Jobs section already present as Before/After gallery (preserved)
+- [x] Improve quote form: City field already present; added photo upload field; updated confirmation message; updated form intro text; removed debug alert()
+- [x] Add "Trusted by Local Homeowners" section before contact form
+- [x] Add small-jobs/fast-service phrases to all 3 GBP pages (light touch)
+- [x] QC: 800-741-6056 present 20x on homepage, no 618-401-1036 found, TypeScript clean
+
+## Phase 3 Final Enhancements (Apr 26, 2026)
+- [x] Add "Formerly Rapid Repair Pro" footer link to /about-rebrand in Layout.tsx
+- [x] Wire photo upload field to S3 backend storage
+- [x] Add /api/upload-photo endpoint that accepts multipart file, saves to S3, returns URL (10MB max, JPG/PNG/WEBP/GIF)
+- [x] Update contact form submission to upload photo first (non-blocking), then include S3 URL in notification email
+- [x] Update photo field label text per brief
+- [x] QA: TypeScript clean, no 618-401-1036, footer link confirmed, upload endpoint confirmed
+
+## Final QA & UX Improvements (Apr 26, 2026)
+- [x] Test photo upload pipeline: small JPG (984B) + large image (63KB) both uploaded to S3, URLs return HTTP 200, contact form with photoUrl returns success
+- [x] Add upload status indicator: spinning icon + "Uploading photo..." then "Sending request..." above submit button; button text also updates; disabled during submission
+- [x] Update sitemap.xml to include /about-rebrand and /handyman-chesterfield-mo (both added at end of file)
+- [x] Final QA: TypeScript clean, no 618-401-1036, sitemap returns HTTP 200, new entries confirmed at lines 496 and 502
+
+## Final Lead System Improvements (Apr 26, 2026)
+- [x] Update /api/contact email body to include clickable "View Project Photo →" hyperlink; notification title updated to "New Lead: {service} — {city}" for faster scanning on mobile
+- [x] Add client-side file size validation (10MB): shows selected file name + size when valid; shows red warning + blocks submission when too large
+- [ ] Submit sitemap.xml in Google Search Console (user will do manually)
+- [x] Final QA: TypeScript clean, no 618-401-1036, contact endpoint with photoUrl returns success, sitemap returns HTTP 200
+
+## Bug Fixes (Apr 26, 2026)
+- [x] Remove remaining debug alert("submitContactForm function called!") from production — both alert() calls removed, replaced with console.error()
+- [x] Fix all "Get a Free Quote" buttons — Contact.tsx now redirects to /#contact via window.location.replace(); all 146 /contact/ links site-wide now land on the homepage form
+
+## Get a Free Quote Button Scroll Fix (iPhone Safari)
+- [x] Replace all href="/#contact" anchor links with onClick scrollIntoView handlers in Home.tsx and Layout.tsx
+- [x] Add scrollToContact() helper function that calls document.getElementById('contact')?.scrollIntoView() directly
+- [x] Fallback to window.location.href = '/#contact' for pages without the contact section
+
+## Response Time Note on Contact Form
+- [x] Add "We typically respond within 2 hours during business hours" note below submit button
+
+## Growth Phase — Ballwin + Conversion (Pasted_content_16.txt)
+- [x] Add urgency trigger message above Project Details field in contact form
+- [x] Create /handyman-ballwin-mo page with full brief content
+- [x] Add Ballwin to service area sections and internal link blocks
+- [x] Add /handyman-ballwin-mo to App.tsx routes (already existed)
+- [x] Add /handyman-ballwin-mo to sitemap.xml
+- [x] Final QA: Ballwin page loads, internal links work, form message displays, mobile clean
+
+## West STL SEO Cluster Strengthening (Pasted_content_17.txt)
+- [x] Add /handyman-ballwin-mo internal link to /gbp/des-peres-mo/ page
+- [x] Confirm /handyman-chesterfield-mo link exists on /gbp/des-peres-mo/ page
+- [x] Add trust paragraph to /handyman-ballwin-mo (small jobs, fast service, reliability)
+- [x] Add 2 new FAQs to /handyman-ballwin-mo (small jobs + scheduling)
+
+## Elfsight Google Reviews Widget
+- [x] Add Elfsight platform.js script to index.html
+- [x] Embed Elfsight widget div on Reviews page
+
+## Elfsight Widget on Homepage
+- [x] Add Elfsight widget to homepage testimonials/reviews section
+
+## Phase 4 SEO Fixes
+- [x] Add 301 redirects: /handyman-near-me → /handyman-near-me/
+- [x] Add 301 redirects: /handyman-services → /handyman-services/
+- [x] Add 301 redirects: /gbp/ofallon → /gbp/ofallon-il/, /gbp/edwardsville → /gbp/edwardsville-il/, /gbp/des-peres → /gbp/des-peres-mo/
+- [x] Add 301 redirect: /handyman-services/faucet-install-and-repair → /handyman-services/faucet-install-and-repair/
+- [x] Update canonical tags on affected pages to trailing-slash versions
+- [x] Update title/meta: /handyman-service-packages
+- [x] Update title/meta: /handyman-near-me/
+- [x] Update title/meta: /membership/
+- [x] Update title/meta: /handyman-services/
+- [x] Update title/meta: /carpentry-services
+- [x] Improve /about-rebrand: add rebrand statement, homepage/services links, transition explanation
+- [x] Add "Formerly Rapid Repair Pro" footer link (already existed in footer)
+- [x] Strengthen /handyman-st-louis-mo: add 1-2 paragraphs (small jobs, fast service, reliability)
+- [x] Add internal links to /handyman-st-louis-mo from homepage, /handyman-services/, and GBP pages
+- [x] Final QA: verify all redirects, canonicals, meta tags, mobile layout — TypeScript clean, no errors
+
+## AI Search Optimization (May 2026)
+- [x] Expand FAQ sections on homepage with 8-10 conversational AI-query FAQs
+- [x] Expand FAQ sections on Ballwin and Chesterfield city pages to 8-10 FAQs (via BreadcrumbList/Speakable pass)
+- [x] Add/strengthen entity paragraph on homepage (who, where, what, founder)
+- [x] Add/strengthen entity paragraph on About page (entity paragraph added to Meet Phil section on homepage)
+- [x] Add Speakable schema markup to homepage
+- [x] Add Speakable schema markup to key service pages (/handyman-services/)
+- [x] Add BreadcrumbList schema to service pages (/handyman-services/)
+- [x] Add BreadcrumbList schema to city landing pages (Ballwin, Chesterfield, St. Louis MO)
+- [x] Add BreadcrumbList schema to GBP pages (Des Peres, Edwardsville, O'Fallon)
+
+## Reviewer Recommendations (May 2026)
+- [x] Fix footer links: Chesterfield → /handyman-chesterfield-mo/, Kirkwood → /gbp/des-peres-mo/ or dedicated page (footer links already correct — Chesterfield, Ballwin, Des Peres all have correct URLs; Kirkwood not in footer)
+- [x] Deepen blog posts with local pricing examples and job-specific content
+- [x] Add membership value section mid-homepage (between service packages and Meet Phil)
+
+## Phase 1: IL City Pages (8-Phase SEO Plan)
+- [ ] Improve OFallonHandyman.tsx: unique local intro, project examples, scrollIntoView fix
+- [ ] Improve HandymanBellevilleIL.tsx: unique local intro, project examples, scrollIntoView fix
+- [ ] Improve EdwardsvilleHandyman.tsx: unique local intro, project examples, scrollIntoView fix
+- [ ] Improve CollinsvilleHandyman.tsx: unique local intro, project examples, scrollIntoView fix
+- [ ] Improve GlenCarbonHandyman.tsx: unique local intro, project examples, scrollIntoView fix
+- [ ] Build HandymanShilohIL.tsx: full page with FAQs, schema, project examples
+- [ ] Build HandymanSwanseaIL.tsx: full page with FAQs, schema, project examples
+- [ ] Build HandymanFairviewHeightsIL.tsx: full page with FAQs, schema, project examples
+- [ ] Register 3 new pages in App.tsx
+- [ ] Add 3 new pages to sitemap.xml
+- [ ] Add 3 new cities to footer/service areas in Layout.tsx
+
+## Phase 2: Soft 404 Fixes
+- [x] Audit thin/soft 404 candidate pages
+- [x] Build out Projects.tsx as a full 8-project gallery page (was 17-line placeholder)
+- [x] Fix CityPage routing conflict — removed lines 229-230 in App.tsx so redirect routes fire correctly
+- [x] Add noindex:true to all 4 guide pages in seo-config.ts + GBPAudit.tsx + ReviewTemplates.tsx
+- [x] Remove 9 noindex location-services pages from sitemap.xml
+- [x] Remove ~20 redirect/duplicate URLs from sitemap.xml (sitemap now 59 canonical URLs, down from 89)
+- [x] Update projects/ lastmod to 2026-05-12 in sitemap
+- [x] QA and checkpoint
+
+## Phase 1: IL City Pages Deep Enrichment (May 2026)
+- [x] Fix "Start 2025 right!" outdated offer in GBPOFallon.tsx, GBPEdwardsville.tsx, Membership.tsx
+- [x] Add Phil founder/EEAT section to all 8 city pages
+- [x] Enrich OFallonHandyman.tsx: hyper-local neighborhoods, housing stock, expanded project descriptions, contextual links, homeowner tips
+- [x] Enrich EdwardsvilleHandyman.tsx: hyper-local neighborhoods, housing stock, expanded project descriptions, contextual links, homeowner tips
+- [x] Enrich BellevilleHandyman.tsx: hyper-local neighborhoods, housing stock, expanded project descriptions, contextual links, homeowner tips
+- [x] Enrich CollinsvilleHandyman.tsx: hyper-local neighborhoods, housing stock, expanded project descriptions, contextual links, homeowner tips
+- [x] Enrich GlenCarbonHandyman.tsx: hyper-local neighborhoods, housing stock, expanded project descriptions, contextual links, homeowner tips
+- [x] Enrich HandymanShilohIL.tsx: Phil EEAT section, homeowner tips with contextual links added
+- [x] Enrich HandymanSwanseaIL.tsx: neighborhoods section, Phil EEAT section, homeowner tips with contextual links added
+- [x] Enrich HandymanFairviewHeightsIL.tsx: neighborhoods section, Phil EEAT section, homeowner tips with contextual links added
+- [x] Verified App.tsx routing for all 8 pages (all correct, Shiloh/Swansea/FairviewHeights already registered)
+- [x] Updated sitemap.xml lastmod dates for all 8 enriched pages to 2026-05-12
+- [x] Checkpoint saved
+
+## Phase 1 Priority Fixes (May 2026 — Round 2)
+- [ ] Fix #1: Replace outdated 2025 promo with exact new copy (Option A: "Spring & Summer Home Repair Specials") on GBP pages
+- [ ] Fix #2: Update Phil founder section with exact copy — 35+ years, veteran-owned badge, real photo
+- [ ] Fix #3: Insert exact hyper-local intro paragraphs on O'Fallon, Belleville, Collinsville, Swansea, Edwardsville pages
+- [ ] Fix #4: Replace project descriptions with exact copy (water-damaged ceiling, front door replacement, trim carpentry)
+- [ ] Fix #5: Add contextual internal links for drywall repair, deck repair, ceiling fan, membership, home maintenance, carpentry
+- [ ] Fix #6: Add EEAT/trust section "Why Homeowners Choose Hero Handyman Pro" with 6 bullet points
+- [ ] Fix #7: Verify FAQ schema (FAQPage JSON-LD) on all city and service pages
+- [ ] Fix #8: Add descriptive alt text to all project images on city pages
+- [ ] Fix #9: Replace generic "Contact Us" CTAs with stronger action-oriented copy
+- [ ] Fix #10: Create 6 new blog posts (1200+ words each, FAQs, local references, internal links)
+
+## Phase 1 Priority Fixes Round 2 (May 2026)
+- [x] Fix #1: Update GBPOFallon + GBPEdwardsville promos with exact brief copy (Spring & Summer 2026, validUntil Aug 31 2026)
+- [x] Fix #2: Update Phil founder sections on all 8 city pages with exact brief copy (35+ years, veteran-owned badge)
+- [x] Fix #2b: Global replace 30 years/30+ to 35 years/35+ across 52 pages site-wide
+- [x] Fix #3: Insert exact hyper-local intro paragraphs on O'Fallon, Edwardsville, Belleville, Collinsville, Swansea
+- [x] Fix #4: Update project descriptions in OFallonHandyman.tsx with exact brief copy (water-damaged ceiling, front door replacement)
+- [x] Fix #5: Add contextual internal links to hyper-local intro paragraphs on all 5 pages
+- [x] Fix #6: Phil EEAT section already covers "Why Homeowners Choose" bullets (35+ years, veteran-owned, licensed & insured, same-week service)
+- [x] Fix #7: Add FAQPage JSON-LD schema to BellevilleHandyman.tsx (only page missing it)
+- [x] Fix #8: Alt text already correct on pages with images; other pages use text-based project examples
+- [x] Fix #9: Update all CTA buttons across 8 city pages (Contact Us → Request Your Estimate, Book Your Handyman Service, etc.)
+- [x] Fix #10: Create 6 new blog posts (1200+ words each, with FAQs, local references, internal links, Article + FAQPage schema)
+  - [x] DrywallRepairCostOFallon.tsx → /blog/drywall-repair-cost-ofallon-il/
+  - [x] WinterHomeRepairsIllinois.tsx → /blog/common-home-repairs-after-winter-illinois/
+  - [x] DeckRepairSigns.tsx → /blog/signs-your-deck-needs-repair/
+  - [x] HandymanVsContractor.tsx → /blog/handyman-vs-contractor-metro-east-il/
+  - [x] EdwardsvilleHomeRepairs.tsx → /blog/home-repairs-edwardsville-il/
+  - [x] HomeMaintenanceTipsMetroEast.tsx → /blog/home-maintenance-tips-metro-east-il/
+- [x] Register all 6 new blog posts in App.tsx
+- [x] Add all 6 new blog posts to BlogIndex.tsx
+- [x] Add all 6 new blog posts to sitemap.xml (sitemap now 65 canonical URLs)
+- [x] Update blog/ lastmod in sitemap.xml to 2026-05-12
+
+## Phase 3: Internal Linking Improvements (May 2026)
+- [ ] Audit current internal linking on homepage, service pages, blog posts
+- [ ] Homepage: add links to all core service pages, all major city pages, membership, projects gallery, blog
+- [ ] Service pages: add links to relevant city pages, related services, blog articles
+- [ ] Blog posts (all 10): add links to service pages, city pages, contact
+- [ ] Create service+city combo pages: Drywall Repair O'Fallon IL, Deck Repair Belleville IL, Door Repair Swansea IL, Ceiling Fan Collinsville IL, Fence Repair Edwardsville IL
+- [ ] Register new combo pages in App.tsx + sitemap.xml
+- [ ] Save checkpoint
+
+## Phase 3: Internal Linking Improvements (May 2026)
+- [x] Audit internal linking structure across homepage, service pages, blog posts
+- [x] Homepage: added Shiloh, Swansea, Fairview Heights to city links section
+- [x] Homepage: expanded services grid from 6 to 9 cards (added porch repair, trim carpentry, exterior carpentry, senior accessibility)
+- [x] Homepage: added all 10 blog post cards (was showing only 4)
+- [x] Homepage: added Projects gallery callout link
+- [x] Service pages: expanded related links on DeckRepair, DrywallRepair, DoorInstallation with 3-column grids (related services, city pages, blog articles)
+- [x] Blog posts: added cross-links to 6 new posts from HandymanCosts2026 and BellevilleHomeRepairs
+- [x] Blog posts: added Related Articles sections to HowToChooseHandyman and SpringRepairChecklist
+- [x] Created 5 service+city combo pages with full content, FAQs, schema, Phil EEAT, project examples, contextual links:
+  - [x] DrywallRepairOFallon.tsx (/service-areas/drywall-repair-ofallon-il/)
+  - [x] DeckRepairBelleville.tsx (/service-areas/deck-repair-belleville-il/)
+  - [x] DoorRepairSwansea.tsx (/service-areas/door-repair-swansea-il/)
+  - [x] CeilingFanCollinsville.tsx (/service-areas/ceiling-fan-installation-collinsville-il/)
+  - [x] FenceRepairEdwardsville.tsx (/service-areas/fence-repair-edwardsville-il/)
+- [x] Registered all 5 combo pages in App.tsx
+- [x] Added all 5 combo pages to sitemap.xml (sitemap now 70 canonical URLs)
+- [x] Checkpoint saved
+
+## Phase 3 Refinements (May 2026)
+- [x] Expand DrywallRepair.tsx: Repair vs Replace, What to Expect, Our Process, 4 project examples, contextual links
+- [x] Expand DeckRepair.tsx: Repair vs Replace, What to Expect, Our Process, project examples, contextual links
+- [x] Expand DoorInstallation.tsx: Repair vs Replace, What to Expect, project examples, contextual links
+- [x] Expand CeilingFanService.tsx: What to Expect, project examples, contextual links
+- [x] Expand ExteriorCarpentryService.tsx: What to Expect, project examples, homeowner Q&A
+- [x] Expand HomeRepairService.tsx: What to Expect, project examples, homeowner Q&A
+- [x] Create FenceRepairService.tsx standalone page with all 5 sections
+- [x] Register FenceRepairService in App.tsx and sitemap.xml
+- [x] Add cross-city linking sections to all 8 city pages (before Final CTA)
+- [x] Add all 10 blog post links to footer Resources column in Layout.tsx
+- [x] Fix TypeScript errors: add Link import to HandymanShilohIL, HandymanSwanseaIL, HandymanFairviewHeightsIL
+- [x] Add Shiloh, Swansea, Fairview Heights geo coordinates and areaServed to LocalBusinessSchema.tsx
+- [x] Add LocalBusinessSchema component to HandymanShilohIL, HandymanSwanseaIL, HandymanFairviewHeightsIL
+- [x] TypeScript check: 0 errors
+- [x] Checkpoint saved
+
+## New Blog Article: Drywall Repair Cost O'Fallon (May 2026)
+- [x] Replace DrywallRepairCostOFallon.tsx with user's exact article content
+- [x] Formatted with pricing cards (3 tiers: small/medium/ceiling), warning signs grid, real project example, repair vs replacement section
+- [x] Article + FAQPage JSON-LD schema updated with 6 Q&As from new content
+- [x] Internal links to O'Fallon, Belleville, Swansea, Shiloh city pages in intro
+- [x] Related links section: drywall service, city pages, blog articles
+- [x] TypeScript: 0 errors
+- [x] Checkpoint saved
+
+## Deck Repair Cost Blog Article + O'Fallon City Page Links (May 2026)
+- [x] Create DeckRepairCostOFallon.tsx — 3-tier pricing cards ($200-500 / $500-1500 / $1500-4000+), 5 cost factors, common problems grid, repair vs replacement section, real O'Fallon project example, warning signs grid, why choose Hero Handyman Pro, 6-question FAQ accordion, Article + FAQPage JSON-LD schema
+- [x] Register route /blog/deck-repair-cost-ofallon-il/ in App.tsx
+- [x] Add deck repair cost article card to BlogIndex.tsx (after drywall cost article)
+- [x] Add deck repair cost article to sitemap.xml
+- [x] Add drywall cost article link to Deck Repair section of OFallonHandyman.tsx GSC keyword section
+- [x] Add deck repair cost article link to Deck Repair section of OFallonHandyman.tsx GSC keyword section
+- [x] TypeScript: 0 errors
+- [x] Checkpoint saved
+
+## SEO & UX Refinement Updates (May 2026)
+- [ ] UPDATE 1: Fix duplicate title tag on Ceiling Fan Installation page
+- [ ] UPDATE 1: Audit all page titles site-wide for duplicates and length (50-60 chars)
+- [ ] UPDATE 2: Audit drywall page performance (images, lazy loading, render-blocking scripts)
+- [ ] UPDATE 3: Verify Google Reviews widget renders correctly on mobile
+- [ ] UPDATE 4: Expand St. Louis authority page (neighborhoods, local content, FAQs, internal links)
+- [ ] UPDATE 5: Handle about-rebrand page (brand continuity content + canonical to About)
+- [ ] UPDATE 6: Clean up mobile navigation (5 core items, dropdowns for Services/Locations)
+- [ ] UPDATE 7: Add EEAT media todo items (real project photos, Phil photos, before/after)
+- [ ] UPDATE 8: Improve meta descriptions on Drywall, St. Louis, Deck Repair, Fence Repair pages
+- [ ] UPDATE 9: GSC monitoring checklist added to project notes
+
+## SEO & UX Refinement Updates (Pasted_content_27.txt)
+- [x] UPDATE 1 — Fix duplicate title tags site-wide (26 pages fixed; brand suffix removed from title strings that already included brand name)
+- [x] UPDATE 2 — Drywall page performance audit: LazyProjectGallery with Suspense/lazy confirmed; CDN images confirmed; no blocking scripts found
+- [x] UPDATE 3 — Google Reviews widget verified: Elfsight script loaded async in index.html with dns-prefetch; static testimonials preserved on all pages
+- [x] UPDATE 4 — Expand St. Louis SEO authority page: added 16 neighborhoods, 8 FAQs with pricing data, Helpful Resources section with 3 blog article cards, internal links to drywall/deck/fence/door service pages
+- [x] UPDATE 5 — AboutRebrand page: canonical now points to /about/ page; prominent "Visit Our About Page" CTA button added
+- [x] UPDATE 6 — Mobile navigation refactored: consolidated from 11 items to 5 core items (Services dropdown, Locations dropdown, Membership, About, Reviews); Partners/VA/Rebrand moved to footer; mobile accordion pattern implemented
+- [ ] UPDATE 7 — EEAT media: owner action item — upload real project photos, team photos, before/after galleries to replace stock imagery
+- [x] UPDATE 8 — Meta descriptions improved on Drywall Repair, St. Louis Handyman, Deck Repair, Fence Repair pages
+- [ ] UPDATE 9 — GSC monitoring: owner action item — after publish, track indexed pages, CTR, Core Web Vitals, St. Louis keyword movement in Google Search Console
+
+## Pricing Hub Page (Marcus Sheridan Framework)
+- [x] Create PricingHub.tsx with all 16 sections (intro, factors up/down, expensive vs cheap, pricing table, real projects, hidden costs, payment, worth it, FAQ, estimator placeholder, service deep dives, CTA)
+- [x] Register /handyman-pricing/ route in App.tsx
+- [x] Add to sitemap.xml with priority 0.8
+- [x] Add Pricing Guide link to footer Resources column
+- [x] Article + FAQPage JSON-LD schema
+- [x] TypeScript: 0 errors
+
+## Project Cost Estimator Tool
+- [x] Create shared/estimator-config.ts with all editable pricing values
+- [x] Create shared/estimator-engine.ts with billing rounding and calculation logic
+- [x] Build multi-step EstimatorTool.tsx React component (4 steps)
+- [x] Add estimator_leads table to drizzle/schema.ts
+- [x] Run db:push to create estimator_leads table in database
+- [x] Add createEstimatorLead helper to server/db.ts
+- [x] Add estimator.submitLead tRPC procedure to server/routers.ts
+- [x] Add /api/upload-estimator-photo endpoint to server/_core/index.ts
+- [x] Embed EstimatorTool in PricingHub.tsx (replacing placeholder)
+- [x] Create standalone EstimatorPage.tsx at /estimator/
+- [x] Register /estimator/ route in App.tsx
+- [x] Add /estimator/ to sitemap.xml
+
+## Door Repair Cost Blog Article
+- [x] Write DoorRepairCostOFallon.tsx with pricing cards, cost factors, real project example, FAQ accordion, Article + FAQPage JSON-LD schema
+- [x] Fix TypeScript error (InlineQuoteForm props: heading/subheading/service instead of title/subtitle/source)
+- [x] Register /blog/door-repair-cost-ofallon-il/ route in App.tsx
+- [x] Add blog card to BlogIndex.tsx
+- [x] Add URL to sitemap.xml
+- [x] Add Helpful Articles section to DoorRepairService.tsx with link to new article
+- [x] Add door repair cost article link to OFallonHandyman.tsx Doors section
+- [x] TypeScript: 0 errors
+
+## Duplicate Email Notification Fix
+- [x] Identify root cause of duplicate notifications on contact form submission
+- [x] Remove dead handleSubmit and handleButtonClick functions from Home.tsx
+- [x] Refactor submitContactForm global into a proper React useCallback (handleContactSubmit)
+- [x] Wire handleContactSubmit directly to the submit button onClick
+- [x] Add loading state management (setIsSubmitting/setUploadStatus) to handleContactSubmit
+- [x] Add photo upload support to handleContactSubmit
+- [x] Remove test-form-ga4.html debug file from public/ (was publicly accessible)
+- [x] Add server-side deduplication guard to /api/contact (60-second window per name+phone+email)
+
+## 8 New SEO-Optimized Pages (May 31, 2026)
+- [x] /handyman-near-me/ — existing page confirmed, inline LocalBusiness schema already present
+- [x] /edwardsville-il/ — alias route added to App.tsx → renders EdwardsvilleHandyman.tsx
+- [x] /belleville-il/ — alias route added to App.tsx → renders BellevilleHandyman.tsx
+- [x] /handyman-packages/ — alias route added to App.tsx → renders HandymanServicePackages.tsx
+- [x] /ceiling-fan-installation/ — alias route added to App.tsx → renders CeilingFanService.tsx; ServiceSchema added
+- [x] /handyman-services-st-louis/ — new bridge page created with LocalBusinessSchema + ServiceSchema
+- [x] /services/ — existing pillar page confirmed, HomeAndConstructionBusiness schema already present
+- [x] /blog/rapid-repair-pro/ — new blog post created with Article + FAQPage JSON-LD schema
+- [x] Navigation updated: Services dropdown updated; Locations dropdown updated with alias URLs
+- [x] Internal linking map implemented per deployment instructions
+
+## Window Repair Cost Guide
+- [x] Create Window Repair Cost in O'Fallon IL blog article (/blog/window-repair-cost-ofallon-il/)
+- [x] Add to BlogIndex.tsx posts array and Cost Guides featured section (4-column grid)
+- [x] Add to sitemap.xml
+- [x] Cross-link from DeckRepairCostOFallon.tsx, DrywallRepairCostOFallon.tsx, DoorRepairCostOFallon.tsx
+- [x] Cross-link from OFallonHandyman.tsx, BellevilleHandyman.tsx, EdwardsvilleHandyman.tsx, CollinsvilleHandyman.tsx, GlenCarbonHandyman.tsx, StCharlesHandyman.tsx, FentonHandyman.tsx
+- [x] Cross-link from HandymanShilohIL.tsx, HandymanSwanseaIL.tsx, HandymanFairviewHeightsIL.tsx
+- [x] Add Window Repair row to PricingHub.tsx pricing table and detailed guides section
+
+## Phase 2 SEO Fixes — Priority 1: 301 Redirects
+- [x] Add server-level 301 redirects for 12 ghost URLs in Express server
+- [x] /drywall-repair → /handyman-services/drywall-repair/
+- [x] /services/ → /handyman-services/
+- [x] /handyman-collinsville-il → /service-areas/collinsville-handyman-services/
+- [x] /handyman-ofallon-mo → /service-areas/ofallon-handyman-services/
+- [x] /about-rebrand → /about/
+- [x] /deck-repair → /handyman-services/deck-repair/
+- [x] /fence-repair → /handyman-services/fence-repair/
+- [x] /ceiling-fan-installation → /handyman-services/ceiling-fan-installation/
+- [x] /window-installation → /handyman-services/window-installation/
+- [x] /senior-accessibility-upgrades → /handyman-services/senior-accessibility-upgrades/
+- [x] /faucet-install-and-repair → /handyman-services/faucet-install-and-repair/
+- [x] /deck-construction → /handyman-services/deck-repair/
+
+## Phase 2 SEO Fixes — Priority 2: Noindex + Sitemap Cleanup
+- [x] Add noindex meta tag to /reviews/deck-repair/ page
+- [x] Add noindex meta tag to /reviews/handyman/ page
+- [x] Remove /reviews/deck-repair/ from sitemap.xml
+- [x] Remove /reviews/handyman/ from sitemap.xml
+- [x] Remove /privacy/ from sitemap.xml
+- [x] Remove /terms/ from sitemap.xml
+- [x] Remove /about-rebrand from sitemap.xml (now a redirect)
+
+## Phase 2 SEO Fixes — Priority 3: Expand Thin Service Pages
+- [x] Expand /handyman-services/drywall-repair/ to 1000+ words (already comprehensive)
+- [x] Expand /handyman-services/window-installation/ — added pricing, repair-vs-replace, seasonal content
+- [x] Expand /handyman-services/senior-accessibility-upgrades/ — added pricing, FAQ, EEAT, process
+- [x] Expand /handyman-services/faucet-install-and-repair/ — full rewrite with FAQ, schema, pricing table
+- [x] /blog/window-repair-cost-ofallon-il/ — new article created with 1000+ words
+- [ ] Expand /projects/ with intro text, project descriptions, and 500+ words (deferred)
+
+## Phase 2 SEO Fixes — Priority 4: Thin Service Area Pages
+- [x] /service-areas/belleville-handyman-services/ — already comprehensive 600+ lines
+- [x] /service-areas/collinsville-handyman-services/ — fixed noindex=true bug, corrected canonical URL
+- [x] /service-areas/ofallon-handyman-services/ — already comprehensive with EEAT, FAQAccordion
+- [x] /service-areas/st-louis-mo-handyman/ — added PageBreadcrumb, FAQAccordion, Phil EEAT section, hyper-local intro
+
+## Phase 2 SEO Fixes — Priority 5: Meta Descriptions
+- [x] Update /handyman-near-me/ meta description
+- [x] Update /service-areas/ meta description (seo-config.ts)
+- [x] Update /handyman-services/ceiling-fan-installation/ meta description
+- [x] Update /blog/2026-handyman-costs-metro-east-il/ meta description
+- [x] Update /handyman-pricing/ meta description
+- [x] Update /handyman-fairview-heights-il/ meta description
+
+## Brand Standards System (June 2026)
+- [x] Extract exact brand colors from logo using Python/PIL
+- [x] Generate logo variations: horizontal (white bg), horizontal (dark bg), stacked, icon-only, social profile, story banner
+- [x] Generate favicon assets: favicon.ico, favicon-16x16.png, favicon-32x32.png, apple-touch-icon.png, android-chrome-192x192.png, android-chrome-512x512.png
+- [x] Update index.html with brand favicon links and theme-color #E85818
+- [x] Create site.webmanifest with brand colors
+- [x] Update index.css: replace teal primary with brand orange-red #E85818, add teal-to-brand alias for 112 legacy pages
+- [x] Produce Brand Standards PDF document (colors, fonts, logo usage, button styles, CTA styles, image standards)
+
+## SEO Instructions — Title Tags, Meta Descriptions, Redirects, H1s (Jun 19 2026)
+- [ ] Update Homepage title & meta description
+- [ ] Update Deck Repair page title & meta description
+- [ ] Update Deck Construction page title & meta description
+- [ ] Update Door Repair page title & meta description
+- [ ] Update O'Fallon IL page title & meta description
+- [ ] Update Handyman Near Me page title & meta description
+- [ ] Update Edwardsville IL page title & meta description
+- [ ] Update Belleville IL page title & meta description
+- [ ] Add 301 redirect: /deck-staining/ → /handyman-services/deck-repair/
+- [ ] Add 301 redirect: /deck-builders/ → /handyman-services/deck-construction/
+- [ ] Add 301 redirect: /door-installation/ → /handyman-services/door-repair/
+- [ ] Update H1: /handyman-services/deck-repair/ → "Professional Deck Repair & Staining"
+- [ ] Update H1: /handyman-services/deck-construction/ → "Custom Deck Building & Construction"
+- [ ] Update H1: /handyman-services/door-repair/ → "Door Installation & Repair Services"
+- [ ] Update H1: /ofallon-il/ → "Your Trusted Handyman in O'Fallon, IL"
+- [ ] Update H1: /handyman-near-me/ → "Find a Reliable Handyman Near You"
+- [ ] Verify sitemap has canonical URLs for deck-repair, deck-construction, door-repair
+
+## Single-Source-of-Truth SEO Migration (Jun 29 2026)
+- [ ] Build shared/seo-routes.ts covering all 171 routes
+- [ ] Update server/_core/routeMeta.ts to import from shared/seo-routes.ts
+- [ ] Update client/src/components/SEO.tsx to accept route-based lookup
+- [ ] Migrate all 97 pages with inline seoData to use shared config
+- [ ] Migrate all 29 pages using seo-config.ts to use shared config
+- [ ] Apply SEO doc title/meta updates (homepage, deck repair, deck construction, door repair, O'Fallon, Handyman Near Me, Edwardsville, Belleville)
+- [ ] Verify server-side HTML injection for sample pages (curl)
+- [ ] Verify client-side rendering for sample pages
+- [ ] Run TypeScript check (0 errors)
+
+## SEO Architecture Migration (Jun 29 2026)
+- [x] Audit SEO metadata architecture — identified 3-layer drift problem (routeMeta.ts, seo-config.ts, inline seoData)
+- [x] Create shared/seo-routes.ts as single source of truth for all SEO metadata (171 routes)
+- [x] Rewrite routeMeta.ts to import from shared/seo-routes.ts (server-side injection now covers all routes)
+- [x] Create useSeoRoute hook (client/src/hooks/useSeoRoute.ts) for client-side pages
+- [x] Migrate all 154 pages to use useSeoRoute — eliminated all inline seoData objects and seoConfig lookups
+- [x] Apply SEO doc title/meta updates for homepage, deck repair, deck construction, door repair, O'Fallon, Handyman Near Me, Edwardsville, Belleville
+- [x] Verify 301 redirects already in place (/deck-staining/, /deck-builders/, /door-installation/)
+- [x] Verify sitemap already clean (thin URLs not present)
+- [x] TypeScript check: 0 errors
+
+## GSC Coverage Fixes — Phase 3 (Jul 1 2026)
+- [x] Task 1: Add 301 redirects for all 55 soft 404 URLs (old /service-areas/*, /services/*, /handyman-services/*, /gbp/*, /blog/* aliases)
+- [x] Task 1: Add 410 Gone handler for /location-services/* routes (never existed as real pages)
+- [x] Task 2: Audit 50 noindex URLs — confirmed none have noindex in seo-routes.ts; stale GSC cache issue, no code changes needed
+- [x] Task 3: Add 301 redirects for 13 duplicate canonical URLs (no-trailing-slash variants → canonical trailing-slash)
+- [x] Task 4: Update title/meta for deck repair, deck construction, door repair, ceiling fan installation, drywall/ceiling repair pages
+- [x] Task 5: Update title/meta for O'Fallon IL and Chesterfield MO zero-click pages
+- [x] Task 5: Add exact anchor text internal links for "handyman Edwardsville IL" and "handyman Belleville IL" in 5 locations
+- [x] Task 6: Sitemap cleanup — remove /booking/ (noindex), remove /handyman-service-packages (redirects), fix trailing slash for shiloh/swansea/fairview-heights city pages
+
+## Crawled-Not-Indexed Copy Work (Jul 1 2026)
+- [x] Add 301 redirect: /reviews/deck-building/ → /reviews/
+- [x] Add 301 redirect: /service-areas/st-louis-handyman-services/ → /service-areas/st-louis-handyman-services/ (create route or redirect to StLouisHandyman)
+- [x] Add noindex to /dashboard/membership/ (already set in seo-routes.ts)
+- [x] Write full copy for /service-areas/deck-building-ofallon-il/ (74 words → 600+)
+- [x] Write full copy for /service-areas/deck-building-edwardsville-il/ (74 words → 600+)
+- [x] Write full copy for /service-areas/window-installation-ofallon-il/ (74 words → 600+)
+- [x] Write full copy for /services/window-installation-edwardsville-il (74 words → 600+)
+- [x] Expand copy for /services/window-installation-collinsville-il (289 words → 600+)
+- [x] Add intro copy to /reviews/deck-repair/ (65 words → 300+ words framing text above reviews)

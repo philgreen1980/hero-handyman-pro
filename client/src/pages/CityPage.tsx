@@ -22,7 +22,7 @@ export default function CityPage() {
             <p className="text-xl text-primary-foreground/90 mb-8">
               Trusted local repairs for homeowners in O'Fallon, Shiloh, and surrounding 62269 areas.
             </p>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold uppercase tracking-wider">
                 Get a Free Estimate
               </Button>
@@ -91,7 +91,7 @@ export default function CityPage() {
             <div className="absolute inset-0 bg-hazard opacity-10 pointer-events-none"></div>
             <h3 className="font-heading font-bold text-2xl mb-4 relative z-10">Live in O'Fallon?</h3>
             <p className="mb-6 relative z-10 text-primary-foreground/90">We're in your neighborhood regularly. Contact us for a quick and easy estimate.</p>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold uppercase relative z-10">
                 Get Estimate
               </Button>

@@ -2,18 +2,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DoorRepairGlenCarbon() {
-  const seoData = {
-    title: "Door Repair Glen Carbon IL | Sticking Doors, Frame & Hardware Repair",
-    description: "Professional door repair in Glen Carbon IL — sticking doors, broken hardware, damaged frames, and storm door repairs. Hero Handyman Pro serves all of Madison County.",
-    keywords: "door repair Glen Carbon IL, sticking door Glen Carbon, door frame repair Glen Carbon, door hardware repair Glen Carbon IL, storm door repair Glen Carbon",
-    canonicalUrl: "https://herohandymanpro.com/door-repair-glen-carbon-il"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -33,7 +27,7 @@ export default function DoorRepairGlenCarbon() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -196,7 +190,7 @@ export default function DoorRepairGlenCarbon() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-teal-600 text-teal-600 hover:bg-teal-50">
                 Get a Free Quote
               </Button>

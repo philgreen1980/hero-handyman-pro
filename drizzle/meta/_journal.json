@@ -29,6 +29,20 @@
       "when": 1768585737030,
       "tag": "0003_shallow_marauders",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1779551135047,
+      "tag": "0004_condemned_franklin_storm",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "5",
+      "when": 1779551893290,
+      "tag": "0005_early_roughhouse",
+      "breakpoints": true
     }
   ]
 }

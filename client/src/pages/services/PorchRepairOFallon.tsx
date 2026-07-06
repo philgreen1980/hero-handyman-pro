@@ -7,12 +7,12 @@ import ServiceSchema from '@/components/ServiceSchema';
 import FAQSchema from '@/components/FAQSchema';
 import LeadMagnetForm from '@/components/LeadMagnetForm';
 import SEO from '@/components/SEO';
-import { seoConfig } from '@/lib/seo-config';
-
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 export default function PorchRepairOFallon() {
+  const seo = useSeoRoute();
   return (
     <div className="min-h-screen">
-      <SEO {...seoConfig.porchRepairOFallon} />
+      <SEO {...seo} />
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-teal-700 via-teal-600 to-teal-500 text-white py-20">
@@ -28,7 +28,7 @@ export default function PorchRepairOFallon() {
             </h1>
             
             <p className="text-xl md:text-2xl mb-8 text-teal-50">
-              Expert porch repairs for sagging floors, rotted wood, damaged railings, and more. Restore your porch's safety and beauty. Licensed & insured with 30+ years experience.
+              Expert porch repairs for sagging floors, rotted wood, damaged railings, and more. Restore your porch's safety and beauty. Licensed & insured with 35+ years experience.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

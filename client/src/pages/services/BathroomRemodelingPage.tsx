@@ -5,12 +5,19 @@ import { ServiceAreaMap } from '@/components/ServiceAreaMap';
 import LocalBusinessSchema from '@/components/LocalBusinessSchema';
 import LeadMagnetForm from '@/components/LeadMagnetForm';
 import SEO from '@/components/SEO';
-import { seoConfig } from '@/lib/seo-config';
+import PageBreadcrumb from "@/components/PageBreadcrumb";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function BathroomRemodelingPage() {
+  const seo = useSeoRoute();
   return (
     <div className="min-h-screen">
-      <SEO {...seoConfig.bathroomRemodeling} />
+      <PageBreadcrumb crumbs={[
+    { label: "Home", href: "/" },
+    { label: "Services", href: "/handyman-services/" },
+    { label: "Bathroom Remodeling" }
+  ]} />
+      <SEO {...seo} />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-teal-700 via-teal-600 to-teal-500 text-white py-20">
         <div className="container">

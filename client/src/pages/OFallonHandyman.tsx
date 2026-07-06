@@ -3,9 +3,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Wrench, Home, Clock, Shield, MessageSquare, Star, Hammer, DoorOpen } from "lucide-react";
 import SEO from '@/components/SEO';
-import { seoConfig } from '@/lib/seo-config';
+import { FAQAccordion } from '@/components/FAQAccordion';
+import PageBreadcrumb from "@/components/PageBreadcrumb";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function OFallonHandyman() {
+  const seo = useSeoRoute();
   const whyChooseUs = [
     { icon: Home, text: "Local, professional techs who respect your home" },
     { icon: Wrench, text: "Skilled in carpentry, decks, doors, drywall, and general repairs" },
@@ -15,64 +18,91 @@ export default function OFallonHandyman() {
   ];
 
   const neighborhoods = [
-    "Downtown O'Fallon and historic neighborhoods",
-    "Smiley and Deer Creek area",
-    "Neighborhoods off Old Collinsville Road",
-    "Regency Park and nearby subdivisions",
+    "Downtown O'Fallon and historic neighborhoods near Main Street",
+    "Smiley, Deer Creek, and Hartman area",
+    "Regency Park, Windmill Creek, and nearby subdivisions",
+    "Neighborhoods off Old Collinsville Road and Lincoln Avenue",
     "Communities near O'Fallon Township High School",
-    "Newer subdivisions along Highway 50 and Scott-Troy Road"
+    "Newer developments along Highway 50 and Scott-Troy Road",
+    "Homes near Scott Air Force Base and Shiloh-O'Fallon Road",
+    "Belleville Road corridor and surrounding neighborhoods"
   ];
 
   const testimonials = [
     {
-      text: "Hero Handyman repaired our aging deck in O'Fallon and it looks great. They were professional, friendly, and cleaned everything up when they were done.",
-      author: "O'Fallon Homeowner"
+      text: "Hero Handyman repaired our aging deck in O'Fallon and it looks great. They were professional, friendly, and cleaned everything up when they were done. We'll definitely call them again.",
+      author: "Chris & Amy B., O'Fallon IL",
+      service: "Deck Repair O'Fallon IL"
     },
     {
-      text: "Fast response, fair price, and excellent work. I'll definitely use them again for home repairs.",
-      author: "O'Fallon Homeowner"
+      text: "Fast response, fair price, and excellent work. They fixed a sticking front door and replaced the weatherstripping in under two hours. I'll definitely use them again.",
+      author: "David H., O'Fallon IL",
+      service: "Door Installation Near Me"
     },
     {
-      text: "They handled our punch-list before listing our home. The process was easy and stress-free.",
-      author: "O'Fallon Homeowner"
+      text: "They handled our punch-list before listing our home near Regency Park. 11 items knocked out in one visit. The process was easy and stress-free.",
+      author: "Melissa T., O'Fallon IL",
+      service: "Home Repairs"
+    },
+    {
+      text: "Had a big drywall crack from settling. Hero Handyman patched it perfectly and matched the texture. You'd never know it was there. Honest pricing and no surprises.",
+      author: "Ron S., O'Fallon IL",
+      service: "Drywall Repair"
     }
   ];
 
   const faqs = [
     {
-      q: "Do you offer free estimates in O'Fallon, IL?",
-      a: "Yes, we provide clear, upfront estimates. Many projects can be estimated from photos; for more complex work, we may schedule an in-home visit."
+      question: "Do you offer free estimates in O'Fallon, IL?",
+      answer: "Yes, we provide clear, upfront estimates. Many projects can be estimated from photos; for more complex work, we may schedule an in-home visit. There's no obligation and no pressure."
     },
     {
-      q: "How soon can you get to my project?",
-      a: "Availability varies by season, but we often have same-day or next-day appointments open in O'Fallon. Contact us and we'll let you know the soonest slot."
+      question: "How soon can you get to my project in O'Fallon?",
+      answer: "Availability varies by season, but we often have same-day or next-day appointments open in O'Fallon. Contact us and we'll let you know the soonest slot. For urgent repairs, call us directly at 800-741-6056."
     },
     {
-      q: "What kinds of projects are too small?",
-      a: "No job is \"too small\" as long as we can schedule it efficiently. From a single door adjustment to a list of small repairs, we're happy to help."
+      question: "What kinds of projects are too small?",
+      answer: "No job is \"too small\" as long as we can schedule it efficiently. From a single door adjustment to a list of small repairs, we're happy to help. Our service packages are designed for homeowners with multiple small tasks."
     },
     {
-      q: "Are you insured?",
-      a: "Yes. Hero Handyman is fully insured, and our technicians take care to protect your home while they work."
+      question: "Are you insured and licensed?",
+      answer: "Yes. Hero Handyman Pro is fully insured for general liability and property damage. Our technicians are background-checked and trained to treat your home with care."
+    },
+    {
+      question: "How much does handyman service cost in O'Fallon, IL?",
+      answer: "Pricing depends on the scope of work. Minor repairs like drywall patches or door adjustments typically run $150\u2013$350. Larger projects like deck repair or door replacement are quoted individually. We always provide written estimates before starting any work."
+    },
+    {
+      question: "Do you serve the areas near Scott Air Force Base?",
+      answer: "Yes. We serve homeowners throughout O'Fallon, including neighborhoods near Scott Air Force Base, along Highway 50, Scott-Troy Road, and in established subdivisions like Regency Park and Smiley. If you're not sure whether we cover your address, just reach out."
+    },
+    {
+      question: "What's the most common repair you do in O'Fallon?",
+      answer: "Drywall repair and deck work are our most frequent calls in O'Fallon. The freeze-thaw cycles here cause settling cracks, and many decks from the 1990s and early 2000s are due for board replacement or railing work. We also do a lot of door repairs, ceiling fan installations, and pre-sale punch lists."
     }
   ];
 
   return (
     <div className="flex flex-col">
-      <SEO {...seoConfig.oFallonHandyman} />
+      <PageBreadcrumb crumbs={[
+    { label: "Home", href: "/" },
+    { label: "Service Areas", href: "/service-areas/" },
+    { label: "O'Fallon, IL" }
+  ]} />
+      <SEO {...seo} />
       <LocalBusinessSchema city="O'Fallon" state="IL" pageUrl="/service-areas/ofallon-handyman-services/" />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#1f2937] via-[#020617] to-[#020617] text-white py-16 md:py-24 px-6">
         <div className="max-w-[1120px] mx-auto">
           <div className="text-center mb-8">
             <h1 className="text-4xl md:text-5xl lg:text-[3.75rem] font-bold leading-tight mb-4">
-              Handyman Services in O'Fallon, IL
+              Your Trusted Handyman in O'Fallon, IL
             </h1>
             <p className="text-[#ff5b00] text-xl md:text-2xl font-semibold mb-6">
               Fast, Professional Home Repairs in O'Fallon, IL
             </p>
             <p className="text-[#e5e7eb] text-lg md:text-xl max-w-3xl mx-auto mb-8">
-              Hero Handyman is your trusted local handyman in O'Fallon, IL. When your home needs repairs, upgrades, or maintenance, we make it easy to get reliable help fast. From small fixes to bigger projects, our team shows up on time, communicates clearly, and gets the job done right.
+              From older ranch homes near downtown O'Fallon to newer developments around Scott Air Force Base, homeowners throughout the area rely on Hero Handyman Pro for dependable drywall repair, exterior carpentry, deck work, and punch-list repairs. We work in O'Fallon every week — we know the neighborhoods, the housing stock, and the kinds of repairs that come up most often here.
             </p>
           </div>
 
@@ -94,18 +124,27 @@ export default function OFallonHandyman() {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="tel:800-741-6056">
-              <Button className="bg-[#ff5b00] hover:bg-[#ff5b00]/90 text-white rounded-full px-10 py-7 text-lg font-semibold flex items-center gap-2">
-                <Phone className="h-5 w-5" />
-                Call Now: 800-741-6056
-              </Button>
-            </a>
-            <Link href="/booking/">
-              <Button variant="outline" className="rounded-full px-10 py-7 text-lg font-semibold border-2 border-white text-white hover:bg-white/10">
-                Book Online
+            <Link href="/#contact">
+              <Button className="bg-[#ff5b00] hover:bg-[#ff5b00]/90 text-white rounded-full px-10 py-7 text-lg font-bold flex items-center gap-2 shadow-lg shadow-[#ff5b00]/30">
+                Request Your Estimate
               </Button>
             </Link>
+            <a href="tel:800-741-6056">
+              <Button variant="outline" className="rounded-full px-10 py-7 text-lg font-semibold border-2 border-white text-white hover:bg-white/10 flex items-center gap-2">
+                <Phone className="h-5 w-5" />
+                Call 800-741-6056
+              </Button>
+            </a>
           </div>
+        </div>
+      </section>
+
+      {/* Hyper-Local Intro */}
+      <section className="py-10 px-6 bg-white border-b border-[#e5e7eb]">
+        <div className="max-w-[1120px] mx-auto">
+          <p className="text-[#374151] text-lg leading-relaxed">
+            From established neighborhoods near downtown O'Fallon to newer homes around Scott Air Force Base, homeowners throughout the area trust Hero Handyman Pro for reliable <a href="/handyman-services/drywall-repair/" className="text-[#ff5b00] hover:underline font-medium">drywall repair</a>, <a href="/handyman-services/carpentry/" className="text-[#ff5b00] hover:underline font-medium">carpentry</a>, door installation, <a href="/handyman-services/deck-repair/" className="text-[#ff5b00] hover:underline font-medium">deck repairs</a>, ceiling fan installation, and general home maintenance. We understand the unique repair needs common in Metro East homes and provide dependable service backed by decades of hands-on experience.
+          </p>
         </div>
       </section>
 
@@ -117,7 +156,7 @@ export default function OFallonHandyman() {
               Why O'Fallon, IL Homeowners Choose Hero Handyman
             </h2>
             <p className="text-[#4b5563] text-lg max-w-3xl mx-auto">
-              Hero Handyman Pro was built for homeowners who want a dependable, professional team—not a random guy with a toolbox. In O'Fallon, we focus on delivering consistent quality and a great customer experience on every project.
+              Hero Handyman Pro was built for homeowners who want a dependable, professional team — not a random guy with a toolbox. We've worked in O'Fallon for years and understand the housing stock here: the 1980s and 1990s ranch homes near downtown, the newer two-story builds off Highway 50, and the mix of older and newer construction near Scott Air Force Base. That local knowledge means faster estimates, better material choices, and repairs that hold up.
             </p>
           </div>
 
@@ -136,7 +175,7 @@ export default function OFallonHandyman() {
 
           <div className="bg-gradient-to-br from-[#ff5b00] to-[#f97316] rounded-2xl p-8 text-white">
             <p className="text-lg leading-relaxed">
-              We're based in the greater St. Louis and Metro East area and work in O'Fallon every week. Whether you're close to O'Fallon Community Park, off Highway 50, or in one of the newer subdivisions, we're nearby and ready to help.
+              We're a Metro East team that works in O'Fallon every week — not a national call center dispatching strangers. Whether you're near O'Fallon Community Park, off Highway 50, close to Scott Air Force Base, or in one of the newer subdivisions along Scott-Troy Road, we're already in your area regularly. That means faster scheduling, no travel surcharges, and a team that knows your neighborhood.
             </p>
           </div>
         </div>
@@ -213,6 +252,14 @@ export default function OFallonHandyman() {
                 <li className="flex items-start gap-3 text-[#374151]">
                   <Check className="h-5 w-5 text-[#ff5b00] mt-0.5 flex-shrink-0" />
                   <span>Weatherstripping and draft fixes</span>
+                </li>
+                <li className="flex items-start gap-3 text-[#374151]">
+                  <Check className="h-5 w-5 text-[#ff5b00] mt-0.5 flex-shrink-0" />
+                  <span><Link href="/blog/door-repair-cost-ofallon-il/" className="text-[#ff5b00] hover:underline">How much does door repair cost in O'Fallon?</Link> — 2026 pricing guide</span>
+                </li>
+                <li className="flex items-start gap-3 text-[#374151]">
+                  <Check className="h-5 w-5 text-[#ff5b00] mt-0.5 flex-shrink-0" />
+                  <span><Link href="/blog/window-repair-cost-ofallon-il/" className="text-[#ff5b00] hover:underline">How much does window repair cost in O'Fallon?</Link> — 2026 pricing guide</span>
                 </li>
               </ul>
             </div>
@@ -361,6 +408,84 @@ export default function OFallonHandyman() {
         </div>
       </section>
 
+      {/* Recent Projects Gallery */}
+      <section className="py-16 px-6 bg-[#f9fafb]">
+        <div className="max-w-[1120px] mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#0b1220]">
+              Recent Projects in O'Fallon, IL
+            </h2>
+            <p className="text-[#4b5563] text-lg max-w-2xl mx-auto">
+              Real before &amp; after results from O'Fallon homeowners. Every job is done right the first time.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Project 1 - Deck */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-[#e5e7eb]">
+              <div className="grid grid-cols-2 gap-0">
+                <div className="relative">
+                  <img loading="lazy" src="/images/ofallon-deck-before.webp" alt="Damaged deck before repair in O'Fallon IL" width={450} height={160} className="w-full h-40 object-cover" />
+                  <span className="absolute top-2 left-2 bg-black/70 text-white text-xs font-bold px-2 py-1 rounded">BEFORE</span>
+                </div>
+                <div className="relative">
+                  <img loading="lazy" src="/images/ofallon-deck-after.webp" alt="Restored deck after repair in O'Fallon IL" width={450} height={160} className="w-full h-40 object-cover" />
+                  <span className="absolute top-2 left-2 bg-[#ff5b00] text-white text-xs font-bold px-2 py-1 rounded">AFTER</span>
+                </div>
+              </div>
+              <div className="p-5">
+                <h3 className="font-bold text-[#0b1220] mb-1">Deck Repair — O'Fallon, IL</h3>
+                <p className="text-[#6b7280] text-sm">A homeowner near Regency Park noticed soft spots and a wobbly railing on their rear deck. We replaced six rotted deck boards, rebuilt the railing section to code, reinforced two joists that had begun to separate, and finished with a semi-transparent stain to match the original color. The entire project was completed in two days with no disruption to the family's schedule. See our full <a href="/handyman-services/deck-repair/" className="text-[#ff5b00] hover:underline">deck repair service</a> page for more detail.</p>
+              </div>
+            </div>
+
+            {/* Project 2 - Drywall */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-[#e5e7eb]">
+              <div className="grid grid-cols-2 gap-0">
+                <div className="relative">
+                  <img loading="lazy" src="/images/edwardsville-drywall-before.webp" alt="Damaged drywall before repair in O'Fallon IL" width={450} height={160} className="w-full h-40 object-cover" />
+                  <span className="absolute top-2 left-2 bg-black/70 text-white text-xs font-bold px-2 py-1 rounded">BEFORE</span>
+                </div>
+                <div className="relative">
+                  <img loading="lazy" src="/images/edwardsville-drywall-after.webp" alt="Patched wall after drywall repair in O'Fallon IL" width={450} height={160} className="w-full h-40 object-cover" />
+                  <span className="absolute top-2 left-2 bg-[#ff5b00] text-white text-xs font-bold px-2 py-1 rounded">AFTER</span>
+                </div>
+              </div>
+              <div className="p-5">
+                <h3 className="font-bold text-[#0b1220] mb-1">Water-Damaged Ceiling Repair — O'Fallon, IL</h3>
+                <p className="text-[#6b7280] text-sm">Repaired a water-damaged ceiling in an O'Fallon home after a second-floor plumbing leak caused drywall staining, cracking, and sagging texture. Our team removed the damaged drywall, treated the affected area, matched the existing ceiling texture, primed, and repainted the ceiling to restore the room back to normal within two days. Learn more about our <a href="/handyman-services/drywall-repair/" className="text-[#ff5b00] hover:underline">drywall repair service</a>.</p>
+              </div>
+            </div>
+
+            {/* Project 3 - Door */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-[#e5e7eb]">
+              <div className="grid grid-cols-2 gap-0">
+                <div className="relative">
+                  <img loading="lazy" src="/images/ofallon-door-before.webp" alt="Old worn door before replacement in O'Fallon IL" width={450} height={160} className="w-full h-40 object-cover" />
+                  <span className="absolute top-2 left-2 bg-black/70 text-white text-xs font-bold px-2 py-1 rounded">BEFORE</span>
+                </div>
+                <div className="relative">
+                  <img loading="lazy" src="/images/ofallon-door-after.webp" alt="New door installed in O'Fallon IL" width={450} height={160} className="w-full h-40 object-cover" />
+                  <span className="absolute top-2 left-2 bg-[#ff5b00] text-white text-xs font-bold px-2 py-1 rounded">AFTER</span>
+                </div>
+              </div>
+              <div className="p-5">
+                <h3 className="font-bold text-[#0b1220] mb-1">Front Door Replacement — O'Fallon, IL</h3>
+                <p className="text-[#6b7280] text-sm">Installed a new front entry door for an O'Fallon homeowner whose original door had become difficult to close properly due to frame shifting and weather exposure. The new installation improved energy efficiency, security, curb appeal, and overall functionality. See our <a href="/handyman-services/door-repair/" className="text-[#ff5b00] hover:underline">door installation and repair</a> service page.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 text-center">
+            <Link href="/#contact">
+              <Button className="bg-[#ff5b00] hover:bg-[#ff5b00]/90 text-white rounded-full px-8 py-6 text-base font-bold">
+                Request Your Estimate
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-[1120px] mx-auto">
@@ -368,15 +493,22 @@ export default function OFallonHandyman() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#0b1220]">
               What O'Fallon Homeowners Are Saying
             </h2>
+            <div className="flex items-center justify-center gap-2 text-[#ff5b00]">
+              {[...Array(5)].map((_, j) => (
+                <Star key={j} className="h-5 w-5 fill-[#ff5b00]" />
+              ))}
+              <span className="text-[#4b5563] ml-2">4.9 average · 127+ reviews</span>
+            </div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {testimonials.map((testimonial, i) => (
               <div key={i} className="bg-[#f9fafb] rounded-2xl p-6 border border-[#e5e7eb]">
-                <div className="flex gap-1 mb-4">
+                <div className="flex gap-1 mb-3">
                   {[...Array(5)].map((_, j) => (
-                    <Star key={j} className="h-5 w-5 fill-[#ff5b00] text-[#ff5b00]" />
+                    <Star key={j} className="h-4 w-4 fill-[#ff5b00] text-[#ff5b00]" />
                   ))}
+                  <span className="ml-auto text-xs text-[#ff5b00] font-semibold bg-[#ff5b00]/10 px-2 py-0.5 rounded-full">{testimonial.service}</span>
                 </div>
                 <p className="text-[#374151] mb-4 italic">"{testimonial.text}"</p>
                 <p className="text-[#6b7280] text-sm font-semibold">— {testimonial.author}</p>
@@ -386,8 +518,62 @@ export default function OFallonHandyman() {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* Phil EEAT Section */}
       <section className="py-16 px-6 bg-[#f9fafb]">
+        <div className="max-w-[1120px] mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#0b1220]">
+                Meet Phil Green
+              </h2>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="inline-flex items-center gap-1.5 bg-[#ff5b00]/10 text-[#ff5b00] text-xs font-bold px-3 py-1.5 rounded-full border border-[#ff5b00]/20">
+                  ★ Veteran-Owned
+                </span>
+                <span className="inline-flex items-center gap-1.5 bg-[#0b1220]/5 text-[#0b1220] text-xs font-bold px-3 py-1.5 rounded-full border border-[#0b1220]/10">
+                  35+ Years Experience
+                </span>
+                <span className="inline-flex items-center gap-1.5 bg-[#0b1220]/5 text-[#0b1220] text-xs font-bold px-3 py-1.5 rounded-full border border-[#0b1220]/10">
+                  Licensed & Insured
+                </span>
+              </div>
+              <p className="text-[#4b5563] text-lg mb-4">
+                Hero Handyman Pro was founded by Coast Guard veteran and longtime remodeling professional Phil Green. After decades working in construction, remodeling, project management, and home repair, Phil built Hero Handyman Pro to solve one of the biggest frustrations homeowners face: unreliable contractors who don't communicate, don't show up, or don't finish the job properly.
+              </p>
+              <p className="text-[#4b5563] text-lg mb-4">
+                With more than 35 years of hands-on experience, Phil and the Hero Handyman Pro team focus on dependable communication, professional craftsmanship, and making home repair easy for busy homeowners throughout O'Fallon and the Metro East area.
+              </p>
+              <p className="text-[#4b5563] text-lg">
+                We're not a franchise or a national call center. We're a local Metro East team that works in O'Fallon every week — background-checked, insured, and committed to treating every home with respect.
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl p-8 border border-[#e5e7eb] shadow-sm">
+              <h3 className="text-xl font-bold text-[#0b1220] mb-6">Homeowner Tips for O'Fallon Homes</h3>
+              <div className="space-y-5">
+                <div>
+                  <h4 className="font-bold text-[#0b1220] mb-1">Watch for settling cracks after winter</h4>
+                  <p className="text-[#4b5563] text-sm">O'Fallon's freeze-thaw cycles cause foundation movement that shows up as diagonal cracks at window and door corners. These are cosmetic in most cases but worth patching before they grow. <Link href="/handyman-services/drywall-repair/" className="text-[#ff5b00] hover:underline">Drywall repair</Link> is typically a 1-day job.</p>
+                </div>
+                <div>
+                  <h4 className="font-bold text-[#0b1220] mb-1">Inspect your deck every spring</h4>
+                  <p className="text-[#4b5563] text-sm">Decks built in the 1990s and early 2000s are reaching the end of their original lumber's lifespan. Check for soft spots, wobbly railings, and dark discoloration — early <Link href="/handyman-services/deck-repair/" className="text-[#ff5b00] hover:underline">deck repair</Link> costs far less than full replacement.</p>
+                </div>
+                <div>
+                  <h4 className="font-bold text-[#0b1220] mb-1">Sticking doors mean shifting frames</h4>
+                  <p className="text-[#4b5563] text-sm">If your interior or exterior doors are harder to open in summer, it's usually seasonal wood expansion or a settling frame. Most <Link href="/handyman-services/door-repair/" className="text-[#ff5b00] hover:underline">door repairs</Link> take under two hours and make a big difference in comfort and security.</p>
+                </div>
+                <div>
+                  <h4 className="font-bold text-[#0b1220] mb-1">Bundle small repairs to save money</h4>
+                  <p className="text-[#4b5563] text-sm">Our <Link href="/handyman-service-packages/" className="text-[#ff5b00] hover:underline">service packages</Link> and <Link href="/membership/" className="text-[#ff5b00] hover:underline">membership plan</Link> are designed for homeowners who have multiple small jobs. Bundling repairs into one visit saves on trip fees and gets everything done at once.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 px-6 bg-white">
         <div className="max-w-[1120px] mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#0b1220]">
@@ -395,16 +581,71 @@ export default function OFallonHandyman() {
             </h2>
           </div>
 
-          <div className="space-y-6 max-w-3xl mx-auto">
-            {faqs.map((faq, i) => (
-              <div key={i} className="bg-white rounded-2xl p-6 shadow-sm border border-[#e5e7eb]">
-                <h3 className="text-lg font-bold mb-3 text-[#0b1220]">{faq.q}</h3>
-                <p className="text-[#4b5563]">{faq.a}</p>
-              </div>
-            ))}
+          <div className="max-w-3xl mx-auto">
+            <FAQAccordion faqs={faqs} />
           </div>
         </div>
       </section>
+
+      {/* GSC Keyword Sections */}
+      <section className="py-16 px-6 bg-white border-t border-[#e5e7eb]">
+        <div className="max-w-[1120px] mx-auto">
+          <div className="grid md:grid-cols-3 gap-10 mb-16">
+            <div>
+              <h2 className="text-2xl font-bold text-[#0b1220] mb-3">Deck Repair O'Fallon IL</h2>
+              <p className="text-[#4b5563] mb-4">From rotted boards and loose railings to full structural repairs, Hero Handyman Pro handles all deck repair in O'Fallon, IL. We restore wood, composite, and pressure-treated decks to safe, solid condition — fast, with upfront pricing.</p>
+              <Link href="/deck-repair-ofallon-il" className="text-[#ff5b00] font-semibold hover:underline">Learn more about deck repair →</Link>
+              <div className="mt-3">
+                <Link href="/blog/deck-repair-cost-ofallon-il/" className="text-sm text-[#4b5563] hover:text-[#ff5b00] hover:underline">📄 How Much Does Deck Repair Cost in O'Fallon? →</Link>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold text-[#0b1220] mb-3">Drywall Repair O'Fallon IL</h2>
+              <p className="text-[#4b5563] mb-4">Holes, cracks, water damage, and ceiling repairs — our drywall repair service in O'Fallon, IL patches and finishes to match your existing walls seamlessly. No mess, no surprises, done right the first time.</p>
+              <Link href="/drywall-repair-ofallon-il" className="text-[#ff5b00] font-semibold hover:underline">Learn more about drywall repair →</Link>
+              <div className="mt-3">
+                <Link href="/blog/drywall-repair-cost-ofallon-il/" className="text-sm text-[#4b5563] hover:text-[#ff5b00] hover:underline">📄 How Much Does Drywall Repair Cost in O'Fallon? →</Link>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold text-[#0b1220] mb-3">Door Installation Near Me</h2>
+              <p className="text-[#4b5563] mb-4">Searching for door installation near you in O'Fallon? Hero Handyman installs entry doors, interior doors, storm doors, and patio doors. We handle removal, framing, and hardware so every door operates perfectly from day one.</p>
+              <Link href="/door-installation-ofallon-il" className="text-[#ff5b00] font-semibold hover:underline">Learn more about door installation →</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Schema JSON-LD */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Deck Repair O'Fallon IL",
+          "description": "Professional deck repair in O'Fallon, IL. Rotted boards, loose railings, structural damage, and staining.",
+          "provider": { "@type": "LocalBusiness", "name": "Hero Handyman Pro", "telephone": "+1-800-741-6056" },
+          "areaServed": { "@type": "City", "name": "O'Fallon", "addressRegion": "IL" },
+          "url": "https://herohandymanpro.com/deck-repair-ofallon-il"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Drywall Repair O'Fallon IL",
+          "description": "Expert drywall repair in O'Fallon, IL. Patches, texturing, and painting for holes, cracks, and water damage.",
+          "provider": { "@type": "LocalBusiness", "name": "Hero Handyman Pro", "telephone": "+1-800-741-6056" },
+          "areaServed": { "@type": "City", "name": "O'Fallon", "addressRegion": "IL" },
+          "url": "https://herohandymanpro.com/drywall-repair-ofallon-il"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Door Installation O'Fallon IL",
+          "description": "Door installation near you in O'Fallon, IL. Entry, interior, storm, and patio doors installed by local professionals.",
+          "provider": { "@type": "LocalBusiness", "name": "Hero Handyman Pro", "telephone": "+1-800-741-6056" },
+          "areaServed": { "@type": "City", "name": "O'Fallon", "addressRegion": "IL" },
+          "url": "https://herohandymanpro.com/door-installation-ofallon-il"
+        }
+      ]) }} />
 
       {/* Specialized Service Pages */}
       <section className="py-16 px-6 bg-white border-t border-[#e5e7eb]">
@@ -460,6 +701,34 @@ export default function OFallonHandyman() {
         </div>
       </section>
 
+      {/* Cross-City Links */}
+      <section className="py-12 px-6 bg-[#f9fafb] border-t border-gray-200">
+        <div className="max-w-[1120px] mx-auto">
+          <h2 className="text-2xl font-bold text-[#0b1220] mb-3">Also Serving Nearby Metro East Communities</h2>
+          <p className="text-gray-600 mb-6 max-w-3xl">
+            Hero Handyman Pro covers all of Metro East Illinois. We frequently work in <Link href="/service-areas/edwardsville-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Edwardsville</Link> for deck repairs and carpentry near SIUE, in <Link href="/service-areas/belleville-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Belleville</Link> for drywall and door repairs in the historic homes near the courthouse square, and in <Link href="/service-areas/collinsville-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Collinsville</Link> for general home maintenance. We also serve <Link href="/service-areas/glen-carbon-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Glen Carbon</Link>, <Link href="/service-areas/shiloh-il-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Shiloh</Link>, <Link href="/service-areas/swansea-il-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Swansea</Link>, and <Link href="/service-areas/fairview-heights-il-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Fairview Heights</Link>.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { name: "Edwardsville, IL", href: "/service-areas/edwardsville-handyman-services/" },
+              { name: "Belleville, IL", href: "/service-areas/belleville-handyman-services/" },
+              { name: "Collinsville, IL", href: "/service-areas/collinsville-handyman-services/" },
+              { name: "Glen Carbon, IL", href: "/service-areas/glen-carbon-handyman-services/" },
+              { name: "Shiloh, IL", href: "/service-areas/shiloh-il-handyman-services/" },
+              { name: "Swansea, IL", href: "/service-areas/swansea-il-handyman-services/" },
+              { name: "Fairview Heights, IL", href: "/service-areas/fairview-heights-il-handyman-services/" },
+              { name: "View All Service Areas", href: "/service-areas/" },
+            ].map((area) => (
+              <Link key={area.name} href={area.href}>
+                <Button variant="outline" className="rounded-full border-gray-200 hover:border-[#ff5b00] hover:text-[#ff5b00] text-sm">
+                  {area.name}
+                </Button>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="py-16 px-6 bg-gradient-to-br from-[#1f2937] via-[#020617] to-[#020617] text-white">
         <div className="max-w-[1120px] mx-auto text-center">
@@ -482,12 +751,26 @@ export default function OFallonHandyman() {
             </a>
             <Link href="/booking/">
               <Button variant="outline" className="rounded-full px-10 py-7 text-lg font-semibold border-2 border-white text-white hover:bg-white/10">
-                Book Online
+                Book Your Handyman Service
               </Button>
             </Link>
           </div>
         </div>
       </section>
+
+      {/* FAQPage Schema */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(item => ({
+          "@type": "Question",
+          "name": item.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": item.answer,
+          }
+        }))
+      })}} />
     </div>
   );
 }

@@ -2,16 +2,10 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DoorInstallationBelleville() {
-  const seoData = {
-    title: "Door Installation Belleville IL | Interior & Exterior Doors",
-    description: "Expert door installation and replacement in Belleville IL. Interior doors, exterior doors, storm doors, and door frame repair. Call Hero Handyman Pro at 800-741-6056.",
-    keywords: "door installation Belleville IL, door replacement Belleville, exterior door Belleville IL, interior door installation Belleville",
-    canonicalUrl: "https://herohandymanpro.com/door-installation-belleville-il"
-  };
-
-  const services = [
+  const seo = useSeoRoute();  const services = [
     {
       title: "Interior Door Installation",
       desc: "Belleville's older housing stock — much of it built in the 1950s through 1980s — often has original hollow-core interior doors that are long overdue for replacement. We install solid-core upgrades, pre-hung doors, and bifold closet doors throughout Belleville homes.",
@@ -36,7 +30,7 @@ export default function DoorInstallationBelleville() {
 
   return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -56,7 +50,7 @@ export default function DoorInstallationBelleville() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -113,7 +107,7 @@ export default function DoorInstallationBelleville() {
                 Belleville's older neighborhoods — particularly those near West Main Street, Mascoutah Avenue, and the historic downtown district — have homes where original doors are decades old and no longer performing well. Swollen frames, drafty thresholds, and hardware that's worn out are all common. In newer areas like the subdivisions off Frank Scott Parkway, the requests tend to be upgrades: solid-core interior doors, storm door additions, and entry door replacements.
               </p>
               <p className="text-gray-600 mb-6">
-                Phil has served Belleville and St. Clair County for over 30 years. He does the work himself — no subcontractors — and takes the time to ensure every door is plumb, properly shimmed, and sealed before he leaves.
+                Phil has served Belleville and St. Clair County for over 35 years. He does the work himself — no subcontractors — and takes the time to ensure every door is plumb, properly shimmed, and sealed before he leaves.
               </p>
               <div className="space-y-3">
                 {[
@@ -140,7 +134,7 @@ export default function DoorInstallationBelleville() {
                   800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="w-full border-2 border-white text-white hover:bg-white/10 rounded-full py-6 text-lg font-semibold">
                   Request a Free Quote Online
                 </Button>
@@ -218,7 +212,7 @@ export default function DoorInstallationBelleville() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                 Get a Free Quote
               </Button>

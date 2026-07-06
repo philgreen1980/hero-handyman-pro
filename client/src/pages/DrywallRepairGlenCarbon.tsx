@@ -2,18 +2,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DrywallRepairGlenCarbon() {
-  const seoData = {
-    title: "Drywall Repair Glen Carbon IL | Hole, Patch & Ceiling Repair",
-    description: "Professional drywall repair in Glen Carbon IL including hole patching, ceiling drywall repair, and water-damaged drywall fixes. Call Hero Handyman Pro today.",
-    keywords: "drywall repair Glen Carbon IL, drywall patching Glen Carbon, ceiling repair Glen Carbon IL, water damaged drywall Glen Carbon, hole in drywall Glen Carbon IL",
-    canonicalUrl: "https://herohandymanpro.com/drywall-repair-glen-carbon-il"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -33,7 +27,7 @@ export default function DrywallRepairGlenCarbon() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -196,7 +190,7 @@ export default function DrywallRepairGlenCarbon() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-teal-600 text-teal-600 hover:bg-teal-50">
                 Get a Free Quote
               </Button>

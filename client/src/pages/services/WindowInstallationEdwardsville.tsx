@@ -5,12 +5,12 @@ import { ServiceAreaMap } from '@/components/ServiceAreaMap';
 import LocalBusinessSchema from '@/components/LocalBusinessSchema';
 import ServiceSchema from '@/components/ServiceSchema';
 import SEO from '@/components/SEO';
-import { seoConfig } from '@/lib/seo-config';
-
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 export default function WindowInstallationEdwardsville() {
+  const seo = useSeoRoute();
   return (
     <div className="min-h-screen">
-      <SEO {...seoConfig.windowInstallationEdwardsville} />
+      <SEO {...seo} />
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-teal-700 via-teal-600 to-teal-500 text-white py-20">
@@ -78,7 +78,7 @@ export default function WindowInstallationEdwardsville() {
               </p>
               
               <p>
-                We've been installing energy-efficient replacement windows in Edwardsville neighborhoods like Governors' Hill, Montclaire, and The Orchards for over 30 years. Our team knows the local building codes, understands the architectural styles common in Edwardsville homes, and can recommend the best window solutions for your specific needs and budget.
+                We've been installing energy-efficient replacement windows in Edwardsville neighborhoods like Governors' Hill, Montclaire, and The Orchards for over 35 years. Our team knows the local building codes, understands the architectural styles common in Edwardsville homes, and can recommend the best window solutions for your specific needs and budget.
               </p>
               
               <p>

@@ -2,18 +2,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DrywallRepairEdwardsville() {
-  const seoData = {
-    title: "Drywall Repair Near Me | Edwardsville IL Hole & Ceiling Repair",
-    description: "Edwardsville IL drywall repair — hole patching, ceiling repair, water damage & texture matching. Local handyman near you. Same-day available. Call 800-741-6056.",
-    keywords: "drywall repair Edwardsville IL, drywall patching Edwardsville, ceiling repair Edwardsville, water damaged drywall Edwardsville, hole in drywall Edwardsville",
-    canonicalUrl: "https://herohandymanpro.com/drywall-repair-edwardsville-il"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -33,7 +27,7 @@ export default function DrywallRepairEdwardsville() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -127,7 +121,7 @@ export default function DrywallRepairEdwardsville() {
             <div>
               <h2 className="text-3xl font-bold mb-4 text-gray-900">Why Edwardsville Homeowners Choose Hero Handyman Pro</h2>
               <p className="text-gray-600 mb-6">
-                We're a local handyman service based in the Metro East — not a national franchise. When you call us, you're talking to Phil, the owner, who has been doing drywall and home repairs in Edwardsville and the surrounding area for over 30 years. He knows the homes here, the soil conditions, and the types of damage that show up most often in Madison County.
+                We're a local handyman service based in the Metro East — not a national franchise. When you call us, you're talking to Phil, the owner, who has been doing drywall and home repairs in Edwardsville and the surrounding area for over 35 years. He knows the homes here, the soil conditions, and the types of damage that show up most often in Madison County.
               </p>
               <div className="space-y-4">
                 {[
@@ -193,7 +187,7 @@ export default function DrywallRepairEdwardsville() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-teal-700 rounded-full px-8 py-6 text-lg font-bold transition-colors">
                 Get a Free Quote
               </Button>

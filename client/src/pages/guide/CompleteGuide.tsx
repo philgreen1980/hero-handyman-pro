@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import { Link } from 'wouter';
 import { Download, ArrowLeft, FileText } from 'lucide-react';
 import SEO from '@/components/SEO';
-import { seoConfig } from '@/lib/seo-config';
-
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 export default function CompleteGuide() {
+  const seo = useSeoRoute();
   const [content, setContent] = useState('');
 
   useEffect(() => {
@@ -16,7 +16,7 @@ export default function CompleteGuide() {
 
   return (
     <>
-      <SEO {...seoConfig['/guide/complete']} />
+      <SEO {...seo} />
       
       {/* Header */}
       <div className="bg-teal-600 text-white py-6">

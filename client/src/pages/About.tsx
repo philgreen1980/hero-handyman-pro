@@ -1,16 +1,10 @@
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function About() {
-  const seoData = {
-    title: "About Hero Handyman Pro® | Local, Trusted Handyman Services",
-    description: "Meet Hero Handyman Pro—built on craftsmanship, integrity, and reliable service. Learn how we protect your home and deliver dependable handyman solutions.",
-    keywords: "about Hero Handyman Pro, local handyman, trusted handyman, handyman company",
-    canonicalUrl: "https://herohandymanpro.com/about"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="py-14 px-6 bg-white">
@@ -30,10 +24,10 @@ export default function About() {
             <span className="text-xs uppercase tracking-[0.18em] text-teal-700">Meet Your Handyman</span>
             <h2 className="text-3xl font-bold mt-2 mb-4 text-gray-900">Phil Green</h2>
             <p className="text-gray-700 mb-4">
-              Phil Green is the owner and lead craftsman behind Hero Handyman Pro. With over 30 years of hands-on experience in home repair, carpentry, and exterior work, Phil has built a reputation across the Metro East for showing up on time, doing the job right, and treating every home with the same care he'd give his own.
+              Phil Green is the owner and lead craftsman behind Hero Handyman Pro. With over 35 years of hands-on experience in home repair, carpentry, and exterior work, Phil has built a reputation across the Metro East for showing up on time, doing the job right, and treating every home with the same care he'd give his own.
             </p>
             <p className="text-gray-700 mb-4">
-              Phil previously built Rapid Repair Pro into one of the most trusted handyman services in the Metro East. Today that experience continues under the new name Hero Handyman Pro — same team, same values, same commitment to quality that homeowners in Edwardsville, O'Fallon, and the greater St. Louis area have relied on for years.
+              Phil has spent decades building one of the most trusted handyman services in the Metro East. Hero Handyman Pro is the culmination of that experience — same team, same values, same commitment to quality that homeowners in Edwardsville, O'Fallon, and the greater St. Louis area have relied on for years.
             </p>
             <p className="text-gray-700">
               Whether it's a leaky faucet, a rotted deck board, a sticky door, or a full exterior carpentry project, Phil brings the same level of professionalism and craftsmanship to every job — no matter the size.
@@ -42,7 +36,7 @@ export default function About() {
           <div className="flex justify-center">
             <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-teal-700 shadow-lg">
               <img
-                src="/phil-green.jpg"
+                src="/phil-green.webp"
                 alt="Phil Green - Owner, Hero Handyman Pro"
                 className="w-full h-full object-cover"
               />
@@ -83,7 +77,7 @@ export default function About() {
             <a href="tel:800-741-6056" className="inline-block bg-white text-teal-700 font-bold px-8 py-3 rounded-full hover:bg-teal-50 transition-colors">
               Call 800-741-6056
             </a>
-            <a href="/contact/" className="inline-block border-2 border-white text-white font-bold px-8 py-3 rounded-full hover:bg-white hover:text-teal-700 transition-colors">
+            <a href="/#contact" className="inline-block border-2 border-white text-white font-bold px-8 py-3 rounded-full hover:bg-white hover:text-teal-700 transition-colors">
               Get a Free Quote
             </a>
           </div>

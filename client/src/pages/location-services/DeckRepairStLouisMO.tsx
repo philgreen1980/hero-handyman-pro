@@ -3,18 +3,12 @@ import { Button } from "@/components/ui/button";
 import { Phone, MapPin, CheckCircle, Clock, Shield, Star } from "lucide-react";
 import SEO from "@/components/SEO";
 import { trackPhoneClick, trackCTAClick } from "@/lib/analytics";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DeckRepairStLouisMO() {
-  const seoData = {
-    title: "Deck Repair St. Louis MO | Local Experts | Same-Day Quotes",
-    description: "Professional deck repair in St. Louis, MO. Local, trusted service. Licensed & insured. Same-day quotes. Call 314-499-5522 for free estimate.",
-    keywords: "deck repair St. Louis MO, deck repair St. Louis, St. Louis deck repair",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/deck-repair-st-louis-mo/"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="min-h-screen bg-white">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-teal-700 to-teal-900 text-white py-16 px-6">

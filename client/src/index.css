@@ -8,6 +8,37 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
+  /* ═══════════════════════════════════════════════════════════════
+     Brand Color Aliases — maps legacy teal classes → Hero Orange #E84E1B
+     Official palette (June 2026):
+       Hero Orange  #E84E1B  — primary CTA, buttons, accents
+       Charcoal     #2B2B2B  — headlines, nav, body text
+       Steel Gray   #AAB3BD  — borders, icons, dividers
+       White        #FFFFFF  — hero/page backgrounds
+       Light Gray   #F8F8F8  — alternate sections
+  ═══════════════════════════════════════════════════════════════ */
+
+  /* teal-900 → charcoal #2B2B2B */
+  --color-teal-900: oklch(0.22 0.005 0);
+  /* teal-800 → hero orange hover #D54417 */
+  --color-teal-800: oklch(0.52 0.20 30);
+  /* teal-700 → hero orange #E84E1B (primary brand color) */
+  --color-teal-700: oklch(0.58 0.20 30);
+  /* teal-600 → hero orange lighter */
+  --color-teal-600: oklch(0.62 0.19 30);
+  /* teal-500 → hero orange even lighter */
+  --color-teal-500: oklch(0.66 0.17 30);
+  /* teal-400 → steel gray #AAB3BD */
+  --color-teal-400: oklch(0.74 0.02 220);
+  /* teal-300 → light steel gray */
+  --color-teal-300: oklch(0.82 0.015 220);
+  /* teal-200 → pale steel gray (for backgrounds) */
+  --color-teal-200: oklch(0.92 0.008 220);
+  /* teal-100 → very pale gray (for hover backgrounds) */
+  --color-teal-100: oklch(0.97 0.003 220);
+  /* teal-50 → near-white light gray #F8F8F8 */
+  --color-teal-50: oklch(0.985 0 0);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -43,41 +74,62 @@
 }
 
 :root {
-  /* Teal/cyan color scheme from new design */
-  --primary: oklch(0.52 0.12 195); /* #0f766e teal */
-  --primary-dark: oklch(0.45 0.12 195); /* #115e59 darker teal */
-  --accent: oklch(0.67 0.19 35); /* #f97316 orange accent */
-  --primary-foreground: oklch(1 0 0); /* white */
-  --dark: oklch(0.15 0.02 250); /* #0b1220 dark blue */
+  /* ═══════════════════════════════════════════════════════════════
+     Hero Handyman Pro — Official Brand Color System (June 2026)
+
+     Hero Orange  #E84E1B  — primary CTA, buttons, accents
+     Charcoal     #2B2B2B  — headlines, nav, body text
+     Steel Gray   #AAB3BD  — borders, icons, dividers
+     White        #FFFFFF  — hero/page backgrounds
+     Light Gray   #F8F8F8  — alternate section backgrounds
+     Footer Dark  #2B2B2B  — footer background
+  ═══════════════════════════════════════════════════════════════ */
+
+  /* Primary = Hero Orange #E84E1B */
+  --primary: oklch(0.58 0.20 30);         /* #E84E1B hero orange */
+  --primary-dark: oklch(0.52 0.20 30);    /* #D54417 hover state */
+  --primary-foreground: oklch(1 0 0);     /* white on primary */
+
+  /* Secondary = Steel Gray #AAB3BD */
+  --secondary: oklch(0.74 0.02 220);      /* #AAB3BD steel gray */
+  --secondary-foreground: oklch(0.22 0.005 0); /* charcoal on secondary */
+
+  /* Named brand tokens */
+  --brand-orange: oklch(0.58 0.20 30);    /* #E84E1B hero orange */
+  --brand-orange-hover: oklch(0.52 0.20 30); /* #D54417 hover */
+  --brand-charcoal: oklch(0.22 0.005 0);  /* #2B2B2B charcoal */
+  --brand-steel: oklch(0.74 0.02 220);    /* #AAB3BD steel gray */
+  --brand-light-gray: oklch(0.985 0 0);   /* #F8F8F8 light section bg */
+
   --radius: 1rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.2 0.01 250);
+  --background: oklch(1 0 0);             /* #FFFFFF white */
+  --foreground: oklch(0.22 0.005 0);      /* #2B2B2B charcoal */
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.2 0.01 250);
+  --card-foreground: oklch(0.22 0.005 0);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.2 0.01 250);
-  --secondary: oklch(0.67 0.19 35); /* orange accent */
-  --secondary-foreground: oklch(1 0 0);
-  --muted: oklch(0.98 0.001 250);
-  --muted-foreground: oklch(0.45 0.01 250);
-  --accent: oklch(0.98 0.001 250);
-  --accent-foreground: oklch(0.2 0.01 250);
+  --popover-foreground: oklch(0.22 0.005 0);
+  --muted: oklch(0.985 0 0);              /* #F8F8F8 light gray */
+  --muted-foreground: oklch(0.50 0.01 220); /* medium gray text */
+  --accent: oklch(0.985 0 0);             /* #F8F8F8 */
+  --accent-foreground: oklch(0.22 0.005 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 250);
-  --input: oklch(0.92 0.004 250);
-  --ring: oklch(0.52 0.12 195);
-  --chart-1: oklch(0.52 0.12 195);
-  --chart-2: oklch(0.45 0.12 195);
-  --chart-3: oklch(0.67 0.19 35);
-  --chart-4: oklch(0.35 0.12 195);
-  --chart-5: oklch(0.25 0.12 195);
+  --border: oklch(0.74 0.02 220 / 50%);   /* steel gray border */
+  --input: oklch(0.74 0.02 220 / 30%);
+  --ring: oklch(0.58 0.20 30);            /* hero orange focus ring */
+  --chart-1: oklch(0.58 0.20 30);         /* hero orange */
+  --chart-2: oklch(0.52 0.20 30);         /* orange hover */
+  --chart-3: oklch(0.74 0.02 220);        /* steel gray */
+  --chart-4: oklch(0.22 0.005 0);         /* charcoal */
+  --chart-5: oklch(0.50 0.01 220);        /* medium gray */
   --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.2 0.01 250);
-  --sidebar-accent: oklch(0.98 0.001 250);
-  --sidebar-accent-foreground: oklch(0.2 0.01 250);
-  --sidebar-border: oklch(0.92 0.004 250);
-  --sidebar-ring: oklch(0.52 0.12 195);
+  --sidebar-foreground: oklch(0.22 0.005 0);
+  --sidebar-primary: oklch(0.58 0.20 30);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.985 0 0);
+  --sidebar-accent-foreground: oklch(0.22 0.005 0);
+  --sidebar-border: oklch(0.74 0.02 220 / 50%);
+  --sidebar-ring: oklch(0.58 0.20 30);
 }
 
 .dark {

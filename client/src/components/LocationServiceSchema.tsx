@@ -40,7 +40,7 @@ export default function LocationServiceSchema({
           "@type": "LocalBusiness",
           "@id": `https://herohandymanpro.com/#localbusiness-${city.toLowerCase()}`,
           "name": "Hero Handyman Pro",
-          "image": "https://files.manuscdn.com/user_upload_by_module/session_file/310419663029565453/JLrsrJqAaUkBYHOx.png",
+          "image": "https://herohandymanpro.com/images/phil-portrait.webp",
           "description": `Professional handyman and home repair services in ${city}, ${state}`,
           "url": "https://herohandymanpro.com",
           "telephone": "800-741-6056",

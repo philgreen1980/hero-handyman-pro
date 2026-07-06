@@ -1,337 +1,358 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Check, DoorOpen, Star } from "lucide-react";
+import { Check, Phone, Star, Wrench, DollarSign, ArrowRight } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { trackPhoneClick, trackCTAClick } from "@/lib/analytics";
 import SEO from "@/components/SEO";
+import InlineQuoteForm from "@/components/InlineQuoteForm";
+import PageBreadcrumb from "@/components/PageBreadcrumb";
+import { trackCTAClick, trackPhoneClick } from "@/lib/analytics";
+import LazyProjectGallery from "@/components/LazyProjectGallery";
+import type { ProjectPair } from "@/components/ProjectGallery";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
+
+const doorProjects: ProjectPair[] = [
+  {
+    beforeSrc: "/images/door-before-stcharles.webp",
+    afterSrc: "/images/door-after-stcharles.webp",
+    beforeAlt: "Old damaged front door with peeling paint and torn weatherstripping – St. Charles MO",
+    afterAlt: "New navy blue fiberglass front door with sidelights installed – St. Charles MO",
+    caption: "Front door replacement",
+    city: "St. Charles, MO",
+  },
+  {
+    beforeSrc: "/images/carpentry-before-belleville.webp",
+    afterSrc: "/images/carpentry-after-belleville.webp",
+    beforeAlt: "Damaged door casing trim with peeling paint – Belleville IL",
+    afterAlt: "Freshly repaired and painted door casing trim – Belleville IL",
+    caption: "Door casing & trim repair",
+    city: "Belleville, IL",
+  },
+];
 
 export default function DoorRepairService() {
-  const seoData = {
-    title: "Door Installation & Repair | St. Louis & Metro East | Hero Handyman Pro",
-    description: "Professional door installation & repair in St. Louis. Fix sticking doors, replace entry doors, install storm doors. Licensed, 30+ years experience. Free estimates!",
-    keywords: "door repair, door installation, entry door replacement, storm door installation, interior door repair, St Louis door repair",
-    canonicalUrl: "https://herohandymanpro.com/handyman-services/door-repair"
-  };
-
-  const services = [
-    "Entry door installation",
-    "Storm doors",
-    "Sliding doors",
-    "Interior door replacement",
-    "Jamb & threshold repair",
-    "Lockset upgrades",
-    "Weatherstripping & adjustments"
+  const seo = useSeoRoute();  const processSteps = [
+    { num: "1", title: "Diagnosis", desc: "We assess the door, frame, hinges, and weatherstripping to identify the root cause — not just the symptom." },
+    { num: "2", title: "Clear Estimate", desc: "You receive a written, itemized estimate before any work begins. No surprises." },
+    { num: "3", title: "Material Sourcing", desc: "We source the right door, hardware, or parts — or work with what you've already purchased." },
+    { num: "4", title: "Installation / Repair", desc: "Precise installation with proper shimming, leveling, and weatherstripping for a tight, energy-efficient fit." },
+    { num: "5", title: "Test & Adjust", desc: "We test the door through multiple open/close cycles, adjust the latch and hinges, and verify the lock engages properly." },
   ];
 
-  const expectations = [
-    { title: "Smooth operation", desc: "No more sticking, scraping, or hard-to-close doors" },
-    { title: "Tight weather seal", desc: "Eliminate drafts and improve energy efficiency" },
-    { title: "Secure latching", desc: "Doors that close properly and lock securely" },
-    { title: "Clean, finished appearance", desc: "Professional installation with attention to detail" }
+  const pricingRanges = [
+    { type: "Door Adjustment / Rehang", range: "$75 – $200", note: "Sticking, sagging, or hard-to-close doors" },
+    { type: "Weatherstripping Replacement", range: "$100 – $250", note: "Drafts, energy loss, or worn seals" },
+    { type: "Interior Door Installation", range: "$150 – $400", note: "Pre-hung or slab door, labor only" },
+    { type: "Exterior Entry Door Install", range: "$300 – $700", note: "Labor only; door supplied by homeowner or us" },
+    { type: "Storm Door Installation", range: "$200 – $450", note: "Full installation including hardware" },
+    { type: "Door Frame Repair", range: "$200 – $600", note: "Rot, damage, or failed frame repair" },
+  ];
+
+  const faqs = [
+    {
+      question: "Why is my door sticking or hard to close?",
+      answer: "The most common causes are seasonal wood swelling (humidity changes in St. Louis summers), hinge screws that have worked loose, a settling foundation shifting the door frame, or paint buildup on the door edges. We diagnose the root cause so the fix lasts — not just a quick plane that comes back next season."
+    },
+    {
+      question: "Can you install a door I already purchased?",
+      answer: "Yes — we install doors you've purchased from Home Depot, Lowe's, or any supplier. Just make sure you have the correct rough opening size before buying. We can also help you select the right door if you'd like our guidance."
+    },
+    {
+      question: "How long does door installation take?",
+      answer: "A standard interior door installation takes 1–3 hours. An exterior entry door with new weatherstripping and hardware takes 2–4 hours. We can typically complete most door jobs in a single visit."
+    },
+    {
+      question: "How much does door installation cost in St. Louis?",
+      answer: "Interior door installation (labor only) runs $150–$400. Exterior entry door installation is $300–$700 for labor. Storm door installation is $200–$450. Door adjustments for sticking or sagging start at $75. We provide a firm written estimate before starting any work."
+    },
+    {
+      question: "Can you fix a door that won't latch properly?",
+      answer: "Yes. A door that won't latch is usually caused by a misaligned strike plate, loose hinges, or a shifted door frame. We diagnose the cause and fix it properly — often in under an hour."
+    },
+    {
+      question: "Do you install storm doors?",
+      answer: "Yes. We install storm doors from all major brands including Andersen, Larson, and Pella. Storm doors improve energy efficiency and protect your entry door from the elements. Installation typically takes 2–3 hours."
+    },
+    {
+      question: "Can you repair a door frame with rot damage?",
+      answer: "Yes. Rotted door frames are common in St. Louis due to moisture and freeze-thaw cycles. We remove the rotted material, treat the area, and rebuild the frame with pressure-treated or composite materials that resist future rot."
+    },
+    {
+      question: "Do you install pet doors?",
+      answer: "Yes — we install pet doors in both interior and exterior doors, including sliding glass doors. We'll cut the opening precisely and install the pet door unit with proper weatherstripping to maintain energy efficiency."
+    },
   ];
 
   return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#1f2937] via-[#020617] to-[#020617] text-white py-14 md:py-20 px-6">
-        <div className="max-w-[1120px] mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-tight mb-4">
-            Door Installation & Repair
-          </h1>
-          <p className="text-[#e5e7eb] text-lg md:text-xl max-w-3xl mx-auto">
-            We fix sticking doors, replace damaged frames, and install new entry and interior doors.
-          </p>
-        </div>
-      </section>
+      <PageBreadcrumb crumbs={[
+    { label: "Home", href: "/" },
+    { label: "Services", href: "/handyman-services/" },
+    { label: "Door Installation & Repair" }
+  ]} />
+      <SEO {...seo} />
 
-      {/* Services Offered Section */}
-      <section className="py-16 px-6">
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-[#1f2937] via-[#020617] to-[#020617] text-white py-16 md:py-24 px-6">
         <div className="max-w-[1120px] mx-auto">
-          <div className="mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Services Offered</h2>
-            <p className="text-[#4b5563] text-lg max-w-2xl">
-              From simple adjustments to complete door replacements, we handle all your door service needs.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-2xl border border-[#e5e7eb] p-8 shadow-md">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="bg-[#ff5b00]/10 rounded-full p-3">
-                  <DoorOpen className="h-8 w-8 text-[#ff5b00]" />
-                </div>
-                <h3 className="text-2xl font-bold text-[#0b1220]">What We Do</h3>
-              </div>
-              <ul className="space-y-4">
-                {services.map((service, i) => (
-                  <li key={i} className="flex items-start gap-3 text-[#374151]">
-                    <div className="bg-[#ff5b00]/10 rounded-full p-1 mt-0.5">
-                      <Check className="h-5 w-5 text-[#ff5b00]" />
-                    </div>
-                    <span className="text-base">{service}</span>
-                  </li>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <span className="text-[#ff5b00] text-sm font-bold uppercase tracking-widest mb-4 block">Door Installation &amp; Repair</span>
+              <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
+                Door Installation &amp; Repair Services
+              </h1>
+              <p className="text-[#e5e7eb] text-lg mb-6">
+                Sticking doors, broken frames, new entry doors, storm doors, and interior door installations — done right the first time. Serving St. Louis, Edwardsville, O'Fallon, and all of Metro East IL.
+              </p>
+              <div className="flex flex-wrap gap-3 mb-8">
+                {["Free Quote in 24 hrs", "Same/Next-Day Available", "Licensed & Insured", "30+ Years Experience"].map((badge) => (
+                  <span key={badge} className="bg-white/10 text-white text-sm px-3 py-1.5 rounded-full font-medium">{badge}</span>
                 ))}
-              </ul>
-            </div>
-
-            <div className="flex flex-col gap-6">
-              <div className="bg-[#f9fafb] rounded-2xl p-8 border border-[#e5e7eb]">
-                <h3 className="text-xl font-bold mb-4 text-[#0b1220]">Repair vs Replace</h3>
-                <p className="text-[#4b5563] mb-4">
-                  Not every door problem requires a full replacement. We diagnose the door's condition and recommend the best solution for your situation and budget.
-                </p>
-                <p className="text-[#374151] text-sm">
-                  Whether it's a simple adjustment, hardware upgrade, or complete door replacement, we'll give you honest advice on what makes the most sense.
-                </p>
               </div>
-
-              <div className="bg-gradient-to-br from-[#ff5b00] to-[#f97316] rounded-2xl p-8 text-white shadow-lg">
-                <h3 className="text-xl font-bold mb-3">Common Door Problems</h3>
-                <ul className="space-y-2 text-white/90">
-                  <li className="flex items-start gap-2">
-                    <span className="font-bold">•</span>
-                    <span>Doors that stick or scrape</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="font-bold">•</span>
-                    <span>Drafty or poorly sealed doors</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="font-bold">•</span>
-                    <span>Damaged frames or thresholds</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="font-bold">•</span>
-                    <span>Broken or outdated hardware</span>
-                  </li>
-                </ul>
+              <div className="flex flex-wrap gap-4">
+                <Link href="/#contact" onClick={() => trackCTAClick('Get Free Quote in 24 Hours', 'Door Installation Hero Section')}>
+                  <Button className="bg-[#ff5b00] hover:bg-[#ff5b00]/90 text-white rounded-full px-8 py-6 text-base font-bold shadow-lg shadow-[#ff5b00]/30">
+                    Get Free Quote in 24 Hours
+                  </Button>
+                </Link>
+                <a href="tel:800-741-6056" onClick={() => trackPhoneClick('800-741-6056', 'Door Installation Hero Section')}>
+                  <Button variant="outline" className="rounded-full px-8 py-6 text-base font-semibold border-2 border-white text-white hover:bg-white/10 flex items-center gap-2">
+                    <Phone className="h-4 w-4" />
+                    800-741-6056
+                  </Button>
+                </a>
+              </div>
+            </div>
+            <div className="hidden md:block">
+              <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="flex gap-1">
+                    {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-[#ff5b00] text-[#ff5b00]" />)}
+                  </div>
+                  <span className="text-white font-semibold">4.9 · 127+ Reviews</span>
+                </div>
+                {[
+                  "Entry, storm, interior & sliding doors",
+                  "Diagnose root cause — not just symptoms",
+                  "Upfront pricing — no surprises",
+                  "Serving St. Louis & Metro East IL",
+                  "Install doors you purchase or we source",
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center gap-3 mb-3">
+                    <Check className="h-5 w-5 text-[#ff5b00] flex-shrink-0" />
+                    <span className="text-[#e5e7eb]">{item}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* What You Can Expect */}
-      <section className="py-16 px-6 bg-[#f9fafb]">
+      {/* What We Do */}
+      <section className="py-16 px-6 bg-white">
         <div className="max-w-[1120px] mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">What You Can Expect</h2>
-            <p className="text-[#4b5563] text-lg max-w-2xl mx-auto">
-              When we complete your door service, you'll enjoy these improvements:
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0b1220] mb-4">Door Installation &amp; Repair Services</h2>
+            <p className="text-[#4b5563] text-lg max-w-2xl mx-auto">From a sticking interior door to a full entry door replacement, we handle all door work in St. Louis and Metro East.</p>
           </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {expectations.map((item, i) => (
-              <div key={i} className="bg-white rounded-2xl p-6 shadow-sm border border-[#e5e7eb]">
-                <div className="flex items-start gap-4">
-                  <div className="bg-[#ff5b00]/10 rounded-full p-2 mt-1">
-                    <Check className="h-6 w-6 text-[#ff5b00]" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold mb-2 text-[#0b1220]">{item.title}</h3>
-                    <p className="text-[#4b5563] text-sm">{item.desc}</p>
-                  </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              { title: "Door Repairs", items: ["Sticking or hard-to-close doors", "Doors that won't latch", "Sagging or misaligned doors", "Broken hinges or hardware"] },
+              { title: "Door Installation", items: ["Exterior entry door replacement", "Storm door installation", "Interior door installation", "Pet door installation"] },
+              { title: "Frame & Weatherproofing", items: ["Rotted door frame repair", "Weatherstripping replacement", "Door sweep installation", "Draft elimination"] },
+            ].map((cat, i) => (
+              <div key={i} className="bg-[#f9fafb] rounded-2xl p-6 border border-[#e5e7eb]">
+                <div className="bg-[#ff5b00]/10 rounded-full p-3 w-fit mb-4">
+                  <Wrench className="h-6 w-6 text-[#ff5b00]" />
                 </div>
+                <h3 className="text-xl font-bold text-[#0b1220] mb-3">{cat.title}</h3>
+                <ul className="space-y-2">
+                  {cat.items.map((item, j) => (
+                    <li key={j} className="flex items-start gap-2 text-[#4b5563]">
+                      <Check className="h-4 w-4 text-[#ff5b00] mt-0.5 flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="py-16 px-6">
-        <div className="max-w-[1120px] mx-auto">
-          <div className="bg-white rounded-2xl border border-[#e5e7eb] p-8 md:p-12 shadow-md">
-            <h2 className="text-3xl font-bold mb-6 text-center">Why Choose Hero Handyman Pro for Door Work?</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="bg-[#ff5b00]/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Check className="h-8 w-8 text-[#ff5b00]" />
-                </div>
-                <h3 className="font-bold text-lg mb-2 text-[#0b1220]">Precision Installation</h3>
-                <p className="text-[#4b5563] text-sm">
-                  Proper door installation requires precision—we ensure perfect fit and function
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="bg-[#ff5b00]/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Check className="h-8 w-8 text-[#ff5b00]" />
-                </div>
-                <h3 className="font-bold text-lg mb-2 text-[#0b1220]">Quality Hardware</h3>
-                <p className="text-[#4b5563] text-sm">
-                  We use reliable hardware and materials that stand up to daily use
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="bg-[#ff5b00]/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Check className="h-8 w-8 text-[#ff5b00]" />
-                </div>
-                <h3 className="font-bold text-lg mb-2 text-[#0b1220]">Clean Workmanship</h3>
-                <p className="text-[#4b5563] text-sm">
-                  We leave your home clean and your doors looking and working great
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-16 px-6 bg-gray-50">
+      {/* Step-by-Step Process */}
+      <section className="py-16 px-6 bg-[#f9fafb]">
         <div className="max-w-[1120px] mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
-            <p className="text-[#4b5563] text-lg max-w-2xl mx-auto">
-              Get answers to common questions about our door installation and repair services.
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0b1220] mb-4">Our Door Installation Process</h2>
+            <p className="text-[#4b5563] text-lg max-w-2xl mx-auto">A precise, professional process — from diagnosis to final test.</p>
           </div>
-          <div className="max-w-3xl mx-auto">
-            <FAQAccordion faqs={[
-              {
-                question: "How long does a typical door installation take?",
-                answer: "Most door installations can be completed in 2-4 hours, depending on the complexity. A simple interior door replacement might take 1-2 hours, while a full exterior door installation with frame work could take 3-4 hours. We'll give you an accurate time estimate when we assess your specific project."
-              },
-              {
-                question: "Do you provide free estimates for door repair?",
-                answer: "Yes! We provide free, no-obligation estimates for all door repair and installation projects. We can often give you a ballpark estimate over the phone, but we prefer to see the door in person to provide the most accurate quote and ensure we understand exactly what you need."
-              },
-              {
-                question: "Should I repair or replace my door?",
-                answer: "It depends on the condition of your door and frame. Minor issues like sticking, squeaking, or loose hardware can usually be repaired cost-effectively. However, if your door has significant damage, rot, warping, or major drafts, replacement is often the better long-term investment. We'll assess your door honestly and recommend the most cost-effective solution."
-              },
-              {
-                question: "What types of doors do you work with?",
-                answer: "We work with all types of doors including entry doors, storm doors, sliding patio doors, French doors, interior doors, closet doors, and pocket doors. We handle wood, fiberglass, steel, and composite materials. Whether it's a standard size or custom door, we have the experience to install it properly."
-              },
-              {
-                question: "Do you offer a warranty on door installation?",
-                answer: "Yes! All our door installation work comes with a lifetime labor warranty. This covers any issues related to our installation workmanship. The doors and hardware we install are covered by manufacturer warranties, which we'll provide documentation for at the time of installation."
-              },
-              {
-                question: "Can you match my existing door style?",
-                answer: "Absolutely! We can help you find doors that match your existing style, or we can update your look entirely. We work with quality suppliers who offer a wide range of styles, finishes, and hardware options. Bring us a photo or description of what you're looking for, and we'll help you find the perfect match."
-              }
-            ]} />
+          <div className="grid md:grid-cols-5 gap-4">
+            {processSteps.map((step, i) => (
+              <div key={i} className="relative">
+                <div className="bg-white rounded-2xl p-6 shadow-sm border border-[#e5e7eb] h-full text-center">
+                  <div className="bg-[#ff5b00] text-white w-10 h-10 rounded-full flex items-center justify-center text-lg font-bold mx-auto mb-4">
+                    {step.num}
+                  </div>
+                  <h3 className="font-bold text-[#0b1220] mb-2">{step.title}</h3>
+                  <p className="text-[#4b5563] text-sm">{step.desc}</p>
+                </div>
+                {i < processSteps.length - 1 && (
+                  <div className="hidden md:flex absolute top-1/2 -right-2 z-10 items-center justify-center">
+                    <ArrowRight className="h-4 w-4 text-[#ff5b00]" />
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Customer Reviews CTA */}
-      <section className="py-12 px-6 bg-teal-50">
-        <div className="container max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            See What Our Customers Say
-          </h2>
-          <p className="text-lg text-gray-600 mb-6">
-            Read authentic reviews from homeowners who trusted us with their door installation projects.
-          </p>
-          <Link href="/reviews/door-installation/">
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-2 border-teal-700 text-teal-700 hover:bg-teal-700 hover:text-white rounded-full px-8"
-              onClick={() => trackCTAClick('Read Customer Reviews', 'Door Installation - Reviews CTA')}
-            >
-              <Star className="w-5 h-5 mr-2" />
-              Read Customer Reviews
-            </Button>
-          </Link>
-        </div>
-      </section>
-
-      {/* Local Experience Section */}
-      <section className="py-16 px-6 bg-gray-50">
+      {/* Pricing Ranges */}
+      <section className="py-16 px-6 bg-white">
         <div className="max-w-[1120px] mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Door Repair Experience in Your Area</h2>
-          
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-4 text-teal-700">Recent Fix: O'Fallon Sticking Door</h3>
-              <p className="text-gray-700 mb-4">
-                A homeowner in O'Fallon's Winghaven neighborhood called us about a front door that wouldn't close properly. The door had been sticking for months, requiring force to latch, and was letting in drafts that drove up their heating bill.
-              </p>
-              <p className="text-gray-700 mb-4">
-                After inspection, we found the issue: minor foundation settling (common in homes built on St. Louis clay soil) had shifted the door frame slightly. We adjusted the hinges, planed the door edge where it was binding, and installed a new weatherstrip. The entire repair took 90 minutes and cost $275.
-              </p>
-              <p className="text-gray-700 font-semibold">
-                Result: The door now closes smoothly, the drafts are gone, and the homeowner estimates they're saving $30-40/month on heating costs.
-              </p>
-            </div>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0b1220] mb-4">Door Repair &amp; Installation Pricing</h2>
+            <p className="text-[#4b5563] text-lg max-w-2xl mx-auto">
+              Transparent, upfront pricing — you'll know the cost before we start. These ranges reflect typical door projects in the St. Louis and Metro East area.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+            {pricingRanges.map((item, i) => (
+              <div key={i} className="bg-[#f9fafb] rounded-2xl p-6 border border-[#e5e7eb]">
+                <div className="flex items-start gap-3">
+                  <div className="bg-[#ff5b00]/10 rounded-full p-2 mt-0.5">
+                    <DollarSign className="h-5 w-5 text-[#ff5b00]" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-[#0b1220] mb-1">{item.type}</h3>
+                    <p className="text-[#ff5b00] font-bold text-lg mb-1">{item.range}</p>
+                    <p className="text-[#6b7280] text-sm">{item.note}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-[#4b5563] text-sm">
+            * Prices are labor estimates. Door and hardware costs are additional unless otherwise noted. Final price confirmed before work begins.
+          </p>
+        </div>
+      </section>
 
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-4 text-teal-700">What Door Repairs Cost</h3>
-              <p className="text-gray-700 mb-4">
-                Most door repairs in the St. Louis and Metro East area range from $150 to $800, depending on the problem. Here's the typical breakdown:
-              </p>
-              <ul className="space-y-2 text-gray-700 mb-4">
-                <li className="flex items-start">
-                  <Check className="w-5 h-5 text-teal-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span><strong>Hinge adjustment/replacement:</strong> $150-$300</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="w-5 h-5 text-teal-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span><strong>Door planing (sticking doors):</strong> $200-$400</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="w-5 h-5 text-teal-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span><strong>Lockset/hardware replacement:</strong> $200-$500</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="w-5 h-5 text-teal-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span><strong>Frame repair/adjustment:</strong> $300-$600</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="w-5 h-5 text-teal-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span><strong>Full door replacement:</strong> $400-$1,200+ (depending on door quality)</span>
-                </li>
-              </ul>
-              <p className="text-gray-700">
-                Every estimate includes parts and labor with no hidden fees. If we can fix it instead of replacing it, we'll tell you.
-              </p>
+      {/* Inline Quote Form */}
+      <section className="py-16 px-6 bg-[#0b1220]">
+        <div className="max-w-[600px] mx-auto">
+          <InlineQuoteForm
+            service="Door Installation & Repair"
+            heading="Get Your Free Door Quote in 24 Hours"
+            subheading="Tell us about your door project and we'll respond within 24 hours with a clear, upfront estimate."
+          />
+        </div>
+      </section>
+
+      {/* Before/After Project Gallery */}
+      <LazyProjectGallery
+        projects={doorProjects}
+        title="Recent Door Projects in Your Area"
+        subtitle="Before-and-after results from door replacements and repairs across St. Louis & Metro East."
+      />
+
+      {/* Testimonials */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-[1120px] mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-[#0b1220] mb-2">What Homeowners Are Saying</h2>
+            <div className="flex items-center justify-center gap-2 text-[#ff5b00]">
+              {[...Array(5)].map((_, j) => <Star key={j} className="h-5 w-5 fill-[#ff5b00]" />)}
+              <span className="text-[#4b5563] ml-2">4.9 average · 127+ reviews</span>
             </div>
           </div>
-
-          <div className="bg-teal-50 p-8 rounded-lg border-l-4 border-teal-600">
-            <h3 className="text-xl font-bold mb-3 text-gray-900">Why St. Louis Area Doors Stick and Sag</h3>
-            <p className="text-gray-700 mb-3">
-              If you live in an older St. Louis home—especially in neighborhoods like Soulard, Tower Grove, or the Hill—you've probably dealt with sticking doors. The combination of wood expansion from humidity changes and minor foundation settling creates the perfect conditions for door problems.
-            </p>
-            <p className="text-gray-700">
-              In Metro East Illinois homes, we see similar issues. The seasonal temperature swings cause wood doors to expand in summer and contract in winter. Add in the clay-heavy soil that shifts with moisture, and you've got doors that work fine in October but won't close in July.
-            </p>
-            <p className="text-gray-700 mt-3">
-              The good news? Most door problems are fixable without replacement. A skilled handyman can adjust hinges, plane edges, and reset frames to restore smooth operation—usually in under two hours.
-            </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              { text: "My front door wouldn't close properly for two years. Hero Handyman diagnosed a shifted frame and fixed it in 90 minutes. Should have called sooner.", author: "David H., O'Fallon IL" },
+              { text: "They installed a new storm door and replaced all the weatherstripping on my entry door. My energy bill dropped noticeably the next month.", author: "Jennifer M., Edwardsville IL" },
+              { text: "Quick, professional, and reasonably priced. Fixed three interior doors that were sticking. All work done in one visit.", author: "Ron S., St. Louis MO" },
+            ].map((t, i) => (
+              <div key={i} className="bg-[#f9fafb] rounded-2xl p-6 border border-[#e5e7eb]">
+                <div className="flex gap-1 mb-3">
+                  {[...Array(5)].map((_, j) => <Star key={j} className="h-4 w-4 fill-[#ff5b00] text-[#ff5b00]" />)}
+                </div>
+                <p className="text-[#374151] italic mb-4">"{t.text}"</p>
+                <p className="text-[#6b7280] text-sm font-semibold">— {t.author}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 px-6 bg-gradient-to-br from-[#1f2937] via-[#020617] to-[#020617] text-white">
+      {/* FAQ */}
+      <section className="py-16 px-6 bg-[#f9fafb]">
+        <div className="max-w-[800px] mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0b1220] mb-4">Door Installation FAQs</h2>
+            <p className="text-[#4b5563]">Common questions from St. Louis and Metro East homeowners about door installation and repair.</p>
+          </div>
+          <FAQAccordion faqs={faqs} />
+        </div>
+      </section>
+
+      {/* Service Area Links */}
+      <section className="py-16 px-6 bg-white border-t border-[#e5e7eb]">
         <div className="max-w-[1120px] mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Fix Your Door Problems?</h2>
-          <p className="text-[#e5e7eb] text-lg mb-8 max-w-2xl mx-auto">
-            Whether you need a simple adjustment or a complete door replacement, we're here to help.
-          </p>
-          <p className="text-[#e5e7eb] text-base mb-6 max-w-xl mx-auto">
-            Serving homeowners in <Link href="/service-areas/ofallon-handyman-services/" className="text-[#ff5b00] hover:underline">O'Fallon</Link>, <Link href="/service-areas/edwardsville-handyman-services/" className="text-[#ff5b00] hover:underline">Edwardsville</Link>, <Link href="/service-areas/collinsville-handyman-services/" className="text-[#ff5b00] hover:underline">Collinsville</Link>, <Link href="/service-areas/belleville-handyman-services/" className="text-[#ff5b00] hover:underline">Belleville</Link>, and throughout Greater St. Louis & Metro East.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <a href="tel:800-741-6056">
-              <Button className="bg-[#ff5b00] hover:bg-[#ff5b00]/90 text-white rounded-full px-8 py-6 text-lg font-semibold">
-                Call Now: 800-741-6056
-              </Button>
-            </a>
-            <Link href="/#contact?service=door-repair">
-              <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
-                Request Free Estimate
-              </Button>
-            </Link>
+          <h2 className="text-2xl font-bold text-[#0b1220] mb-4">Door Installation Near You</h2>
+          <p className="text-[#4b5563] mb-6">We serve all of St. Louis and Metro East Illinois. Find your city below.</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { name: "handyman Edwardsville IL", href: "/service-areas/edwardsville-handyman-services/" },
+              { name: "O'Fallon, IL", href: "/door-installation-ofallon-il" },
+              { name: "handyman Belleville IL", href: "/handyman-belleville-il" },
+              { name: "Collinsville, IL", href: "/door-installation-collinsville-il" },
+              { name: "Glen Carbon, IL", href: "/door-installation-glen-carbon-il" },
+              { name: "St. Charles, MO", href: "/door-installation-st-charles-mo" },
+              { name: "Chesterfield, MO", href: "/door-installation-chesterfield-mo" },
+              { name: "Ballwin, MO", href: "/door-installation-ballwin-mo" },
+            ].map((area) => (
+              <Link key={area.name} href={area.href}>
+                <Button variant="outline" className="rounded-full border-[#e5e7eb] hover:border-[#ff5b00] hover:text-[#ff5b00]">
+                  {area.name}
+                </Button>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
+
+      {/* Helpful Articles */}
+      <section className="py-14 px-6 bg-[#f9fafb] border-t border-[#e5e7eb]">
+        <div className="max-w-[1120px] mx-auto">
+          <h2 className="text-2xl font-bold text-[#0b1220] mb-6">Helpful Articles for O'Fallon Homeowners</h2>
+          <div className="grid md:grid-cols-3 gap-4">
+            {[
+              { label: "How Much Does Door Repair Cost in O'Fallon IL?", href: "/blog/door-repair-cost-ofallon-il/", desc: "Pricing guide: minor repairs, frame work, and full door replacement costs in 2026" },
+              { label: "Handyman Pricing Guide", href: "/handyman-pricing/", desc: "Full pricing transparency across all handyman services" },
+              { label: "Get a Free Estimate", href: "/estimator/", desc: "Use our online estimator to get a ballpark price for your project" },
+            ].map((link, i) => (
+              <Link key={i} href={link.href}>
+                <div className="p-5 bg-white rounded-xl border border-[#e5e7eb] hover:border-[#ff5b00] hover:shadow-sm transition-all cursor-pointer h-full">
+                  <p className="font-semibold text-[#0b1220] text-sm mb-1">{link.label}</p>
+                  <p className="text-[#6b7280] text-xs">{link.desc}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+        }))
+      }) }} />
     </div>
   );
 }

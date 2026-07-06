@@ -3,7 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Check, Hammer } from "lucide-react";
 import SEO from "@/components/SEO";
 
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 export default function DeckConstructionService() {
+  const seo = useSeoRoute();
   const deckTypes = [
     "Pressure-treated wood decks",
     "Composite decks",
@@ -22,16 +24,12 @@ export default function DeckConstructionService() {
 
   return (
     <div className="flex flex-col">
-      <SEO 
-        title="Deck Construction & Replacement | Hero Handyman Pro"
-        description="Custom deck construction in St. Louis & Metro East. Build new wood or composite decks, multi-level platforms, and replacement railings. Quality materials, expert craftsmanship, and full permit handling."
-        canonicalUrl="https://herohandymanpro.com/handyman-services/deck-construction/"
-      />
+      <SEO {...seo} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#1f2937] via-[#020617] to-[#020617] text-white py-14 md:py-20 px-6">
         <div className="max-w-[1120px] mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-tight mb-4">
-            Deck Construction & Replacement
+            Custom Deck Building &amp; Construction
           </h1>
           <p className="text-[#e5e7eb] text-lg md:text-xl max-w-3xl mx-auto">
             When repairs aren't enough, we build safe, beautiful decks designed to last.
@@ -85,7 +83,7 @@ export default function DeckConstructionService() {
                 <p className="mb-6 text-white/90">
                   Let's discuss your vision and create a deck that fits your space, style, and budget.
                 </p>
-                <Link href="/contact/">
+                <Link href="/#contact">
                   <Button className="bg-white text-[#ff5b00] hover:bg-white/90 rounded-full px-6 font-semibold w-full">
                     Request Free Consultation
                   </Button>
@@ -236,7 +234,7 @@ export default function DeckConstructionService() {
                 Start Your Deck Project
               </Button>
             </Link>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                 Request an Estimate
               </Button>

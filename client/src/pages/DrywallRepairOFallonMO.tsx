@@ -2,18 +2,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DrywallRepairOFallonMO() {
-  const seoData = {
-    title: "Drywall Repair O'Fallon MO | Hole Patching, Water Damage & Texture Matching",
-    description: "Expert drywall repair in O'Fallon MO. Hole patching, water-damaged drywall, ceiling crack repair, and texture matching. Licensed & insured. Call 800-741-6056.",
-    keywords: "drywall repair O'Fallon MO, hole patching O'Fallon Missouri, drywall patch O'Fallon, ceiling repair O'Fallon MO, drywall contractor O'Fallon",
-    canonicalUrl: "https://herohandymanpro.com/drywall-repair-ofallon-mo"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
         <div className="max-w-[1120px] mx-auto">
@@ -32,7 +26,7 @@ export default function DrywallRepairOFallonMO() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -135,7 +129,7 @@ export default function DrywallRepairOFallonMO() {
                   800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="w-full border-2 border-white text-white hover:bg-white/10 rounded-full py-6 text-lg font-semibold">
                   Request a Free Quote Online
                 </Button>

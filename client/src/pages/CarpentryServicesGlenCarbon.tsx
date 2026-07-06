@@ -2,18 +2,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function CarpentryServicesGlenCarbon() {
-  const seoData = {
-    title: "Carpentry Services Glen Carbon IL | Trim, Rot Repair & Exterior Carpentry",
-    description: "Expert carpentry services in Glen Carbon IL — trim repair, exterior carpentry, wood rot repair, and finish carpentry. Hero Handyman Pro serves all of Madison County.",
-    keywords: "carpentry services Glen Carbon IL, exterior carpentry Glen Carbon, wood rot repair Glen Carbon, trim repair Glen Carbon IL, finish carpentry Glen Carbon",
-    canonicalUrl: "https://herohandymanpro.com/carpentry-services-glen-carbon-il"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -33,7 +27,7 @@ export default function CarpentryServicesGlenCarbon() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -81,7 +75,7 @@ export default function CarpentryServicesGlenCarbon() {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Exterior Wood Rot in Glen Carbon Homes</h2>
               <p className="text-gray-600 mb-4">
-                Glen Carbon's humid summers and wet springs create ideal conditions for wood rot in exterior trim elements. Fascia boards, soffits, and window trim that weren't properly primed and painted during original construction are now showing rot after 20–30 years of exposure.
+                Glen Carbon's humid summers and wet springs create ideal conditions for wood rot in exterior trim elements. Fascia boards, soffits, and window trim that weren't properly primed and painted during original construction are now showing rot after 20–35 years of exposure.
               </p>
               <p className="text-gray-600 mb-4">
                 The most common rot locations we see in Glen Carbon homes are the fascia boards at the roofline (where gutters trap moisture), the bottom of window trim (where water pools), and the rim boards on decks and porches (where wood contacts soil or concrete).
@@ -196,7 +190,7 @@ export default function CarpentryServicesGlenCarbon() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-teal-600 text-teal-600 hover:bg-teal-50">
                 Get a Free Quote
               </Button>

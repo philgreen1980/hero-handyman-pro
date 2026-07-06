@@ -3,18 +3,12 @@ import { Button } from "@/components/ui/button";
 import { Phone, MapPin, CheckCircle, Clock, Shield, Star } from "lucide-react";
 import SEO from "@/components/SEO";
 import { trackPhoneClick, trackCTAClick } from "@/lib/analytics";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DoorInstallationOFallonIL() {
-  const seoData = {
-    title: "Door Installation O'Fallon IL | Local Experts | Same-Day Quotes",
-    description: "Professional door installation in O'Fallon, IL. Local, trusted service. Licensed & insured. Same-day quotes. Call 618-353-0955 for free estimate.",
-    keywords: "door installation O'Fallon IL, door installation O'Fallon, O'Fallon door installation",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/door-installation-ofallon-il/"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="min-h-screen bg-white">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-teal-700 to-teal-900 text-white py-16 px-6">

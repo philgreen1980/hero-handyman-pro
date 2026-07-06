@@ -12,7 +12,9 @@ import {
 import { Link } from "wouter";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 export default function HandymanServicePackages() {
+  const seo = useSeoRoute();
   const packages = [
     {
       icon: Home,
@@ -120,11 +122,7 @@ export default function HandymanServicePackages() {
 
   return (
     <>
-      <SEO
-        title="Handyman Membership & Service Plans | Save on Home Repairs"
-        description="Looking for a reliable handyman near you in Edwardsville or O'Fallon? Save on home repairs with our flat-rate handyman packages. Drywall, doors, decks & more. Call 800-741-6056."
-        canonicalUrl="https://herohandymanpro.com/handyman-service-packages"
-      />
+      <SEO {...seo} />
       
       <LocalBusinessSchema 
         pageUrl="https://herohandymanpro.com/handyman-service-packages"
@@ -137,13 +135,13 @@ export default function HandymanServicePackages() {
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Handyman Service Plans & Membership Packages
+              Handyman Service Packages — Flat-Rate Pricing from $249
             </h1>
             <p className="text-xl md:text-2xl mb-4 text-teal-50">
-              Looking for a reliable handyman near you in Edwardsville or O'Fallon? We provide fast drywall repair, door repair, deck repair, and general home fixes — all available as convenient flat-rate packages.
+              Stop paying per-trip rates. Hero Handyman Pro's flat-rate service packages bundle your most common home repairs into one affordable visit — starting at $249 for homeowners across St. Louis and Metro East Illinois.
             </p>
             <p className="text-lg mb-8 text-teal-100">
-              Save on home repairs with our handyman packages. Clear pricing, one-visit solutions, and same-day availability.
+              New home move-in, honey-do list, safety inspection, or membership plan — clear pricing, no surprises, same-day availability.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/booking">

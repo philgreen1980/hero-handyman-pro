@@ -2,18 +2,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function CarpentryServicesEdwardsville() {
-  const seoData = {
-    title: "Carpentry Services Edwardsville IL | Trim, Repairs & Custom Work",
-    description: "Professional carpentry services in Edwardsville IL. Trim repair, framing repairs, cabinet adjustments, and custom carpentry. Call Hero Handyman Pro at 800-741-6056.",
-    keywords: "carpentry services Edwardsville IL, trim repair Edwardsville, cabinet repair Edwardsville, custom carpentry Edwardsville",
-    canonicalUrl: "https://herohandymanpro.com/carpentry-services-edwardsville-il"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -24,7 +18,7 @@ export default function CarpentryServicesEdwardsville() {
               Professional Carpentry Services in Edwardsville IL
             </h1>
             <p className="text-gray-300 text-lg mb-8">
-              Trim repair, framing, cabinet adjustments, and custom carpentry work — delivered with the craftsmanship that Edwardsville homeowners have trusted for over 30 years.
+              Trim repair, framing, cabinet adjustments, and custom carpentry work — delivered with the craftsmanship that Edwardsville homeowners have trusted for over 35 years.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="tel:800-741-6056">
@@ -33,7 +27,7 @@ export default function CarpentryServicesEdwardsville() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -159,7 +153,7 @@ export default function CarpentryServicesEdwardsville() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-teal-700 rounded-full px-8 py-6 text-lg font-bold transition-colors">
                 Get a Free Quote
               </Button>

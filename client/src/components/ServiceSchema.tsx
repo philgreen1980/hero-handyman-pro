@@ -27,7 +27,7 @@ export default function ServiceSchema({
       "provider": {
         "@type": "LocalBusiness",
         "name": "Hero Handyman Pro",
-        "image": "https://files.manuscdn.com/user_upload_by_module/session_file/310419663029565453/JLrsrJqAaUkBYHOx.png",
+        "image": "https://herohandymanpro.com/images/phil-portrait.webp",
         "telephone": "+1-800-741-6056",
         "url": "https://herohandymanpro.com",
         "priceRange": "$$",

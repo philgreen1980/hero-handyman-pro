@@ -6,7 +6,9 @@ import { Label } from "@/components/ui/label";
 import { Check, Phone, Mail, Calendar, DollarSign, Gift, Star, Shield } from "lucide-react";
 import SEO from "@/components/SEO";
 
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 export default function Membership() {
+  const seo = useSeoRoute();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -66,17 +68,13 @@ export default function Membership() {
 
   return (
     <div className="min-h-screen">
-      <SEO
-        title="Membership Plan - Priority Service & Savings"
-        description="Join Hero Handyman Pro Membership for $97/year. Get same-day service, 15% off all repairs, no scheduling fees, and exclusive benefits. Spring special: Free deck design service!"
-        keywords="handyman membership, home repair plan, priority service, handyman discount, St Louis handyman membership"
-      />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-teal-700 via-teal-800 to-cyan-900 text-white py-16 px-6">
         <div className="container max-w-[1120px] mx-auto text-center">
           <div className="inline-block bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
-            🎉 SPRING SPECIAL: Free Deck Design Service (March-May 2025)
+            🎉 SUMMER SPECIAL: Free Deck Design Service (June-August 2026)
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Hero Handyman Pro Membership Plan
@@ -170,14 +168,14 @@ export default function Membership() {
               LIMITED TIME OFFER
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Spring Special: March to May 2025
+              Summer Special: June to August 2026
             </h2>
             <p className="text-xl text-gray-700 mb-6">
               Join now and receive a <strong>FREE Deck Design Service</strong> (valued at $250)
             </p>
             <p className="text-gray-600">
-              Perfect timing to plan your outdoor space for summer! Our expert will assess your deck needs, 
-              provide design recommendations, and give you a detailed quote - completely free with your membership.
+              Perfect timing to plan your outdoor space before fall! Our expert will assess your deck needs, 
+              provide design recommendations, and give you a detailed quote — completely free with your membership.
             </p>
           </div>
         </div>
@@ -351,10 +349,10 @@ export default function Membership() {
 
             <Card>
               <CardContent className="p-6">
-                <h3 className="font-bold text-lg mb-2">When does the Spring Special end?</h3>
+                <h3 className="font-bold text-lg mb-2">When does the Summer Special end?</h3>
                 <p className="text-gray-600">
-                  The free deck design service is available for memberships purchased between March 1 and May 31, 2025. 
-                  The design service must be scheduled by June 30, 2025.
+                  The free deck design service is available for memberships purchased between June 1 and August 31, 2026. 
+                  The design service must be scheduled by September 30, 2026.
                 </p>
               </CardContent>
             </Card>

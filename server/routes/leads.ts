@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { getDb } from '../db';
 import { leads } from '../../drizzle/schema';
+import { requireAdmin } from '../_core/adminAuth';
 
 const router = Router();
 
@@ -41,8 +42,9 @@ router.post('/', async (req, res) => {
   }
 });
 
-// GET /api/leads - Get all leads (for admin use)
-router.get('/', async (req, res) => {
+// GET /api/leads - Get all leads (admin only - previously had no protection
+// at all, meaning anyone who found this URL could see every captured lead)
+router.get('/', requireAdmin, async (req, res) => {
   try {
     const db = await getDb();
     if (!db) {

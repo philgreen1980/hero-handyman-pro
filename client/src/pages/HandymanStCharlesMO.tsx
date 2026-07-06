@@ -2,15 +2,47 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star, Shield, Clock, Wrench, Home, DoorOpen, Hammer } from "lucide-react";
 import SEO from "@/components/SEO";
+import { FAQAccordion } from "@/components/FAQAccordion";
+import PageBreadcrumb from "@/components/PageBreadcrumb";
+
+import { useSeoRoute } from '@/hooks/useSeoRoute';
+const faqs = [
+  {
+    question: "How much does a handyman cost in St. Charles, MO?",
+    answer: "Most handyman jobs in St. Charles run between $150 and $600 depending on scope. Simple repairs like drywall patching or door adjustments typically fall in the $150–$300 range. Larger projects like deck board replacement or full door installation are usually $350–$700+. We provide free estimates so you know the cost before any work begins.",
+  },
+  {
+    question: "Do you offer same-day handyman service in St. Charles?",
+    answer: "Yes — we offer same-day and next-day availability for most repairs in St. Charles. For urgent repairs, call us directly at 800-741-6056 and we'll do our best to get to you quickly.",
+  },
+  {
+    question: "Are you licensed and insured to work in Missouri?",
+    answer: "Yes. Hero Handyman Pro is fully insured for residential work in Missouri and Illinois. We carry general liability insurance on every job, so you're protected if anything unexpected happens.",
+  },
+  {
+    question: "What areas of St. Charles do you serve?",
+    answer: "We serve all of St. Charles including the historic district near First Capitol Drive, Mid Rivers Mall corridor, Dardenne Prairie, O'Fallon MO, and surrounding St. Charles County communities.",
+  },
+  {
+    question: "Can you handle multiple repairs in one visit in St. Charles?",
+    answer: "Absolutely — our Honey-Do List Knockout package is designed exactly for that. We batch multiple small repairs into one efficient visit so you're not paying multiple trip charges for each item.",
+  },
+  {
+    question: "Do you work on historic homes in St. Charles?",
+    answer: "Yes. We have experience with older construction methods, plaster walls, and period-appropriate materials common in St. Charles's historic district. We match existing finishes carefully to preserve the character of your home.",
+  },
+];
 
 export default function HandymanStCharlesMO() {
+  const seo = useSeoRoute();
   return (
     <div className="flex flex-col">
-      <SEO
-        title="Handyman Services St Charles MO | Hero Handyman Pro"
-        description="Reliable handyman services in St. Charles MO. Drywall repair, deck repair, door installation, and general home repairs. Call 800-741-6056 for a free quote."
-        canonicalUrl="https://herohandymanpro.com/handyman-st-charles-mo"
-      />
+      <PageBreadcrumb crumbs={[
+    { label: "Home", href: "/" },
+    { label: "Service Areas", href: "/service-areas/" },
+    { label: "St. Charles, MO" }
+  ]} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#1f2937] via-[#020617] to-[#020617] text-white py-16 md:py-24 px-6">
@@ -30,7 +62,7 @@ export default function HandymanStCharlesMO() {
                   Call Now: 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-10 py-7 text-lg font-semibold border-2 border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -196,7 +228,7 @@ export default function HandymanStCharlesMO() {
                   800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="w-full border-2 border-white text-white hover:bg-white/10 rounded-full py-6 text-lg font-semibold">
                   Request a Free Quote Online
                 </Button>
@@ -205,6 +237,31 @@ export default function HandymanStCharlesMO() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-6 bg-[#f9fafb] border-t border-[#e5e7eb]">
+        <div className="max-w-[780px] mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-[#0b1220] mb-3">Frequently Asked Questions</h2>
+            <p className="text-[#4b5563]">Common questions from St. Charles homeowners</p>
+          </div>
+          <FAQAccordion faqs={faqs} />
+        </div>
+      </section>
+
+      {/* FAQPage Schema */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(item => ({
+          "@type": "Question",
+          "name": item.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": item.answer,
+          },
+        })),
+      })}} />
 
       {/* Internal Links Section */}
       <section className="py-12 px-6 bg-white border-t border-[#e5e7eb]">

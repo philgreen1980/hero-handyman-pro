@@ -23,7 +23,7 @@ export default function ServiceDetail() {
             <p className="text-xl text-primary-foreground/90 mb-8">
               From honey-do lists to critical home maintenance, we handle the small jobs so you don't have to.
             </p>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold uppercase tracking-wider">
                 Get a Free Estimate
               </Button>
@@ -153,7 +153,7 @@ export default function ServiceDetail() {
             <div className="absolute inset-0 bg-hazard opacity-10 pointer-events-none"></div>
             <h3 className="font-heading font-bold text-2xl mb-4 relative z-10">Ready to get started?</h3>
             <p className="mb-6 relative z-10 text-primary-foreground/90">Contact us today for a free estimate on your home repair project.</p>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold uppercase relative z-10">
                 Request Estimate
               </Button>

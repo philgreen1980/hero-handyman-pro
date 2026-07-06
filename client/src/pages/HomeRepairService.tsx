@@ -3,8 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Check, ClipboardList } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import SEO from "@/components/SEO";
+import PageBreadcrumb from "@/components/PageBreadcrumb";
 
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 export default function HomeRepairService() {
+  const seo = useSeoRoute();
   const weHandle = [
     "Inspection repair lists",
     "Pre-sale repairs",
@@ -23,11 +26,12 @@ export default function HomeRepairService() {
 
   return (
     <div className="flex flex-col">
-      <SEO 
-        title="Home Repair Services & Punch Lists | Hero Handyman Pro"
-        description="Professional home repair services in St. Louis & Metro East. We handle inspection repairs, move-in punch lists, and rental turnover fixes. Fast, reliable service from experienced craftsmen."
-        canonicalUrl="https://herohandymanpro.com/handyman-services/home-repair-services/"
-      />
+      <PageBreadcrumb crumbs={[
+    { label: "Home", href: "/" },
+    { label: "Services", href: "/handyman-services/" },
+    { label: "Home Repair Services" }
+  ]} />
+      <SEO {...seo} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#1f2937] via-[#020617] to-[#020617] text-white py-14 md:py-20 px-6">
         <div className="max-w-[1120px] mx-auto text-center">
@@ -288,6 +292,107 @@ export default function HomeRepairService() {
             <p className="text-gray-700">
               For homes in O'Fallon, Edwardsville, Collinsville, and Belleville (typically built after 1960), you'll have standard drywall. These repairs are faster and less expensive, but still require skill to match texture and blend paint seamlessly.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* What to Expect */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-[1120px] mx-auto">
+          <h2 className="text-3xl font-bold mb-3 text-gray-900">What to Expect When You Book Home Repair</h2>
+          <p className="text-gray-600 mb-10 max-w-2xl">From first contact to finished repairs — here's how home maintenance and repair work goes with Hero Handyman Pro:</p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              { step: "1", title: "Send Your Punch List", desc: "Text, email, or call with your list of repairs. We can often group multiple small jobs into a single visit, saving you time and money. Photos help us estimate faster and more accurately." },
+              { step: "2", title: "Phone or On-Site Assessment", desc: "For simple repairs, we can often quote over the phone. For larger or more complex jobs, we schedule a brief on-site visit to assess the scope before providing a written estimate." },
+              { step: "3", title: "Written Quote", desc: "You receive a firm written quote before any work begins. We itemize each repair so you can approve the full list or prioritize specific items based on your budget." },
+              { step: "4", title: "Scheduled Repair Day", desc: "We arrive on time, bring all necessary materials, and work efficiently through your list. Most multi-item punch lists are completed in a single day." },
+              { step: "5", title: "Quality Check", desc: "Each repair is tested before we move to the next item. Doors are cycled, fixtures are run, drywall patches are inspected for smoothness. We don't rush through a list just to finish." },
+              { step: "6", title: "Final Walkthrough", desc: "We walk through every completed repair with you before leaving. If anything isn't right, we fix it on the spot. Your satisfaction is confirmed before we pack up." },
+            ].map((item, i) => (
+              <div key={i} className="bg-gray-50 rounded-2xl border border-gray-200 p-6 shadow-sm">
+                <div className="w-10 h-10 bg-teal-700 text-white rounded-full flex items-center justify-center font-bold text-lg mb-4">{item.step}</div>
+                <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
+                <p className="text-gray-600 text-sm">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* More Project Examples */}
+      <section className="py-16 px-6 bg-gray-50">
+        <div className="max-w-[1120px] mx-auto">
+          <h2 className="text-3xl font-bold mb-3 text-gray-900">More Recent Home Repair Projects</h2>
+          <p className="text-gray-600 mb-10 max-w-2xl">Real jobs completed by Hero Handyman Pro across Metro East Illinois and the Greater St. Louis area.</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                city: "O'Fallon, IL",
+                title: "Multi-Item Punch List — New Home",
+                desc: "A new homeowner in O'Fallon had a 14-item punch list from their home inspection: squeaky stair treads, a sticking back door, two cracked outlet covers, a loose towel bar, a dripping bathroom faucet, and several small drywall dings from the move. We completed all 14 items in a single 6-hour visit. The homeowner had been dreading the list for months — it was done before lunch."
+              },
+              {
+                city: "Edwardsville, IL",
+                title: "Water Damage Repair After Roof Leak",
+                desc: "An Edwardsville homeowner had a roof leak repaired by a roofer but was left with a 4-foot water-stained ceiling in the living room. The drywall had softened in one corner. We removed the damaged section, installed new drywall, matched the existing knockdown texture, and repainted the entire ceiling to eliminate the stain line. The repair was invisible after painting."
+              },
+              {
+                city: "Belleville, IL",
+                title: "Aging Home Maintenance Day",
+                desc: "An older couple in Belleville needed help with a growing list of deferred maintenance: a loose handrail on the front steps, a bathroom door that wouldn't latch, a cracked window sill, two stuck double-hung windows, and a dripping kitchen faucet. We completed everything in one visit and also identified a small section of rotting fascia board they hadn't noticed — we repaired that too."
+              },
+              {
+                city: "Collinsville, IL",
+                title: "Rental Property Turnover Repairs",
+                desc: "A Collinsville landlord needed a rental unit turned over between tenants: patch 6 drywall holes, repaint two rooms, replace two interior door knobs, fix a running toilet, and reinstall a towel bar. We completed the full turnover in two days, and the landlord had the unit re-listed within the week."
+              },
+              {
+                city: "Glen Carbon, IL",
+                title: "Seasonal Maintenance Package",
+                desc: "A Glen Carbon homeowner enrolled in our maintenance membership and scheduled a seasonal visit. We replaced weatherstripping on three exterior doors, caulked around two bathroom tubs, tightened all cabinet hinges, lubricated garage door hardware, and replaced a cracked light switch cover. Small things that add up to a well-maintained home."
+              },
+            ].map((project, i) => (
+              <div key={i} className="border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow bg-white">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="text-xs font-semibold text-teal-700 uppercase tracking-wide">{project.city}</span>
+                </div>
+                <h3 className="font-bold text-gray-900 mb-3">{project.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{project.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Homeowner Q&A */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-[1120px] mx-auto">
+          <h2 className="text-3xl font-bold mb-10 text-gray-900">Common Homeowner Questions About Home Repair</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {[
+              {
+                q: "Is it worth hiring a handyman for small repairs?",
+                a: "Absolutely. Small repairs left unaddressed often become larger, more expensive problems. A sticking door becomes a warped frame. A small drywall crack becomes a sign of settling that spreads. A dripping faucet wastes hundreds of gallons of water a year. Addressing small repairs promptly is almost always the most cost-effective approach."
+              },
+              {
+                q: "What's the difference between a handyman and a contractor?",
+                a: "A licensed contractor is required for structural work, electrical panel upgrades, plumbing rough-in, and HVAC. A handyman handles the wide range of repairs and maintenance tasks that don't require a specialty license: drywall, carpentry, fixture installation, painting, and general home maintenance. For most homeowner punch lists, a skilled handyman is the right call — and usually more affordable."
+              },
+              {
+                q: "How do I prioritize my repair list?",
+                a: "Start with anything that affects safety (loose railings, sticking doors, tripping hazards), then water-related issues (leaks, water stains, rotting wood), then energy efficiency (weatherstripping, caulking), then cosmetic repairs. We're happy to help you prioritize during a free estimate call."
+              },
+              {
+                q: "Can you handle repairs in older Metro East homes?",
+                a: "Yes — and this is one of our specialties. Older homes in Belleville, Collinsville, and the St. Louis area often have plaster walls, older door hardware, and non-standard trim profiles. We have experience working with older construction and can match textures, profiles, and finishes that newer handymen often can't."
+              },
+            ].map((item, i) => (
+              <div key={i} className="bg-gray-50 rounded-2xl border border-gray-200 p-6">
+                <h3 className="font-bold text-gray-900 mb-3">{item.q}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{item.a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

@@ -4,8 +4,10 @@ import { Phone, CheckCircle, Clock, Shield, Star } from "lucide-react";
 import SEO from "@/components/SEO";
 import FAQSchema from "@/components/FAQSchema";
 import { trackPhoneClick, trackCTAClick } from "@/lib/analytics";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function BathroomRemodeling() {
+  const seo = useSeoRoute();
   const faqs = [
     {
       question: "How much does a bathroom remodel cost?",
@@ -31,18 +33,9 @@ export default function BathroomRemodeling() {
       question: "Do you handle permits for bathroom remodeling?",
       answer: "Yes, we handle all necessary permits for your bathroom remodel. Permits are typically required for plumbing, electrical, and structural work. We're familiar with local building codes in St. Louis and Metro East, and we ensure all work meets or exceeds code requirements for your safety and peace of mind."
     }
-  ];
-
-  const seoData = {
-    title: "Bathroom Remodeling St. Louis | Complete Bathroom Renovations",
-    description: "Professional bathroom remodeling and renovation in St. Louis & Metro East. From small updates to full remodels. Licensed, insured, lifetime labor warranty. Call 800-741-6056 for free quote.",
-    keywords: "bathroom remodeling, bathroom renovation, bathroom remodel, bathroom remodel near me, bathroom renovation near me, St Louis bathroom remodeling, Metro East bathroom renovation",
-    canonicalUrl: "https://herohandymanpro.com/handyman-services/bathroom-remodeling/"
-  };
-
-  return (
+  ];  return (
     <div className="min-h-screen bg-white">
-      <SEO {...seoData} />
+      <SEO {...seo} />
       <FAQSchema faqs={faqs} pageUrl="/handyman-services/bathroom-remodeling/" />
 
       {/* Hero Section */}
@@ -300,7 +293,7 @@ export default function BathroomRemodeling() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Quality Craftsmanship</h3>
               <p className="text-gray-600">
-                30+ years of experience in home remodeling. We take pride in precise tile work, clean finishes, and attention to every detail.
+                35+ years of experience in home remodeling. We take pride in precise tile work, clean finishes, and attention to every detail.
               </p>
             </div>
 

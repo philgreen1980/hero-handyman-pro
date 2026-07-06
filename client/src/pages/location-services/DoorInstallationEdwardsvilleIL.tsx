@@ -3,18 +3,12 @@ import { Button } from "@/components/ui/button";
 import { Phone, MapPin, CheckCircle, Clock, Shield, Star } from "lucide-react";
 import SEO from "@/components/SEO";
 import { trackPhoneClick, trackCTAClick } from "@/lib/analytics";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DoorInstallationEdwardsvilleIL() {
-  const seoData = {
-    title: "Door Installation Edwardsville IL | Local Experts | Same-Day Quotes",
-    description: "Professional door installation in Edwardsville, IL. Local, trusted service. Licensed & insured. Same-day quotes. Call 618-353-0955 for free estimate.",
-    keywords: "door installation Edwardsville IL, door installation Edwardsville, Edwardsville door installation",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/door-installation-edwardsville-il/"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="min-h-screen bg-white">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-teal-700 to-teal-900 text-white py-16 px-6">

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ExternalLink } from "lucide-react";
 import { Link } from "wouter";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 interface Partner {
   category: string;
@@ -51,16 +52,9 @@ const partners: Partner[] = [
 ];
 
 export default function TrustedLocalPartners() {
-  const seoData = {
-    title: "Trusted Local Home Service Partners | Hero Handyman Pro",
-    description: "A curated list of trusted local partners we recommend for restoration, plumbing, HVAC, roofing, insurance, and real estate in St. Louis & Metro East.",
-    keywords: "trusted partners, local contractors, home services, St. Louis contractors, Metro East contractors",
-    canonicalUrl: "https://herohandymanpro.com/trusted-local-partners"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
       
       {/* Hero Section */}
       <section className="py-16 px-6 bg-gradient-to-br from-teal-50 to-white">

@@ -2,18 +2,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function CarpentryServicesStCharles() {
-  const seoData = {
-    title: "Carpentry Services St. Charles MO | Trim, Wood Rot Repair & Exterior Carpentry",
-    description: "Professional carpentry services in St. Charles MO — trim installation, wood rot repair, exterior carpentry, and finish work. Hero Handyman Pro serves all of St. Charles County.",
-    keywords: "carpentry services St. Charles MO, wood rot repair St. Charles, trim installation St. Charles MO, exterior carpentry St. Charles, finish carpentry St. Charles County",
-    canonicalUrl: "https://herohandymanpro.com/carpentry-services-st-charles-mo"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -33,7 +27,7 @@ export default function CarpentryServicesStCharles() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -176,7 +170,7 @@ export default function CarpentryServicesStCharles() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-teal-600 text-teal-600 hover:bg-teal-50">
                 Get a Free Quote
               </Button>

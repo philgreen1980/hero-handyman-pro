@@ -1,5 +1,23 @@
 import { useEffect } from 'react';
 
+const LOCAL_BUSINESS_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Hero Handyman Pro",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Swansea",
+    "addressRegion": "IL",
+    "postalCode": "62226",
+    "addressCountry": "US"
+  },
+  "telephone": "800-741-6056",
+  "url": "https://herohandymanpro.com/",
+  "openingHours": "Mo-Su 08:00-17:00",
+  "priceRange": "$$",
+  "description": "Fast, honest handyman services in St. Louis and Metro East IL"
+};
+
 interface SEOProps {
   title: string;
   description: string;
@@ -7,19 +25,27 @@ interface SEOProps {
   ogImage?: string;
   ogType?: string;
   canonicalUrl?: string;
+  /** When true, uses title as-is without appending "| Hero Handyman Pro" */
+  fullTitle?: boolean;
+  /** When true, adds <meta name="robots" content="noindex, follow"> to prevent indexing */
+  noindex?: boolean;
 }
 
 export default function SEO({
   title,
   description,
   keywords,
-  ogImage = 'https://herohandymanpro.com/og-image.jpg',
+  ogImage = '/images/og-image-hero-handyman-pro.png',
   ogType = 'website',
-  canonicalUrl
+  canonicalUrl,
+  fullTitle = false,
+  noindex = false
 }: SEOProps) {
   useEffect(() => {
+    const displayTitle = fullTitle ? title : `${title} | Hero Handyman Pro`;
+
     // Set page title
-    document.title = `${title} | Hero Handyman Pro`;
+    document.title = displayTitle;
 
     // Set or update meta tags
     const setMetaTag = (name: string, content: string, property?: boolean) => {
@@ -42,7 +68,7 @@ export default function SEO({
     }
 
     // Open Graph tags
-    setMetaTag('og:title', `${title} | Hero Handyman Pro`, true);
+    setMetaTag('og:title', displayTitle, true);
     setMetaTag('og:description', description, true);
     setMetaTag('og:image', ogImage, true);
     setMetaTag('og:type', ogType, true);
@@ -54,9 +80,13 @@ export default function SEO({
 
     // Twitter Card tags
     setMetaTag('twitter:card', 'summary_large_image');
-    setMetaTag('twitter:title', `${title} | Hero Handyman Pro`);
+    setMetaTag('twitter:title', displayTitle);
     setMetaTag('twitter:description', description);
     setMetaTag('twitter:image', ogImage);
+
+    // Robots meta tag
+    const robotsContent = noindex ? 'noindex, follow' : 'index, follow';
+    setMetaTag('robots', robotsContent);
 
     // Canonical URL
     if (canonicalUrl) {
@@ -68,7 +98,19 @@ export default function SEO({
       }
       link.setAttribute('href', canonicalUrl);
     }
-  }, [title, description, keywords, ogImage, ogType, canonicalUrl]);
+
+    // Inject LocalBusiness JSON-LD schema (once per page, keyed by id)
+    const schemaId = 'local-business-schema';
+    let schemaScript = document.getElementById(schemaId);
+    if (!schemaScript) {
+      schemaScript = document.createElement('script');
+      schemaScript.setAttribute('type', 'application/ld+json');
+      schemaScript.id = schemaId;
+      document.head.appendChild(schemaScript);
+    }
+    schemaScript.textContent = JSON.stringify(LOCAL_BUSINESS_SCHEMA);
+
+  }, [title, description, keywords, ogImage, ogType, canonicalUrl, fullTitle]);
 
   return null;
 }

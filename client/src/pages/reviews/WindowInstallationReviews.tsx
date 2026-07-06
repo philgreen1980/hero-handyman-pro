@@ -4,16 +4,10 @@ import { Star, Quote, Phone, ArrowLeft } from "lucide-react";
 import SEO from "@/components/SEO";
 import { ReviewSchema } from "@/components/ReviewSchema";
 import { trackPhoneClick, trackCTAClick } from "@/lib/analytics";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function WindowInstallationReviews() {
-  const seoData = {
-    title: "Window Installation Reviews | Customer Testimonials | Hero Handyman Pro",
-    description: "Read real customer reviews of our window installation services. See why homeowners trust Hero Handyman Pro for professional window replacement in St. Louis & Metro East.",
-    keywords: "window installation reviews, window replacement testimonials, window installer reviews St. Louis",
-    canonicalUrl: "https://herohandymanpro.com/reviews/window-installation/"
-  };
-
-  const reviews = [
+  const seo = useSeoRoute();  const reviews = [
     {
       name: "Sarah M.",
       location: "O'Fallon, IL",
@@ -66,7 +60,7 @@ export default function WindowInstallationReviews() {
 
   return (
     <div className="min-h-screen bg-white">
-      <SEO {...seoData} />
+      <SEO {...seo} />
       <ReviewSchema 
         serviceName="Window Installation & Replacement"
         serviceUrl="/reviews/window-installation/"

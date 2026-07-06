@@ -2,18 +2,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DeckRepairStCharles() {
-  const seoData = {
-    title: "Deck Repair St. Charles MO | Board Replacement, Railings & Structural Repairs",
-    description: "Professional deck repair in St. Charles MO — rotted boards, loose railings, structural damage, and deck maintenance. Hero Handyman Pro serves all of St. Charles County.",
-    keywords: "deck repair St. Charles MO, deck board replacement St. Charles, railing repair St. Charles MO, rotted deck repair St. Charles, deck maintenance St. Charles County",
-    canonicalUrl: "https://herohandymanpro.com/deck-repair-st-charles-mo"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -33,7 +27,7 @@ export default function DeckRepairStCharles() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -176,7 +170,7 @@ export default function DeckRepairStCharles() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-teal-600 text-teal-600 hover:bg-teal-50">
                 Get a Free Quote
               </Button>

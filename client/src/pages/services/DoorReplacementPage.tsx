@@ -7,12 +7,19 @@ import ServiceSchema from '@/components/ServiceSchema';
 import FAQSchema from '@/components/FAQSchema';
 import LeadMagnetForm from '@/components/LeadMagnetForm';
 import SEO from '@/components/SEO';
-import { seoConfig } from '@/lib/seo-config';
+import PageBreadcrumb from "@/components/PageBreadcrumb";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DoorReplacementPage() {
+  const seo = useSeoRoute();
   return (
     <div className="min-h-screen">
-      <SEO {...seoConfig.doorReplacement} />
+      <PageBreadcrumb crumbs={[
+    { label: "Home", href: "/" },
+    { label: "Services", href: "/handyman-services/" },
+    { label: "Door Replacement" }
+  ]} />
+      <SEO {...seo} />
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-teal-700 via-teal-600 to-teal-500 text-white py-20">
@@ -28,7 +35,7 @@ export default function DoorReplacementPage() {
             </h1>
             
             <p className="text-xl md:text-2xl mb-8 text-teal-50">
-              Expert door replacement for interior and exterior doors. Same-day service available. Licensed & insured with 30+ years experience.
+              Expert door replacement for interior and exterior doors. Same-day service available. Licensed & insured with 35+ years experience.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

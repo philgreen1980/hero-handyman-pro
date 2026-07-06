@@ -2,18 +2,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function CarpentryServicesBallwin() {
-  const seoData = {
-    title: "Carpentry Services Ballwin MO | Trim, Millwork & Exterior Carpentry",
-    description: "Professional carpentry services in Ballwin MO. Trim repair, exterior carpentry, rot repair, and custom millwork. Call Hero Handyman Pro at 800-741-6056.",
-    keywords: "carpentry services Ballwin MO, trim repair Ballwin, exterior carpentry Ballwin, rot repair Ballwin MO, millwork Ballwin",
-    canonicalUrl: "https://herohandymanpro.com/carpentry-services-ballwin-mo"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -33,7 +27,7 @@ export default function CarpentryServicesBallwin() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -110,7 +104,7 @@ export default function CarpentryServicesBallwin() {
             <div>
               <h2 className="text-3xl font-bold mb-4 text-gray-900">Why Ballwin Homeowners Choose Hero Handyman Pro</h2>
               <p className="text-gray-600 mb-6">
-                Phil has been doing carpentry work in Ballwin and West County for over 30 years. He understands the construction details of each era of Ballwin's housing stock — the trim profiles, the framing methods, and the common failure points — and he does the work himself without subcontractors.
+                Phil has been doing carpentry work in Ballwin and West County for over 35 years. He understands the construction details of each era of Ballwin's housing stock — the trim profiles, the framing methods, and the common failure points — and he does the work himself without subcontractors.
               </p>
               <div className="space-y-4">
                 {[
@@ -180,7 +174,7 @@ export default function CarpentryServicesBallwin() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-teal-700 rounded-full px-8 py-6 text-lg font-bold transition-colors">
                 Get a Free Quote
               </Button>

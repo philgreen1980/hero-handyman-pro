@@ -2,16 +2,10 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Star, ArrowRight, Hammer, Home as HomeIcon, DoorOpen, Layers, Wrench, Zap } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function HandymanServices() {
-  const seoData = {
-    title: "Handyman Services Near You | Drywall, Doors, Deck Repair",
-    description: "Looking for a reliable handyman near you in Edwardsville or O'Fallon? Fast drywall repair, door repair, deck repair & home fixes. Licensed & insured. Call 800-741-6056.",
-    keywords: "handyman services near me, drywall repair near me, door repair near me, deck repair near me, handyman Edwardsville IL, handyman O'Fallon IL, home repairs Metro East",
-    canonicalUrl: "https://herohandymanpro.com/handyman-services/"
-  };
-
-  const primaryServices = [
+  const seo = useSeoRoute();  const primaryServices = [
     {
       icon: <Hammer className="w-7 h-7 text-teal-700" />,
       title: "Deck Repair",
@@ -76,7 +70,7 @@ export default function HandymanServices() {
 
   return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -84,10 +78,10 @@ export default function HandymanServices() {
           <div className="max-w-3xl">
             <span className="text-xs uppercase tracking-widest text-teal-400 font-semibold">Greater St. Louis & Metro East Illinois</span>
             <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4 leading-tight">
-              Handyman Services Near You in Edwardsville & O'Fallon IL
+              Handyman Services in St. Louis & Metro East
             </h1>
             <p className="text-gray-300 text-lg mb-8">
-              Looking for a reliable handyman near you in Edwardsville or O'Fallon? We provide fast drywall repair, door repair, deck repair, and general home fixes throughout Metro East IL. Same-day and next-day availability. Licensed & insured.
+              Hero Handyman Pro provides professional handyman services across St. Louis, MO and Metro East IL — including drywall repair, door repair, deck repair, carpentry, and small home projects. Same-day and next-day availability. Licensed &amp; insured.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="tel:800-741-6056">
@@ -95,7 +89,7 @@ export default function HandymanServices() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -141,9 +135,9 @@ export default function HandymanServices() {
       {/* Near You Section — Internal Links to City-Specific Pages */}
       <section className="py-10 px-6 bg-teal-50 border-y border-teal-100">
         <div className="max-w-[1120px] mx-auto">
-          <h2 className="text-xl font-bold mb-2 text-teal-900">Looking for a Handyman Near You in Edwardsville or O'Fallon?</h2>
+          <h2 className="text-xl font-bold mb-2 text-teal-900">Find Local Handyman Services Near You</h2>
           <p className="text-teal-800 text-sm mb-5 max-w-2xl">
-            We provide fast, local handyman services throughout Metro East IL. Find the right service for your area:
+            We serve homeowners throughout St. Louis, MO and Metro East IL. Find the right service for your area, or explore our <Link href="/handyman-service-packages" className="text-teal-700 hover:underline font-semibold">home repair packages</Link> for bundled savings.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link href="/drywall-repair-edwardsville-il">
@@ -159,6 +153,11 @@ export default function HandymanServices() {
             <Link href="/deck-repair-edwardsville-il">
               <span className="inline-block bg-white border border-teal-200 text-teal-800 text-sm font-semibold px-4 py-2 rounded-full hover:bg-teal-100 transition-colors cursor-pointer">
                 Deck repair near you
+              </span>
+            </Link>
+            <Link href="/service-areas/collinsville-handyman-services/">
+              <span className="inline-block bg-white border border-teal-200 text-teal-800 text-sm font-semibold px-4 py-2 rounded-full hover:bg-teal-100 transition-colors cursor-pointer">
+                Handyman services in Collinsville
               </span>
             </Link>
             <Link href="/handyman-near-me/">
@@ -280,6 +279,8 @@ export default function HandymanServices() {
             <span className="text-gray-300">|</span>
             <Link href="/handyman-near-me"><span className="text-teal-700 hover:underline cursor-pointer">Handyman Near Me</span></Link>
             <span className="text-gray-300">|</span>
+            <Link href="/handyman-service-packages"><span className="text-teal-700 hover:underline cursor-pointer">Service Packages</span></Link>
+            <span className="text-gray-300">|</span>
             <Link href="/drywall-repair-edwardsville-il"><span className="text-teal-700 hover:underline cursor-pointer">Drywall Repair Edwardsville IL</span></Link>
             <span className="text-gray-300">|</span>
             <Link href="/handyman-chesterfield-mo"><span className="text-teal-700 hover:underline cursor-pointer">Handyman Chesterfield MO</span></Link>
@@ -304,7 +305,7 @@ export default function HandymanServices() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-teal-700 rounded-full px-8 py-6 text-lg font-bold transition-colors">
                 Get a Free Quote
               </Button>
@@ -312,6 +313,29 @@ export default function HandymanServices() {
           </div>
         </div>
       </section>
+
+      {/* Speakable Schema */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Handyman Services in Edwardsville & St. Louis | Small Jobs Welcome",
+        "url": "https://herohandymanpro.com/handyman-services/",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["h1", "h2"]
+        },
+        "description": "Professional handyman services including drywall, doors, carpentry, deck repair, and home maintenance. Small jobs welcome. Serving St. Louis MO, Metro East Illinois, Ballwin, Chesterfield, O'Fallon IL, and Edwardsville IL."
+      })}} />
+
+      {/* BreadcrumbList Schema */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://herohandymanpro.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Handyman Services", "item": "https://herohandymanpro.com/handyman-services/" }
+        ]
+      })}} />
     </div>
   );
 }

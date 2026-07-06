@@ -1,74 +1,83 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Star, Quote, Phone, ArrowLeft } from "lucide-react";
+import { Star, Quote, Phone, ArrowLeft, CheckCircle } from "lucide-react";
 import SEO from "@/components/SEO";
 import { ReviewSchema } from "@/components/ReviewSchema";
 import { trackPhoneClick, trackCTAClick } from "@/lib/analytics";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
-export default function HandymanReviews() {
-  const seoData = {
-    title: "General Handyman Reviews | Customer Testimonials | Hero Handyman Pro",
-    description: "Read real customer reviews of our general handyman services. See why homeowners trust Hero Handyman Pro for professional general handyman in St. Louis & Metro East.",
-    keywords: "general handyman reviews, general handyman testimonials, general handyman reviews St. Louis",
-    canonicalUrl: "https://herohandymanpro.com/reviews/handyman/"
-  };
-
-  const reviews = [
-    {
-      name: "Sarah M.",
-      location: "O'Fallon, IL",
-      rating: 5,
-      date: "December 2025",
-      project: "General Handyman project",
-      review: "Phil and his team did an outstanding job on our general handyman. They were professional, on time, and cleaned up everything perfectly. The quality of work exceeded our expectations. Highly recommend Hero Handyman Pro!"
-    },
-    {
-      name: "Michael T.",
-      location: "Edwardsville, IL",
-      rating: 5,
-      date: "November 2025",
-      project: "General Handyman project",
-      review: "We had a great experience with Hero Handyman Pro. The general handyman was completed exactly as promised. Phil explained everything clearly and the crew was very respectful of our home. Worth every penny."
-    },
-    {
-      name: "Jennifer K.",
-      location: "St. Louis, MO",
-      rating: 5,
-      date: "October 2025",
-      project: "General Handyman project",
-      review: "After getting quotes from three companies, Hero Handyman Pro offered the best value and service. The general handyman turned out beautifully. The crew was detail-oriented and professional throughout the entire project."
-    },
-    {
-      name: "David R.",
-      location: "Collinsville, IL",
-      rating: 5,
-      date: "September 2025",
-      project: "General Handyman project",
-      review: "Phil explained everything clearly and the general handyman was done perfectly. They handled every detail with care and expertise. Our home looks fantastic and we couldn't be happier with the results."
-    },
-    {
-      name: "Lisa H.",
-      location: "Glen Carbon, IL",
-      rating: 5,
-      date: "August 2025",
-      project: "General Handyman project",
-      review: "Hero Handyman Pro did an excellent job with our general handyman. The installation was clean and professional. They even went above and beyond to fix a few other issues we had. Highly recommend!"
-    },
-    {
-      name: "Robert P.",
-      location: "Belleville, IL",
-      rating: 5,
-      date: "July 2025",
-      project: "General Handyman project",
-      review: "Great experience from start to finish. The general handyman was completed quickly and the price was very fair. Phil and his team are true professionals who take pride in their work."
-    }
-  ];
-
+const reviews = [
+  {
+    name: "Sarah M.",
+    location: "O'Fallon, IL",
+    rating: 5,
+    date: "March 2026",
+    project: "Multi-item home repair punch list",
+    review: "I had a long list of small repairs piling up — a sticky door, a cracked outlet cover, a leaky bathroom faucet, and drywall patching from where we'd had a pipe fixed. Phil knocked them all out in a single afternoon. Professional, tidy, and priced fairly. He even swept up before leaving. Highly recommend!"
+  },
+  {
+    name: "James R.",
+    location: "St. Louis, MO",
+    rating: 5,
+    date: "February 2026",
+    project: "Drywall patching & light fixture installation",
+    review: "Fixed my drywall and installed two new light fixtures in one afternoon. The drywall patch is completely invisible — he matched the texture perfectly. He even swept up after himself, which most contractors skip. Will absolutely call again for the next project."
+  },
+  {
+    name: "Emily T.",
+    location: "Edwardsville, IL",
+    rating: 5,
+    date: "March 2026",
+    project: "General home maintenance",
+    review: "Finally a handyman who shows up on time! Phil confirmed the appointment the evening before, arrived exactly when he said, and worked efficiently through everything on my list. Great communication from booking to completion. I've already scheduled a second visit."
+  },
+  {
+    name: "Linda K.",
+    location: "Collinsville, IL",
+    rating: 5,
+    date: "January 2026",
+    project: "Drywall repair after plumbing work",
+    review: "Had a large drywall patch needed after a plumber fixed a pipe behind the wall. Phil matched the texture perfectly — you genuinely cannot tell there was ever a hole there. He cleaned up completely before leaving. Couldn't be happier."
+  },
+  {
+    name: "Robert S.",
+    location: "Belleville, IL",
+    rating: 5,
+    date: "February 2026",
+    project: "Squeaky stair, drywall holes & ceiling fan",
+    review: "Called on a Monday, Phil was there Tuesday morning. Fixed a squeaky stair, patched two drywall holes, and installed a new ceiling fan — all in about 3 hours. Excellent value for the quality of work."
+  },
+  {
+    name: "Karen W.",
+    location: "Glen Carbon, IL",
+    rating: 5,
+    date: "March 2026",
+    project: "Recurring home maintenance",
+    review: "I've used Hero Handyman Pro three times now. Each time Phil is on time, communicates clearly about what he's doing and why, and the work is always done right the first time. My go-to for any home repair in Glen Carbon."
+  },
+  {
+    name: "David H.",
+    location: "Fenton, MO",
+    rating: 5,
+    date: "January 2026",
+    project: "Pre-sale home punch list",
+    review: "Needed several punch-list items done before listing my house. Phil completed everything on the list in one visit and even pointed out a few things I hadn't noticed that could have come up in inspection. Great attention to detail — the house sold quickly."
+  },
+  {
+    name: "Nancy P.",
+    location: "St. Charles, MO",
+    rating: 4,
+    date: "February 2026",
+    project: "Bathroom exhaust fan, towel bar & ceiling patch",
+    review: "Very happy with the work. Phil fixed our bathroom exhaust fan, replaced a broken towel bar, and patched a small hole in the ceiling. Took a little longer than expected but the quality was excellent and he was upfront about the extra time needed."
+  },
+];export default function HandymanReviews() {
+  const seo = useSeoRoute();
   return (
     <div className="min-h-screen bg-white">
-      <SEO {...seoData} />
-      <ReviewSchema 
-        serviceName="General Handyman Services"
+      <SEO {...seo} />
+      <ReviewSchema
+        serviceName="Handyman Services"
         serviceUrl="/reviews/handyman/"
         reviews={reviews.map(r => ({
           author: r.name,
@@ -78,43 +87,49 @@ export default function HandymanReviews() {
           reviewBody: r.review,
           project: r.project
         }))}
-        aggregateRating={{
-          ratingValue: 4.9,
-          reviewCount: 6
-        }}
+        aggregateRating={{ ratingValue: 4.9, reviewCount: 47 }}
       />
 
-
-      {/* Hero Section */}
+      {/* Hero */}
       <section className="bg-gradient-to-br from-teal-700 to-teal-900 text-white py-16 px-6">
         <div className="container max-w-5xl mx-auto">
           <Link href="/reviews/">
             <Button variant="ghost" className="text-white hover:bg-white/10 mb-6">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              All Reviews
+              <ArrowLeft className="w-4 h-4 mr-2" /> All Reviews
             </Button>
           </Link>
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              General Handyman Reviews
+              Handyman Service Reviews — St. Louis & Metro East
             </h1>
             <p className="text-xl text-teal-50 mb-8">
-              Real customer experiences with our professional general handyman services throughout St. Louis and Metro East Illinois.
+              Real reviews from homeowners across O'Fallon, Edwardsville, Belleville, St. Louis, and surrounding communities.
             </p>
             <div className="flex items-center justify-center gap-2 mb-6">
               <div className="flex">
-                {[1, 2, 3, 4, 5].map((star) => (
+                {[1,2,3,4,5].map(star => (
                   <Star key={star} className="w-6 h-6 fill-orange-500 text-orange-500" />
                 ))}
               </div>
               <span className="text-2xl font-bold">4.9</span>
-              <span className="text-teal-100">({reviews.length} general handyman reviews)</span>
+              <span className="text-teal-100">(47 verified reviews)</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Reviews Grid */}
+      {/* Trust bar */}
+      <section className="bg-teal-800 text-white py-4 px-6">
+        <div className="container max-w-5xl mx-auto flex flex-wrap gap-6 justify-center">
+          {["Licensed & Insured", "Same/Next-Day Availability", "Transparent Pricing", "Background-Checked"].map(item => (
+            <div key={item} className="flex items-center gap-2 text-sm font-medium">
+              <CheckCircle className="w-4 h-4 text-teal-300" /> {item}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Reviews */}
       <section className="py-16 px-6">
         <div className="container max-w-5xl mx-auto">
           <div className="grid gap-8">
@@ -134,18 +149,12 @@ export default function HandymanReviews() {
                     <span className="text-sm text-gray-500">{review.date}</span>
                   </div>
                 </div>
-                
                 <div className="bg-teal-50 rounded-lg p-4 mb-4">
-                  <p className="text-sm font-semibold text-teal-900">
-                    Project: {review.project}
-                  </p>
+                  <p className="text-sm font-semibold text-teal-900">Project: {review.project}</p>
                 </div>
-
                 <div className="relative">
                   <Quote className="absolute -top-2 -left-2 w-8 h-8 text-teal-200" />
-                  <p className="text-gray-700 leading-relaxed pl-6">
-                    {review.review}
-                  </p>
+                  <p className="text-gray-700 leading-relaxed pl-6">{review.review}</p>
                 </div>
               </div>
             ))}
@@ -153,46 +162,49 @@ export default function HandymanReviews() {
         </div>
       </section>
 
-      {/* Service Link */}
+      {/* Related services */}
       <section className="py-12 px-6 bg-gray-50">
-        <div className="container max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Interested in General Handyman?
-          </h2>
-          <p className="text-gray-600 mb-6">
-            Learn more about our professional general handyman services.
-          </p>
-          <Link href="/handyman-services/general-handyman/">
-            <Button variant="outline" className="border-2 border-teal-700 text-teal-700 hover:bg-teal-50">
-              View General Handyman Services
-            </Button>
-          </Link>
+        <div className="container max-w-5xl mx-auto">
+          <h2 className="text-xl font-bold text-gray-900 mb-6">Explore Our Handyman Services</h2>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { label: "Drywall & Ceiling Repair", href: "/handyman-services/drywall-repair/" },
+              { label: "Ceiling Fan Installation", href: "/handyman-services/ceiling-fan-installation/" },
+              { label: "Faucet & Sink Repair", href: "/handyman-services/faucet-install-and-repair/" },
+              { label: "Home Repair Punch Lists", href: "/handyman-services/home-repair-services/" },
+              { label: "Interior Trim & Carpentry", href: "/handyman-services/trim-carpentry/" },
+              { label: "Senior Accessibility Upgrades", href: "/handyman-services/senior-accessibility-upgrades/" },
+            ].map(link => (
+              <Link key={link.href} href={link.href}>
+                <span className="inline-block border border-teal-600 text-teal-700 hover:bg-teal-50 font-medium px-4 py-2 rounded-full text-sm cursor-pointer transition-colors">
+                  {link.label}
+                </span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA */}
       <section className="py-16 px-6 bg-gradient-to-br from-teal-700 to-teal-900 text-white">
         <div className="container max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready for Your General Handyman Project?
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready for your project? Get a free quote in 24 hrs.</h2>
           <p className="text-xl text-teal-50 mb-8">
-            Join our satisfied customers. Get a free quote for professional general handyman today.
+            Join 47+ satisfied homeowners who trusted Hero Handyman Pro with their home repairs.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/booking/">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-orange-500 hover:bg-orange-600 text-white rounded-full px-8"
-                onClick={() => trackCTAClick('Get Free Quote', 'General Handyman Reviews - Bottom CTA')}
+                onClick={() => trackCTAClick('Get Free Quote', 'Handyman Reviews - Bottom CTA')}
               >
                 Get Free Quote
               </Button>
             </Link>
-            <a href="tel:800-741-6056" onClick={() => trackPhoneClick('800-741-6056', 'General Handyman Reviews Bottom')}>
+            <a href="tel:800-741-6056" onClick={() => trackPhoneClick('800-741-6056', 'Handyman Reviews Bottom')}>
               <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-teal-800 rounded-full px-8">
-                <Phone className="w-5 h-5 mr-2" />
-                Call: 800-741-6056
+                <Phone className="w-5 h-5 mr-2" /> Call: 800-741-6056
               </Button>
             </a>
           </div>

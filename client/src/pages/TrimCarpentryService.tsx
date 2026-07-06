@@ -3,7 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Check, Ruler } from "lucide-react";
 import SEO from "@/components/SEO";
 
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 export default function TrimCarpentryService() {
+  const seo = useSeoRoute();
   const services = [
     "Baseboards",
     "Window & door casing",
@@ -22,11 +24,7 @@ export default function TrimCarpentryService() {
 
   return (
     <div className="flex flex-col">
-      <SEO 
-        title="Interior Trim & Finish Carpentry | Hero Handyman Pro"
-        description="Expert trim carpentry in St. Louis & Metro East. Baseboards, crown molding, window casing, and custom trim work. Precise cuts, tight joints, and professional finish ready for paint or stain."
-        canonicalUrl="https://herohandymanpro.com/handyman-services/trim-carpentry/"
-      />
+      <SEO {...seo} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#1f2937] via-[#020617] to-[#020617] text-white py-14 md:py-20 px-6">
         <div className="max-w-[1120px] mx-auto text-center">

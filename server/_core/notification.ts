@@ -13,16 +13,6 @@ const trimValue = (value: string): string => value.trim();
 const isNonEmptyString = (value: unknown): value is string =>
   typeof value === "string" && value.trim().length > 0;
 
-const buildEndpointUrl = (baseUrl: string): string => {
-  const normalizedBase = baseUrl.endsWith("/")
-    ? baseUrl
-    : `${baseUrl}/`;
-  return new URL(
-    "webdevtoken.v1.WebDevService/SendNotification",
-    normalizedBase
-  ).toString();
-};
-
 const validatePayload = (input: NotificationPayload): NotificationPayload => {
   if (!isNonEmptyString(input.title)) {
     throw new TRPCError({
@@ -57,49 +47,77 @@ const validatePayload = (input: NotificationPayload): NotificationPayload => {
   return { title, content };
 };
 
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
 /**
- * Dispatches a project-owner notification through the Manus Notification Service.
- * Returns `true` if the request was accepted, `false` when the upstream service
- * cannot be reached (callers can fall back to email/slack). Validation errors
- * bubble up as TRPC errors so callers can fix the payload.
+ * Dispatches an owner notification by email via Resend (https://resend.com).
+ *
+ * This replaces the old Manus-only "Built-in Forge" notification service,
+ * which only worked while the site was hosted inside a Manus sandbox. Every
+ * caller (contact form, VA lead form, bookings, estimator leads) already
+ * saves its own record to the database first, so a failed/misconfigured
+ * email here is a lost notification, not a lost lead - it can be resent by
+ * checking the database or admin pages.
+ *
+ * Setup required (see README / deployment notes):
+ *   RESEND_API_KEY   - API key from your Resend account (free tier is fine
+ *                       for typical lead volume on a small business site)
+ *   OWNER_EMAIL       - the email address that should receive lead alerts
+ *   RESEND_FROM_EMAIL - optional; defaults to Resend's shared sandbox sender.
+ *                       Verify your own domain in Resend and set this to
+ *                       something like "leads@herohandymanpro.com" for
+ *                       better deliverability once you're ready.
+ *
+ * Returns `true` if the email was accepted by Resend, `false` if not
+ * configured or if the request failed - callers should not treat a
+ * `false` return as fatal since the record is already saved.
  */
 export async function notifyOwner(
   payload: NotificationPayload
 ): Promise<boolean> {
   const { title, content } = validatePayload(payload);
 
-  if (!ENV.forgeApiUrl) {
-    throw new TRPCError({
-      code: "INTERNAL_SERVER_ERROR",
-      message: "Notification service URL is not configured.",
-    });
+  if (!ENV.resendApiKey) {
+    console.warn(
+      "[Notification] RESEND_API_KEY is not configured - skipping email alert (submission was still saved to the database)."
+    );
+    return false;
   }
 
-  if (!ENV.forgeApiKey) {
-    throw new TRPCError({
-      code: "INTERNAL_SERVER_ERROR",
-      message: "Notification service API key is not configured.",
-    });
+  if (!ENV.ownerEmail) {
+    console.warn(
+      "[Notification] OWNER_EMAIL is not configured - skipping email alert (submission was still saved to the database)."
+    );
+    return false;
   }
-
-  const endpoint = buildEndpointUrl(ENV.forgeApiUrl);
 
   try {
-    const response = await fetch(endpoint, {
+    const response = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
-        accept: "application/json",
-        authorization: `Bearer ${ENV.forgeApiKey}`,
         "content-type": "application/json",
-        "connect-protocol-version": "1",
+        authorization: `Bearer ${ENV.resendApiKey}`,
       },
-      body: JSON.stringify({ title, content }),
+      body: JSON.stringify({
+        from: ENV.resendFromEmail,
+        to: [ENV.ownerEmail],
+        subject: title,
+        html: `<pre style="font-family: inherit; white-space: pre-wrap;">${escapeHtml(content)}</pre>`,
+        text: content,
+      }),
     });
 
     if (!response.ok) {
       const detail = await response.text().catch(() => "");
       console.warn(
-        `[Notification] Failed to notify owner (${response.status} ${response.statusText})${
+        `[Notification] Resend request failed (${response.status} ${response.statusText})${
           detail ? `: ${detail}` : ""
         }`
       );
@@ -108,7 +126,7 @@ export async function notifyOwner(
 
     return true;
   } catch (error) {
-    console.warn("[Notification] Error calling notification service:", error);
+    console.warn("[Notification] Error calling Resend:", error);
     return false;
   }
 }

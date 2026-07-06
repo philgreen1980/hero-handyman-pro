@@ -2,18 +2,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function CarpentryServicesOFallon() {
-  const seoData = {
-    title: "Carpentry Services O'Fallon IL | Trim, Repairs & Custom Work",
-    description: "Professional carpentry services in O'Fallon IL. Trim repair, framing repairs, cabinet adjustments, and custom carpentry. Call Hero Handyman Pro at 800-741-6056.",
-    keywords: "carpentry services O'Fallon IL, trim repair O'Fallon, cabinet repair O'Fallon, custom carpentry O'Fallon IL",
-    canonicalUrl: "https://herohandymanpro.com/carpentry-services-ofallon-il"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -33,7 +27,7 @@ export default function CarpentryServicesOFallon() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -55,7 +49,7 @@ export default function CarpentryServicesOFallon() {
         <div className="max-w-[1120px] mx-auto">
           <h2 className="text-3xl font-bold mb-3 text-gray-900">Carpentry Services in O'Fallon</h2>
           <p className="text-gray-600 mb-10 max-w-2xl">
-            From replacing damaged baseboards to building custom built-ins, Hero Handyman Pro delivers quality carpentry work for O'Fallon homeowners. Phil has 30+ years of hands-on experience with finish carpentry, framing repairs, and custom woodwork.
+            From replacing damaged baseboards to building custom built-ins, Hero Handyman Pro delivers quality carpentry work for O'Fallon homeowners. Phil has 35+ years of hands-on experience with finish carpentry, framing repairs, and custom woodwork.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -135,7 +129,7 @@ export default function CarpentryServicesOFallon() {
             <div>
               <h2 className="text-3xl font-bold mb-4 text-gray-900">Why O'Fallon Homeowners Choose Hero Handyman Pro</h2>
               <p className="text-gray-600 mb-6">
-                Good carpentry is about precision and patience — two things Phil has refined over 30+ years of working in O'Fallon and the Metro East. Every cut is measured twice, every joint is tight, and every finished surface is ready for paint.
+                Good carpentry is about precision and patience — two things Phil has refined over 35+ years of working in O'Fallon and the Metro East. Every cut is measured twice, every joint is tight, and every finished surface is ready for paint.
               </p>
               <div className="space-y-4">
                 {[
@@ -188,7 +182,7 @@ export default function CarpentryServicesOFallon() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-teal-700 rounded-full px-8 py-6 text-lg font-bold transition-colors">
                 Get a Free Quote
               </Button>

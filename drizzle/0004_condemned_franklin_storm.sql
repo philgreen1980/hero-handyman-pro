@@ -1,0 +1,21 @@
+CREATE TABLE `estimator_leads` (
+	`id` int AUTO_INCREMENT NOT NULL,
+	`name` varchar(255) NOT NULL,
+	`phone` varchar(30) NOT NULL,
+	`email` varchar(320) NOT NULL,
+	`zip` varchar(10) NOT NULL,
+	`contactMethod` varchar(20) NOT NULL,
+	`timeline` varchar(50),
+	`description` text,
+	`projectType` varchar(100) NOT NULL,
+	`projectLabel` varchar(255) NOT NULL,
+	`billableHoursLow` int NOT NULL,
+	`billableHoursHigh` int NOT NULL,
+	`priceLow` int NOT NULL,
+	`priceHigh` int NOT NULL,
+	`materialLow` int NOT NULL,
+	`materialHigh` int NOT NULL,
+	`photoUrls` text,
+	`createdAt` timestamp NOT NULL DEFAULT (now()),
+	CONSTRAINT `estimator_leads_id` PRIMARY KEY(`id`)
+);

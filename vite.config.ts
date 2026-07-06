@@ -24,6 +24,16 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
+    // Improve chunk splitting for better caching
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ["react", "react-dom"],
+          router: ["wouter"],
+        },
+      },
+    },
+    chunkSizeWarningLimit: 500,
   },
   server: {
     host: true,

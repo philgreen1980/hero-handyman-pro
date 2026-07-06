@@ -2,18 +2,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DrywallRepairOFallon() {
-  const seoData = {
-    title: "Drywall Repair Near Me | O'Fallon IL Hole & Ceiling Repair",
-    description: "O'Fallon IL drywall repair — hole patching, ceiling repair, water damage & texture matching. Local handyman near you. Same-day available. Call 800-741-6056.",
-    keywords: "drywall repair O'Fallon IL, drywall patching O'Fallon, ceiling repair O'Fallon, water damaged drywall O'Fallon",
-    canonicalUrl: "https://herohandymanpro.com/drywall-repair-ofallon-il"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -33,7 +27,7 @@ export default function DrywallRepairOFallon() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -135,7 +129,7 @@ export default function DrywallRepairOFallon() {
             <div>
               <h2 className="text-3xl font-bold mb-4 text-gray-900">Why O'Fallon Homeowners Choose Hero Handyman Pro</h2>
               <p className="text-gray-600 mb-6">
-                We're a local handyman service based in the Metro East — not a national franchise. When you call us, you're talking to Phil, the owner, who has been doing drywall and home repairs in O'Fallon and the surrounding area for over 30 years.
+                We're a local handyman service based in the Metro East — not a national franchise. When you call us, you're talking to Phil, the owner, who has been doing drywall and home repairs in O'Fallon and the surrounding area for over 35 years.
               </p>
               <div className="space-y-4">
                 {[
@@ -238,7 +232,7 @@ export default function DrywallRepairOFallon() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-teal-700 rounded-full px-8 py-6 text-lg font-bold transition-colors">
                 Get a Free Quote
               </Button>

@@ -2,18 +2,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DoorInstallationStCharles() {
-  const seoData = {
-    title: "Door Installation St. Charles MO | Entry, Interior & Storm Door Install",
-    description: "Professional door installation in St. Charles MO — entry doors, interior doors, storm doors, and patio doors. Hero Handyman Pro serves all of St. Charles County.",
-    keywords: "door installation St. Charles MO, entry door installation St. Charles, interior door installation St. Charles MO, storm door installation St. Charles, patio door St. Charles County",
-    canonicalUrl: "https://herohandymanpro.com/door-installation-st-charles-mo"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -33,7 +27,7 @@ export default function DoorInstallationStCharles() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -204,7 +198,7 @@ export default function DoorInstallationStCharles() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-teal-600 text-teal-600 hover:bg-teal-50">
                 Get a Free Quote
               </Button>

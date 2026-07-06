@@ -3,7 +3,9 @@ import { Link } from 'wouter';
 import { Download, ArrowLeft, Printer } from 'lucide-react';
 import SEO from '@/components/SEO';
 
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 export default function GBPAudit() {
+  const seo = useSeoRoute();
   const [content, setContent] = useState('');
 
   useEffect(() => {
@@ -28,11 +30,7 @@ export default function GBPAudit() {
 
   return (
     <>
-      <SEO 
-        title="GBP Audit Checklist - Google Business Profile Optimization | Hero Handyman Pro"
-        description="Comprehensive Google Business Profile audit checklist for handyman businesses. Ensure your GBP is fully optimized with this printable checklist covering profile completeness, photos, reviews, and more."
-        canonicalUrl="/guide/gbp-audit"
-      />
+      <SEO {...seo} />
       
       {/* Header */}
       <div className="bg-teal-600 text-white py-6 print:hidden">

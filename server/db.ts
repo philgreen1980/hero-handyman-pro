@@ -1,6 +1,6 @@
 import { eq, desc } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users, bookings, InsertBooking, memberships, membershipSavings, InsertMembership, InsertMembershipSaving } from "../drizzle/schema";
+import { InsertUser, users, bookings, InsertBooking, memberships, membershipSavings, InsertMembership, InsertMembershipSaving, estimatorLeads, InsertEstimatorLead, contactSubmissions, InsertContactSubmission } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -185,4 +185,58 @@ export async function addMembershipSaving(saving: InsertMembershipSaving) {
 
   const result = await db.insert(membershipSavings).values(saving);
   return result;
+}
+
+export async function createEstimatorLead(lead: InsertEstimatorLead) {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  const result = await db.insert(estimatorLeads).values(lead);
+  return result;
+}
+
+export async function getEstimatorLeads() {
+  const db = await getDb();
+  if (!db) return [];
+  return db.select().from(estimatorLeads).orderBy(estimatorLeads.createdAt);
+}
+
+export async function updateEstimatorLeadStatus(id: number, status: string) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  const { eq } = await import("drizzle-orm");
+  return db.update(estimatorLeads).set({ status }).where(eq(estimatorLeads.id, id));
+}
+
+// Contact submissions: durable storage for the main "Contact Us" form and the
+// VA lead form, so a submission is never lost even if the owner-notification
+// email fails or isn't configured. Called BEFORE attempting the notification.
+export async function createContactSubmission(
+  submission: InsertContactSubmission
+): Promise<number | null> {
+  const db = await getDb();
+  if (!db) {
+    console.warn("[Database] Cannot save contact submission: database not available");
+    return null;
+  }
+  const result = await db.insert(contactSubmissions).values(submission);
+  const insertId = (result as unknown as [{ insertId: number }])[0]?.insertId;
+  return insertId ?? null;
+}
+
+export async function markContactSubmissionNotified(id: number): Promise<void> {
+  const db = await getDb();
+  if (!db || !id) return;
+  const { eq } = await import("drizzle-orm");
+  await db
+    .update(contactSubmissions)
+    .set({ notificationSent: "yes" })
+    .where(eq(contactSubmissions.id, id));
+}
+
+export async function getContactSubmissions() {
+  const db = await getDb();
+  if (!db) return [];
+  return db.select().from(contactSubmissions).orderBy(desc(contactSubmissions.createdAt));
 }

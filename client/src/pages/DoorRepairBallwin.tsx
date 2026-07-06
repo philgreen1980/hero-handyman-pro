@@ -2,18 +2,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star, AlertTriangle } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DoorRepairBallwin() {
-  const seoData = {
-    title: "Door Repair Ballwin MO | Interior, Exterior & Storm Doors",
-    description: "Professional door repair in Ballwin MO. Sticking doors, broken hardware, damaged frames, and storm door repairs. Call Hero Handyman Pro at 800-741-6056.",
-    keywords: "door repair Ballwin MO, door repair Ballwin, sticking door Ballwin, door frame repair Ballwin MO, storm door repair Ballwin",
-    canonicalUrl: "https://herohandymanpro.com/door-repair-ballwin-mo"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -33,7 +27,7 @@ export default function DoorRepairBallwin() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -153,7 +147,7 @@ export default function DoorRepairBallwin() {
             <div>
               <h2 className="text-3xl font-bold mb-4 text-gray-900">Why Ballwin Homeowners Choose Hero Handyman Pro</h2>
               <p className="text-gray-600 mb-6">
-                Phil has been repairing and installing doors in Ballwin and West County for over 30 years. He knows the common issues in each neighborhood and the door brands popular in Ballwin's construction eras — and he does the work himself, without subcontractors.
+                Phil has been repairing and installing doors in Ballwin and West County for over 35 years. He knows the common issues in each neighborhood and the door brands popular in Ballwin's construction eras — and he does the work himself, without subcontractors.
               </p>
               <div className="space-y-4">
                 {[
@@ -211,7 +205,7 @@ export default function DoorRepairBallwin() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-teal-700 rounded-full px-8 py-6 text-lg font-bold transition-colors">
                 Get a Free Quote
               </Button>

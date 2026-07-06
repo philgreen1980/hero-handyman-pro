@@ -3,21 +3,19 @@ import { Button } from "@/components/ui/button";
 import { Phone, MapPin, Check, Star, Shield, Clock, Wrench, Home, DoorOpen, Hammer } from "lucide-react";
 import SEO from "@/components/SEO";
 
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 export default function HandymanNearMe() {
+  const seo = useSeoRoute();
   return (
     <div className="flex flex-col">
-      <SEO
-        title="Handyman Near Me | Fast Local Home Repairs in Edwardsville IL"
-        description="Looking for a handyman near you? Fast local home repairs in Edwardsville, O'Fallon & Metro East IL. Drywall, doors, decks & more. Call 800-741-6056 for same-day service."
-        canonicalUrl="https://herohandymanpro.com/handyman-near-me"
-      />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#1f2937] via-[#020617] to-[#020617] text-white py-16 md:py-24 px-6">
         <div className="max-w-[1120px] mx-auto text-center">
           <p className="text-[#ff5b00] text-sm font-semibold uppercase tracking-widest mb-3">Serving Metro East IL & West St. Louis County MO</p>
           <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-tight mb-4">
-            Looking for a Reliable Handyman Near You?
+            Find a Reliable Handyman Near You
           </h1>
           <p className="text-[#e5e7eb] text-lg md:text-xl max-w-3xl mx-auto mb-8">
             Hero Handyman Pro is your trusted local handyman serving homeowners throughout Edwardsville, O'Fallon, Chesterfield, and the surrounding communities. We handle the repairs that matter — done right the first time, on time, and at a fair price.
@@ -29,7 +27,7 @@ export default function HandymanNearMe() {
                 Call Now: 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="rounded-full px-10 py-7 text-lg font-semibold border-2 border-white text-white hover:bg-white/10">
                 Get a Free Quote
               </Button>
@@ -172,7 +170,7 @@ export default function HandymanNearMe() {
                 {[
                   { title: "Trusted Local Handyman", desc: "We're not a franchise or a national chain. Phil and his team are your neighbors, with deep roots in the Metro East and West County communities we serve." },
                   { title: "Fast Response Times", desc: "We offer same-day and next-day availability for most repairs. When something breaks, you shouldn't have to wait weeks for a callback." },
-                  { title: "Experienced Craftsmanship", desc: "30+ years of hands-on residential repair experience. We've seen every type of home repair problem and know how to fix it right the first time." },
+                  { title: "Experienced Craftsmanship", desc: "35+ years of hands-on residential repair experience. We've seen every type of home repair problem and know how to fix it right the first time." },
                   { title: "High Customer Ratings", desc: "4.9-star average across Google reviews. Homeowners in Edwardsville, O'Fallon, and Chesterfield consistently recommend us to their neighbors." },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4">
@@ -287,7 +285,7 @@ export default function HandymanNearMe() {
                 Call Now: 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="rounded-full px-10 py-7 text-lg font-semibold border-2 border-white text-white hover:bg-white/10">
                 Get a Free Quote
               </Button>
@@ -296,6 +294,175 @@ export default function HandymanNearMe() {
           <p className="text-[#9ca3af] text-sm mt-6">Same-day and next-day availability for most repairs. Licensed & insured.</p>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-[720px] mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0b1220] mb-3">Frequently Asked Questions</h2>
+            <p className="text-[#4b5563]">Common questions from homeowners looking for a reliable handyman nearby.</p>
+          </div>
+          <div className="space-y-3">
+            {([
+              {
+                q: "Do you take small handyman jobs?",
+                a: "Yes. We specialize in small jobs and punch-list repairs that many contractors won't take, including drywall patches, door repairs, minor carpentry, and general home fixes."
+              },
+              {
+                q: "How quickly can you come out?",
+                a: "In many cases, we can schedule within a few days. We focus on fast, reliable service for homeowners who need repairs done without long delays."
+              },
+              {
+                q: "What areas do you serve?",
+                a: "We serve homeowners across St. Louis and Metro East, including Chesterfield, Ballwin, Des Peres, Edwardsville, and O'Fallon."
+              },
+              {
+                q: "What types of work do you do?",
+                a: "We handle drywall repair, door installation, deck repair, carpentry, fixture installation, and general home maintenance."
+              },
+              {
+                q: "How do I get a quote?",
+                a: "You can call us at 800-741-6056 or request a quote online. We'll review your project and help you get scheduled quickly."
+              },
+            ] as { q: string; a: string }[]).map((item, i) => (
+              <details key={i} className="group border border-[#e5e7eb] rounded-xl overflow-hidden">
+                <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer list-none font-semibold text-[#0b1220] hover:bg-[#f9fafb] transition-colors">
+                  {item.q}
+                  <span className="text-[#ff5b00] text-xl font-bold flex-shrink-0 group-open:rotate-45 transition-transform duration-200">+</span>
+                </summary>
+                <div className="px-6 pb-5 pt-1 text-[#4b5563] leading-relaxed">{item.a}</div>
+              </details>
+            ))}
+          </div>
+          <div className="mt-8 text-center">
+            <p className="text-[#6b7280] mb-4">Still have questions? We're happy to help.</p>
+            <a href="tel:800-741-6056">
+              <button className="bg-teal-700 hover:bg-teal-800 text-white font-bold px-8 h-12 rounded-full transition-colors inline-flex items-center gap-2">
+                <Phone className="w-4 h-4" /> Call 800-741-6056
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQPage Schema */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you take small handyman jobs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We specialize in small jobs and punch-list repairs that many contractors won't take, including drywall patches, door repairs, minor carpentry, and general home fixes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How quickly can you come out?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In many cases, we can schedule within a few days. We focus on fast, reliable service for homeowners who need repairs done without long delays."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What areas do you serve?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We serve homeowners across St. Louis and Metro East, including Chesterfield, Ballwin, Des Peres, Edwardsville, and O'Fallon."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What types of work do you do?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We handle drywall repair, door installation, deck repair, carpentry, fixture installation, and general home maintenance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I get a quote?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can call us at 800-741-6056 or request a quote online. We'll review your project and help you get scheduled quickly."
+            }
+          }
+        ]
+      })}} />
+
+      {/* LocalBusiness Schema */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "HomeAndConstructionBusiness",
+        "name": "Hero Handyman Pro",
+        "url": "https://herohandymanpro.com",
+        "telephone": "+1-800-741-6056",
+        "image": "https://herohandymanpro.com/images/og-image-hero-handyman-pro.png",
+        "description": "Trusted handyman services in Greater St. Louis and Metro East Illinois. Specializing in drywall repair, deck repair, door installation, carpentry, and general home repairs.",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "O'Fallon",
+          "addressRegion": "IL",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 38.5895,
+          "longitude": -89.9112
+        },
+        "areaServed": [
+          { "@type": "City", "name": "O'Fallon", "addressRegion": "IL" },
+          { "@type": "City", "name": "Edwardsville", "addressRegion": "IL" },
+          { "@type": "City", "name": "Belleville", "addressRegion": "IL" },
+          { "@type": "City", "name": "Collinsville", "addressRegion": "IL" },
+          { "@type": "City", "name": "Glen Carbon", "addressRegion": "IL" },
+          { "@type": "City", "name": "St. Louis", "addressRegion": "MO" },
+          { "@type": "City", "name": "Chesterfield", "addressRegion": "MO" },
+          { "@type": "City", "name": "Ballwin", "addressRegion": "MO" },
+          { "@type": "City", "name": "St. Charles", "addressRegion": "MO" },
+          { "@type": "City", "name": "O'Fallon", "addressRegion": "MO" }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Handyman Services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drywall Repair" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Deck Repair" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Door Installation" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Door Repair" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Carpentry Services" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "VA Home Modifications" } }
+          ]
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "07:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "08:00",
+            "closes": "16:00"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "127",
+          "bestRating": "5"
+        },
+        "sameAs": [
+          "https://www.facebook.com/herohandymanpro",
+          "https://www.google.com/maps?cid=herohandymanpro"
+        ]
+      })}} />
     </div>
   );
 }

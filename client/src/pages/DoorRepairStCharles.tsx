@@ -2,18 +2,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DoorRepairStCharles() {
-  const seoData = {
-    title: "Door Repair St. Charles MO | Sticking Doors, Frame Repair & Hardware",
-    description: "Professional door repair in St. Charles MO — sticking doors, frame repair, hardware replacement, and alignment. Hero Handyman Pro serves all of St. Charles County.",
-    keywords: "door repair St. Charles MO, sticking door repair St. Charles, door frame repair St. Charles MO, door hardware replacement St. Charles, door alignment St. Charles County",
-    canonicalUrl: "https://herohandymanpro.com/door-repair-st-charles-mo"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -33,7 +27,7 @@ export default function DoorRepairStCharles() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -176,7 +170,7 @@ export default function DoorRepairStCharles() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-teal-600 text-teal-600 hover:bg-teal-50">
                 Get a Free Quote
               </Button>

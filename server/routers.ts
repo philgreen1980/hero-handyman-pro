@@ -3,7 +3,7 @@ import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, router } from "./_core/trpc";
 import { z } from "zod";
-import { createBooking, getMembershipByEmail, getMembershipSavings } from "./db";
+import { createBooking, getMembershipByEmail, getMembershipSavings, createEstimatorLead, getEstimatorLeads, updateEstimatorLeadStatus, createContactSubmission, markContactSubmissionNotified } from "./db";
 import { notifyOwner } from "./_core/notification";
 
 export const appRouter = router({
@@ -59,12 +59,59 @@ export const appRouter = router({
         message: z.string().min(1, "Message is required"),
       }))
       .mutation(async ({ input }) => {
-        // Send notification to owner
-        await notifyOwner({
+        // Save first so the submission is never lost, even if the
+        // notification below fails or isn't configured.
+        const submissionId = await createContactSubmission({
+          source: "contact",
+          name: input.name,
+          email: input.email,
+          phone: input.phone,
+          message: input.message,
+        });
+
+        const sent = await notifyOwner({
           title: "New Contact Form Submission",
           content: `Name: ${input.name}\nEmail: ${input.email}\nPhone: ${input.phone}\nMessage: ${input.message}`
+        }).catch(() => false);
+
+        if (sent && submissionId) {
+          await markContactSubmissionNotified(submissionId);
+        }
+
+        return { success: true };
+      }),
+  }),
+
+  vaLead: router({
+    submit: publicProcedure
+      .input(z.object({
+        name: z.string().min(1, "Name is required"),
+        phone: z.string().min(10, "Phone number is required"),
+        email: z.string().email("Valid email is required"),
+        city: z.string().min(1, "City is required"),
+        projectDescription: z.string().optional(),
+        isVeteran: z.boolean(),
+      }))
+      .mutation(async ({ input }) => {
+        const submissionId = await createContactSubmission({
+          source: "va_lead",
+          name: input.name,
+          email: input.email,
+          phone: input.phone,
+          city: input.city,
+          message: input.projectDescription,
+          isVeteran: input.isVeteran ? "yes" : "no",
         });
-        
+
+        const sent = await notifyOwner({
+          title: "New VA Lead Form Submission",
+          content: `Name: ${input.name}\nPhone: ${input.phone}\nEmail: ${input.email}\nCity: ${input.city}\nVeteran/Assisting Veteran: ${input.isVeteran ? 'Yes' : 'No'}\nProject: ${input.projectDescription || 'Not provided'}`
+        }).catch(() => false);
+
+        if (sent && submissionId) {
+          await markContactSubmissionNotified(submissionId);
+        }
+
         return { success: true };
       }),
   }),
@@ -142,6 +189,51 @@ export const appRouter = router({
         return { schedulingLink };
       }),
   }),
-});
+  estimator: router({
+    submitLead: publicProcedure
+      .input(z.object({
+        name: z.string().min(1),
+        phone: z.string().min(7),
+        email: z.string().email(),
+        zip: z.string().min(5).max(10),
+        contactMethod: z.string(),
+        timeline: z.string().optional(),
+        description: z.string().optional(),
+        projectType: z.string(),
+        projectLabel: z.string(),
+        billableHoursLow: z.number(),
+        billableHoursHigh: z.number(),
+        priceLow: z.number(),
+        priceHigh: z.number(),
+        materialLow: z.number(),
+        materialHigh: z.number(),
+        photoUrls: z.array(z.string()).optional(),
+      }))
+      .mutation(async ({ input }) => {
+        // Save to database
+        await createEstimatorLead({
+          name: input.name,
+          phone: input.phone,
+          email: input.email,
+          zip: input.zip,
+          contactMethod: input.contactMethod,
+          timeline: input.timeline,
+          description: input.description,
+          projectType: input.projectType,
+          projectLabel: input.projectLabel,
+          billableHoursLow: input.billableHoursLow,
+          billableHoursHigh: input.billableHoursHigh,
+          priceLow: input.priceLow,
+          priceHigh: input.priceHigh,
+          materialLow: input.materialLow,
+          materialHigh: input.materialHigh,
+          photoUrls: input.photoUrls ? JSON.stringify(input.photoUrls) : null,
+        });
 
-export type AppRouter = typeof appRouter;
+        // Notify owner
+        const photoNote = input.photoUrls && input.photoUrls.length > 0
+          ? `\nPhotos: ${input.photoUrls.join(', ')}`
+          : '';
+        await notifyOwner({
+          title: `New Estimator Lead: ${input.projectLabel}`,
+          content: `Name: ${input.name}\nPhone: ${input.phone}\nEmail: ${input.email}\nZIP: ${input.zip}\nContact: ${input.contactMethod}\nTimeline: ${input.timeline ?? 'Not specified'}\n\nProject: ${input.projectLabel}\nEstimate: $${input.priceLow.toLocaleString()} – $${input.priceHigh.toLocaleString

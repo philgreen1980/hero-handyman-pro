@@ -2,18 +2,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DoorRepairCollinsville() {
-  const seoData = {
-    title: "Door Repair & Installation Collinsville IL | Hero Handyman Pro",
-    description: "Door repair and installation in Collinsville IL — sticking doors, broken frames, entry door replacement, storm doors, and hardware. Call Hero Handyman Pro today.",
-    keywords: "door repair Collinsville IL, door installation Collinsville, entry door replacement Collinsville IL, door frame repair Collinsville, storm door installation Collinsville IL",
-    canonicalUrl: "https://herohandymanpro.com/door-repair-collinsville-il"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -33,7 +27,7 @@ export default function DoorRepairCollinsville() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -198,7 +192,7 @@ export default function DoorRepairCollinsville() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-teal-600 text-teal-600 hover:bg-teal-50">
                 Get a Free Quote
               </Button>

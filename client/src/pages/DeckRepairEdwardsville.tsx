@@ -2,18 +2,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DeckRepairEdwardsville() {
-  const seoData = {
-    title: "Deck Repair Near Me | Edwardsville IL Deck Boards & Staining",
-    description: "Edwardsville IL deck repair — board replacement, staining, sealing, rail repair & wood rot. Local handyman near you. Same-day available. Call 800-741-6056.",
-    keywords: "deck repair Edwardsville IL, deck boards Edwardsville, railing repair Edwardsville, deck maintenance Edwardsville",
-    canonicalUrl: "https://herohandymanpro.com/deck-repair-edwardsville-il"
-  };
-
-  return (
+  const seo = useSeoRoute();  return (
     <div className="flex flex-col">
-      <SEO {...seoData} />
+      <SEO {...seo} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 px-6">
@@ -33,7 +27,7 @@ export default function DeckRepairEdwardsville() {
                   Call 800-741-6056
                 </Button>
               </a>
-              <Link href="/contact/">
+              <Link href="/#contact">
                 <Button variant="outline" className="rounded-full px-8 py-6 text-lg font-semibold border-white text-white hover:bg-white/10">
                   Get a Free Quote
                 </Button>
@@ -152,7 +146,7 @@ export default function DeckRepairEdwardsville() {
                 The Metro East climate is particularly tough on outdoor wood structures. Hot, humid summers cause wood to expand and contract, while freeze-thaw cycles in winter work fasteners loose and accelerate rot in any wood that holds moisture.
               </p>
               <p className="text-gray-600 mb-6">
-                Hero Handyman Pro has been repairing decks in Edwardsville and the surrounding area for over 30 years. We know what holds up in this climate and what doesn't.
+                Hero Handyman Pro has been repairing decks in Edwardsville and the surrounding area for over 35 years. We know what holds up in this climate and what doesn't.
               </p>
               <Link href="/gbp/edwardsville">
                 <span className="text-teal-700 hover:underline font-semibold cursor-pointer">
@@ -197,7 +191,7 @@ export default function DeckRepairEdwardsville() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/contact/">
+            <Link href="/#contact">
               <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-teal-700 rounded-full px-8 py-6 text-lg font-bold transition-colors">
                 Get a Free Quote
               </Button>
