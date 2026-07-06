@@ -236,4 +236,34 @@ export const appRouter = router({
           : '';
         await notifyOwner({
           title: `New Estimator Lead: ${input.projectLabel}`,
-          content: `Name: ${input.name}\nPhone: ${input.phone}\nEmail: ${input.email}\nZIP: ${input.zip}\nContact: ${input.contactMethod}\nTimeline: ${input.timeline ?? 'Not specified'}\n\nProject: ${input.projectLabel}\nEstimate: $${input.priceLow.toLocaleString()} – $${input.priceHigh.toLocaleString
+          content: `Name: ${input.name}\nPhone: ${input.phone}\nEmail: ${input.email}\nZIP: ${input.zip}\nContact: ${input.contactMethod}\nTimeline: ${input.timeline ?? 'Not specified'}\n\nProject: ${input.projectLabel}\nEstimate: $${input.priceLow.toLocaleString()} – $${input.priceHigh.toLocaleString()}\nBillable Hours: ${input.billableHoursLow}–${input.billableHoursHigh} hrs\n\nDescription: ${input.description ?? 'None'}${photoNote}`,
+        });
+
+        return { success: true };
+      }),
+
+    // Admin: get all leads (admin only)
+    getLeads: publicProcedure.query(async ({ ctx }) => {
+      // Only allow admin users
+      if (!ctx.user || ctx.user.role !== "admin") {
+        return [];
+      }
+      return getEstimatorLeads();
+    }),
+
+    // Admin: update lead status
+    updateLeadStatus: publicProcedure
+      .input(z.object({
+        id: z.number(),
+        status: z.enum(["new", "contacted", "quoted", "won", "lost"]),
+      }))
+      .mutation(async ({ input, ctx }) => {
+        if (!ctx.user || ctx.user.role !== "admin") {
+          return { success: false };
+        }
+        await updateEstimatorLeadStatus(input.id, input.status);
+        return { success: true };
+      }),
+  }),
+});
+export type AppRouter = typeof appRouter;
