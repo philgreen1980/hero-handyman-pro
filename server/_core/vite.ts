@@ -125,7 +125,16 @@ export function serveStatic(app: Express) {
       const pathname = req.originalUrl.split('?')[0].split('#')[0];
       const injected = injectRouteMeta(html, pathname);
       const statusCode = isKnownRoute(pathname) ? 200 : 404;
-      res.status(statusCode).set({ "Content-Type": "text/html" }).send(injected);
+      // HTML is generated per-request with per-page metadata baked in, and
+      // this content changes on every deploy — never let any edge/CDN cache
+      // hold onto a stale copy the way it just did after this file's own fix.
+      res
+        .status(statusCode)
+        .set({
+          "Content-Type": "text/html",
+          "Cache-Control": "no-cache, no-store, must-revalidate",
+        })
+        .send(injected);
     });
   });
 }
