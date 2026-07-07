@@ -568,4 +568,6 @@ export default function GBPDesPeres() {
           </div>
         </div>
       </section>
-    </
+    </div>
+  );
+}
