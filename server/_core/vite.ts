@@ -118,7 +118,11 @@ export function serveStatic(app: Express) {
         res.status(500).send("Internal Server Error");
         return;
       }
-      const pathname = req.path;
+      // req.path is unreliable here because this handler is mounted with
+      // app.use("*", ...) — Express can report the wrong (often "/") path
+      // in that case. originalUrl always has the real requested path.
+      // (Same fix already applied in the dev-mode Vite middleware branch above.)
+      const pathname = req.originalUrl.split('?')[0].split('#')[0];
       const injected = injectRouteMeta(html, pathname);
       const statusCode = isKnownRoute(pathname) ? 200 : 404;
       res.status(statusCode).set({ "Content-Type": "text/html" }).send(injected);
