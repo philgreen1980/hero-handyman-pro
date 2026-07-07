@@ -39,7 +39,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Looking for a reliable handyman near me? Hero Handyman Pro serves St. Louis, Collinsville, Edwardsville & the Metro East. Free quotes available!",
     h1: "Top-Rated Handyman Near You — St. Louis & Metro East",
     bodySnippet: "Hero Handyman Pro provides trusted handyman and home repair services across St. Louis, MO and Metro East Illinois. Services include drywall repair, deck repair, door installation, carpentry, and general home maintenance. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com",
+    canonicalUrl: "https://www.herohandymanpro.com",
     fullTitle: true,
   },
 
@@ -49,7 +49,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Decks, doors, drywall, carpentry, fixtures, and punch-list repairs across St. Louis & Metro East. We take the jobs other contractors skip. Small jobs always welcome.",
     h1: "Handyman Services in St. Louis & Metro East",
     bodySnippet: "Hero Handyman Pro handles drywall repair, deck restoration, door installation, carpentry, ceiling fans, and more. Serving St. Louis & Metro East IL. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-services/",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-services/",
     keywords: "handyman services, home repair services, small jobs handyman, punch list repairs",
   },
   "/services/": {
@@ -57,7 +57,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Hero Handyman Pro handles drywall repair, deck restoration, door installation, carpentry, ceiling fans, TV mounting, and more. Serving St. Louis & Metro East IL. We answer the phone.",
     h1: "Handyman Services in St. Louis & Metro East",
     bodySnippet: "Hero Handyman Pro provides handyman and home repair services across St. Louis, MO and Metro East Illinois. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/services/",
+    canonicalUrl: "https://www.herohandymanpro.com/services/",
   },
 
   // ── Core Service Pages ────────────────────────────────────────────────────
@@ -66,7 +66,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Professional deck staining and repair across St. Louis & Metro East IL. Hero Handyman Pro restores lasting color and protection. Call 800-741-6056 for a same-day estimate.",
     h1: "Professional Deck Repair & Staining",
     bodySnippet: "Hero Handyman Pro provides professional deck repair and staining services in St. Louis, MO and Metro East Illinois. Services include deck board replacement, railing repair, structural ledger repair, and stair replacement. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-services/deck-repair/",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-services/deck-repair/",
     keywords: "deck repair St Louis, deck repair near me, deck board replacement, deck staining",
   },
   "/handyman-services/deck-construction/": {
@@ -74,7 +74,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Custom deck builders serving St. Louis & Metro East IL. Hero Handyman Pro delivers expert craftsmanship and same-day estimates. Call 800-741-6056 to get started.",
     h1: "Custom Deck Building & Construction",
     bodySnippet: "Hero Handyman Pro builds custom decks across St. Louis, MO and Metro East Illinois. Services include new deck construction, composite decking, pressure-treated lumber, and custom railings. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-services/deck-construction/",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-services/deck-construction/",
     keywords: "deck builders St Louis, custom deck construction, new deck Metro East",
   },
   "/handyman-services/door-repair/": {
@@ -82,7 +82,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Expert door installation and repair across St. Louis & Metro East IL. Hero Handyman Pro handles entry, interior, and storm doors. Call 800-741-6056 to schedule service.",
     h1: "Door Installation & Repair Services",
     bodySnippet: "Hero Handyman Pro provides professional door installation and repair services in St. Louis, MO and Metro East Illinois. Services include entry door replacement, interior door installation, storm door installation, and door frame repair. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-services/door-repair/",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-services/door-repair/",
     keywords: "door installation near me, door replacement St Louis, entry door installation",
   },
   "/handyman-services/drywall-repair/": {
@@ -90,7 +90,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Ceiling and drywall repair across St. Louis & Metro East IL. Holes, cracks, water damage, and texture matching. Small jobs welcome. Call 800-741-6056 for a free quote.",
     h1: "Drywall Repair in St. Louis & Metro East",
     bodySnippet: "Hero Handyman Pro provides professional drywall repair services in St. Louis, MO and Metro East Illinois. Services include hole patching, water damage repair, ceiling crack repair, and retexturing. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-services/drywall-repair/",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-services/drywall-repair/",
     keywords: "drywall repair St Louis, drywall patching near me, hole repair drywall",
   },
   "/handyman-services/porch-repair/": {
@@ -98,7 +98,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Sagging porch floors, rotted posts, and damaged railings fixed right. Hero Handyman Pro serves St. Louis & Metro East IL. Free estimate. Call 800-741-6056.",
     h1: "Porch Repair in St. Louis & Metro East",
     bodySnippet: "Hero Handyman Pro provides professional porch repair services in St. Louis, MO and Metro East Illinois. Services include sagging floor repair, rotted post replacement, railing repair, and step replacement. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-services/porch-repair/",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-services/porch-repair/",
     keywords: "porch repair St Louis, porch repair Metro East, sagging porch repair",
   },
   "/handyman-services/window-installation/": {
@@ -106,7 +106,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Professional window installation and replacement in St. Louis & Metro East IL. Energy-efficient windows, fast installation, upfront pricing. Free estimate. Call 800-741-6056.",
     h1: "Window Installation & Replacement",
     bodySnippet: "Hero Handyman Pro provides professional window installation and replacement services in St. Louis, MO and Metro East Illinois. Energy-efficient replacement windows, storm windows, and custom sizing. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-services/window-installation/",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-services/window-installation/",
     keywords: "window installation St Louis, window replacement near me, energy efficient windows",
   },
   "/handyman-services/bathroom-remodeling/": {
@@ -114,7 +114,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Bathroom remodeling in St. Louis & Metro East. Full remodels, tile, vanity & fixture upgrades. Free quote in 24 hrs. Call 800-741-6056.",
     h1: "Bathroom Remodeling in St. Louis & Metro East",
     bodySnippet: "Hero Handyman Pro provides bathroom remodeling services in St. Louis, MO and Metro East Illinois. Services include full remodels, tile installation, vanity replacement, and fixture upgrades. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-services/bathroom-remodeling/",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-services/bathroom-remodeling/",
     keywords: "bathroom remodeling St Louis, bathroom renovation near me, bathroom remodel Metro East",
   },
   "/handyman-services/deck-building/": {
@@ -122,7 +122,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Custom deck building in St. Louis & Metro East IL. New decks, composite decking, and custom railings. Upfront pricing, expert craftsmanship. Free estimate.",
     h1: "Custom Deck Building in St. Louis & Metro East",
     bodySnippet: "Hero Handyman Pro builds custom decks across St. Louis, MO and Metro East Illinois. New deck construction, composite and pressure-treated options, custom railings. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-services/deck-building/",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-services/deck-building/",
     keywords: "deck building St Louis, custom deck builders, new deck construction Metro East",
   },
   "/handyman-services/trim-carpentry/": {
@@ -130,7 +130,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Interior trim, crown molding, baseboards, and finish carpentry in St. Louis & Metro East IL. Precision cuts, clean installs. Free estimate. Call 800-741-6056.",
     h1: "Interior Trim & Finish Carpentry",
     bodySnippet: "Hero Handyman Pro provides interior trim and finish carpentry services in St. Louis, MO and Metro East Illinois. Crown molding, baseboards, door casings, and custom millwork. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-services/trim-carpentry/",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-services/trim-carpentry/",
     keywords: "trim carpentry St Louis, crown molding installation, baseboard installation",
   },
   "/handyman-services/exterior-carpentry/": {
@@ -138,7 +138,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Expert exterior carpentry & wood rot repair in St. Louis. Fix trim, fascia, siding & porch damage. Stop rot before it spreads. Licensed, 35+ years experience!",
     h1: "Exterior Carpentry & Wood Rot Repair",
     bodySnippet: "Hero Handyman Pro provides exterior carpentry and wood rot repair in St. Louis, MO and Metro East Illinois. Trim, fascia, siding, and porch damage repair. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-services/exterior-carpentry/",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-services/exterior-carpentry/",
     keywords: "exterior carpentry St Louis, wood rot repair, fascia repair, siding repair",
   },
   "/handyman-services/ceiling-fan-installation/": {
@@ -146,7 +146,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Professional ceiling fan installation across St. Louis & Metro East IL. New installs, replacements, and light fixture swaps. Same-day service. Call 800-741-6056 for a free estimate.",
     h1: "Ceiling Fan Installation in St. Louis & Metro East",
     bodySnippet: "Hero Handyman Pro provides ceiling fan installation services in St. Louis, MO and Metro East Illinois. New installs, replacements, and light fixture upgrades. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-services/ceiling-fan-installation/",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-services/ceiling-fan-installation/",
     keywords: "ceiling fan installation St Louis, ceiling fan replacement, light fixture installation",
   },
   "/handyman-services/faucet-install-and-repair/": {
@@ -154,7 +154,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Fix dripping faucets, leaky sinks, running toilets & garbage disposals in St. Louis & Metro East. Same-day service available. Transparent pricing. Call 800-741-6056.",
     h1: "Faucet, Sink & Toilet Repair",
     bodySnippet: "Hero Handyman Pro provides faucet, sink, and toilet repair services in St. Louis, MO and Metro East Illinois. Dripping faucets, leaky sinks, running toilets, and garbage disposal repair. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-services/faucet-install-and-repair/",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-services/faucet-install-and-repair/",
     keywords: "faucet repair St Louis, leaky faucet fix, toilet repair Metro East",
   },
   "/handyman-services/home-repair-services/": {
@@ -162,7 +162,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "General home repair services in St. Louis & Metro East IL. Drywall, doors, decks, carpentry, fixtures, and punch-list repairs. Small jobs welcome. Call 800-741-6056.",
     h1: "General Home Repair Services",
     bodySnippet: "Hero Handyman Pro provides general home repair services in St. Louis, MO and Metro East Illinois. Drywall, doors, decks, carpentry, and punch-list repairs. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-services/home-repair-services/",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-services/home-repair-services/",
     keywords: "home repair services St Louis, general handyman, home maintenance Metro East",
   },
   "/handyman-services/senior-accessibility-upgrades/": {
@@ -170,7 +170,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Grab bars, ramps, handrails, and accessibility upgrades for seniors in St. Louis & Metro East IL. Safe, professional installation. Free estimate. Call 800-741-6056.",
     h1: "Senior Accessibility Upgrades in St. Louis & Metro East",
     bodySnippet: "Hero Handyman Pro provides senior accessibility upgrade services in St. Louis, MO and Metro East Illinois. Grab bars, ramps, handrails, and bathroom safety modifications. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-services/senior-accessibility-upgrades/",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-services/senior-accessibility-upgrades/",
     keywords: "senior accessibility upgrades, grab bar installation, wheelchair ramp St Louis",
   },
   "/handyman-services/fence-repair/": {
@@ -178,7 +178,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Professional fence repair in St. Louis & Metro East IL. Wood fence repair, post replacement, and panel fixes. Fast service, honest pricing. Free estimate. Call 800-741-6056.",
     h1: "Fence Repair in St. Louis & Metro East",
     bodySnippet: "Hero Handyman Pro provides fence repair services in St. Louis, MO and Metro East Illinois. Wood fence repair, post replacement, and panel fixes. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-services/fence-repair/",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-services/fence-repair/",
     keywords: "fence repair St Louis, wood fence repair, fence post replacement",
   },
 
@@ -188,7 +188,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Searching for a reliable handyman near me? Hero Handyman Pro serves St. Louis and the Metro East with expert home repairs, upfront pricing, and guaranteed results.",
     h1: "Find a Reliable Handyman Near You",
     bodySnippet: "Hero Handyman Pro is your local handyman serving St. Louis, MO and Metro East Illinois. Fast response, transparent pricing, and quality workmanship. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-near-me/",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-near-me/",
     fullTitle: true,
     keywords: "handyman near me, local handyman St Louis, handyman Metro East",
   },
@@ -199,7 +199,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "VA-funded home accessibility modifications in St. Louis & Metro East. Grab bars, ramps, widened doorways, and more. We work with HISA, SAH, and SHA grants.",
     h1: "VA Home Modifications for Veterans in St. Louis & Metro East",
     bodySnippet: "Hero Handyman Pro provides VA-funded home accessibility modifications for veterans in St. Louis, MO and Metro East Illinois. HISA, SAH, and SHA grant assistance. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/va-home-modifications",
+    canonicalUrl: "https://www.herohandymanpro.com/va-home-modifications",
     keywords: "VA home modifications, HISA grant contractor, veteran home accessibility",
   },
 
@@ -209,7 +209,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Flat-rate handyman service packages in St. Louis & Metro East. New home setup, safety checks, honey-do list help — all in one visit. Free quote in 24 hrs.",
     h1: "Handyman Service Packages — Flat-Rate Pricing",
     bodySnippet: "Hero Handyman Pro offers flat-rate handyman service packages in St. Louis, MO and Metro East Illinois. New home setup, safety checks, and honey-do list packages. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-service-packages",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-service-packages",
     keywords: "handyman service packages, flat rate handyman, handyman bundles",
   },
   "/handyman-packages/": {
@@ -217,7 +217,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Flat-rate handyman service packages in St. Louis & Metro East. New home setup, safety checks, honey-do list help — all in one visit. Free quote in 24 hrs.",
     h1: "Handyman Service Packages — Flat-Rate Pricing",
     bodySnippet: "Hero Handyman Pro offers flat-rate handyman service packages in St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-service-packages",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-service-packages",
     keywords: "handyman service packages, flat rate handyman",
   },
   "/handyman-pricing/": {
@@ -225,7 +225,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Real handyman pricing for St. Louis & Metro East IL. Drywall repair from $150, deck repair from $300, ceiling fan from $125. Honest local pricing from Hero Handyman Pro.",
     h1: "Handyman Pricing Guide — St. Louis & Metro East (2026)",
     bodySnippet: "Hero Handyman Pro provides transparent handyman pricing for St. Louis, MO and Metro East Illinois. Drywall repair, deck repair, door installation, and more. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-pricing/",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-pricing/",
     keywords: "handyman pricing St Louis, handyman cost Metro East, home repair cost 2026",
   },
   "/estimator/": {
@@ -233,7 +233,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Get an instant project estimate for handyman services in St. Louis & Metro East IL. Free, no-obligation quote in 24 hours. Call 800-741-6056.",
     h1: "Free Project Estimate",
     bodySnippet: "Get a free project estimate from Hero Handyman Pro for handyman services in St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/estimator/",
+    canonicalUrl: "https://www.herohandymanpro.com/estimator/",
   },
 
   // ── Service Areas Hub ─────────────────────────────────────────────────────
@@ -242,7 +242,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Hero Handyman Pro serves 8+ cities across Metro East IL & St. Louis. Edwardsville, O'Fallon, Belleville, Collinsville & more. Licensed, insured, 4.9★ reviews. Call today.",
     h1: "Service Areas — St. Louis & Metro East Illinois",
     bodySnippet: "Hero Handyman Pro serves homeowners across St. Louis, MO and Metro East Illinois including Edwardsville, O'Fallon, Belleville, Collinsville, Glen Carbon, St. Charles, and Fenton. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/",
     keywords: "handyman service areas, St Louis service area, Metro East handyman coverage",
   },
 
@@ -252,7 +252,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Top-rated handyman in O'Fallon, IL (62269). Deck repair, drywall, door installation & more. Serving Scott AFB area. Call 800-741-6056 for a free estimate.",
     h1: "Handyman Services in O'Fallon, IL",
     bodySnippet: "Hero Handyman Pro serves O'Fallon, IL homeowners with professional handyman services. Services include deck repair, drywall patching, door installation, and carpentry. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/ofallon-handyman-services/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/ofallon-handyman-services/",
     keywords: "handyman O'Fallon IL, O'Fallon handyman, home repairs O'Fallon Illinois",
   },
   "/service-areas/edwardsville-handyman-services/": {
@@ -260,7 +260,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Edwardsville's trusted handyman for deck repairs, drywall, painting, and home projects. Serving SIUE area and surrounding neighborhoods. Call for a free estimate!",
     h1: "Handyman Services in Edwardsville, IL",
     bodySnippet: "Hero Handyman Pro serves Edwardsville, IL homeowners with professional handyman services including drywall repair, deck repair, door installation, and general home maintenance. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/edwardsville-handyman-services/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/edwardsville-handyman-services/",
     keywords: "handyman Edwardsville IL, Edwardsville handyman, home repairs Edwardsville Illinois",
   },
   "/service-areas/belleville-handyman-services/": {
@@ -268,7 +268,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Belleville homeowners trust Hero Handyman Pro for deck repairs, drywall patches, door fixes, and more. Professional service with upfront pricing. Book today!",
     h1: "Handyman Services in Belleville, IL",
     bodySnippet: "Hero Handyman Pro provides handyman and home repair services in Belleville, IL. Services include deck repair, drywall patching, door installation, and carpentry. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/belleville-handyman-services/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/belleville-handyman-services/",
     keywords: "handyman Belleville IL, Belleville handyman, home repairs Belleville Illinois",
   },
   "/service-areas/collinsville-handyman-services/": {
@@ -276,7 +276,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Collinsville IL handyman for drywall, deck boards, door repairs, and carpentry. Serving Route 159 corridor and nearby neighborhoods. Honest pricing. Call 800-741-6056.",
     h1: "Collinsville IL Handyman — Fast Home Repairs & Small Projects",
     bodySnippet: "Hero Handyman Pro serves homeowners in Collinsville, IL with professional handyman services including drywall repair, door installation, deck repair, and carpentry. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/collinsville-handyman-services/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/collinsville-handyman-services/",
     keywords: "handyman Collinsville IL, Collinsville handyman, home repairs Collinsville",
   },
   "/service-areas/glen-carbon-handyman-services/": {
@@ -284,7 +284,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Glen Carbon IL handyman for growing families — deck repairs, door adjustments, drywall patches, and home maintenance before your to-do list grows. Call 800-741-6056.",
     h1: "Handyman Services in Glen Carbon, IL",
     bodySnippet: "Hero Handyman Pro provides handyman and home repair services in Glen Carbon, IL. Services include deck repair, drywall patching, door installation, and carpentry. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/glen-carbon-handyman-services/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/glen-carbon-handyman-services/",
     keywords: "handyman Glen Carbon IL, Glen Carbon handyman, home repairs Glen Carbon",
   },
   "/service-areas/st-charles-handyman-services/": {
@@ -292,7 +292,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "St. Charles MO handyman for Historic Main Street area homes and newer subdivisions alike — deck rot, door repairs, drywall, and carpentry. Free estimate. Call 800-741-6056.",
     h1: "Handyman Services in St. Charles, MO",
     bodySnippet: "Hero Handyman Pro provides handyman and home repair services in St. Charles, MO. Services include deck repair, drywall patching, door installation, and carpentry. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/st-charles-handyman-services/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/st-charles-handyman-services/",
     keywords: "handyman St Charles MO, St Charles handyman, home repairs St Charles Missouri",
   },
   "/service-areas/fenton-handyman-services/": {
@@ -300,7 +300,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Fenton MO handyman for Gravois Bluffs area homeowners — deck repair, door fixes, drywall patches, and punch-list jobs. Fast response, honest pricing. Call 800-741-6056.",
     h1: "Handyman Services in Fenton, MO",
     bodySnippet: "Hero Handyman Pro provides handyman and home repair services in Fenton, MO. Services include deck repair, drywall patching, door installation, and carpentry. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/fenton-handyman-services/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/fenton-handyman-services/",
     keywords: "handyman Fenton MO, Fenton handyman, home repairs Fenton Missouri",
   },
   "/service-areas/st-louis-mo-handyman/": {
@@ -308,7 +308,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "St. Louis homeowners call Hero Handyman Pro for the repairs that pile up — drywall holes, sticking doors, deck boards, and fixture swaps. Licensed, insured, 35+ yrs. 800-741-6056.",
     h1: "Handyman Services in St. Louis, MO",
     bodySnippet: "Hero Handyman Pro provides handyman and home repair services in St. Louis, MO. Services include drywall repair, deck repair, door installation, and carpentry. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/st-louis-mo-handyman/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/st-louis-mo-handyman/",
     keywords: "handyman St Louis MO, St Louis handyman, home repairs St Louis Missouri",
   },
 
@@ -318,7 +318,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Collinsville IL handyman for drywall, deck boards, door repairs, and carpentry. Serving Route 159 corridor and nearby neighborhoods. Honest pricing. Call 800-741-6056.",
     h1: "Handyman Services in Collinsville, IL",
     bodySnippet: "Hero Handyman Pro serves Collinsville, IL homeowners with professional handyman services. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-collinsville-il",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-collinsville-il",
     keywords: "handyman Collinsville IL, Collinsville handyman",
   },
   "/handyman-st-louis-mo": {
@@ -326,7 +326,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "St. Louis MO homeowners call Hero Handyman Pro for the repairs that pile up — drywall holes, sticking doors, deck boards, and fixture swaps. Licensed, insured, 35+ yrs. 800-741-6056.",
     h1: "Handyman Services in St. Louis, MO",
     bodySnippet: "Hero Handyman Pro serves St. Louis, MO homeowners with professional handyman services. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-st-louis-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-st-louis-mo",
     keywords: "handyman St Louis MO, St Louis handyman",
   },
   "/handyman-belleville-il": {
@@ -334,7 +334,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Belleville IL handyman for drywall, deck repair, door installation, and carpentry. Serving St. Clair County homeowners. Honest pricing. Call 800-741-6056.",
     h1: "Handyman Services in Belleville, IL",
     bodySnippet: "Hero Handyman Pro serves Belleville, IL homeowners with professional handyman services. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-belleville-il",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-belleville-il",
     keywords: "handyman Belleville IL, Belleville handyman",
   },
   "/handyman-kirkwood-mo": {
@@ -342,7 +342,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Trusted handyman in Kirkwood, MO. We specialize in older homes — drywall, doors, deck repair, and general home maintenance. Free estimates. Call 800-741-6056.",
     h1: "Handyman Services in Kirkwood, MO",
     bodySnippet: "Hero Handyman Pro provides reliable handyman services for homeowners in Kirkwood, MO. We specialize in older homes — drywall, doors, deck repair, and general home maintenance. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-kirkwood-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-kirkwood-mo",
     keywords: "handyman Kirkwood MO, home repair Kirkwood Missouri, deck repair Kirkwood, drywall repair Kirkwood",
   },
   "/handyman-chesterfield-mo": {
@@ -350,7 +350,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Trusted handyman in Chesterfield, MO (63005/63017). Deck repair, drywall, door installation & carpentry. Clarkson/Baxter corridor. Call 800-741-6056.",
     h1: "Handyman Services in Chesterfield, MO",
     bodySnippet: "Hero Handyman Pro provides handyman and home repair services in Chesterfield, MO. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-chesterfield-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-chesterfield-mo",
     keywords: "handyman Chesterfield MO, Chesterfield handyman",
   },
   "/handyman-ballwin-mo": {
@@ -358,7 +358,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Trusted handyman services in Ballwin, MO. Drywall repair, deck repair, door installation, and carpentry. Same-day and next-day availability.",
     h1: "Handyman Services in Ballwin, MO",
     bodySnippet: "Hero Handyman Pro serves Ballwin, MO homeowners with professional handyman services. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-ballwin-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-ballwin-mo",
     keywords: "handyman Ballwin MO, Ballwin handyman",
   },
   "/handyman-st-charles-mo": {
@@ -366,7 +366,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Professional handyman services in St. Charles, MO. Deck repair, drywall, door installation, and carpentry. Licensed and insured.",
     h1: "Handyman Services in St. Charles, MO",
     bodySnippet: "Hero Handyman Pro serves St. Charles, MO homeowners with professional handyman services. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-st-charles-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-st-charles-mo",
     keywords: "handyman St Charles MO, St Charles handyman",
   },
   "/handyman-ofallon-mo": {
@@ -374,7 +374,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Trusted handyman services in O'Fallon, MO. Drywall repair, deck repair, door installation, and carpentry. Fast response and free quotes.",
     h1: "Handyman Services in O'Fallon, MO",
     bodySnippet: "Hero Handyman Pro serves O'Fallon, MO homeowners with professional handyman services. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-ofallon-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-ofallon-mo",
     keywords: "handyman O'Fallon MO, O'Fallon MO handyman",
   },
   "/handyman-shiloh-il": {
@@ -382,7 +382,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Professional handyman services in Shiloh, IL. Deck repair, drywall, door installation, and carpentry. Fast response and free quotes.",
     h1: "Handyman Services in Shiloh, IL",
     bodySnippet: "Hero Handyman Pro serves Shiloh, IL homeowners with professional handyman services. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-shiloh-il",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-shiloh-il",
     keywords: "handyman Shiloh IL, Shiloh handyman",
   },
   "/handyman-swansea-il": {
@@ -390,7 +390,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Professional handyman services in Swansea, IL. Deck repair, drywall, door installation, and carpentry. Fast response and free quotes.",
     h1: "Handyman Services in Swansea, IL",
     bodySnippet: "Hero Handyman Pro serves Swansea, IL homeowners with professional handyman services. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-swansea-il",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-swansea-il",
     keywords: "handyman Swansea IL, Swansea handyman",
   },
   "/handyman-fairview-heights-il": {
@@ -398,7 +398,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Professional handyman services in Fairview Heights, IL. Deck repair, drywall, door installation, and carpentry. Fast response and free quotes.",
     h1: "Handyman Services in Fairview Heights, IL",
     bodySnippet: "Hero Handyman Pro serves Fairview Heights, IL homeowners with professional handyman services. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-fairview-heights-il",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-fairview-heights-il",
     keywords: "handyman Fairview Heights IL, Fairview Heights handyman",
   },
   "/handyman-services-st-louis/": {
@@ -406,7 +406,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Drywall, doors, decks, carpentry, fixtures, and punch-list repairs across St. Louis & Metro East. We take the jobs other contractors skip. Small jobs always welcome. Call 800-741-6056.",
     h1: "Handyman Services in St. Louis & Metro East",
     bodySnippet: "Hero Handyman Pro provides handyman services in St. Louis, MO and Metro East Illinois. Small jobs always welcome. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-services-st-louis/",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-services-st-louis/",
     keywords: "handyman St Louis, handyman services St Louis, home repair St Louis",
   },
 
@@ -416,7 +416,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Top-rated handyman in O'Fallon, IL (62269). Deck repair, drywall, door installation & more. Serving Scott AFB area. Call 800-741-6056 for a free estimate.",
     h1: "Handyman Services in O'Fallon, IL",
     bodySnippet: "Hero Handyman Pro serves O'Fallon, IL homeowners with professional handyman services. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/ofallon-il-handyman/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/ofallon-il-handyman/",
     keywords: "handyman O'Fallon IL, O'Fallon handyman",
   },
   "/service-areas/edwardsville-il-handyman/": {
@@ -424,7 +424,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Trusted handyman services in Edwardsville, IL. Drywall repair, deck repair, door installation, and carpentry. Fast response and free quotes.",
     h1: "Handyman Services in Edwardsville, IL",
     bodySnippet: "Hero Handyman Pro serves Edwardsville, IL homeowners with professional handyman services. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/edwardsville-il-handyman/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/edwardsville-il-handyman/",
     keywords: "handyman Edwardsville IL, Edwardsville handyman",
   },
   "/service-areas/belleville-il-handyman/": {
@@ -432,7 +432,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Professional handyman services in Belleville, IL. Deck repair, drywall, door installation, and carpentry. Licensed and insured.",
     h1: "Handyman Services in Belleville, IL",
     bodySnippet: "Hero Handyman Pro serves Belleville, IL homeowners with professional handyman services. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/belleville-il-handyman/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/belleville-il-handyman/",
     keywords: "handyman Belleville IL, Belleville handyman",
   },
   "/service-areas/collinsville-il-handyman/": {
@@ -440,7 +440,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Trusted handyman services in Collinsville, IL. Drywall repair, deck repair, door installation, and carpentry. Fast response and free quotes.",
     h1: "Handyman Services in Collinsville, IL",
     bodySnippet: "Hero Handyman Pro serves Collinsville, IL homeowners with professional handyman services. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/collinsville-il-handyman/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/collinsville-il-handyman/",
     keywords: "handyman Collinsville IL, Collinsville handyman",
   },
   "/service-areas/glen-carbon-il-handyman/": {
@@ -448,7 +448,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Professional handyman services in Glen Carbon, IL. Deck repair, drywall, door installation, and carpentry. Licensed and insured.",
     h1: "Handyman Services in Glen Carbon, IL",
     bodySnippet: "Hero Handyman Pro serves Glen Carbon, IL homeowners with professional handyman services. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/glen-carbon-il-handyman/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/glen-carbon-il-handyman/",
     keywords: "handyman Glen Carbon IL, Glen Carbon handyman",
   },
   "/service-areas/st-charles-mo-handyman/": {
@@ -456,7 +456,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Trusted handyman services in St. Charles, MO. Drywall repair, deck repair, door installation, and carpentry. Fast response and free quotes.",
     h1: "Handyman Services in St. Charles, MO",
     bodySnippet: "Hero Handyman Pro serves St. Charles, MO homeowners with professional handyman services. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/st-charles-mo-handyman/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/st-charles-mo-handyman/",
     keywords: "handyman St Charles MO, St Charles handyman",
   },
   "/service-areas/fenton-mo-handyman/": {
@@ -464,7 +464,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Professional handyman services in Fenton, MO. Deck repair, drywall, door installation, and carpentry. Licensed and insured.",
     h1: "Handyman Services in Fenton, MO",
     bodySnippet: "Hero Handyman Pro serves Fenton, MO homeowners with professional handyman services. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/fenton-mo-handyman/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/fenton-mo-handyman/",
     keywords: "handyman Fenton MO, Fenton handyman",
   },
   "/service-areas/chesterfield-mo/": {
@@ -472,7 +472,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Trusted handyman in Chesterfield, MO (63005/63017). Deck repair, drywall, door installation & carpentry. Clarkson/Baxter corridor. Call 800-741-6056.",
     h1: "Handyman Services in Chesterfield, MO",
     bodySnippet: "Hero Handyman Pro serves Chesterfield, MO homeowners with professional handyman services. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/chesterfield-mo/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/chesterfield-mo/",
     keywords: "handyman Chesterfield MO, Chesterfield handyman",
   },
   "/service-areas/st-louis-handyman-services/": {
@@ -480,7 +480,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Trusted handyman services in St. Louis, MO. Drywall repair, deck repair, door installation, and carpentry. Fast response and free quotes.",
     h1: "Handyman Services in St. Louis, MO",
     bodySnippet: "Hero Handyman Pro serves St. Louis, MO homeowners with professional handyman services. Call 800-741-6056 for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/st-louis-handyman-services/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/st-louis-handyman-services/",
     keywords: "handyman St Louis, St Louis handyman",
   },
 
@@ -490,7 +490,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Professional drywall repair in St. Louis & Metro East IL. Hole patching, water damage, ceiling cracks, and retexturing. Fast service, free estimate. Call 800-741-6056.",
     h1: "Drywall Repair Services",
     bodySnippet: "Hero Handyman Pro provides professional drywall repair services. Hole patching, water damage repair, ceiling crack repair, and retexturing. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/drywall-repair",
+    canonicalUrl: "https://www.herohandymanpro.com/drywall-repair",
     keywords: "drywall repair, hole patching, ceiling repair",
   },
   "/drywall-repair-ofallon-il": {
@@ -498,7 +498,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "O'Fallon IL drywall repair — hole patching, ceiling repair, water damage & texture matching. Scott AFB area homes trust Hero Handyman Pro for invisible repairs. Call 800-741-6056.",
     h1: "Drywall Repair in O'Fallon, IL",
     bodySnippet: "Hero Handyman Pro provides drywall repair in O'Fallon, IL. Hole patching, ceiling repair, water damage, and texture matching. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/drywall-repair-ofallon-il",
+    canonicalUrl: "https://www.herohandymanpro.com/drywall-repair-ofallon-il",
     keywords: "drywall repair O'Fallon IL, drywall patching O'Fallon",
   },
   "/drywall-repair-edwardsville-il": {
@@ -506,7 +506,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Edwardsville IL drywall repair — hole patching, ceiling repair, water damage & texture matching. SIUE area homes trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Drywall Repair in Edwardsville, IL",
     bodySnippet: "Hero Handyman Pro provides drywall repair in Edwardsville, IL. Hole patching, ceiling repair, water damage, and texture matching. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/drywall-repair-edwardsville-il",
+    canonicalUrl: "https://www.herohandymanpro.com/drywall-repair-edwardsville-il",
     keywords: "drywall repair Edwardsville IL, drywall patching Edwardsville",
   },
   "/drywall-repair-belleville-il": {
@@ -514,7 +514,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Belleville IL drywall repair — hole patching, ceiling repair, water damage & texture matching. St. Clair County homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Drywall Repair in Belleville, IL",
     bodySnippet: "Hero Handyman Pro provides drywall repair in Belleville, IL. Hole patching, ceiling repair, water damage, and texture matching. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/drywall-repair-belleville-il",
+    canonicalUrl: "https://www.herohandymanpro.com/drywall-repair-belleville-il",
     keywords: "drywall repair Belleville IL, drywall patching Belleville",
   },
   "/drywall-repair-collinsville-il": {
@@ -522,7 +522,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Collinsville IL drywall repair — hole patching, ceiling repair, water damage & texture matching. Route 159 corridor homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Drywall Repair in Collinsville, IL",
     bodySnippet: "Hero Handyman Pro provides drywall repair in Collinsville, IL. Hole patching, ceiling repair, water damage, and texture matching. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/drywall-repair-collinsville-il",
+    canonicalUrl: "https://www.herohandymanpro.com/drywall-repair-collinsville-il",
     keywords: "drywall repair Collinsville IL, drywall patching Collinsville",
   },
   "/drywall-repair-glen-carbon-il": {
@@ -530,7 +530,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Glen Carbon IL drywall repair — hole patching, ceiling repair, water damage & texture matching. Local handyman, honest pricing. Call 800-741-6056.",
     h1: "Drywall Repair in Glen Carbon, IL",
     bodySnippet: "Hero Handyman Pro provides drywall repair in Glen Carbon, IL. Hole patching, ceiling repair, water damage, and texture matching. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/drywall-repair-glen-carbon-il",
+    canonicalUrl: "https://www.herohandymanpro.com/drywall-repair-glen-carbon-il",
     keywords: "drywall repair Glen Carbon IL, drywall patching Glen Carbon",
   },
   "/drywall-repair-chesterfield-mo": {
@@ -538,7 +538,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Chesterfield MO drywall repair — hole patching, water-damaged drywall, ceiling crack repair, and texture matching. West County homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Drywall Repair in Chesterfield, MO",
     bodySnippet: "Hero Handyman Pro provides drywall repair in Chesterfield, MO. Hole patching, ceiling repair, water damage, and texture matching. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/drywall-repair-chesterfield-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/drywall-repair-chesterfield-mo",
     keywords: "drywall repair Chesterfield MO, drywall patching Chesterfield",
   },
   "/drywall-repair-ballwin-mo": {
@@ -546,7 +546,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Ballwin MO drywall repair — hole patching, water-damaged drywall, ceiling crack repair, and texture matching. West County homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Drywall Repair in Ballwin, MO",
     bodySnippet: "Hero Handyman Pro provides drywall repair in Ballwin, MO. Hole patching, ceiling repair, water damage, and texture matching. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/drywall-repair-ballwin-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/drywall-repair-ballwin-mo",
     keywords: "drywall repair Ballwin MO, drywall patching Ballwin",
   },
   "/drywall-repair-ofallon-mo": {
@@ -554,7 +554,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "O'Fallon MO drywall repair — hole patching, water-damaged drywall, ceiling crack repair, and texture matching. West County homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Drywall Repair in O'Fallon, MO",
     bodySnippet: "Hero Handyman Pro provides drywall repair in O'Fallon, MO. Hole patching, ceiling repair, water damage, and texture matching. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/drywall-repair-ofallon-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/drywall-repair-ofallon-mo",
     keywords: "drywall repair O'Fallon MO, drywall patching O'Fallon MO",
   },
   "/drywall-repair-st-charles-mo": {
@@ -562,7 +562,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "St. Charles MO drywall repair — hole patching, ceiling repair, water damage, and texture matching. Serving Historic Main Street area and all of St. Charles County. Call 800-741-6056.",
     h1: "Drywall Repair in St. Charles, MO",
     bodySnippet: "Hero Handyman Pro provides drywall repair in St. Charles, MO. Hole patching, ceiling repair, water damage, and texture matching. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/drywall-repair-st-charles-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/drywall-repair-st-charles-mo",
     keywords: "drywall repair St Charles MO, drywall patching St Charles",
   },
 
@@ -572,7 +572,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Rotted deck boards, wobbly railings, or soft spots underfoot? Hero Handyman Pro fixes decks across St. Louis & Metro East — boards, rails, ledgers, and stairs. Free estimate.",
     h1: "Deck Repair in St. Louis & Metro East",
     bodySnippet: "Hero Handyman Pro provides deck repair services across St. Louis, MO and Metro East Illinois. Deck board replacement, railing repair, structural repair, and staining. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/deck-repair",
+    canonicalUrl: "https://www.herohandymanpro.com/deck-repair",
     keywords: "deck repair St Louis, deck repair near me, deck board replacement",
   },
   "/deck-repair-ofallon-il": {
@@ -580,7 +580,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "O'Fallon IL deck repair — rotted boards, wobbly railings, soft spots, and staining. Scott AFB area homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Deck Repair in O'Fallon, IL",
     bodySnippet: "Hero Handyman Pro provides deck repair in O'Fallon, IL. Deck board replacement, railing repair, rot repair, and staining. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/deck-repair-ofallon-il",
+    canonicalUrl: "https://www.herohandymanpro.com/deck-repair-ofallon-il",
     keywords: "deck repair O'Fallon IL, deck repair O'Fallon Illinois",
   },
   "/deck-repair-edwardsville-il": {
@@ -588,7 +588,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Edwardsville IL deck repair — rotted boards, wobbly railings, soft spots, and staining. SIUE area homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Deck Repair in Edwardsville, IL",
     bodySnippet: "Hero Handyman Pro provides deck repair in Edwardsville, IL. Deck board replacement, railing repair, rot repair, and staining. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/deck-repair-edwardsville-il",
+    canonicalUrl: "https://www.herohandymanpro.com/deck-repair-edwardsville-il",
     keywords: "deck repair Edwardsville IL, deck repair Edwardsville Illinois",
   },
   "/deck-repair-belleville-il": {
@@ -596,7 +596,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Belleville IL deck repair — rotted boards, wobbly railings, soft spots, and staining. St. Clair County homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Deck Repair in Belleville, IL",
     bodySnippet: "Hero Handyman Pro provides deck repair in Belleville, IL. Deck board replacement, railing repair, rot repair, and staining. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/deck-repair-belleville-il",
+    canonicalUrl: "https://www.herohandymanpro.com/deck-repair-belleville-il",
     keywords: "deck repair Belleville IL, deck repair Belleville Illinois",
   },
   "/deck-repair-collinsville-il": {
@@ -604,7 +604,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Collinsville IL deck repair — rotted boards, wobbly railings, soft spots, and staining. Route 159 corridor homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Deck Repair in Collinsville, IL",
     bodySnippet: "Hero Handyman Pro provides deck repair in Collinsville, IL. Deck board replacement, railing repair, rot repair, and staining. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/deck-repair-collinsville-il",
+    canonicalUrl: "https://www.herohandymanpro.com/deck-repair-collinsville-il",
     keywords: "deck repair Collinsville IL, deck repair Collinsville Illinois",
   },
   "/deck-repair-glen-carbon-il": {
@@ -612,7 +612,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Glen Carbon IL deck repair — rotted boards, wobbly railings, soft spots, and staining. Local handyman, honest pricing. Call 800-741-6056.",
     h1: "Deck Repair in Glen Carbon, IL",
     bodySnippet: "Hero Handyman Pro provides deck repair in Glen Carbon, IL. Deck board replacement, railing repair, rot repair, and staining. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/deck-repair-glen-carbon-il",
+    canonicalUrl: "https://www.herohandymanpro.com/deck-repair-glen-carbon-il",
     keywords: "deck repair Glen Carbon IL, deck repair Glen Carbon Illinois",
   },
   "/deck-repair-chesterfield-mo": {
@@ -620,7 +620,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Chesterfield MO deck repair — rotted boards, wobbly railings, soft spots, and staining. West County homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Deck Repair in Chesterfield, MO",
     bodySnippet: "Hero Handyman Pro provides deck repair in Chesterfield, MO. Deck board replacement, railing repair, rot repair, and staining. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/deck-repair-chesterfield-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/deck-repair-chesterfield-mo",
     keywords: "deck repair Chesterfield MO, deck repair Chesterfield Missouri",
   },
   "/deck-repair-ballwin-mo": {
@@ -628,7 +628,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Ballwin MO deck repair — rotted boards, wobbly railings, soft spots, and staining. West County homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Deck Repair in Ballwin, MO",
     bodySnippet: "Hero Handyman Pro provides deck repair in Ballwin, MO. Deck board replacement, railing repair, rot repair, and staining. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/deck-repair-ballwin-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/deck-repair-ballwin-mo",
     keywords: "deck repair Ballwin MO, deck repair Ballwin Missouri",
   },
   "/deck-repair-ofallon-mo": {
@@ -636,7 +636,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "O'Fallon MO deck repair — rotted boards, wobbly railings, soft spots, and staining. West County homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Deck Repair in O'Fallon, MO",
     bodySnippet: "Hero Handyman Pro provides deck repair in O'Fallon, MO. Deck board replacement, railing repair, rot repair, and staining. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/deck-repair-ofallon-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/deck-repair-ofallon-mo",
     keywords: "deck repair O'Fallon MO, deck repair O'Fallon Missouri",
   },
   "/deck-repair-st-charles-mo": {
@@ -644,7 +644,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "St. Charles MO deck repair — rotted boards, wobbly railings, soft spots, and staining. Historic Main Street area homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Deck Repair in St. Charles, MO",
     bodySnippet: "Hero Handyman Pro provides deck repair in St. Charles, MO. Deck board replacement, railing repair, rot repair, and staining. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/deck-repair-st-charles-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/deck-repair-st-charles-mo",
     keywords: "deck repair St Charles MO, deck repair St Charles Missouri",
   },
 
@@ -654,7 +654,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Professional door installation and repair in St. Louis & Metro East IL. Entry, interior & storm doors. Fast service, honest pricing. Free estimate. Call 800-741-6056.",
     h1: "Door Installation & Repair",
     bodySnippet: "Hero Handyman Pro provides door installation and repair services across St. Louis, MO and Metro East Illinois. Entry doors, interior doors, storm doors, and frame repair. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/door-installation",
+    canonicalUrl: "https://www.herohandymanpro.com/door-installation",
     keywords: "door installation St Louis, door repair near me",
   },
   "/door-installation-ofallon-il": {
@@ -662,7 +662,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "O'Fallon IL door installation — entry doors, interior doors, storm doors, and frame repair. Scott AFB area homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Door Installation in O'Fallon, IL",
     bodySnippet: "Hero Handyman Pro provides door installation in O'Fallon, IL. Entry doors, interior doors, storm doors, and frame repair. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/door-installation-ofallon-il",
+    canonicalUrl: "https://www.herohandymanpro.com/door-installation-ofallon-il",
     keywords: "door installation O'Fallon IL, door replacement O'Fallon",
   },
   "/door-installation-edwardsville-il": {
@@ -670,7 +670,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Edwardsville IL door installation — entry doors, interior doors, storm doors, and frame repair. SIUE area homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Door Installation in Edwardsville, IL",
     bodySnippet: "Hero Handyman Pro provides door installation in Edwardsville, IL. Entry doors, interior doors, storm doors, and frame repair. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/door-installation-edwardsville-il",
+    canonicalUrl: "https://www.herohandymanpro.com/door-installation-edwardsville-il",
     keywords: "door installation Edwardsville IL, door replacement Edwardsville",
   },
   "/door-installation-belleville-il": {
@@ -678,7 +678,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Belleville IL door installation — entry doors, interior doors, storm doors, and frame repair. St. Clair County homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Door Installation in Belleville, IL",
     bodySnippet: "Hero Handyman Pro provides door installation in Belleville, IL. Entry doors, interior doors, storm doors, and frame repair. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/door-installation-belleville-il",
+    canonicalUrl: "https://www.herohandymanpro.com/door-installation-belleville-il",
     keywords: "door installation Belleville IL, door replacement Belleville",
   },
   "/door-installation-collinsville-il": {
@@ -686,7 +686,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Collinsville IL door installation — entry doors, interior doors, storm doors, and frame repair. Route 159 corridor homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Door Installation in Collinsville, IL",
     bodySnippet: "Hero Handyman Pro provides door installation in Collinsville, IL. Entry doors, interior doors, storm doors, and frame repair. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/door-installation-collinsville-il",
+    canonicalUrl: "https://www.herohandymanpro.com/door-installation-collinsville-il",
     keywords: "door installation Collinsville IL, door replacement Collinsville",
   },
   "/door-installation-glen-carbon-il": {
@@ -694,7 +694,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Glen Carbon IL door installation — entry doors, interior doors, storm doors, and frame repair. Local handyman, honest pricing. Call 800-741-6056.",
     h1: "Door Installation in Glen Carbon, IL",
     bodySnippet: "Hero Handyman Pro provides door installation in Glen Carbon, IL. Entry doors, interior doors, storm doors, and frame repair. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/door-installation-glen-carbon-il",
+    canonicalUrl: "https://www.herohandymanpro.com/door-installation-glen-carbon-il",
     keywords: "door installation Glen Carbon IL, door replacement Glen Carbon",
   },
   "/door-installation-chesterfield-mo": {
@@ -702,7 +702,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Chesterfield MO door installation — entry doors, interior doors, storm doors, and frame repair. West County homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Door Installation in Chesterfield, MO",
     bodySnippet: "Hero Handyman Pro provides door installation in Chesterfield, MO. Entry doors, interior doors, storm doors, and frame repair. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/door-installation-chesterfield-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/door-installation-chesterfield-mo",
     keywords: "door installation Chesterfield MO, door replacement Chesterfield",
   },
   "/door-installation-ballwin-mo": {
@@ -710,7 +710,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Ballwin MO door installation — entry doors, interior doors, storm doors, and frame repair. West County homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Door Installation in Ballwin, MO",
     bodySnippet: "Hero Handyman Pro provides door installation in Ballwin, MO. Entry doors, interior doors, storm doors, and frame repair. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/door-installation-ballwin-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/door-installation-ballwin-mo",
     keywords: "door installation Ballwin MO, door replacement Ballwin",
   },
   "/door-installation-ofallon-mo": {
@@ -718,7 +718,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "O'Fallon MO door installation — entry doors, interior doors, storm doors, and frame repair. West County homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Door Installation in O'Fallon, MO",
     bodySnippet: "Hero Handyman Pro provides door installation in O'Fallon, MO. Entry doors, interior doors, storm doors, and frame repair. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/door-installation-ofallon-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/door-installation-ofallon-mo",
     keywords: "door installation O'Fallon MO, door replacement O'Fallon MO",
   },
   "/door-installation-st-charles-mo": {
@@ -726,7 +726,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "St. Charles MO door installation — entry doors, interior doors, storm doors, and frame repair. Historic Main Street area homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Door Installation in St. Charles, MO",
     bodySnippet: "Hero Handyman Pro provides door installation in St. Charles, MO. Entry doors, interior doors, storm doors, and frame repair. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/door-installation-st-charles-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/door-installation-st-charles-mo",
     keywords: "door installation St Charles MO, door replacement St Charles",
   },
   "/door-repair-ofallon-il": {
@@ -734,7 +734,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "O'Fallon IL door repair — sticking doors, broken frames, hardware repair, and entry door replacement. Scott AFB area homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Door Repair in O'Fallon, IL",
     bodySnippet: "Hero Handyman Pro provides door repair in O'Fallon, IL. Sticking doors, broken frames, hardware repair, and door replacement. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/door-repair-ofallon-il",
+    canonicalUrl: "https://www.herohandymanpro.com/door-repair-ofallon-il",
     keywords: "door repair O'Fallon IL, door repair near me O'Fallon",
   },
   "/door-repair-edwardsville-il": {
@@ -742,7 +742,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Edwardsville IL door repair — sticking doors, broken frames, hardware repair, and entry door replacement. SIUE area homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Door Repair in Edwardsville, IL",
     bodySnippet: "Hero Handyman Pro provides door repair in Edwardsville, IL. Sticking doors, broken frames, hardware repair, and door replacement. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/door-repair-edwardsville-il",
+    canonicalUrl: "https://www.herohandymanpro.com/door-repair-edwardsville-il",
     keywords: "door repair Edwardsville IL, door repair near me Edwardsville",
   },
   "/door-repair-belleville-il": {
@@ -750,7 +750,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Belleville IL door repair — sticking doors, broken frames, hardware repair, and entry door replacement. St. Clair County homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Door Repair in Belleville, IL",
     bodySnippet: "Hero Handyman Pro provides door repair in Belleville, IL. Sticking doors, broken frames, hardware repair, and door replacement. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/door-repair-belleville-il",
+    canonicalUrl: "https://www.herohandymanpro.com/door-repair-belleville-il",
     keywords: "door repair Belleville IL, door repair near me Belleville",
   },
   "/door-repair-collinsville-il": {
@@ -758,7 +758,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Collinsville IL door repair — sticking doors, broken frames, hardware repair, and entry door replacement. Route 159 corridor homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Door Repair in Collinsville, IL",
     bodySnippet: "Hero Handyman Pro provides door repair in Collinsville, IL. Sticking doors, broken frames, hardware repair, and door replacement. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/door-repair-collinsville-il",
+    canonicalUrl: "https://www.herohandymanpro.com/door-repair-collinsville-il",
     keywords: "door repair Collinsville IL, door repair near me Collinsville",
   },
   "/door-repair-glen-carbon-il": {
@@ -766,7 +766,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Glen Carbon IL door repair — sticking doors, broken frames, hardware repair, and entry door replacement. Local handyman, honest pricing. Call 800-741-6056.",
     h1: "Door Repair in Glen Carbon, IL",
     bodySnippet: "Hero Handyman Pro provides door repair in Glen Carbon, IL. Sticking doors, broken frames, hardware repair, and door replacement. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/door-repair-glen-carbon-il",
+    canonicalUrl: "https://www.herohandymanpro.com/door-repair-glen-carbon-il",
     keywords: "door repair Glen Carbon IL, door repair near me Glen Carbon",
   },
   "/door-repair-chesterfield-mo": {
@@ -774,7 +774,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Chesterfield MO door repair — sticking doors, broken frames, hardware repair, and entry door replacement. West County homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Door Repair in Chesterfield, MO",
     bodySnippet: "Hero Handyman Pro provides door repair in Chesterfield, MO. Sticking doors, broken frames, hardware repair, and door replacement. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/door-repair-chesterfield-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/door-repair-chesterfield-mo",
     keywords: "door repair Chesterfield MO, door repair near me Chesterfield",
   },
   "/door-repair-ballwin-mo": {
@@ -782,7 +782,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Ballwin MO door repair — sticking doors, broken frames, hardware repair, and entry door replacement. West County homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Door Repair in Ballwin, MO",
     bodySnippet: "Hero Handyman Pro provides door repair in Ballwin, MO. Sticking doors, broken frames, hardware repair, and door replacement. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/door-repair-ballwin-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/door-repair-ballwin-mo",
     keywords: "door repair Ballwin MO, door repair near me Ballwin",
   },
   "/door-repair-ofallon-mo": {
@@ -790,7 +790,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "O'Fallon MO door repair — sticking doors, broken frames, hardware repair, and entry door replacement. West County homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Door Repair in O'Fallon, MO",
     bodySnippet: "Hero Handyman Pro provides door repair in O'Fallon, MO. Sticking doors, broken frames, hardware repair, and door replacement. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/door-repair-ofallon-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/door-repair-ofallon-mo",
     keywords: "door repair O'Fallon MO, door repair near me O'Fallon MO",
   },
   "/door-repair-st-charles-mo": {
@@ -798,7 +798,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "St. Charles MO door repair — sticking doors, broken frames, hardware repair, and entry door replacement. Historic Main Street area homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Door Repair in St. Charles, MO",
     bodySnippet: "Hero Handyman Pro provides door repair in St. Charles, MO. Sticking doors, broken frames, hardware repair, and door replacement. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/door-repair-st-charles-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/door-repair-st-charles-mo",
     keywords: "door repair St Charles MO, door repair near me St Charles",
   },
 
@@ -808,7 +808,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "O'Fallon IL carpentry services — interior trim, exterior carpentry, deck repair, and wood rot repair. Scott AFB area homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Carpentry Services in O'Fallon, IL",
     bodySnippet: "Hero Handyman Pro provides carpentry services in O'Fallon, IL. Interior trim, exterior carpentry, deck repair, and wood rot repair. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/carpentry-services-ofallon-il",
+    canonicalUrl: "https://www.herohandymanpro.com/carpentry-services-ofallon-il",
     keywords: "carpentry services O'Fallon IL, trim carpentry O'Fallon",
   },
   "/carpentry-services-edwardsville-il": {
@@ -816,7 +816,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Edwardsville IL carpentry services — interior trim, exterior carpentry, deck repair, and wood rot repair. SIUE area homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Carpentry Services in Edwardsville, IL",
     bodySnippet: "Hero Handyman Pro provides carpentry services in Edwardsville, IL. Interior trim, exterior carpentry, deck repair, and wood rot repair. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/carpentry-services-edwardsville-il",
+    canonicalUrl: "https://www.herohandymanpro.com/carpentry-services-edwardsville-il",
     keywords: "carpentry services Edwardsville IL, trim carpentry Edwardsville",
   },
   "/carpentry-services-belleville-il": {
@@ -824,7 +824,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Belleville IL carpentry services — interior trim, exterior carpentry, deck repair, and wood rot repair. St. Clair County homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Carpentry Services in Belleville, IL",
     bodySnippet: "Hero Handyman Pro provides carpentry services in Belleville, IL. Interior trim, exterior carpentry, deck repair, and wood rot repair. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/carpentry-services-belleville-il",
+    canonicalUrl: "https://www.herohandymanpro.com/carpentry-services-belleville-il",
     keywords: "carpentry services Belleville IL, trim carpentry Belleville",
   },
   "/carpentry-services-collinsville-il": {
@@ -832,7 +832,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Collinsville IL carpentry services — interior trim, exterior carpentry, deck repair, and wood rot repair. Route 159 corridor homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Carpentry Services in Collinsville, IL",
     bodySnippet: "Hero Handyman Pro provides carpentry services in Collinsville, IL. Interior trim, exterior carpentry, deck repair, and wood rot repair. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/carpentry-services-collinsville-il",
+    canonicalUrl: "https://www.herohandymanpro.com/carpentry-services-collinsville-il",
     keywords: "carpentry services Collinsville IL, trim carpentry Collinsville",
   },
   "/carpentry-services-glen-carbon-il": {
@@ -840,7 +840,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Glen Carbon IL carpentry services — interior trim, exterior carpentry, deck repair, and wood rot repair. Local handyman, honest pricing. Call 800-741-6056.",
     h1: "Carpentry Services in Glen Carbon, IL",
     bodySnippet: "Hero Handyman Pro provides carpentry services in Glen Carbon, IL. Interior trim, exterior carpentry, deck repair, and wood rot repair. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/carpentry-services-glen-carbon-il",
+    canonicalUrl: "https://www.herohandymanpro.com/carpentry-services-glen-carbon-il",
     keywords: "carpentry services Glen Carbon IL, trim carpentry Glen Carbon",
   },
   "/carpentry-services-chesterfield-mo": {
@@ -848,7 +848,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Chesterfield MO carpentry services — interior trim, exterior carpentry, deck repair, and wood rot repair. West County homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Carpentry Services in Chesterfield, MO",
     bodySnippet: "Hero Handyman Pro provides carpentry services in Chesterfield, MO. Interior trim, exterior carpentry, deck repair, and wood rot repair. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/carpentry-services-chesterfield-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/carpentry-services-chesterfield-mo",
     keywords: "carpentry services Chesterfield MO, trim carpentry Chesterfield",
   },
   "/carpentry-services-ballwin-mo": {
@@ -856,7 +856,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Ballwin MO carpentry services — interior trim, exterior carpentry, deck repair, and wood rot repair. West County homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Carpentry Services in Ballwin, MO",
     bodySnippet: "Hero Handyman Pro provides carpentry services in Ballwin, MO. Interior trim, exterior carpentry, deck repair, and wood rot repair. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/carpentry-services-ballwin-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/carpentry-services-ballwin-mo",
     keywords: "carpentry services Ballwin MO, trim carpentry Ballwin",
   },
   "/carpentry-services-ofallon-mo": {
@@ -864,7 +864,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "O'Fallon MO carpentry services — interior trim, exterior carpentry, deck repair, and wood rot repair. West County homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Carpentry Services in O'Fallon, MO",
     bodySnippet: "Hero Handyman Pro provides carpentry services in O'Fallon, MO. Interior trim, exterior carpentry, deck repair, and wood rot repair. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/carpentry-services-ofallon-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/carpentry-services-ofallon-mo",
     keywords: "carpentry services O'Fallon MO, trim carpentry O'Fallon MO",
   },
   "/carpentry-services-st-charles-mo": {
@@ -872,7 +872,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "St. Charles MO carpentry services — interior trim, exterior carpentry, deck repair, and wood rot repair. Historic Main Street area homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Carpentry Services in St. Charles, MO",
     bodySnippet: "Hero Handyman Pro provides carpentry services in St. Charles, MO. Interior trim, exterior carpentry, deck repair, and wood rot repair. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/carpentry-services-st-charles-mo",
+    canonicalUrl: "https://www.herohandymanpro.com/carpentry-services-st-charles-mo",
     keywords: "carpentry services St Charles MO, trim carpentry St Charles",
   },
 
@@ -882,7 +882,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "O'Fallon IL drywall repair — hole patching, ceiling repair, water damage & texture matching. Scott AFB area homes trust Hero Handyman Pro for invisible repairs. Call 800-741-6056.",
     h1: "Drywall Repair in O'Fallon, IL",
     bodySnippet: "Hero Handyman Pro provides drywall repair in O'Fallon, IL. Hole patching, ceiling repair, water damage, and texture matching. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/drywall-repair-ofallon-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/drywall-repair-ofallon-il/",
     keywords: "drywall repair O'Fallon IL, drywall patching O'Fallon",
   },
   "/service-areas/deck-repair-belleville-il/": {
@@ -890,7 +890,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Belleville IL deck repair — rotted boards, wobbly railings, soft spots, and staining. St. Clair County homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Deck Repair in Belleville, IL",
     bodySnippet: "Hero Handyman Pro provides deck repair in Belleville, IL. Deck board replacement, railing repair, rot repair, and staining. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/deck-repair-belleville-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/deck-repair-belleville-il/",
     keywords: "deck repair Belleville IL, deck repair Belleville Illinois",
   },
   "/service-areas/deck-repair-st-louis-mo/": {
@@ -898,7 +898,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Professional deck repair in St. Louis MO. Local trusted service. Licensed & insured. Same-day quotes. Call 314-499-5522 for free estimate.",
     h1: "Deck Repair in St. Louis, MO",
     bodySnippet: "Hero Handyman Pro provides deck repair in St. Louis, MO. Deck board replacement, railing repair, rot repair, and staining. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/deck-repair-st-louis-mo/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/deck-repair-st-louis-mo/",
     keywords: "deck repair St Louis MO, deck repair St Louis Missouri",
   },
   "/service-areas/door-installation-ofallon-il/": {
@@ -906,7 +906,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Professional door installation in OFallon IL. Local trusted service. Licensed & insured. Same-day quotes. Call 618-353-0955 for free estimate.",
     h1: "Door Installation in O'Fallon, IL",
     bodySnippet: "Hero Handyman Pro provides door installation in O'Fallon, IL. Entry doors, interior doors, storm doors, and frame repair. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/door-installation-ofallon-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/door-installation-ofallon-il/",
     keywords: "door installation O'Fallon IL, door replacement O'Fallon",
   },
   "/service-areas/door-installation-edwardsville-il/": {
@@ -914,7 +914,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Professional door installation in Edwardsville IL. Local trusted service. Licensed & insured. Same-day quotes. Call 618-353-0955 for free estimate.",
     h1: "Door Installation in Edwardsville, IL",
     bodySnippet: "Hero Handyman Pro provides door installation in Edwardsville, IL. Entry doors, interior doors, storm doors, and frame repair. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/door-installation-edwardsville-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/door-installation-edwardsville-il/",
     keywords: "door installation Edwardsville IL, door replacement Edwardsville",
   },
   "/service-areas/door-repair-swansea-il/": {
@@ -922,7 +922,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Swansea IL door repair — sticking doors, broken frames, hardware repair, and entry door replacement. Local handyman, honest pricing. Call 800-741-6056.",
     h1: "Door Repair in Swansea, IL",
     bodySnippet: "Hero Handyman Pro provides door repair in Swansea, IL. Sticking doors, broken frames, hardware repair, and door replacement. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/door-repair-swansea-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/door-repair-swansea-il/",
     keywords: "door repair Swansea IL, door repair near me Swansea",
   },
   "/service-areas/window-installation-ofallon-il/": {
@@ -930,7 +930,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Window installation in OFallon IL — energy-efficient replacement windows for Scott AFB area homes. Reduce drafts and energy bills. Licensed & insured. Same-day quotes. 618-353-0955.",
     h1: "Window Installation in O'Fallon, IL",
     bodySnippet: "Hero Handyman Pro provides window installation in O'Fallon, IL. Energy-efficient replacement windows, storm windows, and custom sizing. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/window-installation-ofallon-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/window-installation-ofallon-il/",
     keywords: "window installation O'Fallon IL, window replacement O'Fallon",
   },
   "/service-areas/window-installation-edwardsville-il/": {
@@ -938,7 +938,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Window installation in Edwardsville IL — energy-efficient replacement windows for Madison County homes near SIUE. Reduce drafts and energy bills. Licensed & insured. Free estimate. 618-353-0955.",
     h1: "Window Installation in Edwardsville, IL",
     bodySnippet: "Hero Handyman Pro provides window installation in Edwardsville, IL. Energy-efficient replacement windows, storm windows, and custom sizing. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/window-installation-edwardsville-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/window-installation-edwardsville-il/",
     keywords: "window installation Edwardsville IL, window replacement Edwardsville",
   },
   "/service-areas/bathroom-remodeling-ofallon-il/": {
@@ -946,7 +946,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Professional bathroom remodeling in OFallon IL. Local trusted service. Licensed & insured. Same-day quotes. Call 618-353-0955 for free estimate.",
     h1: "Bathroom Remodeling in O'Fallon, IL",
     bodySnippet: "Hero Handyman Pro provides bathroom remodeling in O'Fallon, IL. Full remodels, tile, vanity & fixture upgrades. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/bathroom-remodeling-ofallon-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/bathroom-remodeling-ofallon-il/",
     keywords: "bathroom remodeling O'Fallon IL, bathroom renovation O'Fallon",
   },
   "/service-areas/bathroom-remodeling-edwardsville-il/": {
@@ -954,7 +954,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Professional bathroom remodeling in Edwardsville IL. Local trusted service. Licensed & insured. Same-day quotes. Call 618-353-0955 for free estimate.",
     h1: "Bathroom Remodeling in Edwardsville, IL",
     bodySnippet: "Hero Handyman Pro provides bathroom remodeling in Edwardsville, IL. Full remodels, tile, vanity & fixture upgrades. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/bathroom-remodeling-edwardsville-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/bathroom-remodeling-edwardsville-il/",
     keywords: "bathroom remodeling Edwardsville IL, bathroom renovation Edwardsville",
   },
   "/service-areas/deck-building-ofallon-il/": {
@@ -962,7 +962,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Professional deck building in OFallon IL. Local trusted service. Licensed & insured. Same-day quotes. Call 618-353-0955 for free estimate.",
     h1: "Deck Building in O'Fallon, IL",
     bodySnippet: "Hero Handyman Pro provides deck building in O'Fallon, IL. New deck construction, composite and pressure-treated options, custom railings. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/deck-building-ofallon-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/deck-building-ofallon-il/",
     keywords: "deck building O'Fallon IL, deck construction O'Fallon",
   },
   "/service-areas/deck-building-edwardsville-il/": {
@@ -970,7 +970,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Professional deck building in Edwardsville IL. Local trusted service. Licensed & insured. Same-day quotes. Call 618-353-0955 for free estimate.",
     h1: "Deck Building in Edwardsville, IL",
     bodySnippet: "Hero Handyman Pro provides deck building in Edwardsville, IL. New deck construction, composite and pressure-treated options, custom railings. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/deck-building-edwardsville-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/deck-building-edwardsville-il/",
     keywords: "deck building Edwardsville IL, deck construction Edwardsville",
   },
   "/service-areas/fence-repair-edwardsville-il/": {
@@ -978,7 +978,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Edwardsville IL fence repair — post replacement, panel fixes, and rail repair. SIUE area homeowners trust Hero Handyman Pro. Call 800-741-6056.",
     h1: "Fence Repair in Edwardsville, IL",
     bodySnippet: "Hero Handyman Pro provides fence repair in Edwardsville, IL. Post replacement, panel fixes, and rail repair. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/fence-repair-edwardsville-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/fence-repair-edwardsville-il/",
     keywords: "fence repair Edwardsville IL, fence repair near me Edwardsville",
   },
   "/service-areas/ceiling-fan-installation-collinsville-il/": {
@@ -986,7 +986,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Professional ceiling fan installation in Collinsville IL. New installs, replacements, and light fixture swaps. Veteran-owned, 35+ years experience. Free estimates.",
     h1: "Ceiling Fan Installation in Collinsville, IL",
     bodySnippet: "Hero Handyman Pro provides ceiling fan installation in Collinsville, IL. New installs, replacements, and light fixture upgrades. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/ceiling-fan-installation-collinsville-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/ceiling-fan-installation-collinsville-il/",
     keywords: "ceiling fan installation Collinsville IL, ceiling fan replacement Collinsville",
   },
 
@@ -996,140 +996,140 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Professional deck and porch repair in St. Louis & Metro East IL. Rotted boards, wobbly railings, sagging floors, and staining. Free estimate. Call 800-741-6056.",
     h1: "Deck & Porch Repair",
     bodySnippet: "Hero Handyman Pro provides deck and porch repair services across St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/services/deck-porch-repair/",
+    canonicalUrl: "https://www.herohandymanpro.com/services/deck-porch-repair/",
   },
   "/services/deck-repair": {
     title: "Deck Repair St. Louis & Metro East | Free Estimate",
     description: "Rotted deck boards, wobbly railings, or soft spots underfoot? Hero Handyman Pro fixes decks across St. Louis & Metro East — boards, rails, ledgers, and stairs. Free estimate.",
     h1: "Deck Repair in St. Louis & Metro East",
     bodySnippet: "Hero Handyman Pro provides deck repair services across St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/services/deck-repair",
+    canonicalUrl: "https://www.herohandymanpro.com/services/deck-repair",
   },
   "/services/door-installation": {
     title: "Door Installation St. Louis & Metro East | Same-Day",
     description: "Door installation in St. Louis & Metro East. Entry, interior & patio doors installed fast. Honest pricing. Free quote in 24 hrs. Call 800-741-6056.",
     h1: "Door Installation in St. Louis & Metro East",
     bodySnippet: "Hero Handyman Pro provides door installation services across St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/services/door-installation",
+    canonicalUrl: "https://www.herohandymanpro.com/services/door-installation",
   },
   "/services/door-replacement": {
     title: "Door Replacement St. Louis & Metro East | Hero Handyman Pro",
     description: "Door replacement in St. Louis & Metro East. Entry, interior & storm doors replaced fast. Honest pricing. Free quote in 24 hrs. Call 800-741-6056.",
     h1: "Door Replacement in St. Louis & Metro East",
     bodySnippet: "Hero Handyman Pro provides door replacement services across St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/services/door-replacement",
+    canonicalUrl: "https://www.herohandymanpro.com/services/door-replacement",
   },
   "/services/bathroom-remodeling": {
     title: "Bathroom Remodeling St. Louis | Free Consultation",
     description: "Bathroom remodeling in St. Louis & Metro East. Full remodels, tile, vanity & fixture upgrades. Free quote in 24 hrs. Call 800-741-6056.",
     h1: "Bathroom Remodeling in St. Louis & Metro East",
     bodySnippet: "Hero Handyman Pro provides bathroom remodeling services across St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/services/bathroom-remodeling",
+    canonicalUrl: "https://www.herohandymanpro.com/services/bathroom-remodeling",
   },
   "/services/handyman-home-repair/": {
     title: "Handyman & Home Repair Services | Hero Handyman Pro",
     description: "Professional handyman and home repair services in St. Louis & Metro East IL. Drywall, doors, decks, carpentry, and more. Small jobs welcome. Call 800-741-6056.",
     h1: "Handyman & Home Repair Services",
     bodySnippet: "Hero Handyman Pro provides handyman and home repair services across St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/services/handyman-home-repair/",
+    canonicalUrl: "https://www.herohandymanpro.com/services/handyman-home-repair/",
   },
   "/services/doors-windows/": {
     title: "Doors & Windows | Hero Handyman Pro",
     description: "Door and window installation, repair, and replacement in St. Louis & Metro East IL. Fast service, honest pricing. Free estimate. Call 800-741-6056.",
     h1: "Doors & Windows",
     bodySnippet: "Hero Handyman Pro provides door and window services across St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/services/doors-windows/",
+    canonicalUrl: "https://www.herohandymanpro.com/services/doors-windows/",
   },
   "/services/drywall-interior-repair/": {
     title: "Drywall & Interior Repair | Hero Handyman Pro",
     description: "Drywall and interior repair in St. Louis & Metro East IL. Hole patching, water damage, ceiling cracks, and retexturing. Free estimate. Call 800-741-6056.",
     h1: "Drywall & Interior Repair",
     bodySnippet: "Hero Handyman Pro provides drywall and interior repair services across St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/services/drywall-interior-repair/",
+    canonicalUrl: "https://www.herohandymanpro.com/services/drywall-interior-repair/",
   },
   "/services/electrical-fixtures/": {
     title: "Electrical Fixtures | Hero Handyman Pro",
     description: "Ceiling fan installation, light fixture replacement, and electrical fixture work in St. Louis & Metro East IL. Fast service. Free estimate. Call 800-741-6056.",
     h1: "Electrical Fixtures",
     bodySnippet: "Hero Handyman Pro provides electrical fixture services across St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/services/electrical-fixtures/",
+    canonicalUrl: "https://www.herohandymanpro.com/services/electrical-fixtures/",
   },
   "/services/plumbing-fixtures/": {
     title: "Plumbing Fixtures | Hero Handyman Pro",
     description: "Faucet, sink, and toilet repair and replacement in St. Louis & Metro East IL. Fast service, honest pricing. Free estimate. Call 800-741-6056.",
     h1: "Plumbing Fixtures",
     bodySnippet: "Hero Handyman Pro provides plumbing fixture services across St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/services/plumbing-fixtures/",
+    canonicalUrl: "https://www.herohandymanpro.com/services/plumbing-fixtures/",
   },
   "/services/porch-repair": {
     title: "Porch Repair St. Louis & Metro East | Hero Handyman Pro",
     description: "Sagging porch floors, rotted posts, and damaged railings fixed right. Hero Handyman Pro serves St. Louis & Metro East IL. Free estimate. Call 800-741-6056.",
     h1: "Porch Repair in St. Louis & Metro East",
     bodySnippet: "Hero Handyman Pro provides porch repair services across St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/services/porch-repair",
+    canonicalUrl: "https://www.herohandymanpro.com/services/porch-repair",
   },
   "/services/window-installation": {
     title: "Window Installation & Replacement St. Louis | Hero Handyman Pro",
     description: "Professional window installation and replacement in St. Louis & Metro East IL. Energy-efficient windows, fast installation. Free estimate. Call 800-741-6056.",
     h1: "Window Installation in St. Louis & Metro East",
     bodySnippet: "Hero Handyman Pro provides window installation services across St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/services/window-installation",
+    canonicalUrl: "https://www.herohandymanpro.com/services/window-installation",
   },
   "/services/porch-repair-ofallon-il": {
     title: "Porch Repair O'Fallon IL | Sagging & Rotted Porches",
     description: "O'Fallon IL porches take a beating from Metro East winters. Hero Handyman Pro fixes sagging floors, rotted posts, damaged railings, and crumbling steps. Free estimate.",
     h1: "Porch Repair in O'Fallon, IL",
     bodySnippet: "Hero Handyman Pro provides porch repair in O'Fallon, IL. Sagging floors, rotted posts, damaged railings, and crumbling steps. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/services/porch-repair-ofallon-il",
+    canonicalUrl: "https://www.herohandymanpro.com/services/porch-repair-ofallon-il",
   },
   "/services/porch-repair-edwardsville-il": {
     title: "Porch Repair Edwardsville IL | Sagging & Rotted",
     description: "Edwardsville's older homes often have porch rot hiding under paint. We find it, fix it, and make it safe — boards, posts, railings, and stairs. Free estimate. 800-741-6056.",
     h1: "Porch Repair in Edwardsville, IL",
     bodySnippet: "Hero Handyman Pro provides porch repair in Edwardsville, IL. Sagging floors, rotted posts, damaged railings, and crumbling steps. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/services/porch-repair-edwardsville-il",
+    canonicalUrl: "https://www.herohandymanpro.com/services/porch-repair-edwardsville-il",
   },
   "/services/porch-repair-belleville-il": {
     title: "Porch Repair Belleville IL | Sagging & Rotted Porches",
     description: "Belleville IL porch repair — we fix soft spots, rotted wood, and unstable railings before they become a safety hazard. Fast local service. Free estimate. Call 800-741-6056.",
     h1: "Porch Repair in Belleville, IL",
     bodySnippet: "Hero Handyman Pro provides porch repair in Belleville, IL. Sagging floors, rotted posts, damaged railings, and crumbling steps. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/services/porch-repair-belleville-il",
+    canonicalUrl: "https://www.herohandymanpro.com/services/porch-repair-belleville-il",
   },
   "/services/porch-repair-collinsville-il": {
     title: "Porch Repair Collinsville IL | Sagging & Rotted",
     description: "Porch repair in Collinsville IL — sagging floors, rotted posts, loose railings, and crumbling steps fixed right. Local handyman, honest pricing. Free estimate. 800-741-6056.",
     h1: "Porch Repair in Collinsville, IL",
     bodySnippet: "Hero Handyman Pro provides porch repair in Collinsville, IL. Sagging floors, rotted posts, damaged railings, and crumbling steps. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/services/porch-repair-collinsville-il",
+    canonicalUrl: "https://www.herohandymanpro.com/services/porch-repair-collinsville-il",
   },
   "/services/window-installation-ofallon-il": {
     title: "Window Installation O'Fallon IL | Energy-Efficient Replacement Windows",
     description: "Window installation in O'Fallon IL — energy-efficient replacement windows for Scott AFB area homes. Reduce drafts and energy bills. Licensed & insured. Same-day quotes. 618-353-0955.",
     h1: "Window Installation in O'Fallon, IL",
     bodySnippet: "Hero Handyman Pro provides window installation in O'Fallon, IL. Energy-efficient replacement windows, storm windows, and custom sizing. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/services/window-installation-ofallon-il",
+    canonicalUrl: "https://www.herohandymanpro.com/services/window-installation-ofallon-il",
   },
   "/services/window-installation-edwardsville-il": {
     title: "Window Installation Edwardsville IL | Energy-Efficient Replacement Windows",
     description: "Window installation in Edwardsville IL — energy-efficient replacement windows for Madison County homes near SIUE. Reduce drafts and energy bills. Licensed & insured. 618-353-0955.",
     h1: "Window Installation in Edwardsville, IL",
     bodySnippet: "Hero Handyman Pro provides window installation in Edwardsville, IL. Energy-efficient replacement windows, storm windows, and custom sizing. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/services/window-installation-edwardsville-il",
+    canonicalUrl: "https://www.herohandymanpro.com/services/window-installation-edwardsville-il",
   },
   "/services/window-installation-belleville-il": {
     title: "Window Installation Belleville IL | Energy-Efficient Replacement Windows",
     description: "Window installation in Belleville IL — energy-efficient replacement windows for St. Clair County homes. Reduce drafts and energy bills. Licensed & insured. 800-741-6056.",
     h1: "Window Installation in Belleville, IL",
     bodySnippet: "Hero Handyman Pro provides window installation in Belleville, IL. Energy-efficient replacement windows, storm windows, and custom sizing. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/services/window-installation-belleville-il",
+    canonicalUrl: "https://www.herohandymanpro.com/services/window-installation-belleville-il",
   },
   "/services/window-installation-collinsville-il": {
     title: "Window Installation Collinsville IL | Energy-Efficient Replacement Windows",
     description: "Window installation in Collinsville IL — energy-efficient replacement windows. Reduce drafts and energy bills. Licensed & insured. Free quote in 24 hrs. Call 800-741-6056.",
     h1: "Window Installation in Collinsville, IL",
     bodySnippet: "Hero Handyman Pro provides window installation in Collinsville, IL. Energy-efficient replacement windows, storm windows, and custom sizing. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/services/window-installation-collinsville-il",
+    canonicalUrl: "https://www.herohandymanpro.com/services/window-installation-collinsville-il",
   },
 
   // ── GBP Pages ─────────────────────────────────────────────────────────────
@@ -1138,7 +1138,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Phil Green has served O'Fallon IL homeowners for 35+ years — deck rot, sticking doors, drywall patches, and punch-list jobs done right the first time. Call 800-741-6056.",
     h1: "Your Trusted Handyman in O'Fallon, IL",
     bodySnippet: "Hero Handyman Pro serves O'Fallon, IL homeowners with professional handyman services. 35+ years experience. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/gbp/ofallon-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/gbp/ofallon-il/",
     keywords: "handyman O'Fallon IL, O'Fallon handyman, GBP O'Fallon",
   },
   "/gbp/edwardsville-il/": {
@@ -1146,7 +1146,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Edwardsville homeowners call Hero Handyman Pro for the jobs other contractors skip — small drywall patches, deck board swaps, door adjustments. Same/next-day. 800-741-6056.",
     h1: "Your Trusted Handyman in Edwardsville, IL",
     bodySnippet: "Hero Handyman Pro serves Edwardsville, IL homeowners with professional handyman services. Same/next-day availability. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/gbp/edwardsville-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/gbp/edwardsville-il/",
     keywords: "handyman Edwardsville IL, Edwardsville handyman, GBP Edwardsville",
   },
   "/gbp/des-peres-mo/": {
@@ -1154,7 +1154,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Reliable handyman services in West St. Louis MO for drywall, doors, decks, carpentry, fixtures, and home repairs. Serving Chesterfield, Ballwin, Des Peres, and nearby areas.",
     h1: "Handyman Services in West St. Louis, MO",
     bodySnippet: "Hero Handyman Pro serves West St. Louis, MO homeowners with professional handyman services. Chesterfield, Ballwin, Des Peres, and nearby areas. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/gbp/des-peres-mo/",
+    canonicalUrl: "https://www.herohandymanpro.com/gbp/des-peres-mo/",
     keywords: "handyman West St Louis, handyman Chesterfield MO, handyman Des Peres",
   },
   // GBP alias routes (no trailing slash)
@@ -1163,21 +1163,21 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Phil Green has served O'Fallon IL homeowners for 35+ years — deck rot, sticking doors, drywall patches, and punch-list jobs done right the first time. Call 800-741-6056.",
     h1: "Your Trusted Handyman in O'Fallon, IL",
     bodySnippet: "Hero Handyman Pro serves O'Fallon, IL homeowners with professional handyman services. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/gbp/ofallon-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/gbp/ofallon-il/",
   },
   "/gbp/edwardsville": {
     title: "Handyman in Edwardsville IL | Fast Local Repairs",
     description: "Edwardsville homeowners call Hero Handyman Pro for the jobs other contractors skip — small drywall patches, deck board swaps, door adjustments. Same/next-day. 800-741-6056.",
     h1: "Your Trusted Handyman in Edwardsville, IL",
     bodySnippet: "Hero Handyman Pro serves Edwardsville, IL homeowners with professional handyman services. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/gbp/edwardsville-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/gbp/edwardsville-il/",
   },
   "/gbp/des-peres": {
     title: "Handyman Services in West St. Louis MO",
     description: "Reliable handyman services in West St. Louis MO for drywall, doors, decks, carpentry, fixtures, and home repairs. Serving Chesterfield, Ballwin, Des Peres, and nearby areas.",
     h1: "Handyman Services in West St. Louis, MO",
     bodySnippet: "Hero Handyman Pro serves West St. Louis, MO homeowners with professional handyman services. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/gbp/des-peres-mo/",
+    canonicalUrl: "https://www.herohandymanpro.com/gbp/des-peres-mo/",
   },
 
   // ── Reviews ───────────────────────────────────────────────────────────────
@@ -1186,7 +1186,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "4.9-star rated handyman across St. Louis & Metro East. Read real reviews from O'Fallon, Edwardsville, and Belleville homeowners who hired Hero Handyman Pro.",
     h1: "Handyman Reviews — St. Louis & Metro East",
     bodySnippet: "Hero Handyman Pro has 4.9-star ratings across St. Louis, MO and Metro East Illinois. Read real reviews from homeowners in O'Fallon, Edwardsville, and Belleville. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/reviews/",
+    canonicalUrl: "https://www.herohandymanpro.com/reviews/",
     keywords: "handyman reviews, Hero Handyman Pro reviews, St Louis handyman testimonials",
   },
   "/reviews/deck-repair/": {
@@ -1194,7 +1194,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Read real customer reviews of Hero Handyman Pro's deck repair services across O'Fallon, Edwardsville, Belleville, and St. Louis. 5.0 stars from verified reviews.",
     h1: "Deck Repair Reviews",
     bodySnippet: "Hero Handyman Pro deck repair reviews from homeowners in St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/reviews/deck-repair/",
+    canonicalUrl: "https://www.herohandymanpro.com/reviews/deck-repair/",
     noindex: true,
   },
   "/reviews/door-installation/": {
@@ -1202,42 +1202,42 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Read real customer reviews of Hero Handyman Pro's door installation and repair services across O'Fallon, Edwardsville, Belleville, and St. Louis. 5.0 stars from verified reviews.",
     h1: "Door Installation Reviews",
     bodySnippet: "Hero Handyman Pro door installation reviews from homeowners in St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/reviews/door-installation/",
+    canonicalUrl: "https://www.herohandymanpro.com/reviews/door-installation/",
   },
   "/reviews/drywall-repair/": {
     title: "Drywall Repair Reviews – St. Louis & Metro East",
     description: "Read real customer reviews of Hero Handyman Pro's drywall repair services across Edwardsville, O'Fallon, Belleville, and St. Louis. 5.0 stars from verified reviews.",
     h1: "Drywall Repair Reviews",
     bodySnippet: "Hero Handyman Pro drywall repair reviews from homeowners in St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/reviews/drywall-repair/",
+    canonicalUrl: "https://www.herohandymanpro.com/reviews/drywall-repair/",
   },
   "/reviews/handyman/": {
     title: "Handyman Service Reviews – St. Louis & Metro East",
     description: "Read real customer reviews of Hero Handyman Pro's handyman services across O'Fallon, Edwardsville, Belleville, and St. Louis. 4.9 stars from verified reviews.",
     h1: "Handyman Service Reviews",
     bodySnippet: "Hero Handyman Pro handyman service reviews from homeowners in St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/reviews/handyman/",
+    canonicalUrl: "https://www.herohandymanpro.com/reviews/handyman/",
   },
   "/reviews/window-installation/": {
     title: "Window Installation Reviews | Customer Testimonials",
     description: "Read real customer reviews of Hero Handyman Pro's window installation services. See why homeowners trust Hero Handyman Pro for professional window replacement in St. Louis & Metro East.",
     h1: "Window Installation Reviews",
     bodySnippet: "Hero Handyman Pro window installation reviews from homeowners in St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/reviews/window-installation/",
+    canonicalUrl: "https://www.herohandymanpro.com/reviews/window-installation/",
   },
   "/reviews/bathroom-remodeling/": {
     title: "Bathroom Remodeling Reviews | Customer Testimonials",
     description: "Read real customer reviews of Hero Handyman Pro's bathroom remodeling services. See why homeowners trust Hero Handyman Pro for professional bathroom remodeling in St. Louis & Metro East.",
     h1: "Bathroom Remodeling Reviews",
     bodySnippet: "Hero Handyman Pro bathroom remodeling reviews from homeowners in St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/reviews/bathroom-remodeling/",
+    canonicalUrl: "https://www.herohandymanpro.com/reviews/bathroom-remodeling/",
   },
   "/reviews/deck-building/": {
     title: "Deck Building Reviews | Customer Testimonials",
     description: "Read real customer reviews of Hero Handyman Pro's deck building services. See why homeowners trust Hero Handyman Pro for professional deck building in St. Louis & Metro East.",
     h1: "Deck Building Reviews",
     bodySnippet: "Hero Handyman Pro deck building reviews from homeowners in St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/reviews/deck-building/",
+    canonicalUrl: "https://www.herohandymanpro.com/reviews/deck-building/",
   },
 
   // ── Projects ──────────────────────────────────────────────────────────────
@@ -1246,7 +1246,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Real project photos from Hero Handyman Pro — deck repairs, drywall patches, door installations, and carpentry across St. Louis & Metro East. See the quality before you call.",
     h1: "Handyman Project Gallery",
     bodySnippet: "Hero Handyman Pro project gallery — deck repairs, drywall patches, door installations, and carpentry across St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/projects/",
+    canonicalUrl: "https://www.herohandymanpro.com/projects/",
     keywords: "handyman project gallery, home repair photos, deck repair photos",
   },
 
@@ -1256,7 +1256,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Ready to fix that to-do list? Call Hero Handyman Pro at 800-741-6056 or fill out our form. We respond within 24 hours and offer same/next-day service across Metro East & St. Louis.",
     h1: "Contact Hero Handyman Pro",
     bodySnippet: "Contact Hero Handyman Pro for handyman services in St. Louis, MO and Metro East Illinois. Call 800-741-6056 or fill out our form for a free estimate.",
-    canonicalUrl: "https://herohandymanpro.com/contact/",
+    canonicalUrl: "https://www.herohandymanpro.com/contact/",
     keywords: "contact handyman, free estimate, handyman quote St Louis",
   },
 
@@ -1266,7 +1266,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Practical home repair tips, cost guides, and local handyman advice for St. Louis & Metro East IL homeowners. From Hero Handyman Pro.",
     h1: "Handyman Tips & Home Repair Blog",
     bodySnippet: "Hero Handyman Pro blog — practical home repair tips, cost guides, and local handyman advice for St. Louis, MO and Metro East Illinois homeowners. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/blog/",
+    canonicalUrl: "https://www.herohandymanpro.com/blog/",
     keywords: "handyman blog, home repair tips, St Louis home maintenance",
   },
   "/blog/2026-handyman-costs-metro-east-il/": {
@@ -1274,7 +1274,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "2026 handyman costs in Metro East IL: drywall repair from $150, deck repair from $300, ceiling fan install from $125. Real local pricing from Hero Handyman Pro.",
     h1: "2026 Handyman Costs in Metro East IL",
     bodySnippet: "Real handyman pricing for Metro East IL homeowners in 2026. Drywall repair, deck repair, door installation, and more. Hero Handyman Pro. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/blog/2026-handyman-costs-metro-east-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/blog/2026-handyman-costs-metro-east-il/",
     keywords: "handyman costs 2026, Metro East IL handyman pricing, home repair cost guide",
   },
   "/blog/how-to-choose-handyman-st-louis/": {
@@ -1282,7 +1282,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Looking for the best handyman near you in St. Louis or Metro East IL? This 2026 guide shows you exactly what to look for — and what red flags to avoid.",
     h1: "How to Choose a Trusted Handyman in St. Louis & Metro East",
     bodySnippet: "Guide to choosing a trusted handyman in St. Louis, MO and Metro East Illinois. What to look for, what red flags to avoid. Hero Handyman Pro. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/blog/how-to-choose-handyman-st-louis/",
+    canonicalUrl: "https://www.herohandymanpro.com/blog/how-to-choose-handyman-st-louis/",
     keywords: "how to choose handyman, best handyman St Louis, trusted handyman Metro East",
   },
   "/blog/spring-home-repair-checklist-edwardsville-ofallon/": {
@@ -1290,7 +1290,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Your complete spring home maintenance checklist for Edwardsville IL, O'Fallon IL, and Metro East. Catch problems early and protect your home before summer.",
     h1: "Spring Home Repair Checklist for Edwardsville & O'Fallon",
     bodySnippet: "Spring home maintenance checklist for Edwardsville, IL and O'Fallon, IL homeowners. Hero Handyman Pro. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/blog/spring-home-repair-checklist-edwardsville-ofallon/",
+    canonicalUrl: "https://www.herohandymanpro.com/blog/spring-home-repair-checklist-edwardsville-ofallon/",
     keywords: "spring home repair checklist, Edwardsville home maintenance, O'Fallon home repair",
   },
   "/blog/home-repairs-belleville-il/": {
@@ -1298,7 +1298,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "A practical guide to the most common spring home repairs in Belleville, IL — from deck boards and drywall to doors and exterior trim. Get a free quote in 24 hrs.",
     h1: "Top Home Repairs Belleville IL Homeowners Tackle Every Spring",
     bodySnippet: "Common spring home repairs for Belleville, IL homeowners. Deck boards, drywall, doors, and exterior trim. Hero Handyman Pro. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/blog/home-repairs-belleville-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/blog/home-repairs-belleville-il/",
     keywords: "home repairs Belleville IL, spring home repair Belleville, Belleville home maintenance",
   },
   "/blog/drywall-repair-cost-ofallon-il/": {
@@ -1306,7 +1306,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Honest drywall repair cost guide for O'Fallon, IL homeowners. Learn what small holes, water damage, and ceiling repairs cost in 2026 — with free quote options.",
     h1: "Drywall Repair Cost in O'Fallon IL (2026)",
     bodySnippet: "Drywall repair cost guide for O'Fallon, IL homeowners. Small holes, water damage, and ceiling repairs. Hero Handyman Pro. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/blog/drywall-repair-cost-ofallon-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/blog/drywall-repair-cost-ofallon-il/",
     keywords: "drywall repair cost O'Fallon IL, drywall repair price O'Fallon",
   },
   "/blog/deck-repair-cost-ofallon-il/": {
@@ -1314,7 +1314,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Honest deck repair cost guide for O'Fallon, IL homeowners. Learn what board replacement, railing repair, and structural repairs cost in 2026 — with free quote options.",
     h1: "Deck Repair Cost in O'Fallon IL (2026)",
     bodySnippet: "Deck repair cost guide for O'Fallon, IL homeowners. Board replacement, railing repair, and structural repairs. Hero Handyman Pro. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/blog/deck-repair-cost-ofallon-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/blog/deck-repair-cost-ofallon-il/",
     keywords: "deck repair cost O'Fallon IL, deck repair price O'Fallon",
   },
   "/blog/door-repair-cost-ofallon-il/": {
@@ -1322,7 +1322,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Honest door repair cost guide for O'Fallon, IL homeowners. Learn what sticking doors, broken frames, storm door installs, and entry door replacements cost in 2026.",
     h1: "Door Repair Cost in O'Fallon IL (2026)",
     bodySnippet: "Door repair cost guide for O'Fallon, IL homeowners. Sticking doors, broken frames, storm door installs, and entry door replacements. Hero Handyman Pro. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/blog/door-repair-cost-ofallon-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/blog/door-repair-cost-ofallon-il/",
     keywords: "door repair cost O'Fallon IL, door repair price O'Fallon",
   },
   "/blog/common-home-repairs-after-winter-illinois/": {
@@ -1330,7 +1330,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Illinois winters are tough on homes. Here are the most common repairs Metro East and St. Louis homeowners face in spring — and how to tackle them fast.",
     h1: "Most Common Home Repairs After Winter in Illinois",
     bodySnippet: "Common home repairs after winter in Illinois. Deck boards, drywall, doors, and exterior trim. Hero Handyman Pro. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/blog/common-home-repairs-after-winter-illinois/",
+    canonicalUrl: "https://www.herohandymanpro.com/blog/common-home-repairs-after-winter-illinois/",
     keywords: "home repairs after winter Illinois, winter home damage Illinois",
   },
   "/blog/home-maintenance-tips-metro-east-il/": {
@@ -1338,7 +1338,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Practical home maintenance tips for Metro East Illinois homeowners. Seasonal checklists, cost-saving advice, and local repair guidance from Hero Handyman Pro.",
     h1: "Home Maintenance Tips for Metro East IL Homeowners",
     bodySnippet: "Home maintenance tips for Metro East Illinois homeowners. Seasonal checklists and local repair guidance. Hero Handyman Pro. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/blog/home-maintenance-tips-metro-east-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/blog/home-maintenance-tips-metro-east-il/",
     keywords: "home maintenance tips Metro East IL, home maintenance Illinois",
   },
   "/blog/edwardsville-home-repair-guide/": {
@@ -1346,7 +1346,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "A local home repair guide for Edwardsville, IL homeowners — common issues, seasonal maintenance, and trusted local handyman tips from Hero Handyman Pro.",
     h1: "Edwardsville IL Home Repair Guide",
     bodySnippet: "Home repair guide for Edwardsville, IL homeowners. Common issues, seasonal maintenance, and local handyman tips. Hero Handyman Pro. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/blog/edwardsville-home-repair-guide/",
+    canonicalUrl: "https://www.herohandymanpro.com/blog/edwardsville-home-repair-guide/",
     keywords: "Edwardsville home repair guide, Edwardsville IL home maintenance",
   },
   "/blog/handyman-vs-contractor/": {
@@ -1354,7 +1354,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Not sure whether to call a handyman or a contractor? This guide explains the difference, when to use each, and how to save money on your next home repair project.",
     h1: "Handyman vs. Contractor: Which Do You Need?",
     bodySnippet: "Guide to choosing between a handyman and a contractor for home repairs. Hero Handyman Pro. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/blog/handyman-vs-contractor/",
+    canonicalUrl: "https://www.herohandymanpro.com/blog/handyman-vs-contractor/",
     keywords: "handyman vs contractor, when to hire handyman, when to hire contractor",
   },
   "/blog/deck-repair-signs/": {
@@ -1362,7 +1362,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Is your deck safe? Here are 5 warning signs Metro East IL homeowners should never ignore — and what to do about each one before they become expensive problems.",
     h1: "5 Signs Your Deck Needs Repair",
     bodySnippet: "5 signs your deck needs repair. Metro East IL homeowner guide. Hero Handyman Pro. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/blog/deck-repair-signs/",
+    canonicalUrl: "https://www.herohandymanpro.com/blog/deck-repair-signs/",
     keywords: "deck repair signs, when to repair deck, deck safety Metro East IL",
   },
   "/blog/window-repair-cost-ofallon-il/": {
@@ -1370,7 +1370,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Honest window repair cost guide for O'Fallon, IL homeowners. Learn what broken seals, cracked frames, and full replacements cost in 2026 — with free quote options.",
     h1: "Window Repair Cost in O'Fallon IL (2026)",
     bodySnippet: "Window repair cost guide for O'Fallon, IL homeowners. Broken seals, cracked frames, and full replacements. Hero Handyman Pro. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/blog/window-repair-cost-ofallon-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/blog/window-repair-cost-ofallon-il/",
     keywords: "window repair cost O'Fallon IL, window repair price O'Fallon",
   },
 
@@ -1380,7 +1380,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Internal GBP audit checklist for Hero Handyman Pro Google Business Profile optimization.",
     h1: "GBP Audit Checklist",
     bodySnippet: "Internal GBP audit checklist for Hero Handyman Pro.",
-    canonicalUrl: "https://herohandymanpro.com/guides/gbp-audit/",
+    canonicalUrl: "https://www.herohandymanpro.com/guides/gbp-audit/",
     noindex: true,
   },
   "/guides/review-templates/": {
@@ -1388,7 +1388,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Internal Google review response templates for Hero Handyman Pro.",
     h1: "Google Review Response Templates",
     bodySnippet: "Internal Google review response templates for Hero Handyman Pro.",
-    canonicalUrl: "https://herohandymanpro.com/guides/review-templates/",
+    canonicalUrl: "https://www.herohandymanpro.com/guides/review-templates/",
     noindex: true,
   },
 
@@ -1398,7 +1398,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Hero Handyman Pro's trusted local partners for home services in St. Louis & Metro East IL. Vetted contractors, inspectors, and service providers we recommend.",
     h1: "Trusted Local Home Service Partners",
     bodySnippet: "Hero Handyman Pro's trusted local partners for home services in St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/trusted-local-partners/",
+    canonicalUrl: "https://www.herohandymanpro.com/trusted-local-partners/",
   },
 
   // ── Guide Pages (noindex) ─────────────────────────────────────────────────
@@ -1407,7 +1407,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Step-by-step guide to building an SEO-optimized handyman website with GBP landing pages. AI prompts, checklists, and local SEO best practices included.",
     h1: "Handyman Website Builder Guide",
     bodySnippet: "Step-by-step guide to building an SEO-optimized handyman website with GBP landing pages. AI prompts, checklists, and local SEO best practices.",
-    canonicalUrl: "https://herohandymanpro.com/guide",
+    canonicalUrl: "https://www.herohandymanpro.com/guide",
     noindex: true,
   },
   "/guide/complete": {
@@ -1415,7 +1415,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Comprehensive 15,000+ word guide with 9 AI prompts, information gathering checklist, SEO optimization, and post-launch tasks for handyman websites.",
     h1: "Complete Handyman Website Builder Guide",
     bodySnippet: "Comprehensive guide with AI prompts, SEO optimization, and post-launch tasks for handyman websites.",
-    canonicalUrl: "https://herohandymanpro.com/guide/complete",
+    canonicalUrl: "https://www.herohandymanpro.com/guide/complete",
     noindex: true,
   },
   "/guide/checklist": {
@@ -1423,7 +1423,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Printable checklist to gather all information needed before building your handyman website. Business details, GBP data, services, testimonials, and more.",
     h1: "Quick-Start Checklist — Handyman Website Builder",
     bodySnippet: "Printable checklist to gather all information needed before building your handyman website.",
-    canonicalUrl: "https://herohandymanpro.com/guide/checklist",
+    canonicalUrl: "https://www.herohandymanpro.com/guide/checklist",
     noindex: true,
   },
   "/guide/gbp-audit": {
@@ -1431,7 +1431,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Printable Google Business Profile audit checklist for handyman businesses. Covers profile completeness, photos, reviews, and more.",
     h1: "GBP Audit Checklist",
     bodySnippet: "Printable Google Business Profile audit checklist for handyman businesses.",
-    canonicalUrl: "https://herohandymanpro.com/guide/gbp-audit",
+    canonicalUrl: "https://www.herohandymanpro.com/guide/gbp-audit",
     noindex: true,
   },
   "/guide/review-templates": {
@@ -1439,7 +1439,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "15 professional Google review response templates for handyman businesses. Handle positive, neutral, and negative reviews with these customizable templates.",
     h1: "Google Review Response Templates",
     bodySnippet: "15 professional Google review response templates for handyman businesses.",
-    canonicalUrl: "https://herohandymanpro.com/guide/review-templates",
+    canonicalUrl: "https://www.herohandymanpro.com/guide/review-templates",
     noindex: true,
   },
 
@@ -1449,7 +1449,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Belleville homeowners trust Hero Handyman Pro for deck repairs, drywall patches, door fixes, and more. Professional service with upfront pricing. Book today!",
     h1: "Handyman Services in Belleville, IL",
     bodySnippet: "Hero Handyman Pro serves Belleville, IL homeowners with professional handyman services including drywall repair, deck repair, door installation, and carpentry. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/belleville-handyman-services/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/belleville-handyman-services/",
     keywords: "Belleville IL handyman, handyman Belleville Illinois, home repairs Belleville",
   },
   "/edwardsville-il/": {
@@ -1457,7 +1457,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Edwardsville's trusted handyman for deck repairs, drywall, painting, and home projects. Serving SIUE area and surrounding neighborhoods. Call for a free estimate!",
     h1: "Handyman Services in Edwardsville, IL",
     bodySnippet: "Hero Handyman Pro serves Edwardsville, IL homeowners with professional handyman services including drywall repair, deck repair, door installation, and carpentry. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/service-areas/edwardsville-handyman-services/",
+    canonicalUrl: "https://www.herohandymanpro.com/service-areas/edwardsville-handyman-services/",
     keywords: "Edwardsville IL handyman, handyman Edwardsville Illinois, home repairs Edwardsville",
   },
 
@@ -1467,7 +1467,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Expert carpentry services including trim, doors, decks, and repairs. Reliable handyman carpenters serving St. Louis and surrounding areas.",
     h1: "Carpentry Services & Repairs — St. Louis Area",
     bodySnippet: "Expert carpentry services including trim, doors, decks, and repairs. Hero Handyman Pro serves St. Louis and surrounding areas. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/carpentry-services/",
+    canonicalUrl: "https://www.herohandymanpro.com/carpentry-services/",
     keywords: "carpentry services near me, exterior carpentry near me, trim repair near me, custom carpentry, framing repair",
   },
 
@@ -1477,7 +1477,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Professional ceiling fan installation in Metro East IL. New installs, replacements & repairs. High ceilings, patios, no problem. Licensed & insured. Free quote — call 800-741-6056.",
     h1: "Ceiling Fan Installation — St. Louis & Metro East",
     bodySnippet: "Professional ceiling fan installation in Metro East IL and St. Louis. New installs, replacements, and repairs. Hero Handyman Pro. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/handyman-services/ceiling-fan-installation/",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-services/ceiling-fan-installation/",
     keywords: "ceiling fan installation near me, ceiling fan install St Louis, ceiling fan Metro East IL",
   },
 
@@ -1487,7 +1487,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Schedule your handyman service online. Fast, easy booking for drywall, deck repair, door installation, and more in St. Louis & Metro East. Call 800-741-6056.",
     h1: "Book a Handyman Service",
     bodySnippet: "Schedule your handyman service with Hero Handyman Pro online. St. Louis & Metro East IL. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/booking/",
+    canonicalUrl: "https://www.herohandymanpro.com/booking/",
     noindex: true,
   },
   "/membership/": {
@@ -1495,14 +1495,14 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Get priority scheduling, discounted repairs, and ongoing home maintenance with our handyman membership. Perfect for homeowners who want peace of mind.",
     h1: "VIP Handyman Membership",
     bodySnippet: "Hero Handyman Pro VIP membership — priority scheduling, 15% discount on all services, no scheduling fees. St. Louis & Metro East IL. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/membership/",
+    canonicalUrl: "https://www.herohandymanpro.com/membership/",
   },
   "/dashboard/membership/": {
     title: "Member Dashboard | Hero Handyman Pro",
     description: "Access your Hero Handyman Pro membership dashboard. View your membership status and track your savings from discounts and priority service.",
     h1: "Member Dashboard",
     bodySnippet: "Hero Handyman Pro member dashboard. View membership status and savings.",
-    canonicalUrl: "https://herohandymanpro.com/dashboard/membership/",
+    canonicalUrl: "https://www.herohandymanpro.com/dashboard/membership/",
     noindex: true,
   },
   "/terms/": {
@@ -1510,7 +1510,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Terms of service for Hero Handyman Pro. Read our terms before using our website or booking handyman services in St. Louis & Metro East IL.",
     h1: "Terms of Service",
     bodySnippet: "Terms of service for Hero Handyman Pro. Hero Handyman Pro. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/terms/",
+    canonicalUrl: "https://www.herohandymanpro.com/terms/",
     noindex: true,
   },
   "/privacy/": {
@@ -1518,7 +1518,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Privacy policy for Hero Handyman Pro. Learn how we collect, use, and protect your personal information when you use our website or book services.",
     h1: "Privacy Policy",
     bodySnippet: "Privacy policy for Hero Handyman Pro. Hero Handyman Pro. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/privacy/",
+    canonicalUrl: "https://www.herohandymanpro.com/privacy/",
     noindex: true,
   },
   "/brand-preview": {
@@ -1526,7 +1526,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Internal brand preview page for Hero Handyman Pro.",
     h1: "Brand Preview",
     bodySnippet: "Internal brand preview page for Hero Handyman Pro.",
-    canonicalUrl: "https://herohandymanpro.com/brand-preview",
+    canonicalUrl: "https://www.herohandymanpro.com/brand-preview",
     noindex: true,
   },
   "/admin/leads": {
@@ -1534,7 +1534,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Internal admin leads management page.",
     h1: "Leads Dashboard",
     bodySnippet: "Internal admin leads management page.",
-    canonicalUrl: "https://herohandymanpro.com/admin/leads",
+    canonicalUrl: "https://www.herohandymanpro.com/admin/leads",
     noindex: true,
   },
   "/admin/estimator-leads": {
@@ -1542,7 +1542,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Internal admin estimator leads management page.",
     h1: "Estimator Leads Dashboard",
     bodySnippet: "Internal admin estimator leads management page.",
-    canonicalUrl: "https://herohandymanpro.com/admin/estimator-leads",
+    canonicalUrl: "https://www.herohandymanpro.com/admin/estimator-leads",
     noindex: true,
   },
 
@@ -1552,7 +1552,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Is your deck safe? Learn the 5 warning signs that your deck needs repair or replacement — from soft boards and loose railings to rot and structural issues. Metro East IL guide.",
     h1: "5 Signs Your Deck Needs Repair",
     bodySnippet: "5 warning signs your deck needs repair. Metro East IL homeowner guide. Hero Handyman Pro. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/blog/signs-your-deck-needs-repair/",
+    canonicalUrl: "https://www.herohandymanpro.com/blog/signs-your-deck-needs-repair/",
     keywords: "deck repair signs, when to repair deck, deck safety Metro East IL",
   },
   "/blog/handyman-vs-contractor-metro-east-il/": {
@@ -1560,7 +1560,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Not sure whether to hire a handyman or a general contractor? This guide explains the difference, when to use each, and how to save money on home repairs in Metro East IL.",
     h1: "Handyman vs. Contractor: Which Do You Need?",
     bodySnippet: "Guide to choosing between a handyman and a contractor for home repairs in Metro East IL. Hero Handyman Pro. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/blog/handyman-vs-contractor-metro-east-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/blog/handyman-vs-contractor-metro-east-il/",
     keywords: "handyman vs contractor Metro East IL, when to hire handyman, when to hire contractor",
   },
   "/blog/home-repairs-edwardsville-il/": {
@@ -1568,7 +1568,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "A practical home repair guide for Edwardsville, IL homeowners. Learn about common repair needs in Edwardsville homes, seasonal maintenance tips, and how to find reliable local help.",
     h1: "Edwardsville IL Home Repair Guide",
     bodySnippet: "Practical home repair guide for Edwardsville, IL homeowners. Common repair needs, seasonal maintenance tips, and local help. Hero Handyman Pro. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/blog/home-repairs-edwardsville-il/",
+    canonicalUrl: "https://www.herohandymanpro.com/blog/home-repairs-edwardsville-il/",
     keywords: "Edwardsville IL home repairs, home repair guide Edwardsville, Edwardsville handyman tips",
   },
 
@@ -1578,7 +1578,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Meet Phil Green, owner of Hero Handyman Pro. 35+ years of handyman experience serving St. Louis & Metro East IL. Licensed, insured, veteran-friendly. Call 800-741-6056.",
     h1: "About Hero Handyman Pro",
     bodySnippet: "Hero Handyman Pro is owned by Phil Green with 35+ years of handyman experience serving St. Louis, MO and Metro East Illinois. Licensed, insured, veteran-friendly. Call 800-741-6056.",
-    canonicalUrl: "https://herohandymanpro.com/about/",
+    canonicalUrl: "https://www.herohandymanpro.com/about/",
     keywords: "about Hero Handyman Pro, Phil Green handyman, handyman St Louis background",
   },
 

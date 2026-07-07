@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://herohandymanpro.com/sitemap.xml
+Sitemap: https://www.herohandymanpro.com/sitemap.xml

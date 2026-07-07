@@ -12,7 +12,7 @@ const LOCAL_BUSINESS_SCHEMA = {
     "addressCountry": "US"
   },
   "telephone": "800-741-6056",
-  "url": "https://herohandymanpro.com/",
+  "url": "https://www.herohandymanpro.com/",
   "openingHours": "Mo-Su 08:00-17:00",
   "priceRange": "$$",
   "description": "Fast, honest handyman services in St. Louis and Metro East IL"

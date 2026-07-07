@@ -1,6 +1,6 @@
 import { writeFileSync } from 'fs';
 
-const baseUrl = 'https://herohandymanpro.com';
+const baseUrl = 'https://www.herohandymanpro.com';
 
 const pages = [
   { url: '', priority: '1.0', changefreq: 'weekly' }, // Home

@@ -183,7 +183,7 @@ export const appRouter = router({
         }
         
         // Generate scheduling URL with token
-        const baseUrl = process.env.VITE_APP_URL || "https://herohandymanpro.com";
+        const baseUrl = process.env.VITE_APP_URL || "https://www.herohandymanpro.com";
         const schedulingLink = `${baseUrl}/schedule?token=${membership.schedulingToken}`;
         
         return { schedulingLink };

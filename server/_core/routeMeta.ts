@@ -37,7 +37,7 @@ export function getRouteMeta(pathname: string): RouteMeta {
       h1: 'Hero Handyman Pro — Trusted Local Handyman Services',
       bodySnippet:
         'Hero Handyman Pro provides trusted handyman and home repair services across St. Louis, MO and Metro East Illinois. Call 800-741-6056 for a free estimate.',
-      canonicalUrl: 'https://herohandymanpro.com',
+      canonicalUrl: 'https://www.herohandymanpro.com',
     }
   );
 }
