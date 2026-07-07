@@ -550,7 +550,7 @@ export default function GBPOFallon() {
               Ready to Get Started?
             </h2>
             <p className="text-xl mb-8 text-orange-50">
-              Have a small repair or punch-list project? Call Hero Handyman Pro at 800-741-6056 or request a free quote. Reliable handyman service with same-week availability when possible.
+              Have a small repair or punch-list project? Call Hero Handyman Pro at (618) 353-0955 or request a free quote. Reliable handyman service with same-week availability when possible.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:618-353-0955">
@@ -570,4 +570,3 @@ export default function GBPOFallon() {
       </section>
     </div>
   );
-}

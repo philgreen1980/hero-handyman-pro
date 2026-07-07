@@ -161,10 +161,10 @@ export default function GBPDesPeres() {
                 </Button>
               </Link>
 
-              <a href="tel:800-741-6056">
+              <a href="tel:314-931-3732">
                 <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 border-white text-white text-lg px-8 py-6">
                   <Phone className="w-5 h-5 mr-2" />
-                  Call 800-741-6056
+                  Call (314) 931-3732
                 </Button>
               </a>
             </div>
@@ -304,8 +304,8 @@ export default function GBPDesPeres() {
 
             <p className="text-gray-600 mb-10 text-sm">
               Not sure if we cover your area?{' '}
-              <a href="tel:800-741-6056" className="text-[#E85818] hover:text-[#E85818] font-medium">
-                Call 800-741-6056
+              <a href="tel:314-931-3732" className="text-[#E85818] hover:text-[#E85818] font-medium">
+                Call (314) 931-3732
               </a>{' '}
               and we'll let you know right away.
             </p>
@@ -479,11 +479,11 @@ export default function GBPDesPeres() {
           },
           {
             question: "What's your typical response time for West St. Louis jobs?",
-            answer: "We strive to respond to all inquiries the same day during business hours. For smaller repairs, we can often schedule same-week or next-week appointments. Call 800-741-6056 for the fastest response."
+            answer: "We strive to respond to all inquiries the same day during business hours. For smaller repairs, we can often schedule same-week or next-week appointments. Call (314) 931-3732 for the fastest response."
           },
           {
             question: "Do you offer free estimates for West St. Louis projects?",
-            answer: "Absolutely. We provide free, no-obligation estimates for all projects in West St. Louis County. Call us at 800-741-6056 or fill out our contact form and we will schedule a convenient time to assess your project."
+            answer: "Absolutely. We provide free, no-obligation estimates for all projects in West St. Louis County. Call us at (314) 931-3732 or fill out our contact form and we will schedule a convenient time to assess your project."
           },
           {
             question: "Are you licensed and insured to work in West St. Louis County?",
@@ -539,7 +539,7 @@ export default function GBPDesPeres() {
         city="Des Peres"
         state="MO"
         pageUrl="/gbp/des-peres-mo/"
-        phone="+1-800-741-6056"
+        phone="+1-314-931-3732"
       />
 
       {/* ── Final CTA Section ── */}
@@ -550,7 +550,7 @@ export default function GBPDesPeres() {
               Ready to Get Started?
             </h2>
             <p className="text-xl mb-8 text-orange-50">
-              Have a small repair or punch-list project? Call Hero Handyman Pro at 800-741-6056 or request a free quote. Reliable handyman service with same-week availability when possible.
+              Have a small repair or punch-list project? Call Hero Handyman Pro at (314) 931-3732 or request a free quote. Reliable handyman service with same-week availability when possible.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/#contact?city=West+St.+Louis">
@@ -558,16 +558,14 @@ export default function GBPDesPeres() {
                   Get a Free Quote
                 </Button>
               </Link>
-              <a href="tel:800-741-6056">
+              <a href="tel:314-931-3732">
                 <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 border-white text-white text-lg px-8 py-6">
                   <Phone className="w-5 h-5 mr-2" />
-                  Call 800-741-6056
+                  Call (314) 931-3732
                 </Button>
               </a>
             </div>
           </div>
         </div>
       </section>
-    </div>
-  );
-}
+    </
