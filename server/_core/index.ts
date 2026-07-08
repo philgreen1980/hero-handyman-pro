@@ -102,11 +102,11 @@ async function startServer() {
 
   // Standalone admin login (replaces Manus OAuth for /admin/* pages)
   registerAdminAuthRoutes(app);
-  
+
   // Leads API endpoint
   const leadsRouter = (await import("../routes/leads")).default;
   app.use("/api/leads", leadsRouter);
-  
+
   // Photo upload endpoint for contact form
   const multer = (await import("multer")).default;
   const upload = multer({
@@ -172,12 +172,12 @@ async function startServer() {
   app.post("/api/contact", async (req, res) => {
     try {
       const { name, email, phone, city, service, message, photoUrl } = req.body;
-      
+
       // Validate required fields
       if (!name || !email || !phone || !city || !service || !message) {
         return res.status(400).json({ error: "All fields are required" });
       }
-      
+
       // Deduplication: ignore duplicate submissions within 60 seconds
       const dedupKey = deduplicationKey(name, phone, email);
       if (isRecentDuplicate(dedupKey)) {
@@ -225,12 +225,12 @@ async function startServer() {
   // 301 Redirects for old/problematic URLs flagged in Google Search Console
   const redirects: Record<string, string> = {
     "/handyman-services/exterior-carpentry/": "/carpentry-services/",
-    "/service-areas/ofallon-il/": "/service-areas/ofallon-handyman-services/",
-    "/service-areas/edwardsville-il/": "/service-areas/edwardsville-handyman-services/",
-    "/service-areas/chesterfield-mo/": "/handyman-chesterfield-mo/",
-    "/service-areas/ofallon-il-handyman/": "/service-areas/ofallon-handyman-services/",
-    "/service-areas/edwardsville-il-handyman/": "/service-areas/edwardsville-handyman-services/",
-    "/service-areas/belleville-il-handyman/": "/service-areas/belleville-handyman-services/",
+    "/service-areas/ofallon-il/": "/gbp/ofallon-il/",
+    "/service-areas/edwardsville-il/": "/gbp/edwardsville-il/",
+    "/service-areas/chesterfield-mo/": "/handyman-chesterfield-mo",
+    "/service-areas/ofallon-il-handyman/": "/gbp/ofallon-il/",
+    "/service-areas/edwardsville-il-handyman/": "/gbp/edwardsville-il/",
+    "/service-areas/belleville-il-handyman/": "/handyman-belleville-il",
     "/service-areas/collinsville-il-handyman/": "/service-areas/collinsville-handyman-services/",
     "/service-areas/glen-carbon-il-handyman/": "/service-areas/glen-carbon-handyman-services/",
     "/service-areas/st-charles-mo-handyman/": "/service-areas/st-charles-handyman-services/",
@@ -244,7 +244,7 @@ async function startServer() {
     "/services": "/handyman-services/",
     "/services/": "/handyman-services/",
     "/handyman-collinsville-il": "/service-areas/collinsville-handyman-services/",
-    "/handyman-ofallon-mo": "/service-areas/ofallon-handyman-services/",
+    "/handyman-ofallon-mo": "/gbp/ofallon-il/",
     "/about-rebrand": "/about/",
     "/deck-repair": "/handyman-services/deck-repair/",
     "/fence-repair": "/handyman-services/fence-repair/",
@@ -261,16 +261,16 @@ async function startServer() {
     "/door-installation": "/handyman-services/door-repair/",
     "/door-installation/": "/handyman-services/door-repair/",
     // Short-form city URLs → canonical service-area paths
-    "/chesterfield-mo/": "/handyman-chesterfield-mo/",
-    "/chesterfield-mo": "/handyman-chesterfield-mo/",
-    "/chesterfield/": "/handyman-chesterfield-mo/",
-    "/chesterfield": "/handyman-chesterfield-mo/",
-    "/ofallon-il/": "/service-areas/ofallon-handyman-services/",
-    "/ofallon-il": "/service-areas/ofallon-handyman-services/",
-    "/edwardsville-il/": "/service-areas/edwardsville-handyman-services/",
-    "/edwardsville-il": "/service-areas/edwardsville-handyman-services/",
-    "/belleville-il/": "/service-areas/belleville-handyman-services/",
-    "/belleville-il": "/service-areas/belleville-handyman-services/",
+    "/chesterfield-mo/": "/handyman-chesterfield-mo",
+    "/chesterfield-mo": "/handyman-chesterfield-mo",
+    "/chesterfield/": "/handyman-chesterfield-mo",
+    "/chesterfield": "/handyman-chesterfield-mo",
+    "/ofallon-il/": "/gbp/ofallon-il/",
+    "/ofallon-il": "/gbp/ofallon-il/",
+    "/edwardsville-il/": "/gbp/edwardsville-il/",
+    "/edwardsville-il": "/gbp/edwardsville-il/",
+    "/belleville-il/": "/handyman-belleville-il",
+    "/belleville-il": "/handyman-belleville-il",
     // Rapid Repair Pro old brand references → redirect to About page
     "/blog/rapid-repair-pro/": "/about/",
     "/blog/rapid-repair-pro": "/about/",
@@ -317,10 +317,10 @@ async function startServer() {
     "/blog/winter-home-repairs-illinois/": "/blog/common-home-repairs-after-winter-illinois/",
     "/blog/home-maintenance-tips-metro-east": "/blog/2026-handyman-costs-metro-east-il/",
     "/blog/home-maintenance-tips-metro-east/": "/blog/2026-handyman-costs-metro-east-il/",
-    "/blog/belleville-home-repairs": "/service-areas/belleville-handyman-services/",
-    "/blog/belleville-home-repairs/": "/service-areas/belleville-handyman-services/",
-    "/blog/edwardsville-il-home-repair-guide": "/service-areas/edwardsville-handyman-services/",
-    "/blog/edwardsville-il-home-repair-guide/": "/service-areas/edwardsville-handyman-services/",
+    "/blog/belleville-home-repairs": "/handyman-belleville-il",
+    "/blog/belleville-home-repairs/": "/handyman-belleville-il",
+    "/blog/edwardsville-il-home-repair-guide": "/gbp/edwardsville-il/",
+    "/blog/edwardsville-il-home-repair-guide/": "/gbp/edwardsville-il/",
     // Task 1: Duplicate service-area URLs → canonical pages
     "/service-areas/swansea-il-handyman-services": "/handyman-swansea-il/",
     "/service-areas/swansea-il-handyman-services/": "/handyman-swansea-il/",
@@ -375,18 +375,32 @@ async function startServer() {
     // Task 3: /handyman-service-packages → /handyman-services/
     "/handyman-service-packages": "/handyman-services/",
     // Task 3: /services/window-installation-ofallon-il → /handyman-services/window-installation/
-    "/services/window-installation-ofallon-il": "/handyman-services/window-installation/",
-    "/services/window-installation-ofallon-il/": "/handyman-services/window-installation/",
+    "/services/window-installation-ofallon-il": "/service-areas/window-installation-ofallon-il/",
+    "/services/window-installation-ofallon-il/": "/service-areas/window-installation-ofallon-il/",
     // Task 3: city pages trailing-slash canonical
-    "/handyman-fairview-heights-il/": "/handyman-fairview-heights-il",
-    "/handyman-shiloh-il/": "/handyman-shiloh-il",
-    "/handyman-swansea-il/": "/handyman-swansea-il",
+    "/handyman-fairview-heights-il": "/handyman-fairview-heights-il/",
+    "/handyman-shiloh-il": "/handyman-shiloh-il/",
+    "/handyman-swansea-il": "/handyman-swansea-il/",
     // Crawled-not-indexed fixes: /reviews/deck-building/ → main reviews page
     "/reviews/deck-building": "/reviews/",
     "/reviews/deck-building/": "/reviews/",
     // Crawled-not-indexed fixes: /service-areas/st-louis-handyman-services/ → canonical St. Louis page
     "/service-areas/st-louis-handyman-services": "/service-areas/st-louis-mo-handyman/",
     "/service-areas/st-louis-handyman-services/": "/service-areas/st-louis-mo-handyman/",
+    // Phase 5: GSC duplicate/competing-URL redirect map (2026-07-08)
+    "/handyman-services/door-repair": "/handyman-services/door-repair/",
+    "/handyman-chesterfield-mo/": "/handyman-chesterfield-mo",
+    "/handyman-services/deck-repair": "/handyman-services/deck-repair/",
+    "/handyman-service-packages/": "/handyman-services/",
+    "/handyman-ballwin-mo/": "/handyman-ballwin-mo",
+    "/service-areas/edwardsville-il-handyman": "/gbp/edwardsville-il/",
+    "/service-areas/ofallon-handyman-services/": "/gbp/ofallon-il/",
+    "/service-areas/edwardsville-handyman-services/": "/gbp/edwardsville-il/",
+    "/service-areas/belleville-handyman-services/": "/handyman-belleville-il",
+    "/services/electrical-fixtures": "/services/electrical-fixtures/",
+    "/services/deck-repair": "/handyman-services/deck-repair/",
+    "/services/porch-repair": "/handyman-services/porch-repair/",
+    "/services/bathroom-remodeling": "/handyman-services/bathroom-remodeling/",
   };
   app.use((req, res, next) => {
     const target = redirects[req.path];
