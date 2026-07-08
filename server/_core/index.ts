@@ -244,7 +244,11 @@ async function startServer() {
     "/services": "/handyman-services/",
     "/services/": "/handyman-services/",
     "/handyman-collinsville-il": "/service-areas/collinsville-handyman-services/",
-    "/handyman-ofallon-mo": "/gbp/ofallon-il/",
+    // NOTE: intentionally NOT redirected — O'Fallon, MO (St. Charles County/West
+    // County) is a distinct city from O'Fallon, IL (Metro East). This URL has its
+    // own real page (HandymanOFallonMO component + unique seo-routes.ts entry).
+    // A prior redirect had been silently sending this city's traffic to the O'Fallon
+    // IL GBP page — removed so it serves its own content again.
     "/about-rebrand": "/about/",
     "/deck-repair": "/handyman-services/deck-repair/",
     "/fence-repair": "/handyman-services/fence-repair/",
