@@ -93,6 +93,20 @@ async function startServer() {
     });
   }
 
+  // Non-www → www enforcement: GoDaddy's Domain Forwarding only forwards
+  // the bare root path ("/"), not subpaths — anyone hitting
+  // herohandymanpro.com/anything (no www) currently hits GoDaddy's own
+  // "Not Found" page and never reaches this server at all. Once the apex
+  // domain's DNS is pointed at Railway directly (see deployment notes),
+  // this makes sure every path 301s to the working www version instead.
+  app.use((req, res, next) => {
+    const host = req.headers.host;
+    if (host === "herohandymanpro.com") {
+      return res.redirect(301, `https://www.herohandymanpro.com${req.originalUrl}`);
+    }
+    next();
+  });
+
   // Configure body parser with larger size limit for file uploads
   app.use(express.json({ limit: "50mb" }));
   app.use(express.urlencoded({ limit: "50mb", extended: true }));
