@@ -413,7 +413,7 @@ export default function DeckRepairPage() {
       <LocalBusinessSchema
         city="St. Louis"
         state="MO"
-        pageUrl="/services/deck-repair"
+        pageUrl="/handyman-services/deck-repair/"
       />
     </div>
   );

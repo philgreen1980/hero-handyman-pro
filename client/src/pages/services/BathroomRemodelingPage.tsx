@@ -433,7 +433,7 @@ export default function BathroomRemodelingPage() {
       <LocalBusinessSchema
         city="St. Louis"
         state="MO"
-        pageUrl="/services/bathroom-remodeling"
+        pageUrl="/handyman-services/bathroom-remodeling/"
       />
     </div>
   );

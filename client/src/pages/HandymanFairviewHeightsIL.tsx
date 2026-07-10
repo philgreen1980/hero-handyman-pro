@@ -46,7 +46,7 @@ export default function HandymanFairviewHeightsIL() {
     <div className="flex flex-col">
       <SEO {...seo} />
 
-      <LocalBusinessSchema city="Fairview Heights" state="IL" pageUrl="/service-areas/fairview-heights-il-handyman-services/" />
+      <LocalBusinessSchema city="Fairview Heights" state="IL" pageUrl="/handyman-fairview-heights-il/" />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#1f2937] via-[#020617] to-[#020617] text-white py-16 md:py-24 px-6">

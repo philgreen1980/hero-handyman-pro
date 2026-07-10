@@ -456,7 +456,7 @@ export default function PorchRepairCollinsville() {
       <LocalBusinessSchema 
         city="St. Louis"
         state="MO"
-        pageUrl="https://herohandymanpro.com/services/porch-repair"
+        pageUrl="https://www.herohandymanpro.com/handyman-services/porch-repair/"
       />
       <ServiceSchema 
         serviceName="Porch Repair & Restoration"
@@ -464,10 +464,10 @@ export default function PorchRepairCollinsville() {
         serviceType="Porch Repair"
         areaServed="St. Louis"
         priceRange="$200-$8000"
-        pageUrl="/services/porch-repair"
+        pageUrl="/handyman-services/porch-repair/"
       />
       <FAQSchema 
-        pageUrl="/services/porch-repair"
+        pageUrl="/handyman-services/porch-repair/"
         faqs={[
           {
             question: "How do I know if my porch needs repair?",

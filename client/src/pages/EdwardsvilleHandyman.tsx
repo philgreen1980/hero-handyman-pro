@@ -90,7 +90,7 @@ export default function EdwardsvilleHandyman() {
     { label: "Edwardsville, IL" }
   ]} />
       <SEO {...seo} />
-      <LocalBusinessSchema city="Edwardsville" state="IL" pageUrl="/service-areas/edwardsville-handyman-services/" />
+      <LocalBusinessSchema city="Edwardsville" state="IL" pageUrl="/gbp/edwardsville-il/" />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#1f2937] via-[#020617] to-[#020617] text-white py-16 md:py-24 px-6">
         <div className="max-w-[1120px] mx-auto">

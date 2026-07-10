@@ -84,7 +84,7 @@ export default function BellevilleHandyman() {
     { label: "Belleville, IL" }
   ]} />
       <SEO {...seo} />
-      <LocalBusinessSchema city="Belleville" state="IL" pageUrl="/service-areas/belleville-handyman-services/" />
+      <LocalBusinessSchema city="Belleville" state="IL" pageUrl="/handyman-belleville-il" />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#1f2937] via-[#020617] to-[#020617] text-white py-16 md:py-24 px-6">
         <div className="max-w-[1120px] mx-auto">

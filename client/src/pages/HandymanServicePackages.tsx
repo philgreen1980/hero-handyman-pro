@@ -125,7 +125,7 @@ export default function HandymanServicePackages() {
       <SEO {...seo} />
       
       <LocalBusinessSchema 
-        pageUrl="https://herohandymanpro.com/handyman-service-packages"
+        pageUrl="https://www.herohandymanpro.com/handyman-services/"
         city="St. Louis"
         state="MO"
       />

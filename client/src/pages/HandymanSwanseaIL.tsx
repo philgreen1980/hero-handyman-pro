@@ -46,7 +46,7 @@ export default function HandymanSwanseaIL() {
     <div className="flex flex-col">
       <SEO {...seo} />
 
-      <LocalBusinessSchema city="Swansea" state="IL" pageUrl="/service-areas/swansea-il-handyman-services/" />
+      <LocalBusinessSchema city="Swansea" state="IL" pageUrl="/handyman-swansea-il/" />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#1f2937] via-[#020617] to-[#020617] text-white py-16 md:py-24 px-6">
