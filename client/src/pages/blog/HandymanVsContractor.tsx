@@ -22,11 +22,11 @@ const articleSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Hero Handyman Pro",
-    "url": "https://herohandymanpro.com"
+    "url": "https://www.herohandymanpro.com"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://herohandymanpro.com/blog/handyman-vs-contractor-metro-east-il/"
+    "@id": "https://www.herohandymanpro.com/blog/handyman-vs-contractor-metro-east-il/"
   }
 };
 
@@ -290,7 +290,7 @@ export default function HandymanVsContractor() {
           <div className="grid md:grid-cols-2 gap-4">
             {[
               { label: "All Handyman Services", href: "/handyman-services/" },
-              { label: "Service Packages", href: "/handyman-service-packages/" },
+              { label: "Service Packages", href: "/handyman-services/" },
               { label: "Handyman Membership Plan", href: "/membership/" },
               { label: "How to Choose a Handyman", href: "/blog/how-to-choose-handyman-st-louis/" },
               { label: "2026 Handyman Costs Guide", href: "/blog/2026-handyman-costs-metro-east-il/" },

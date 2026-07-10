@@ -150,9 +150,9 @@ const reviews = [
             {[
               { label: "Door Installation & Repair", href: "/handyman-services/door-repair/" },
               { label: "Window Installation & Repair", href: "/handyman-services/window-installation/" },
-              { label: "Exterior Carpentry", href: "/handyman-services/exterior-carpentry/" },
-              { label: "Door Installation in Edwardsville IL", href: "/service-areas/door-installation-edwardsville-il/" },
-              { label: "Door Installation in O'Fallon IL", href: "/service-areas/door-installation-ofallon-il/" },
+              { label: "Exterior Carpentry", href: "/carpentry-services/" },
+              { label: "Door Installation in Edwardsville IL", href: "/door-installation-edwardsville-il" },
+              { label: "Door Installation in O'Fallon IL", href: "/door-installation-ofallon-il" },
             ].map(link => (
               <Link key={link.href} href={link.href}>
                 <span className="inline-block border border-teal-600 text-teal-700 hover:bg-teal-50 font-medium px-4 py-2 rounded-full text-sm cursor-pointer transition-colors">

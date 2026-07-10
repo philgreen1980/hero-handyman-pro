@@ -347,7 +347,7 @@ export default function HandymanBallwinMO() {
             {[
               { label: "West St. Louis Handyman Services", href: "/gbp/des-peres-mo/" },
               { label: "Handyman in Chesterfield, MO", href: "/handyman-chesterfield-mo" },
-              { label: "Handyman Near Me", href: "/handyman-near-me" },
+              { label: "Handyman Near Me", href: "/handyman-near-me/" },
               { label: "All Handyman Services", href: "/handyman-services/" },
               { label: "Drywall Repair", href: "/drywall-repair-ballwin-mo" },
               { label: "Deck Repair", href: "/deck-repair-ballwin-mo" },

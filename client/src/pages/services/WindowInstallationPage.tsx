@@ -525,7 +525,7 @@ export default function WindowInstallationPage() {
       <LocalBusinessSchema 
         city="St. Louis"
         state="MO"
-        pageUrl="https://herohandymanpro.com/services/window-installation"
+        pageUrl="https://www.herohandymanpro.com/services/window-installation"
       />
       <ServiceSchema 
         serviceName="Window Installation & Replacement"

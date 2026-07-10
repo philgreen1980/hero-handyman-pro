@@ -430,14 +430,14 @@ export default function FaucetRepairService() {
           <p className="text-[#4b5563] mb-6">We serve all of St. Louis and Metro East Illinois. Find your city below for local availability.</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { name: "Edwardsville, IL", href: "/service-areas/edwardsville-handyman-services/" },
-              { name: "O'Fallon, IL", href: "/service-areas/ofallon-handyman-services/" },
-              { name: "Belleville, IL", href: "/service-areas/belleville-handyman-services/" },
+              { name: "Edwardsville, IL", href: "/gbp/edwardsville-il/" },
+              { name: "O'Fallon, IL", href: "/gbp/ofallon-il/" },
+              { name: "Belleville, IL", href: "/handyman-belleville-il" },
               { name: "Collinsville, IL", href: "/service-areas/collinsville-handyman-services/" },
               { name: "Glen Carbon, IL", href: "/service-areas/glen-carbon-handyman-services/" },
               { name: "St. Charles, MO", href: "/service-areas/st-charles-handyman-services/" },
               { name: "Fenton, MO", href: "/service-areas/fenton-handyman-services/" },
-              { name: "St. Louis, MO", href: "/service-areas/st-louis-handyman-services/" },
+              { name: "St. Louis, MO", href: "/service-areas/st-louis-mo-handyman/" },
             ].map((area) => (
               <Link key={area.name} href={area.href}>
                 <Button variant="outline" className="rounded-full border-[#e5e7eb] hover:border-[#ff5b00] hover:text-[#ff5b00]">

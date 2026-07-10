@@ -11,7 +11,7 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   "name": "Hero Handyman Pro — Drywall Repair O'Fallon IL",
   "description": "Professional drywall repair services in O'Fallon, Illinois. Holes, cracks, water damage, texture matching, and full drywall replacement.",
-  "url": "https://herohandymanpro.com/service-areas/drywall-repair-ofallon-il/",
+  "url": "https://www.herohandymanpro.com/service-areas/drywall-repair-ofallon-il/",
   "telephone": "+1-618-555-0100",
   "address": {
     "@type": "PostalAddress",
@@ -120,7 +120,7 @@ export default function DrywallRepairOFallon() {
             crumbs={[
               { label: "Home", href: "/" },
               { label: "Service Areas", href: "/service-areas/" },
-              { label: "O'Fallon Handyman", href: "/service-areas/ofallon-handyman-services/" },
+              { label: "O'Fallon Handyman", href: "/gbp/ofallon-il/" },
               { label: "Drywall Repair" },
             ]}
           />
@@ -272,7 +272,7 @@ export default function DrywallRepairOFallon() {
                   { label: "Ceiling Fan Installation", href: "/handyman-services/ceiling-fan-installation/" },
                   { label: "Door Repair & Installation", href: "/handyman-services/door-repair/" },
                   { label: "Interior Painting", href: "/handyman-services/home-repair-services/" },
-                  { label: "Home Repair Packages", href: "/handyman-service-packages" },
+                  { label: "Home Repair Packages", href: "/handyman-services/" },
                 ].map((l) => (
                   <Link key={l.href} href={l.href}>
                     <span className="block text-[#ff5b00] hover:underline text-sm py-0.5">→ {l.label}</span>
@@ -284,11 +284,11 @@ export default function DrywallRepairOFallon() {
               <h3 className="text-base font-bold text-[#0b1220] mb-3">Service Areas</h3>
               <div className="grid gap-2">
                 {[
-                  { label: "O'Fallon Handyman Services", href: "/service-areas/ofallon-handyman-services/" },
-                  { label: "Edwardsville Handyman", href: "/service-areas/edwardsville-handyman-services/" },
-                  { label: "Belleville Handyman", href: "/service-areas/belleville-handyman-services/" },
+                  { label: "O'Fallon Handyman Services", href: "/gbp/ofallon-il/" },
+                  { label: "Edwardsville Handyman", href: "/gbp/edwardsville-il/" },
+                  { label: "Belleville Handyman", href: "/handyman-belleville-il" },
                   { label: "Collinsville Handyman", href: "/service-areas/collinsville-handyman-services/" },
-                  { label: "Shiloh IL Handyman", href: "/service-areas/handyman-shiloh-il/" },
+                  { label: "Shiloh IL Handyman", href: "/handyman-shiloh-il/" },
                 ].map((l) => (
                   <Link key={l.href} href={l.href}>
                     <span className="block text-[#ff5b00] hover:underline text-sm py-0.5">→ {l.label}</span>
@@ -301,7 +301,7 @@ export default function DrywallRepairOFallon() {
               <div className="grid gap-2">
                 {[
                   { label: "Drywall Repair Cost in O'Fallon IL", href: "/blog/drywall-repair-cost-ofallon-il/" },
-                  { label: "Most Common Home Repairs After Winter", href: "/blog/winter-home-repairs-illinois/" },
+                  { label: "Most Common Home Repairs After Winter", href: "/blog/common-home-repairs-after-winter-illinois/" },
                   { label: "Spring Home Repair Checklist", href: "/blog/spring-home-repair-checklist-edwardsville-ofallon/" },
                   { label: "2026 Handyman Costs Guide", href: "/blog/2026-handyman-costs-metro-east-il/" },
                 ].map((l) => (

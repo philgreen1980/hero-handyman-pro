@@ -14,9 +14,9 @@ const ESTIMATOR_SCHEMA = {
   "@graph": [
     {
       "@type": "HomeAndConstructionBusiness",
-      "@id": "https://herohandymanpro.com/#business",
+      "@id": "https://www.herohandymanpro.com/#business",
       "name": "Hero Handyman Pro",
-      "url": "https://herohandymanpro.com",
+      "url": "https://www.herohandymanpro.com",
       "telephone": "+18007416056",
       "email": "info@herohandymanpro.com",
       "priceRange": "$$",
@@ -42,7 +42,7 @@ const ESTIMATOR_SCHEMA = {
           "@type": "Offer",
           "name": "Free Online Project Estimate",
           "description": "Get an instant ballpark price range for your handyman project in under 2 minutes — no phone call required.",
-          "url": "https://herohandymanpro.com/estimator/",
+          "url": "https://www.herohandymanpro.com/estimator/",
           "priceCurrency": "USD",
           "eligibleRegion": { "@type": "State", "name": "Illinois" },
           "availability": "https://schema.org/InStock",
@@ -66,7 +66,7 @@ const ESTIMATOR_SCHEMA = {
         "name": "Get Free Online Estimate",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "https://herohandymanpro.com/estimator/",
+          "urlTemplate": "https://www.herohandymanpro.com/estimator/",
           "actionPlatform": [
             "http://schema.org/DesktopWebPlatform",
             "http://schema.org/MobileWebPlatform"
@@ -81,13 +81,13 @@ const ESTIMATOR_SCHEMA = {
     },
     {
       "@type": "WebPage",
-      "@id": "https://herohandymanpro.com/estimator/#webpage",
-      "url": "https://herohandymanpro.com/estimator/",
+      "@id": "https://www.herohandymanpro.com/estimator/#webpage",
+      "url": "https://www.herohandymanpro.com/estimator/",
       "name": "Free Handyman Project Cost Estimator — Hero Handyman Pro",
       "description": "Get an instant ballpark price range for your handyman project in under 2 minutes. Select your service, answer a few questions, and see what it typically costs — no phone call required.",
-      "isPartOf": { "@id": "https://herohandymanpro.com/#website" },
-      "about": { "@id": "https://herohandymanpro.com/#business" },
-      "primaryImageOfPage": { "@type": "ImageObject", "url": "https://herohandymanpro.com/og-image.png" }
+      "isPartOf": { "@id": "https://www.herohandymanpro.com/#website" },
+      "about": { "@id": "https://www.herohandymanpro.com/#business" },
+      "primaryImageOfPage": { "@type": "ImageObject", "url": "https://www.herohandymanpro.com/og-image.png" }
     }
   ]
 };

@@ -22,11 +22,11 @@ const articleSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Hero Handyman Pro",
-    "url": "https://herohandymanpro.com"
+    "url": "https://www.herohandymanpro.com"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://herohandymanpro.com/blog/common-home-repairs-after-winter-illinois/"
+    "@id": "https://www.herohandymanpro.com/blog/common-home-repairs-after-winter-illinois/"
   }
 };
 
@@ -277,9 +277,9 @@ export default function WinterHomeRepairsIllinois() {
               { label: "Deck Repair Service", href: "/handyman-services/deck-repair/" },
               { label: "Drywall Repair Service", href: "/handyman-services/drywall-repair/" },
               { label: "Door Repair & Installation", href: "/handyman-services/door-repair/" },
-              { label: "Service Packages", href: "/handyman-service-packages/" },
+              { label: "Service Packages", href: "/handyman-services/" },
               { label: "Spring Repair Checklist", href: "/blog/spring-home-repair-checklist-edwardsville-ofallon/" },
-              { label: "Handyman Services in O'Fallon", href: "/service-areas/ofallon-handyman-services/" },
+              { label: "Handyman Services in O'Fallon", href: "/gbp/ofallon-il/" },
             ].map((link, i) => (
               <Link key={i} href={link.href} className="flex items-center gap-2 text-[#ff5b00] hover:underline font-medium text-sm p-3 bg-gray-50 rounded-lg border border-gray-100 hover:border-[#ff5b00]/20 transition-colors">
                 <span>→</span> {link.label}

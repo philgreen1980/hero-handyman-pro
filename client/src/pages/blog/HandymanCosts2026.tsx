@@ -26,11 +26,11 @@ const articleSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Hero Handyman Pro",
-    "url": "https://herohandymanpro.com"
+    "url": "https://www.herohandymanpro.com"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://herohandymanpro.com/blog/2026-handyman-costs-metro-east-il/"
+    "@id": "https://www.herohandymanpro.com/blog/2026-handyman-costs-metro-east-il/"
   }
 };
 
@@ -380,8 +380,8 @@ export default function HandymanCosts2026() {
                   { label: "Door Installation & Repair", href: "/handyman-services/door-repair/" },
                   { label: "Ceiling Fan Installation", href: "/handyman-services/ceiling-fan-installation/" },
                   { label: "Handyman Services St. Louis MO", href: "/handyman-st-louis-mo/" },
-                  { label: "Edwardsville IL Handyman Services", href: "/service-areas/edwardsville-handyman-services/" },
-                  { label: "O'Fallon IL Handyman Services", href: "/service-areas/ofallon-handyman-services/" },
+                  { label: "Edwardsville IL Handyman Services", href: "/gbp/edwardsville-il/" },
+                  { label: "O'Fallon IL Handyman Services", href: "/gbp/ofallon-il/" },
                   { label: "View Completed Projects", href: "/projects/" },
                 ].map((link) => (
                   <Link key={link.href} href={link.href}>
@@ -397,7 +397,7 @@ export default function HandymanCosts2026() {
                   { label: "How Much Does Drywall Repair Cost in O'Fallon, IL?", href: "/blog/drywall-repair-cost-ofallon-il/" },
                   { label: "5 Signs Your Deck Needs Repair", href: "/blog/signs-your-deck-needs-repair/" },
                   { label: "Handyman vs. Contractor: Which Do You Need?", href: "/blog/handyman-vs-contractor-metro-east-il/" },
-                  { label: "Most Common Home Repairs After Winter in Illinois", href: "/blog/winter-home-repairs-illinois/" },
+                  { label: "Most Common Home Repairs After Winter in Illinois", href: "/blog/common-home-repairs-after-winter-illinois/" },
                   { label: "Edwardsville IL Home Repair Guide", href: "/blog/home-repairs-edwardsville-il/" },
                   { label: "Home Maintenance Tips for Metro East IL", href: "/blog/home-maintenance-tips-metro-east-il/" },
                   { label: "Spring Home Repair Checklist", href: "/blog/spring-home-repair-checklist-edwardsville-ofallon/" },

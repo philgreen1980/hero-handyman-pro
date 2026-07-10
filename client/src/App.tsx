@@ -285,7 +285,6 @@ function Router() {
         <Route path="/handyman-near-me/" component={HandymanNearMe} />
         <Route path="/handyman-service-packages" component={HandymanServicePackages} />
         <Route path="/handyman-packages/" component={HandymanServicePackages} />
-        <Route path="/ceiling-fan-installation/" component={CeilingFanService} />
         <Route path="/handyman-services-st-louis/" component={HandymanServicesStLouis} />
         
         {/* City Landing Pages */}

@@ -1472,14 +1472,6 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
   },
 
   // ── Ceiling Fan ───────────────────────────────────────────────────────────
-  "/ceiling-fan-installation/": {
-    title: "Ceiling Fan Installation St. Louis & Metro East",
-    description: "Professional ceiling fan installation in Metro East IL. New installs, replacements & repairs. High ceilings, patios, no problem. Licensed & insured. Free quote — call 800-741-6056.",
-    h1: "Ceiling Fan Installation — St. Louis & Metro East",
-    bodySnippet: "Professional ceiling fan installation in Metro East IL and St. Louis. New installs, replacements, and repairs. Hero Handyman Pro. Call 800-741-6056.",
-    canonicalUrl: "https://www.herohandymanpro.com/handyman-services/ceiling-fan-installation/",
-    keywords: "ceiling fan installation near me, ceiling fan install St Louis, ceiling fan Metro East IL",
-  },
 
   // ── Booking & Utility Pages ───────────────────────────────────────────────
   "/booking/": {

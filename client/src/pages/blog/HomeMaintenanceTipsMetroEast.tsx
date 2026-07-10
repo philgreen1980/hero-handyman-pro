@@ -22,11 +22,11 @@ const articleSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Hero Handyman Pro",
-    "url": "https://herohandymanpro.com"
+    "url": "https://www.herohandymanpro.com"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://herohandymanpro.com/blog/home-maintenance-tips-metro-east-il/"
+    "@id": "https://www.herohandymanpro.com/blog/home-maintenance-tips-metro-east-il/"
   }
 };
 
@@ -273,7 +273,7 @@ export default function HomeMaintenanceTipsMetroEast() {
           <h2 className="text-2xl font-bold text-[#0b1220] mb-4">Related Services & Resources</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              { label: "Service Packages", href: "/handyman-service-packages/" },
+              { label: "Service Packages", href: "/handyman-services/" },
               { label: "Handyman Membership Plan", href: "/membership/" },
               { label: "Deck Repair Service", href: "/handyman-services/deck-repair/" },
               { label: "Drywall Repair Service", href: "/handyman-services/drywall-repair/" },

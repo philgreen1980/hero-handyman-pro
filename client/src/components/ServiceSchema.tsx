@@ -27,9 +27,9 @@ export default function ServiceSchema({
       "provider": {
         "@type": "LocalBusiness",
         "name": "Hero Handyman Pro",
-        "image": "https://herohandymanpro.com/images/phil-portrait.webp",
+        "image": "https://www.herohandymanpro.com/images/phil-portrait.webp",
         "telephone": "+1-800-741-6056",
-        "url": "https://herohandymanpro.com",
+        "url": "https://www.herohandymanpro.com",
         "priceRange": "$$",
         "aggregateRating": {
           "@type": "AggregateRating",
@@ -50,7 +50,7 @@ export default function ServiceSchema({
         },
         "availability": "https://schema.org/InStock"
       },
-      "url": `https://herohandymanpro.com${pageUrl}`
+      "url": `https://www.herohandymanpro.com${pageUrl}`
     };
 
     const script = document.createElement("script");

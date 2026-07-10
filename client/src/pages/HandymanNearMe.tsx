@@ -398,9 +398,9 @@ export default function HandymanNearMe() {
         "@context": "https://schema.org",
         "@type": "HomeAndConstructionBusiness",
         "name": "Hero Handyman Pro",
-        "url": "https://herohandymanpro.com",
+        "url": "https://www.herohandymanpro.com",
         "telephone": "+1-800-741-6056",
-        "image": "https://herohandymanpro.com/images/og-image-hero-handyman-pro.png",
+        "image": "https://www.herohandymanpro.com/images/og-image-hero-handyman-pro.png",
         "description": "Trusted handyman services in Greater St. Louis and Metro East Illinois. Specializing in drywall repair, deck repair, door installation, carpentry, and general home repairs.",
         "priceRange": "$$",
         "address": {

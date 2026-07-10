@@ -371,11 +371,11 @@ export default function HandymanShilohIL() {
           </div>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { label: "O'Fallon, IL", href: "/service-areas/ofallon-handyman-services/" },
+              { label: "O'Fallon, IL", href: "/gbp/ofallon-il/" },
               { label: "Belleville, IL", href: "/handyman-belleville-il" },
-              { label: "Swansea, IL", href: "/handyman-swansea-il" },
-              { label: "Collinsville, IL", href: "/handyman-collinsville-il" },
-              { label: "Edwardsville, IL", href: "/service-areas/edwardsville-handyman-services/" },
+              { label: "Swansea, IL", href: "/handyman-swansea-il/" },
+              { label: "Collinsville, IL", href: "/service-areas/collinsville-handyman-services/" },
+              { label: "Edwardsville, IL", href: "/gbp/edwardsville-il/" },
               { label: "St. Louis, MO", href: "/handyman-st-louis-mo" },
               { label: "All Service Areas", href: "/service-areas/" },
             ].map((city) => (
@@ -398,13 +398,13 @@ export default function HandymanShilohIL() {
           </p>
           <div className="flex flex-wrap gap-3">
             {[
-              { name: "O'Fallon, IL", href: "/service-areas/ofallon-handyman-services/" },
-              { name: "Edwardsville, IL", href: "/service-areas/edwardsville-handyman-services/" },
-              { name: "Belleville, IL", href: "/service-areas/belleville-handyman-services/" },
+              { name: "O'Fallon, IL", href: "/gbp/ofallon-il/" },
+              { name: "Edwardsville, IL", href: "/gbp/edwardsville-il/" },
+              { name: "Belleville, IL", href: "/handyman-belleville-il" },
               { name: "Collinsville, IL", href: "/service-areas/collinsville-handyman-services/" },
               { name: "Glen Carbon, IL", href: "/service-areas/glen-carbon-handyman-services/" },
-              { name: "Swansea, IL", href: "/service-areas/swansea-il-handyman-services/" },
-              { name: "Fairview Heights, IL", href: "/service-areas/fairview-heights-il-handyman-services/" },
+              { name: "Swansea, IL", href: "/handyman-swansea-il/" },
+              { name: "Fairview Heights, IL", href: "/handyman-fairview-heights-il/" },
               { name: "View All Service Areas", href: "/service-areas/" },
             ].map((area) => (
               <Link key={area.name} href={area.href}>
@@ -457,9 +457,9 @@ export default function HandymanShilohIL() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://herohandymanpro.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://herohandymanpro.com/service-areas/" },
-          { "@type": "ListItem", "position": 3, "name": "Handyman Shiloh IL", "item": "https://herohandymanpro.com/handyman-shiloh-il/" }
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.herohandymanpro.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://www.herohandymanpro.com/service-areas/" },
+          { "@type": "ListItem", "position": 3, "name": "Handyman Shiloh IL", "item": "https://www.herohandymanpro.com/handyman-shiloh-il/" }
         ]
       }) }} />
     </div>

@@ -22,11 +22,11 @@ const articleSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Hero Handyman Pro",
-    "url": "https://herohandymanpro.com"
+    "url": "https://www.herohandymanpro.com"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://herohandymanpro.com/blog/how-to-choose-handyman-st-louis/"
+    "@id": "https://www.herohandymanpro.com/blog/how-to-choose-handyman-st-louis/"
   }
 };
 
@@ -306,7 +306,7 @@ export default function HowToChooseHandyman() {
                 {[
                   { label: "2026 Handyman Costs in Metro East IL", href: "/blog/2026-handyman-costs-metro-east-il/" },
                   { label: "5 Signs Your Deck Needs Repair", href: "/blog/signs-your-deck-needs-repair/" },
-                  { label: "Most Common Home Repairs After Winter in Illinois", href: "/blog/winter-home-repairs-illinois/" },
+                  { label: "Most Common Home Repairs After Winter in Illinois", href: "/blog/common-home-repairs-after-winter-illinois/" },
                   { label: "How Much Does Drywall Repair Cost in O'Fallon?", href: "/blog/drywall-repair-cost-ofallon-il/" },
                   { label: "Edwardsville IL Home Repair Guide", href: "/blog/home-repairs-edwardsville-il/" },
                   { label: "Home Maintenance Tips for Metro East IL", href: "/blog/home-maintenance-tips-metro-east-il/" },
@@ -327,8 +327,8 @@ export default function HowToChooseHandyman() {
                   { label: "Drywall & Ceiling Repair", href: "/handyman-services/drywall-repair/" },
                   { label: "Door Installation & Repair", href: "/handyman-services/door-repair/" },
                   { label: "Ceiling Fan Installation", href: "/handyman-services/ceiling-fan-installation/" },
-                  { label: "Exterior Carpentry", href: "/handyman-services/exterior-carpentry/" },
-                  { label: "Home Repair Service Packages", href: "/handyman-service-packages" },
+                  { label: "Exterior Carpentry", href: "/carpentry-services/" },
+                  { label: "Home Repair Service Packages", href: "/handyman-services/" },
                   { label: "Hero Membership Club", href: "/membership/" },
                   { label: "View Completed Projects", href: "/projects/" },
                 ].map((link) => (

@@ -205,7 +205,7 @@ export default function DrywallRepairChesterfield() {
               { label: "Deck Repair Chesterfield", href: "/deck-repair-chesterfield-mo" },
               { label: "Door Installation Chesterfield", href: "/door-installation-chesterfield-mo" },
               { label: "Carpentry Chesterfield", href: "/carpentry-services-chesterfield-mo" },
-              { label: "All Services", href: "/services/" },
+              { label: "All Services", href: "/handyman-services/" },
               { label: "Service Areas", href: "/service-areas/" },
             ].map((link) => (
               <Link key={link.href} href={link.href}>

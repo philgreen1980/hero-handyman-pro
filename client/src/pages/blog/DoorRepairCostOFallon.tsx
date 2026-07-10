@@ -25,11 +25,11 @@ const articleSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Hero Handyman Pro",
-    "url": "https://herohandymanpro.com"
+    "url": "https://www.herohandymanpro.com"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://herohandymanpro.com/blog/door-repair-cost-ofallon-il/"
+    "@id": "https://www.herohandymanpro.com/blog/door-repair-cost-ofallon-il/"
   }
 };
 
@@ -487,7 +487,7 @@ export default function DoorRepairCostOFallon() {
           <div className="grid md:grid-cols-3 gap-4">
             {[
               { label: "Door Repair & Installation Service", href: "/handyman-services/door-repair/", desc: "Full service page with project gallery and pricing" },
-              { label: "Handyman in O'Fallon, IL", href: "/service-areas/ofallon-il-handyman/", desc: "All handyman services in O'Fallon and nearby areas" },
+              { label: "Handyman in O'Fallon, IL", href: "/gbp/ofallon-il/", desc: "All handyman services in O'Fallon and nearby areas" },
               { label: "See also: Drywall Repair Cost Guide", href: "/blog/drywall-repair-cost-ofallon-il/", desc: "What drywall repair costs in O'Fallon in 2026" },
               { label: "See also: Deck Repair Cost Guide", href: "/blog/deck-repair-cost-ofallon-il/", desc: "What deck repair costs in O'Fallon in 2026" },
               { label: "See also: Window Repair Cost Guide", href: "/blog/window-repair-cost-ofallon-il/", desc: "What window repair costs in O'Fallon in 2026" },

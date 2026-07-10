@@ -24,21 +24,21 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   // Consolidated nav: 5 core items with dropdowns for Services and Locations
   const serviceDropdown = [
-    { label: "All Services", href: "/services/" },
+    { label: "All Services", href: "/handyman-services/" },
     { label: "Drywall Repair", href: "/handyman-services/drywall-repair/" },
     { label: "Deck Repair", href: "/handyman-services/deck-repair/" },
     { label: "Fence Repair", href: "/handyman-services/fence-repair/" },
-    { label: "Ceiling Fan Install", href: "/ceiling-fan-installation/" },
+    { label: "Ceiling Fan Install", href: "/handyman-services/ceiling-fan-installation/" },
     { label: "Packages & Plans", href: "/handyman-packages/" },
     { label: "Get Estimate →", href: "/estimator/" },
   ];
 
   const locationDropdown = [
-    { label: "O'Fallon, IL", href: "/service-areas/ofallon-handyman-services/" },
-    { label: "Belleville, IL", href: "/belleville-il/" },
-    { label: "Edwardsville, IL", href: "/edwardsville-il/" },
+    { label: "O'Fallon, IL", href: "/gbp/ofallon-il/" },
+    { label: "Belleville, IL", href: "/handyman-belleville-il" },
+    { label: "Edwardsville, IL", href: "/gbp/edwardsville-il/" },
     { label: "Collinsville, IL", href: "/service-areas/collinsville-handyman-services/" },
-    { label: "Swansea, IL", href: "/handyman-swansea-il" },
+    { label: "Swansea, IL", href: "/handyman-swansea-il/" },
     { label: "St. Louis, MO", href: "/handyman-services-st-louis/" },
     { label: "Handyman Near Me", href: "/handyman-near-me/" },
     { label: "All Areas →", href: "/service-areas/" },

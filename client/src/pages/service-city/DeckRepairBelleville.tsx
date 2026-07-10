@@ -11,7 +11,7 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   "name": "Hero Handyman Pro — Deck Repair Belleville IL",
   "description": "Professional deck repair services in Belleville, Illinois. Rotted boards, railing replacement, stair repair, ledger board repair, and full deck restoration.",
-  "url": "https://herohandymanpro.com/service-areas/deck-repair-belleville-il/",
+  "url": "https://www.herohandymanpro.com/service-areas/deck-repair-belleville-il/",
   "telephone": "+1-618-555-0100",
   "address": {
     "@type": "PostalAddress",
@@ -120,7 +120,7 @@ export default function DeckRepairBelleville() {
             crumbs={[
               { label: "Home", href: "/" },
               { label: "Service Areas", href: "/service-areas/" },
-              { label: "Belleville Handyman", href: "/service-areas/belleville-handyman-services/" },
+              { label: "Belleville Handyman", href: "/handyman-belleville-il" },
               { label: "Deck Repair" },
             ]}
           />
@@ -269,10 +269,10 @@ export default function DeckRepairBelleville() {
               <div className="grid gap-2">
                 {[
                   { label: "Deck Repair (All Areas)", href: "/handyman-services/deck-repair/" },
-                  { label: "Exterior Carpentry", href: "/handyman-services/exterior-carpentry/" },
+                  { label: "Exterior Carpentry", href: "/carpentry-services/" },
                   { label: "Porch Repair", href: "/handyman-services/porch-repair/" },
                   { label: "Fence Repair", href: "/handyman-services/fence-repair/" },
-                  { label: "Home Repair Packages", href: "/handyman-service-packages" },
+                  { label: "Home Repair Packages", href: "/handyman-services/" },
                 ].map((l) => (
                   <Link key={l.href} href={l.href}>
                     <span className="block text-[#ff5b00] hover:underline text-sm py-0.5">→ {l.label}</span>
@@ -284,10 +284,10 @@ export default function DeckRepairBelleville() {
               <h3 className="text-base font-bold text-[#0b1220] mb-3">Service Areas</h3>
               <div className="grid gap-2">
                 {[
-                  { label: "Belleville Handyman Services", href: "/service-areas/belleville-handyman-services/" },
-                  { label: "O'Fallon Handyman", href: "/service-areas/ofallon-handyman-services/" },
-                  { label: "Swansea IL Handyman", href: "/service-areas/handyman-swansea-il/" },
-                  { label: "Fairview Heights Handyman", href: "/service-areas/handyman-fairview-heights-il/" },
+                  { label: "Belleville Handyman Services", href: "/handyman-belleville-il" },
+                  { label: "O'Fallon Handyman", href: "/gbp/ofallon-il/" },
+                  { label: "Swansea IL Handyman", href: "/handyman-swansea-il/" },
+                  { label: "Fairview Heights Handyman", href: "/handyman-fairview-heights-il/" },
                   { label: "Collinsville Handyman", href: "/service-areas/collinsville-handyman-services/" },
                 ].map((l) => (
                   <Link key={l.href} href={l.href}>
@@ -301,7 +301,7 @@ export default function DeckRepairBelleville() {
               <div className="grid gap-2">
                 {[
                   { label: "5 Signs Your Deck Needs Repair", href: "/blog/signs-your-deck-needs-repair/" },
-                  { label: "Most Common Home Repairs After Winter", href: "/blog/winter-home-repairs-illinois/" },
+                  { label: "Most Common Home Repairs After Winter", href: "/blog/common-home-repairs-after-winter-illinois/" },
                   { label: "Spring Home Repair Checklist", href: "/blog/spring-home-repair-checklist-edwardsville-ofallon/" },
                   { label: "2026 Handyman Costs Guide", href: "/blog/2026-handyman-costs-metro-east-il/" },
                 ].map((l) => (

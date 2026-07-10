@@ -111,7 +111,7 @@ export default function LocalBusinessSchema({ city, state, pageUrl, phone = "+1-
       "@context": "https://schema.org",
       "@type": "HomeAndConstructionBusiness",
       "name": "Hero Handyman Pro",
-      "image": "https://herohandymanpro.com/images/phil-portrait.webp",
+      "image": "https://www.herohandymanpro.com/images/phil-portrait.webp",
       "description": `Professional handyman services in ${city}, ${state}. Deck repair, carpentry, drywall, doors, and all home repairs for ${city} homeowners.`,
       "address": {
         "@type": "PostalAddress",
@@ -124,7 +124,7 @@ export default function LocalBusinessSchema({ city, state, pageUrl, phone = "+1-
         "latitude": geo.lat,
         "longitude": geo.lng
       },
-      "url": `https://herohandymanpro.com${pageUrl}`,
+      "url": `https://www.herohandymanpro.com${pageUrl}`,
       "telephone": phone,
       "priceRange": "$$",
       "openingHoursSpecification": [

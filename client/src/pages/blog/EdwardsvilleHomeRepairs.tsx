@@ -22,11 +22,11 @@ const articleSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Hero Handyman Pro",
-    "url": "https://herohandymanpro.com"
+    "url": "https://www.herohandymanpro.com"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://herohandymanpro.com/blog/home-repairs-edwardsville-il/"
+    "@id": "https://www.herohandymanpro.com/blog/home-repairs-edwardsville-il/"
   }
 };
 
@@ -309,11 +309,11 @@ export default function EdwardsvilleHomeRepairs() {
           <h2 className="text-2xl font-bold text-[#0b1220] mb-4">Related Services & Resources</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              { label: "Handyman Services in Edwardsville", href: "/service-areas/edwardsville-handyman-services/" },
+              { label: "Handyman Services in Edwardsville", href: "/gbp/edwardsville-il/" },
               { label: "Deck Repair Service", href: "/handyman-services/deck-repair/" },
               { label: "Drywall Repair Service", href: "/handyman-services/drywall-repair/" },
               { label: "Door Repair & Installation", href: "/handyman-services/door-repair/" },
-              { label: "Service Packages", href: "/handyman-service-packages/" },
+              { label: "Service Packages", href: "/handyman-services/" },
               { label: "2026 Handyman Costs Guide", href: "/blog/2026-handyman-costs-metro-east-il/" },
             ].map((link, i) => (
               <Link key={i} href={link.href} className="flex items-center gap-2 text-[#ff5b00] hover:underline font-medium text-sm p-3 bg-gray-50 rounded-lg border border-gray-100 hover:border-[#ff5b00]/20 transition-colors">

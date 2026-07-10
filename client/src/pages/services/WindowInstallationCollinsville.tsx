@@ -281,7 +281,7 @@ export default function WindowInstallationCollinsville() {
       <LocalBusinessSchema 
         city="Collinsville"
         state="IL"
-        pageUrl="https://herohandymanpro.com/services/window-installation-collinsville-il"
+        pageUrl="https://www.herohandymanpro.com/services/window-installation-collinsville-il"
       />
       <ServiceSchema 
         serviceName="Window Installation in Collinsville, IL"

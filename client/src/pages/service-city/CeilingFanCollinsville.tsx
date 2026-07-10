@@ -11,7 +11,7 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   "name": "Hero Handyman Pro — Ceiling Fan Installation Collinsville IL",
   "description": "Professional ceiling fan installation and replacement in Collinsville, Illinois. New installs, fan replacements, and light fixture swaps.",
-  "url": "https://herohandymanpro.com/service-areas/ceiling-fan-installation-collinsville-il/",
+  "url": "https://www.herohandymanpro.com/service-areas/ceiling-fan-installation-collinsville-il/",
   "telephone": "+1-618-555-0100",
   "address": {
     "@type": "PostalAddress",
@@ -272,7 +272,7 @@ export default function CeilingFanCollinsville() {
                   { label: "Drywall Repair", href: "/handyman-services/drywall-repair/" },
                   { label: "Home Repair Services", href: "/handyman-services/home-repair-services/" },
                   { label: "Senior Accessibility Upgrades", href: "/handyman-services/senior-accessibility-upgrades/" },
-                  { label: "Home Repair Packages", href: "/handyman-service-packages" },
+                  { label: "Home Repair Packages", href: "/handyman-services/" },
                 ].map((l) => (
                   <Link key={l.href} href={l.href}>
                     <span className="block text-[#ff5b00] hover:underline text-sm py-0.5">→ {l.label}</span>
@@ -286,9 +286,9 @@ export default function CeilingFanCollinsville() {
                 {[
                   { label: "Collinsville Handyman Services", href: "/service-areas/collinsville-handyman-services/" },
                   { label: "Glen Carbon Handyman", href: "/service-areas/glen-carbon-handyman-services/" },
-                  { label: "Edwardsville Handyman", href: "/service-areas/edwardsville-handyman-services/" },
-                  { label: "O'Fallon Handyman", href: "/service-areas/ofallon-handyman-services/" },
-                  { label: "Belleville Handyman", href: "/service-areas/belleville-handyman-services/" },
+                  { label: "Edwardsville Handyman", href: "/gbp/edwardsville-il/" },
+                  { label: "O'Fallon Handyman", href: "/gbp/ofallon-il/" },
+                  { label: "Belleville Handyman", href: "/handyman-belleville-il" },
                 ].map((l) => (
                   <Link key={l.href} href={l.href}>
                     <span className="block text-[#ff5b00] hover:underline text-sm py-0.5">→ {l.label}</span>

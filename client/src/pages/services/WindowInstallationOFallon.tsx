@@ -224,7 +224,7 @@ export default function WindowInstallationOFallon() {
       <LocalBusinessSchema 
         city="O'Fallon"
         state="IL"
-        pageUrl="https://herohandymanpro.com/services/window-installation-ofallon-il"
+        pageUrl="https://www.herohandymanpro.com/services/window-installation-ofallon-il"
       />
       <ServiceSchema 
         serviceName="Window Installation in O'Fallon, IL"

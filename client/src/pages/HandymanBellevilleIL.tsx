@@ -311,9 +311,9 @@ export default function HandymanBellevilleIL() {
           </div>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { label: "Collinsville, IL", href: "/handyman-collinsville-il" },
-              { label: "Edwardsville, IL", href: "/service-areas/edwardsville-handyman-services/" },
-              { label: "O'Fallon, IL", href: "/service-areas/ofallon-handyman-services/" },
+              { label: "Collinsville, IL", href: "/service-areas/collinsville-handyman-services/" },
+              { label: "Edwardsville, IL", href: "/gbp/edwardsville-il/" },
+              { label: "O'Fallon, IL", href: "/gbp/ofallon-il/" },
               { label: "St. Louis, MO", href: "/handyman-st-louis-mo" },
               { label: "Chesterfield, MO", href: "/handyman-chesterfield-mo" },
               { label: "All Service Areas", href: "/service-areas/" },
@@ -371,7 +371,7 @@ export default function HandymanBellevilleIL() {
         "@type": "LocalBusiness",
         "name": "Hero Handyman Pro",
         "description": "Professional handyman services in Belleville IL including drywall repair, deck repair, door installation, and carpentry.",
-        "url": "https://herohandymanpro.com/handyman-belleville-il",
+        "url": "https://www.herohandymanpro.com/handyman-belleville-il",
         "telephone": "800-741-6056",
         "areaServed": [
           { "@type": "City", "name": "Belleville", "sameAs": "https://en.wikipedia.org/wiki/Belleville,_Illinois" },

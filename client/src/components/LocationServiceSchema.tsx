@@ -38,11 +38,11 @@ export default function LocationServiceSchema({
         // LocalBusiness Schema
         {
           "@type": "LocalBusiness",
-          "@id": `https://herohandymanpro.com/#localbusiness-${city.toLowerCase()}`,
+          "@id": `https://www.herohandymanpro.com/#localbusiness-${city.toLowerCase()}`,
           "name": "Hero Handyman Pro",
-          "image": "https://herohandymanpro.com/images/phil-portrait.webp",
+          "image": "https://www.herohandymanpro.com/images/phil-portrait.webp",
           "description": `Professional handyman and home repair services in ${city}, ${state}`,
-          "url": "https://herohandymanpro.com",
+          "url": "https://www.herohandymanpro.com",
           "telephone": "800-741-6056",
           "email": "info@herohandymanpro.com",
           "priceRange": "$$",
@@ -90,12 +90,12 @@ export default function LocationServiceSchema({
         // Service Schema
         {
           "@type": "Service",
-          "@id": `https://herohandymanpro.com${pageUrl}#service`,
+          "@id": `https://www.herohandymanpro.com${pageUrl}#service`,
           "serviceType": serviceType,
           "name": serviceName,
           "description": description,
           "provider": {
-            "@id": `https://herohandymanpro.com/#localbusiness-${city.toLowerCase()}`
+            "@id": `https://www.herohandymanpro.com/#localbusiness-${city.toLowerCase()}`
           },
           "areaServed": {
             "@type": "City",
@@ -110,7 +110,7 @@ export default function LocationServiceSchema({
             "priceRange": priceRange,
             "priceCurrency": "USD",
             "availability": "https://schema.org/InStock",
-            "url": `https://herohandymanpro.com${pageUrl}`
+            "url": `https://www.herohandymanpro.com${pageUrl}`
           },
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
@@ -143,19 +143,19 @@ export default function LocationServiceSchema({
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://herohandymanpro.com"
+              "item": "https://www.herohandymanpro.com"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Services",
-              "item": "https://herohandymanpro.com/services"
+              "item": "https://www.herohandymanpro.com/services"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": serviceName,
-              "item": `https://herohandymanpro.com${pageUrl}`
+              "item": `https://www.herohandymanpro.com${pageUrl}`
             }
           ]
         }

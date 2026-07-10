@@ -615,7 +615,7 @@ export default function EdwardsvilleHandyman() {
           "description": "Professional drywall repair in Edwardsville, IL. Patches, texturing, and painting for holes, cracks, and water damage.",
           "provider": { "@type": "LocalBusiness", "name": "Hero Handyman Pro", "telephone": "+1-800-741-6056" },
           "areaServed": { "@type": "City", "name": "Edwardsville", "addressRegion": "IL" },
-          "url": "https://herohandymanpro.com/drywall-repair-edwardsville-il"
+          "url": "https://www.herohandymanpro.com/drywall-repair-edwardsville-il"
         },
         {
           "@context": "https://schema.org",
@@ -624,7 +624,7 @@ export default function EdwardsvilleHandyman() {
           "description": "Expert deck repair in Edwardsville, IL. Rotted boards, loose railings, structural damage, and staining.",
           "provider": { "@type": "LocalBusiness", "name": "Hero Handyman Pro", "telephone": "+1-800-741-6056" },
           "areaServed": { "@type": "City", "name": "Edwardsville", "addressRegion": "IL" },
-          "url": "https://herohandymanpro.com/deck-repair-edwardsville-il"
+          "url": "https://www.herohandymanpro.com/deck-repair-edwardsville-il"
         },
         {
           "@context": "https://schema.org",
@@ -633,7 +633,7 @@ export default function EdwardsvilleHandyman() {
           "description": "Door installation near you in Edwardsville, IL. Entry, interior, storm, and patio doors installed by local professionals.",
           "provider": { "@type": "LocalBusiness", "name": "Hero Handyman Pro", "telephone": "+1-800-741-6056" },
           "areaServed": { "@type": "City", "name": "Edwardsville", "addressRegion": "IL" },
-          "url": "https://herohandymanpro.com/door-installation-edwardsville-il"
+          "url": "https://www.herohandymanpro.com/door-installation-edwardsville-il"
         }
       ]) }} />
 
@@ -700,13 +700,13 @@ export default function EdwardsvilleHandyman() {
           </p>
           <div className="flex flex-wrap gap-3">
             {[
-              { name: "O'Fallon, IL", href: "/service-areas/ofallon-handyman-services/" },
-              { name: "Belleville, IL", href: "/service-areas/belleville-handyman-services/" },
+              { name: "O'Fallon, IL", href: "/gbp/ofallon-il/" },
+              { name: "Belleville, IL", href: "/handyman-belleville-il" },
               { name: "Collinsville, IL", href: "/service-areas/collinsville-handyman-services/" },
               { name: "Glen Carbon, IL", href: "/service-areas/glen-carbon-handyman-services/" },
-              { name: "Shiloh, IL", href: "/service-areas/shiloh-il-handyman-services/" },
-              { name: "Swansea, IL", href: "/service-areas/swansea-il-handyman-services/" },
-              { name: "Fairview Heights, IL", href: "/service-areas/fairview-heights-il-handyman-services/" },
+              { name: "Shiloh, IL", href: "/handyman-shiloh-il/" },
+              { name: "Swansea, IL", href: "/handyman-swansea-il/" },
+              { name: "Fairview Heights, IL", href: "/handyman-fairview-heights-il/" },
               { name: "View All Service Areas", href: "/service-areas/" },
             ].map((area) => (
               <Link key={area.name} href={area.href}>

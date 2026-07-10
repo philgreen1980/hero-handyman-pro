@@ -292,14 +292,14 @@ export default function FenceRepairService() {
           <p className="text-gray-600 mb-6 text-center">We serve all of Metro East Illinois and West St. Louis County.</p>
           <div className="flex flex-wrap justify-center gap-3 mb-10">
             {[
-              { name: "O'Fallon, IL", href: "/service-areas/ofallon-handyman-services/" },
-              { name: "Edwardsville, IL", href: "/service-areas/edwardsville-handyman-services/" },
-              { name: "Belleville, IL", href: "/service-areas/belleville-handyman-services/" },
+              { name: "O'Fallon, IL", href: "/gbp/ofallon-il/" },
+              { name: "Edwardsville, IL", href: "/gbp/edwardsville-il/" },
+              { name: "Belleville, IL", href: "/handyman-belleville-il" },
               { name: "Collinsville, IL", href: "/service-areas/collinsville-handyman-services/" },
               { name: "Glen Carbon, IL", href: "/service-areas/glen-carbon-handyman-services/" },
-              { name: "Shiloh, IL", href: "/service-areas/shiloh-il-handyman-services/" },
-              { name: "Swansea, IL", href: "/service-areas/swansea-il-handyman-services/" },
-              { name: "Fairview Heights, IL", href: "/service-areas/fairview-heights-il-handyman-services/" },
+              { name: "Shiloh, IL", href: "/handyman-shiloh-il/" },
+              { name: "Swansea, IL", href: "/handyman-swansea-il/" },
+              { name: "Fairview Heights, IL", href: "/handyman-fairview-heights-il/" },
             ].map((area) => (
               <Link key={area.name} href={area.href}>
                 <Button variant="outline" className="rounded-full border-gray-200 hover:border-[#ff5b00] hover:text-[#ff5b00]">
@@ -313,8 +313,8 @@ export default function FenceRepairService() {
               <h3 className="font-bold text-[#0b1220] mb-3">Related Services</h3>
               <ul className="space-y-2">
                 {[
-                  { label: "Deck Repair", href: "/handyman-services/deck-porch-repair/" },
-                  { label: "Exterior Carpentry", href: "/handyman-services/exterior-carpentry/" },
+                  { label: "Deck Repair", href: "/handyman-services/deck-repair/" },
+                  { label: "Exterior Carpentry", href: "/carpentry-services/" },
                   { label: "Porch Repair", href: "/handyman-services/porch-repair/" },
                   { label: "Home Repair Services", href: "/handyman-services/home-repair-services/" },
                 ].map((link) => (
@@ -331,7 +331,7 @@ export default function FenceRepairService() {
               <ul className="space-y-2">
                 {[
                   { label: "5 Signs Your Deck Needs Repair", href: "/blog/signs-your-deck-needs-repair/" },
-                  { label: "Home Maintenance Tips for Metro East", href: "/blog/home-maintenance-tips-metro-east/" },
+                  { label: "Home Maintenance Tips for Metro East", href: "/blog/2026-handyman-costs-metro-east-il/" },
                   { label: "Handyman vs Contractor: Which Do You Need?", href: "/blog/handyman-vs-contractor-metro-east-il/" },
                 ].map((link) => (
                   <li key={link.href}>
@@ -347,7 +347,7 @@ export default function FenceRepairService() {
               <ul className="space-y-2">
                 {[
                   { label: "Handyman Membership", href: "/membership/" },
-                  { label: "Service Packages", href: "/service-packages/" },
+                  { label: "Service Packages", href: "/handyman-services/" },
                   { label: "Get an Estimate", href: "/contact/" },
                 ].map((link) => (
                   <li key={link.href}>

@@ -31,8 +31,8 @@ export default function HandymanStLouisMO() {
     { name: "Deck Repair", href: "/handyman-services/deck-repair/", desc: "Rotted boards, railings, stairs, structural fixes" },
     { name: "Door Installation", href: "/handyman-services/door-repair/", desc: "Entry doors, storm doors, interior doors" },
     { name: "Ceiling Fan Installation", href: "/handyman-services/ceiling-fan-installation/", desc: "New installs, replacements, smart fans" },
-    { name: "Exterior Carpentry", href: "/handyman-services/exterior-carpentry/", desc: "Trim, fascia, soffits, wood rot repair" },
-    { name: "Home Repairs", href: "/handyman-services/home-repair/", desc: "Miscellaneous repairs, honey-do lists" },
+    { name: "Exterior Carpentry", href: "/carpentry-services/", desc: "Trim, fascia, soffits, wood rot repair" },
+    { name: "Home Repairs", href: "/handyman-services/", desc: "Miscellaneous repairs, honey-do lists" },
   ];
 
   const faqs = [
@@ -335,14 +335,14 @@ export default function HandymanStLouisMO() {
           <p className="text-[#4b5563] mb-6">In addition to St. Louis MO, we serve all of Metro East Illinois. Find your city below.</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { name: "Edwardsville, IL", href: "/service-areas/edwardsville-handyman-services/" },
-              { name: "O'Fallon, IL", href: "/service-areas/ofallon-handyman-services/" },
-              { name: "Belleville, IL", href: "/service-areas/belleville-handyman-services/" },
+              { name: "Edwardsville, IL", href: "/gbp/edwardsville-il/" },
+              { name: "O'Fallon, IL", href: "/gbp/ofallon-il/" },
+              { name: "Belleville, IL", href: "/handyman-belleville-il" },
               { name: "Collinsville, IL", href: "/service-areas/collinsville-handyman-services/" },
               { name: "Glen Carbon, IL", href: "/service-areas/glen-carbon-handyman-services/" },
-              { name: "St. Charles, MO", href: "/service-areas/st-charles-mo-handyman-services/" },
-              { name: "Chesterfield, MO", href: "/service-areas/chesterfield-mo-handyman-services/" },
-              { name: "Ballwin, MO", href: "/service-areas/ballwin-mo-handyman-services/" },
+              { name: "St. Charles, MO", href: "/service-areas/st-charles-handyman-services/" },
+              { name: "Chesterfield, MO", href: "/handyman-chesterfield-mo" },
+              { name: "Ballwin, MO", href: "/handyman-ballwin-mo" },
             ].map((area) => (
               <Link key={area.name} href={area.href}>
                 <Button variant="outline" className="rounded-full border-[#e5e7eb] hover:border-[#ff5b00] hover:text-[#ff5b00]">

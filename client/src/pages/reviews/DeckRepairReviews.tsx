@@ -169,7 +169,7 @@ const reviews = [
               { label: "Deck Repair & Restoration", href: "/handyman-services/deck-repair/" },
               { label: "Deck Construction", href: "/handyman-services/deck-construction/" },
               { label: "Porch & Exterior Stair Repair", href: "/handyman-services/porch-repair/" },
-              { label: "Exterior Carpentry & Wood Rot", href: "/handyman-services/exterior-carpentry/" },
+              { label: "Exterior Carpentry & Wood Rot", href: "/carpentry-services/" },
               { label: "Deck Repair in Edwardsville IL", href: "/service-areas/deck-building-edwardsville-il/" },
               { label: "Deck Repair in O'Fallon IL", href: "/service-areas/deck-building-ofallon-il/" },
             ].map(link => (

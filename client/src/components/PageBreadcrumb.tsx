@@ -30,7 +30,7 @@ interface PageBreadcrumbProps {
 export default function PageBreadcrumb({ crumbs, className }: PageBreadcrumbProps) {
   if (!crumbs || crumbs.length < 2) return null;
 
-  const baseUrl = "https://herohandymanpro.com";
+  const baseUrl = "https://www.herohandymanpro.com";
 
   // JSON-LD BreadcrumbList schema
   const schemaData = {

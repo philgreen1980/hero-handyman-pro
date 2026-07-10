@@ -23,11 +23,11 @@ const articleSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Hero Handyman Pro",
-    "url": "https://herohandymanpro.com"
+    "url": "https://www.herohandymanpro.com"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://herohandymanpro.com/blog/home-repairs-belleville-il/"
+    "@id": "https://www.herohandymanpro.com/blog/home-repairs-belleville-il/"
   }
 };
 
@@ -286,11 +286,11 @@ export default function BellevilleHomeRepairs() {
               { label: "Deck Repair Services", href: "/handyman-services/deck-repair/" },
               { label: "Drywall Repair Services", href: "/handyman-services/drywall-repair/" },
               { label: "Door Repair & Installation", href: "/handyman-services/door-repair/" },
-              { label: "Exterior Carpentry", href: "/handyman-services/exterior-carpentry/" },
+              { label: "Exterior Carpentry", href: "/carpentry-services/" },
               { label: "2026 Handyman Costs in Metro East IL", href: "/blog/2026-handyman-costs-metro-east-il/" },
               { label: "Spring Repair Checklist for Edwardsville & O'Fallon", href: "/blog/spring-home-repair-checklist-edwardsville-ofallon/" },
               { label: "5 Signs Your Deck Needs Repair", href: "/blog/signs-your-deck-needs-repair/" },
-              { label: "Most Common Home Repairs After Winter in Illinois", href: "/blog/winter-home-repairs-illinois/" },
+              { label: "Most Common Home Repairs After Winter in Illinois", href: "/blog/common-home-repairs-after-winter-illinois/" },
               { label: "Handyman vs. Contractor: Which Do You Need?", href: "/blog/handyman-vs-contractor-metro-east-il/" },
               { label: "Home Maintenance Tips for Metro East IL", href: "/blog/home-maintenance-tips-metro-east-il/" },
               { label: "Edwardsville IL Home Repair Guide", href: "/blog/home-repairs-edwardsville-il/" },

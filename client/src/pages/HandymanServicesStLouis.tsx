@@ -85,14 +85,14 @@ export default function HandymanServicesStLouis() {
   return (
     <div className="flex flex-col min-h-screen">
       <SEO {...seo} />
-      <LocalBusinessSchema city="St. Louis" state="MO" pageUrl="https://herohandymanpro.com/handyman-services-st-louis/" />
+      <LocalBusinessSchema city="St. Louis" state="MO" pageUrl="https://www.herohandymanpro.com/handyman-services-st-louis/" />
       <ServiceSchema
         serviceName="Handyman Services"
         description="Professional handyman services across St. Louis and Metro East Illinois — drywall repair, deck maintenance, door installation, ceiling fan installation, and more."
         serviceType="HandymanService"
         areaServed="St. Louis, MO and Metro East Illinois"
         priceRange="$$"
-        pageUrl="https://herohandymanpro.com/handyman-services-st-louis/"
+        pageUrl="https://www.herohandymanpro.com/handyman-services-st-louis/"
       />
 
       {/* Breadcrumb */}

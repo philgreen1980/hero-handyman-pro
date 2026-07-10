@@ -48,11 +48,11 @@ const articleSchema = {
   publisher: {
     "@type": "Organization",
     name: "Hero Handyman Pro",
-    url: "https://herohandymanpro.com",
+    url: "https://www.herohandymanpro.com",
   },
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://herohandymanpro.com/handyman-pricing/",
+    "@id": "https://www.herohandymanpro.com/handyman-pricing/",
   },
 };
 
@@ -1235,7 +1235,7 @@ export default function PricingHub() {
                 {
                   title: "Exterior Carpentry Cost",
                   desc: "Wood rot repair, fascia, soffits, trim replacement",
-                  href: "/handyman-services/exterior-carpentry/",
+                  href: "/carpentry-services/",
                   range: "$200–$3,000+",
                   available: true,
                 },

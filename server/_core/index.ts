@@ -267,6 +267,10 @@ async function startServer() {
     "/deck-repair": "/handyman-services/deck-repair/",
     "/fence-repair": "/handyman-services/fence-repair/",
     "/ceiling-fan-installation": "/handyman-services/ceiling-fan-installation/",
+    // Duplicate-content fix: this path used to render its own copy of the
+    // ceiling fan page via a second wouter Route (removed from App.tsx) —
+    // now consolidated into the one canonical page below.
+    "/ceiling-fan-installation/": "/handyman-services/ceiling-fan-installation/",
     "/window-installation": "/handyman-services/window-installation/",
     "/senior-accessibility-upgrades": "/handyman-services/senior-accessibility-upgrades/",
     "/faucet-install-and-repair": "/handyman-services/faucet-install-and-repair/",

@@ -153,9 +153,9 @@ const reviews = [
           <div className="flex flex-wrap gap-3">
             {[
               { label: "Drywall Repair Services", href: "/handyman-services/drywall-repair/" },
-              { label: "Drywall Repair in Edwardsville IL", href: "/service-areas/drywall-repair-edwardsville-il/" },
+              { label: "Drywall Repair in Edwardsville IL", href: "/drywall-repair-edwardsville-il" },
               { label: "Drywall Repair in O'Fallon IL", href: "/service-areas/drywall-repair-ofallon-il/" },
-              { label: "Home Repair Services", href: "/handyman-services/home-repair/" },
+              { label: "Home Repair Services", href: "/handyman-services/" },
               { label: "Painting & Interior Finishing", href: "/handyman-services/painting/" },
             ].map(link => (
               <Link key={link.href} href={link.href}>

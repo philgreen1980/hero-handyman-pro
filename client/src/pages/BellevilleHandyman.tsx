@@ -583,14 +583,14 @@ export default function BellevilleHandyman() {
           </p>
           <div className="flex flex-wrap gap-3">
             {[
-              { name: "O'Fallon, IL", href: "/service-areas/ofallon-handyman-services/" },
-              { name: "Edwardsville, IL", href: "/service-areas/edwardsville-handyman-services/" },
-              { name: "Belleville, IL", href: "/service-areas/belleville-handyman-services/" },
+              { name: "O'Fallon, IL", href: "/gbp/ofallon-il/" },
+              { name: "Edwardsville, IL", href: "/gbp/edwardsville-il/" },
+              { name: "Belleville, IL", href: "/handyman-belleville-il" },
               { name: "Collinsville, IL", href: "/service-areas/collinsville-handyman-services/" },
               { name: "Glen Carbon, IL", href: "/service-areas/glen-carbon-handyman-services/" },
-              { name: "Shiloh, IL", href: "/service-areas/shiloh-il-handyman-services/" },
-              { name: "Swansea, IL", href: "/service-areas/swansea-il-handyman-services/" },
-              { name: "Fairview Heights, IL", href: "/service-areas/fairview-heights-il-handyman-services/" },
+              { name: "Shiloh, IL", href: "/handyman-shiloh-il/" },
+              { name: "Swansea, IL", href: "/handyman-swansea-il/" },
+              { name: "Fairview Heights, IL", href: "/handyman-fairview-heights-il/" },
               { name: "View All Service Areas", href: "/service-areas/" },
             ].map((area) => (
               <Link key={area.name} href={area.href}>

@@ -10,35 +10,35 @@ export default function HandymanServices() {
       icon: <Hammer className="w-7 h-7 text-teal-700" />,
       title: "Deck Repair",
       desc: "Board replacement, railing repair, structural repair, stair repair, ledger board work, and deck maintenance. We fix sagging, rotted, and unsafe decks throughout Metro East and West County.",
-      href: "/deck-repair",
+      href: "/handyman-services/deck-repair/",
       cta: "Deck repair services →"
     },
     {
       icon: <Layers className="w-7 h-7 text-teal-700" />,
       title: "Drywall Repair",
       desc: "Holes, cracks, water damage, and texture matching. From doorknob holes to full panel replacement, we patch and finish drywall so the repair is invisible.",
-      href: "/drywall-repair",
+      href: "/handyman-services/drywall-repair/",
       cta: "Drywall repair services →"
     },
     {
       icon: <DoorOpen className="w-7 h-7 text-teal-700" />,
       title: "Door Installation & Repair",
       desc: "Interior doors, exterior doors, storm doors, sliding doors, and door frame repair. Properly shimmed, leveled, and weatherstripped for smooth operation through every season.",
-      href: "/door-installation",
+      href: "/handyman-services/door-repair/",
       cta: "Door installation services →"
     },
     {
       icon: <HomeIcon className="w-7 h-7 text-teal-700" />,
       title: "Carpentry Services",
       desc: "Trim repair, exterior carpentry, framing repairs, cabinet adjustments, custom built-ins, and rot repair. Precision cuts, tight joints, and materials that last.",
-      href: "/carpentry-services",
+      href: "/carpentry-services/",
       cta: "Carpentry services →"
     },
     {
       icon: <Wrench className="w-7 h-7 text-teal-700" />,
       title: "General Handyman",
       desc: "Caulking, weatherstripping, minor plumbing fixes, toilet repairs, punch lists, and the odd jobs that pile up. If it needs fixing around the house, we handle it.",
-      href: "/handyman-services/general-handyman/",
+      href: "/handyman-services/",
       cta: "General handyman →"
     },
     {
@@ -51,12 +51,12 @@ export default function HandymanServices() {
   ];
 
   const additionalServices = [
-    { label: "Bathroom Remodeling", href: "/services/bathroom-remodeling" },
+    { label: "Bathroom Remodeling", href: "/handyman-services/bathroom-remodeling/" },
     { label: "Faucet & Toilet Repair", href: "/handyman-services/faucet-install-and-repair/" },
     { label: "Porch Repair", href: "/handyman-services/porch-repair/" },
     { label: "Deck Construction", href: "/handyman-services/deck-construction/" },
-    { label: "Pressure Washing", href: "/handyman-services/pressure-washing/" },
-    { label: "Gutter Cleaning", href: "/handyman-services/gutter-cleaning/" },
+    { label: "Pressure Washing", href: "/handyman-services/" },
+    { label: "Gutter Cleaning", href: "/handyman-services/" },
     { label: "Home Sale Punch Lists", href: "/handyman-services/" },
     { label: "Window Repair", href: "/handyman-services/" },
   ];
@@ -319,7 +319,7 @@ export default function HandymanServices() {
         "@context": "https://schema.org",
         "@type": "WebPage",
         "name": "Handyman Services in Edwardsville & St. Louis | Small Jobs Welcome",
-        "url": "https://herohandymanpro.com/handyman-services/",
+        "url": "https://www.herohandymanpro.com/handyman-services/",
         "speakable": {
           "@type": "SpeakableSpecification",
           "cssSelector": ["h1", "h2"]
@@ -332,8 +332,8 @@ export default function HandymanServices() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://herohandymanpro.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Handyman Services", "item": "https://herohandymanpro.com/handyman-services/" }
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.herohandymanpro.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Handyman Services", "item": "https://www.herohandymanpro.com/handyman-services/" }
         ]
       })}} />
     </div>

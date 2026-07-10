@@ -224,7 +224,7 @@ export default function WindowInstallationBelleville() {
       <LocalBusinessSchema 
         city="Belleville"
         state="IL"
-        pageUrl="https://herohandymanpro.com/services/window-installation-belleville-il"
+        pageUrl="https://www.herohandymanpro.com/services/window-installation-belleville-il"
       />
       <ServiceSchema 
         serviceName="Window Installation in Belleville, IL"

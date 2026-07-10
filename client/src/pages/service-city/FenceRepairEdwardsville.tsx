@@ -11,7 +11,7 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   "name": "Hero Handyman Pro — Fence Repair Edwardsville IL",
   "description": "Professional fence repair services in Edwardsville, Illinois. Wood fence boards, posts, gates, and privacy fence repairs.",
-  "url": "https://herohandymanpro.com/service-areas/fence-repair-edwardsville-il/",
+  "url": "https://www.herohandymanpro.com/service-areas/fence-repair-edwardsville-il/",
   "telephone": "+1-618-555-0100",
   "address": {
     "@type": "PostalAddress",
@@ -121,7 +121,7 @@ export default function FenceRepairEdwardsville() {
             crumbs={[
               { label: "Home", href: "/" },
               { label: "Service Areas", href: "/service-areas/" },
-              { label: "Edwardsville Handyman", href: "/service-areas/edwardsville-handyman-services/" },
+              { label: "Edwardsville Handyman", href: "/gbp/edwardsville-il/" },
               { label: "Fence Repair" },
             ]}
           />
@@ -271,9 +271,9 @@ export default function FenceRepairEdwardsville() {
                 {[
                   { label: "Fence Repair (All Areas)", href: "/handyman-services/fence-repair/" },
                   { label: "Deck Repair", href: "/handyman-services/deck-repair/" },
-                  { label: "Exterior Carpentry", href: "/handyman-services/exterior-carpentry/" },
+                  { label: "Exterior Carpentry", href: "/carpentry-services/" },
                   { label: "Porch Repair", href: "/handyman-services/porch-repair/" },
-                  { label: "Home Repair Packages", href: "/handyman-service-packages" },
+                  { label: "Home Repair Packages", href: "/handyman-services/" },
                 ].map((l) => (
                   <Link key={l.href} href={l.href}>
                     <span className="block text-[#ff5b00] hover:underline text-sm py-0.5">→ {l.label}</span>
@@ -285,11 +285,11 @@ export default function FenceRepairEdwardsville() {
               <h3 className="text-base font-bold text-[#0b1220] mb-3">Service Areas</h3>
               <div className="grid gap-2">
                 {[
-                  { label: "Edwardsville Handyman Services", href: "/service-areas/edwardsville-handyman-services/" },
+                  { label: "Edwardsville Handyman Services", href: "/gbp/edwardsville-il/" },
                   { label: "Glen Carbon Handyman", href: "/service-areas/glen-carbon-handyman-services/" },
                   { label: "Collinsville Handyman", href: "/service-areas/collinsville-handyman-services/" },
-                  { label: "O'Fallon Handyman", href: "/service-areas/ofallon-handyman-services/" },
-                  { label: "Belleville Handyman", href: "/service-areas/belleville-handyman-services/" },
+                  { label: "O'Fallon Handyman", href: "/gbp/ofallon-il/" },
+                  { label: "Belleville Handyman", href: "/handyman-belleville-il" },
                 ].map((l) => (
                   <Link key={l.href} href={l.href}>
                     <span className="block text-[#ff5b00] hover:underline text-sm py-0.5">→ {l.label}</span>
@@ -302,8 +302,8 @@ export default function FenceRepairEdwardsville() {
               <div className="grid gap-2">
                 {[
                   { label: "5 Signs Your Deck Needs Repair", href: "/blog/signs-your-deck-needs-repair/" },
-                  { label: "Most Common Home Repairs After Winter", href: "/blog/winter-home-repairs-illinois/" },
-                  { label: "Edwardsville IL Home Repair Guide", href: "/blog/edwardsville-il-home-repair-guide/" },
+                  { label: "Most Common Home Repairs After Winter", href: "/blog/common-home-repairs-after-winter-illinois/" },
+                  { label: "Edwardsville IL Home Repair Guide", href: "/gbp/edwardsville-il/" },
                   { label: "Spring Home Repair Checklist", href: "/blog/spring-home-repair-checklist-edwardsville-ofallon/" },
                 ].map((l) => (
                   <Link key={l.href} href={l.href}>

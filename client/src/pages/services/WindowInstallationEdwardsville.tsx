@@ -224,7 +224,7 @@ export default function WindowInstallationEdwardsville() {
       <LocalBusinessSchema 
         city="Edwardsville"
         state="IL"
-        pageUrl="https://herohandymanpro.com/services/window-installation-edwardsville-il"
+        pageUrl="https://www.herohandymanpro.com/services/window-installation-edwardsville-il"
       />
       <ServiceSchema 
         serviceName="Window Installation in Edwardsville, IL"

@@ -186,7 +186,7 @@ export default function DoorInstallationBelleville() {
               { label: "Deck Repair Belleville", href: "/deck-repair-belleville-il" },
               { label: "Door Repair Belleville", href: "/door-repair-belleville-il" },
               { label: "Carpentry Belleville", href: "/carpentry-services-belleville-il" },
-              { label: "All Services", href: "/services/" },
+              { label: "All Services", href: "/handyman-services/" },
             ].map((link) => (
               <Link key={link.href} href={link.href}>
                 <Button variant="outline" className="rounded-full border-orange-200 text-orange-700 hover:bg-orange-50 text-sm">

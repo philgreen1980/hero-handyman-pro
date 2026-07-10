@@ -279,8 +279,8 @@ export default function HandymanStCharlesMO() {
               { label: "Drywall Repair", href: "/handyman-services/drywall-repair/" },
               { label: "Deck Repair", href: "/handyman-services/deck-repair/" },
               { label: "Door Installation", href: "/handyman-services/door-repair/" },
-              { label: "Exterior Carpentry", href: "/handyman-services/exterior-carpentry/" },
-              { label: "All Services", href: "/services/" },
+              { label: "Exterior Carpentry", href: "/carpentry-services/" },
+              { label: "All Services", href: "/handyman-services/" },
             ].map((link) => (
               <Link key={link.href} href={link.href}>
                 <Button variant="outline" className="rounded-full border-[#ff5b00]/30 text-[#ff5b00] hover:bg-[#ff5b00]/5">

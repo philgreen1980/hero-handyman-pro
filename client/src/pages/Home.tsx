@@ -1595,7 +1595,7 @@ export default function Home() {
         "@context": "https://schema.org",
         "@type": "HomeAndConstructionBusiness",
         "name": "Hero Handyman Pro",
-        "url": "https://herohandymanpro.com",
+        "url": "https://www.herohandymanpro.com",
         "telephone": "800-741-6056",
         "description": "Professional handyman services across St. Louis MO and Metro East Illinois including O'Fallon IL, Edwardsville IL, Collinsville IL, Belleville IL, and St. Louis County MO.",
         "areaServed": [
@@ -1660,7 +1660,7 @@ export default function Home() {
         "@context": "https://schema.org",
         "@type": "WebPage",
         "name": "Hero Handyman Pro — Fast Handyman for Small Jobs in St. Louis & Metro East",
-        "url": "https://herohandymanpro.com/",
+        "url": "https://www.herohandymanpro.com/",
         "speakable": {
           "@type": "SpeakableSpecification",
           "cssSelector": ["h1", ".speakable-hero", ".speakable-about"]
@@ -1673,7 +1673,7 @@ export default function Home() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://herohandymanpro.com/" }
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.herohandymanpro.com/" }
         ]
       })}} />
 

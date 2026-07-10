@@ -26,7 +26,7 @@ export function ReviewSchema({ serviceName, serviceUrl, reviews, aggregateRating
       "@context": "https://schema.org",
       "@type": "Service",
       "name": `${serviceName} - Hero Handyman Pro`,
-      "url": `https://herohandymanpro.com${serviceUrl}`,
+      "url": `https://www.herohandymanpro.com${serviceUrl}`,
       "provider": {
         "@type": "LocalBusiness",
         "name": "Hero Handyman Pro",

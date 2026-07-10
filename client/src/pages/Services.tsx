@@ -317,7 +317,7 @@ export default function Services() {
         "@context": "https://schema.org",
         "@type": "HomeAndConstructionBusiness",
         "name": "Hero Handyman Pro",
-        "url": "https://herohandymanpro.com/services/",
+        "url": "https://www.herohandymanpro.com/services/",
         "telephone": "+1-800-741-6056",
         "description": "Hero Handyman Pro provides professional handyman services in St. Louis and Metro East Illinois, specializing in drywall repair, deck restoration, door installation, carpentry, ceiling fan installation, and general home repairs.",
         "priceRange": "$$",

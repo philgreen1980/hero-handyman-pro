@@ -485,7 +485,7 @@ export default function DrywallRepairService() {
           <p className="text-[#4b5563] mb-6">We serve all of St. Louis and Metro East Illinois. Find your city below for local pricing and availability.</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { name: "handyman Edwardsville IL", href: "/service-areas/edwardsville-handyman-services/" },
+              { name: "handyman Edwardsville IL", href: "/gbp/edwardsville-il/" },
               { name: "O'Fallon, IL", href: "/drywall-repair-ofallon-il" },
               { name: "handyman Belleville IL", href: "/handyman-belleville-il" },
               { name: "Collinsville, IL", href: "/drywall-repair-collinsville-il" },

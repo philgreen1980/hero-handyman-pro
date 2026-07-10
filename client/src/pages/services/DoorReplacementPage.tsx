@@ -452,7 +452,7 @@ export default function DoorReplacementPage() {
       <LocalBusinessSchema 
         city="St. Louis"
         state="MO"
-        pageUrl="https://herohandymanpro.com/services/door-replacement"
+        pageUrl="https://www.herohandymanpro.com/services/door-replacement"
       />
       <ServiceSchema 
         serviceName="Door Replacement Services"

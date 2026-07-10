@@ -22,11 +22,11 @@ const articleSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Hero Handyman Pro",
-    "url": "https://herohandymanpro.com"
+    "url": "https://www.herohandymanpro.com"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://herohandymanpro.com/blog/5-signs-deck-needs-repair/"
+    "@id": "https://www.herohandymanpro.com/blog/5-signs-deck-needs-repair/"
   }
 };
 
@@ -301,9 +301,9 @@ export default function DeckRepairSigns() {
           <div className="grid md:grid-cols-2 gap-4">
             {[
               { label: "Deck Repair Service", href: "/handyman-services/deck-repair/" },
-              { label: "Handyman Services in O'Fallon", href: "/service-areas/ofallon-handyman-services/" },
-              { label: "Handyman Services in Edwardsville", href: "/service-areas/edwardsville-handyman-services/" },
-              { label: "Service Packages", href: "/handyman-service-packages/" },
+              { label: "Handyman Services in O'Fallon", href: "/gbp/ofallon-il/" },
+              { label: "Handyman Services in Edwardsville", href: "/gbp/edwardsville-il/" },
+              { label: "Service Packages", href: "/handyman-services/" },
               { label: "Home Repairs After Winter", href: "/blog/common-home-repairs-after-winter-illinois/" },
               { label: "2026 Handyman Costs Guide", href: "/blog/2026-handyman-costs-metro-east-il/" },
             ].map((link, i) => (

@@ -338,7 +338,7 @@ export default function HandymanChesterfieldMO() {
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { label: "Handyman Near Me", href: "/handyman-near-me" },
+              { label: "Handyman Near Me", href: "/handyman-near-me/" },
               { label: "All Services", href: "/handyman-services/" },
               { label: "West St. Louis MO", href: "/gbp/des-peres-mo/" },
               { label: "Drywall Repair", href: "/drywall-repair-chesterfield-mo" },

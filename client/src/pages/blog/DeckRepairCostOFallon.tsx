@@ -25,11 +25,11 @@ const articleSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Hero Handyman Pro",
-    "url": "https://herohandymanpro.com"
+    "url": "https://www.herohandymanpro.com"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://herohandymanpro.com/blog/deck-repair-cost-ofallon-il/"
+    "@id": "https://www.herohandymanpro.com/blog/deck-repair-cost-ofallon-il/"
   }
 };
 

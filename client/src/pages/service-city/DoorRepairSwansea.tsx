@@ -11,7 +11,7 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   "name": "Hero Handyman Pro — Door Repair Swansea IL",
   "description": "Professional door repair and installation services in Swansea, Illinois. Sticking doors, broken hardware, weatherstripping, new door installation.",
-  "url": "https://herohandymanpro.com/service-areas/door-repair-swansea-il/",
+  "url": "https://www.herohandymanpro.com/service-areas/door-repair-swansea-il/",
   "telephone": "+1-618-555-0100",
   "address": {
     "@type": "PostalAddress",
@@ -121,7 +121,7 @@ export default function DoorRepairSwansea() {
             crumbs={[
               { label: "Home", href: "/" },
               { label: "Service Areas", href: "/service-areas/" },
-              { label: "Swansea Handyman", href: "/service-areas/handyman-swansea-il/" },
+              { label: "Swansea Handyman", href: "/handyman-swansea-il/" },
               { label: "Door Repair" },
             ]}
           />
@@ -271,9 +271,9 @@ export default function DoorRepairSwansea() {
                 {[
                   { label: "Door Repair & Installation (All Areas)", href: "/handyman-services/door-repair/" },
                   { label: "Drywall Repair", href: "/handyman-services/drywall-repair/" },
-                  { label: "Exterior Carpentry", href: "/handyman-services/exterior-carpentry/" },
+                  { label: "Exterior Carpentry", href: "/carpentry-services/" },
                   { label: "Trim Carpentry", href: "/handyman-services/trim-carpentry/" },
-                  { label: "Home Repair Packages", href: "/handyman-service-packages" },
+                  { label: "Home Repair Packages", href: "/handyman-services/" },
                 ].map((l) => (
                   <Link key={l.href} href={l.href}>
                     <span className="block text-[#ff5b00] hover:underline text-sm py-0.5">→ {l.label}</span>
@@ -285,11 +285,11 @@ export default function DoorRepairSwansea() {
               <h3 className="text-base font-bold text-[#0b1220] mb-3">Service Areas</h3>
               <div className="grid gap-2">
                 {[
-                  { label: "Swansea IL Handyman", href: "/service-areas/handyman-swansea-il/" },
-                  { label: "Belleville Handyman", href: "/service-areas/belleville-handyman-services/" },
-                  { label: "O'Fallon Handyman", href: "/service-areas/ofallon-handyman-services/" },
-                  { label: "Fairview Heights Handyman", href: "/service-areas/handyman-fairview-heights-il/" },
-                  { label: "Shiloh IL Handyman", href: "/service-areas/handyman-shiloh-il/" },
+                  { label: "Swansea IL Handyman", href: "/handyman-swansea-il/" },
+                  { label: "Belleville Handyman", href: "/handyman-belleville-il" },
+                  { label: "O'Fallon Handyman", href: "/gbp/ofallon-il/" },
+                  { label: "Fairview Heights Handyman", href: "/handyman-fairview-heights-il/" },
+                  { label: "Shiloh IL Handyman", href: "/handyman-shiloh-il/" },
                 ].map((l) => (
                   <Link key={l.href} href={l.href}>
                     <span className="block text-[#ff5b00] hover:underline text-sm py-0.5">→ {l.label}</span>
@@ -301,7 +301,7 @@ export default function DoorRepairSwansea() {
               <h3 className="text-base font-bold text-[#0b1220] mb-3">Helpful Articles</h3>
               <div className="grid gap-2">
                 {[
-                  { label: "Most Common Home Repairs After Winter", href: "/blog/winter-home-repairs-illinois/" },
+                  { label: "Most Common Home Repairs After Winter", href: "/blog/common-home-repairs-after-winter-illinois/" },
                   { label: "Spring Home Repair Checklist", href: "/blog/spring-home-repair-checklist-edwardsville-ofallon/" },
                   { label: "Handyman vs Contractor: Which Do You Need?", href: "/blog/handyman-vs-contractor-metro-east-il/" },
                   { label: "2026 Handyman Costs Guide", href: "/blog/2026-handyman-costs-metro-east-il/" },

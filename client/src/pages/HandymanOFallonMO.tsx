@@ -335,7 +335,7 @@ export default function HandymanOFallonMO() {
               { label: "Door Repair", href: "/door-repair-ofallon-mo" },
               { label: "Door Installation", href: "/door-installation-ofallon-mo" },
               { label: "Carpentry Services", href: "/carpentry-services-ofallon-mo" },
-              { label: "All Services", href: "/services/" },
+              { label: "All Services", href: "/handyman-services/" },
             ].map((link) => (
               <Link key={link.href} href={link.href}>
                 <Button variant="outline" className="rounded-full border-[#ff5b00]/30 text-[#ff5b00] hover:bg-[#ff5b00]/5">

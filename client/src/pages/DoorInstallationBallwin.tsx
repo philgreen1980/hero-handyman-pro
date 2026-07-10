@@ -186,7 +186,7 @@ export default function DoorInstallationBallwin() {
               { label: "Deck Repair Ballwin", href: "/deck-repair-ballwin-mo" },
               { label: "Door Repair Ballwin", href: "/door-repair-ballwin-mo" },
               { label: "Carpentry Ballwin", href: "/carpentry-services-ballwin-mo" },
-              { label: "All Services", href: "/services/" },
+              { label: "All Services", href: "/handyman-services/" },
             ].map((link) => (
               <Link key={link.href} href={link.href}>
                 <Button variant="outline" className="rounded-full border-blue-200 text-blue-700 hover:bg-blue-50 text-sm">

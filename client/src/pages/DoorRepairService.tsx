@@ -303,7 +303,7 @@ export default function DoorRepairService() {
           <p className="text-[#4b5563] mb-6">We serve all of St. Louis and Metro East Illinois. Find your city below.</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { name: "handyman Edwardsville IL", href: "/service-areas/edwardsville-handyman-services/" },
+              { name: "handyman Edwardsville IL", href: "/gbp/edwardsville-il/" },
               { name: "O'Fallon, IL", href: "/door-installation-ofallon-il" },
               { name: "handyman Belleville IL", href: "/handyman-belleville-il" },
               { name: "Collinsville, IL", href: "/door-installation-collinsville-il" },
