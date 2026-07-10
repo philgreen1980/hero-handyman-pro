@@ -423,6 +423,10 @@ async function startServer() {
     "/services/deck-repair": "/handyman-services/deck-repair/",
     "/services/porch-repair": "/handyman-services/porch-repair/",
     "/services/bathroom-remodeling": "/handyman-services/bathroom-remodeling/",
+    // Content consolidation (2026-07-10): door replacement page merged into
+    // the main door installation page (pricing table + FAQs folded in) —
+    // per owner decision, since both pages targeted the same searcher intent.
+    "/services/door-replacement": "/door-installation",
   };
   app.use((req, res, next) => {
     const target = redirects[req.path];

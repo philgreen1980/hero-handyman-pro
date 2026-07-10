@@ -57,7 +57,6 @@ const GBPEdwardsville = lazy(() => import("./pages/GBPEdwardsville"));
 const DeckRepairPage = lazy(() => import("./pages/services/DeckRepairPage"));
 const BathroomRemodelingPage = lazy(() => import("./pages/services/BathroomRemodelingPage"));
 const DoorInstallationPage = lazy(() => import("./pages/services/DoorInstallationPage"));
-const DoorReplacementPage = lazy(() => import("./pages/services/DoorReplacementPage"));
 const WindowInstallationPage = lazy(() => import("./pages/services/WindowInstallationPage"));
 const PorchRepairPage = lazy(() => import("./pages/services/PorchRepairPage"));
 const WindowInstallationOFallon = lazy(() => import("./pages/services/WindowInstallationOFallon"));
@@ -240,7 +239,6 @@ function Router() {
         <Route path="/services/deck-repair" component={DeckRepairPage} />
         <Route path="/services/bathroom-remodeling" component={BathroomRemodelingPage} />
         <Route path="/services/door-installation" component={DoorInstallationPage} />
-        <Route path="/services/door-replacement" component={DoorReplacementPage} />
         <Route path="/services/window-installation" component={WindowInstallationPage} />
         <Route path="/services/porch-repair" component={PorchRepairPage} />
         <Route path="/services/window-installation-ofallon-il" component={WindowInstallationOFallon} />

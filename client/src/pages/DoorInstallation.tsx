@@ -2,10 +2,36 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Star, MapPin } from "lucide-react";
 import SEO from "@/components/SEO";
+import FAQSchema from "@/components/FAQSchema";
 import { useSeoRoute } from '@/hooks/useSeoRoute';
 
 export default function DoorInstallation() {
-  const seo = useSeoRoute();  const services = [
+  const seo = useSeoRoute();
+
+  const replacementFaqs = [
+    {
+      question: "How long does door replacement take?",
+      answer: "Most interior door replacements take 1-2 hours per door. Exterior door replacements typically take 3-4 hours. Complex installations with structural modifications may take longer."
+    },
+    {
+      question: "Do I need to replace the door frame?",
+      answer: "Not always. If your existing frame is in good condition, level, and square, we can often just replace the door slab. However, exterior doors and damaged frames typically require complete replacement for best results."
+    },
+    {
+      question: "What's the best material for exterior doors?",
+      answer: "Steel doors offer the best security and energy efficiency at an affordable price. Fiberglass doors resist warping and require less maintenance. Wood doors provide classic beauty but need more upkeep. We'll help you choose based on your priorities."
+    },
+    {
+      question: "Can you match my existing trim and hardware?",
+      answer: "Yes! We can match your existing trim style and finish, or upgrade to new trim throughout for a cohesive look. We also offer a wide selection of hardware finishes to complement your home's style."
+    },
+    {
+      question: "Do you offer same-day door replacement?",
+      answer: "For emergency situations (broken doors, security issues), we can often provide same-day service with in-stock doors. Custom door orders typically take 1-2 weeks for delivery before installation."
+    }
+  ];
+
+  const services = [
     {
       title: "Interior Door Installation",
       desc: "Bedroom, bathroom, closet, and hallway doors — we install pre-hung and slab doors, adjust hinges, fix sticking or binding issues, and replace hollow-core doors with solid-core upgrades for better sound insulation and durability. Many older Metro East homes have original hollow-core doors that are warped or damaged; replacing them is one of the most cost-effective home upgrades available."
@@ -211,6 +237,49 @@ export default function DoorInstallation() {
         </div>
       </section>
 
+      {/* Door Replacement Pricing */}
+      <section className="py-16 px-6 bg-gray-50">
+        <div className="max-w-[1120px] mx-auto">
+          <h2 className="text-3xl font-bold mb-3 text-gray-900">Door Replacement Pricing</h2>
+          <p className="text-gray-600 mb-10 max-w-2xl">
+            Transparent, upfront pricing for complete door replacement — removal of the old door, installation, hardware, and cleanup are all included.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+              <h3 className="font-bold text-lg text-gray-900 mb-2">Interior Doors</h3>
+              <div className="text-2xl font-bold text-teal-700 mb-4">$250 – $600</div>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" />Remove old door</li>
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" />Install new door & hardware</li>
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" />Trim & casing included</li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-2xl p-6 border-2 border-teal-600 shadow-md relative">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-teal-600 text-white px-4 py-1 rounded-full text-xs font-semibold">Most Common</div>
+              <h3 className="font-bold text-lg text-gray-900 mb-2">Exterior Doors</h3>
+              <div className="text-2xl font-bold text-teal-700 mb-4">$500 – $1,500</div>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" />Remove old door & frame</li>
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" />Install pre-hung door system</li>
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" />Weatherstripping & deadbolt</li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+              <h3 className="font-bold text-lg text-gray-900 mb-2">Patio Doors</h3>
+              <div className="text-2xl font-bold text-teal-700 mb-4">$800 – $2,000</div>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" />Sliding or French style</li>
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" />Energy-efficient glass</li>
+                <li className="flex items-start gap-2"><Check className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" />Complete frame replacement & sealing</li>
+              </ul>
+            </div>
+          </div>
+          <p className="text-gray-500 text-sm mt-6">
+            Prices vary based on door size, material, style, and installation complexity. Custom doors, sidelights, and structural modifications may increase cost. All estimates include labor, basic hardware, and disposal of the old door.
+          </p>
+        </div>
+      </section>
+
       {/* What to Expect */}
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-[1120px] mx-auto">
@@ -280,6 +349,22 @@ export default function DoorInstallation() {
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-[1120px] mx-auto">
+          <h2 className="text-3xl font-bold mb-10 text-gray-900 text-center">Door Installation &amp; Replacement FAQs</h2>
+          <div className="max-w-3xl mx-auto space-y-6">
+            {replacementFaqs.map((faq, i) => (
+              <div key={i} className="bg-gray-50 rounded-2xl p-6 border border-gray-200">
+                <h3 className="font-bold text-lg text-gray-900 mb-2">{faq.question}</h3>
+                <p className="text-gray-600 text-sm">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <FAQSchema pageUrl="/door-installation" faqs={replacementFaqs} />
 
       {/* Why Choose Us */}
       <section className="py-16 px-6 bg-gray-50">

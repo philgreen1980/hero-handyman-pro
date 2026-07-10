@@ -1012,13 +1012,6 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     bodySnippet: "Hero Handyman Pro provides door installation services across St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
     canonicalUrl: "https://www.herohandymanpro.com/services/door-installation",
   },
-  "/services/door-replacement": {
-    title: "Door Replacement St. Louis & Metro East | Hero Handyman Pro",
-    description: "Door replacement in St. Louis & Metro East. Entry, interior & storm doors replaced fast. Honest pricing. Free quote in 24 hrs. Call 800-741-6056.",
-    h1: "Door Replacement in St. Louis & Metro East",
-    bodySnippet: "Hero Handyman Pro provides door replacement services across St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://www.herohandymanpro.com/services/door-replacement",
-  },
   "/services/bathroom-remodeling": {
     title: "Bathroom Remodeling St. Louis | Free Consultation",
     description: "Bathroom remodeling in St. Louis & Metro East. Full remodels, tile, vanity & fixture upgrades. Free quote in 24 hrs. Call 800-741-6056.",
