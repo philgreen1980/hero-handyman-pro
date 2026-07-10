@@ -153,24 +153,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-  <url>
-    <loc>https://www.herohandymanpro.com/service-areas/ofallon-handyman-services/</loc>
-    <lastmod>2026-05-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.herohandymanpro.com/service-areas/edwardsville-handyman-services/</loc>
-    <lastmod>2026-05-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.herohandymanpro.com/service-areas/belleville-handyman-services/</loc>
-    <lastmod>2026-05-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+  <!-- /service-areas/ofallon-handyman-services/, /service-areas/edwardsville-handyman-services/,
+       and /service-areas/belleville-handyman-services/ removed: these 301-redirect to
+       /gbp/ofallon-il/, /gbp/edwardsville-il/, and /handyman-belleville-il, which are
+       already listed below/elsewhere in this sitemap under their canonical URLs. -->
   <url>
     <loc>https://www.herohandymanpro.com/service-areas/collinsville-handyman-services/</loc>
     <lastmod>2026-05-12</lastmod>
@@ -202,20 +188,20 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.herohandymanpro.com/handyman-shiloh-il</loc>
-    <lastmod>2026-05-12</lastmod>
+    <loc>https://www.herohandymanpro.com/handyman-shiloh-il/</loc>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.herohandymanpro.com/handyman-swansea-il</loc>
-    <lastmod>2026-05-12</lastmod>
+    <loc>https://www.herohandymanpro.com/handyman-swansea-il/</loc>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.herohandymanpro.com/handyman-fairview-heights-il</loc>
-    <lastmod>2026-05-12</lastmod>
+    <loc>https://www.herohandymanpro.com/handyman-fairview-heights-il/</loc>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -422,4 +408,8 @@
   </url>
   <!-- /about-rebrand removed from sitemap per Phase 2 SEO cleanup (now a 301 redirect to /about/) -->
   <!-- Last updated: 2026-07-01 — Task 1/3/4/5/6 GSC coverage fixes applied -->
+  <!-- Last updated: 2026-07-10 — removed 3 stale redirecting URLs (ofallon/edwardsville/belleville
+       service-areas variants) that duplicated canonical entries already in this file, and added
+       trailing slashes to 3 city pages (shiloh/swansea/fairview-heights) to match their
+       redirect-map canonical form. -->
 </urlset>
