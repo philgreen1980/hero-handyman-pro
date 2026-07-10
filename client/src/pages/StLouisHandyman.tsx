@@ -216,7 +216,7 @@ export default function StLouisHandyman() {
                 </li>
                 <li className="flex items-start gap-3 text-[#374151]">
                   <Check className="h-5 w-5 text-[#ff5b00] mt-0.5 flex-shrink-0" />
-                  <span><Link href="/handyman-services/exterior-carpentry/" className="text-[#ff5b00] hover:underline">Wood rot repair</Link> and exterior trim replacement</span>
+                  <span><Link href="/carpentry-services/" className="text-[#ff5b00] hover:underline">Wood rot repair</Link> and exterior trim replacement</span>
                 </li>
                 <li className="flex items-start gap-3 text-[#374151]">
                   <Check className="h-5 w-5 text-[#ff5b00] mt-0.5 flex-shrink-0" />
@@ -430,7 +430,7 @@ export default function StLouisHandyman() {
                 </div>
                 <div>
                   <h4 className="font-bold text-[#0b1220] mb-1">Bundle repairs to save on trip fees</h4>
-                  <p className="text-[#4b5563] text-sm">Our <Link href="/handyman-service-packages/" className="text-[#ff5b00] hover:underline">service packages</Link> let you bundle multiple small repairs into one visit, saving on scheduling fees and getting everything done at once.</p>
+                  <p className="text-[#4b5563] text-sm">Our <Link href="/handyman-services/" className="text-[#ff5b00] hover:underline">service packages</Link> let you bundle multiple small repairs into one visit, saving on scheduling fees and getting everything done at once.</p>
                 </div>
               </div>
             </div>

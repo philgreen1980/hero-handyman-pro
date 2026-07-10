@@ -329,7 +329,7 @@ export default function HandymanChesterfieldMO() {
           <h2 className="text-2xl font-bold mb-4 text-[#0b1220]">Explore More Hero Handyman Pro Services</h2>
           <p className="text-[#4b5563] mb-6">
             We serve communities across the Greater St. Louis area and Metro East Illinois. Find a{" "}
-            <Link href="/handyman-near-me" className="text-[#ff5b00] hover:underline font-medium">handyman near you</Link>,{" "}
+            <Link href="/handyman-near-me/" className="text-[#ff5b00] hover:underline font-medium">handyman near you</Link>,{" "}
             browse our full{" "}
             <Link href="/handyman-services/" className="text-[#ff5b00] hover:underline font-medium">home repair services</Link>,{" "}
             or visit our{" "}

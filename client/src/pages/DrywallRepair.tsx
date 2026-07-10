@@ -372,16 +372,16 @@ export default function DrywallRepair() {
                 <Link href="/handyman-services/home-repair-services/"><span className="text-teal-700 hover:underline cursor-pointer">General Home Repairs & Punch Lists</span></Link>
                 <Link href="/handyman-services/trim-carpentry/"><span className="text-teal-700 hover:underline cursor-pointer">Interior Trim & Finish Carpentry</span></Link>
                 <Link href="/handyman-services/door-repair/"><span className="text-teal-700 hover:underline cursor-pointer">Door Repair & Replacement</span></Link>
-                <Link href="/handyman-service-packages"><span className="text-teal-700 hover:underline cursor-pointer">Home Repair Service Packages</span></Link>
+                <Link href="/handyman-services/"><span className="text-teal-700 hover:underline cursor-pointer">Home Repair Service Packages</span></Link>
                 <Link href="/handyman-services/"><span className="text-teal-700 hover:underline cursor-pointer">All Handyman Services</span></Link>
               </div>
             </div>
             <div>
               <h3 className="font-semibold text-gray-800 mb-3 text-sm uppercase tracking-wide">Service Areas</h3>
               <div className="flex flex-col gap-2 text-sm">
-                <Link href="/service-areas/ofallon-handyman-services/"><span className="text-teal-700 hover:underline cursor-pointer">Drywall Repair in O'Fallon, IL</span></Link>
-                <Link href="/service-areas/edwardsville-handyman-services/"><span className="text-teal-700 hover:underline cursor-pointer">Drywall Repair in Edwardsville, IL</span></Link>
-                <Link href="/service-areas/belleville-handyman-services/"><span className="text-teal-700 hover:underline cursor-pointer">Drywall Repair in Belleville, IL</span></Link>
+                <Link href="/gbp/ofallon-il/"><span className="text-teal-700 hover:underline cursor-pointer">Drywall Repair in O'Fallon, IL</span></Link>
+                <Link href="/gbp/edwardsville-il/"><span className="text-teal-700 hover:underline cursor-pointer">Drywall Repair in Edwardsville, IL</span></Link>
+                <Link href="/handyman-belleville-il"><span className="text-teal-700 hover:underline cursor-pointer">Drywall Repair in Belleville, IL</span></Link>
                 <Link href="/service-areas/collinsville-handyman-services/"><span className="text-teal-700 hover:underline cursor-pointer">Drywall Repair in Collinsville, IL</span></Link>
                 <Link href="/handyman-shiloh-il/"><span className="text-teal-700 hover:underline cursor-pointer">Drywall Repair in Shiloh, IL</span></Link>
                 <Link href="/service-areas/"><span className="text-teal-700 hover:underline cursor-pointer">All Service Areas</span></Link>
@@ -391,7 +391,7 @@ export default function DrywallRepair() {
               <h3 className="font-semibold text-gray-800 mb-3 text-sm uppercase tracking-wide">Helpful Articles</h3>
               <div className="flex flex-col gap-2 text-sm">
                 <Link href="/blog/drywall-repair-cost-ofallon-il/"><span className="text-teal-700 hover:underline cursor-pointer">How Much Does Drywall Repair Cost in O'Fallon?</span></Link>
-                <Link href="/blog/winter-home-repairs-illinois/"><span className="text-teal-700 hover:underline cursor-pointer">Most Common Home Repairs After Winter</span></Link>
+                <Link href="/blog/common-home-repairs-after-winter-illinois/"><span className="text-teal-700 hover:underline cursor-pointer">Most Common Home Repairs After Winter</span></Link>
                 <Link href="/blog/home-maintenance-tips-metro-east-il/"><span className="text-teal-700 hover:underline cursor-pointer">Home Maintenance Tips for Metro East IL</span></Link>
                 <Link href="/blog/2026-handyman-costs-metro-east-il/"><span className="text-teal-700 hover:underline cursor-pointer">2026 Handyman Costs in Metro East IL</span></Link>
                 <Link href="/projects/"><span className="text-teal-700 hover:underline cursor-pointer">View Completed Projects</span></Link>

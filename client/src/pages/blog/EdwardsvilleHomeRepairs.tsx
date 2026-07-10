@@ -288,7 +288,7 @@ export default function EdwardsvilleHomeRepairs() {
                 Call 800-741-6056
               </Button>
             </a>
-            <Link href="/service-areas/edwardsville-handyman-services/">
+            <Link href="/gbp/edwardsville-il/">
               <Button variant="outline" className="rounded-full px-8 py-6 text-base font-semibold border-2 border-white text-white hover:bg-white/10">
                 Edwardsville Service Page
               </Button>

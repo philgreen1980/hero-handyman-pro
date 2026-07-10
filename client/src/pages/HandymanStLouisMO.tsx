@@ -306,13 +306,13 @@ export default function HandymanStLouisMO() {
                 </span>
               </Link>
               <span className="text-[#d1d5db]">|</span>
-              <Link href="/handyman-chesterfield-mo/">
+              <Link href="/handyman-chesterfield-mo">
                 <span className="inline-flex items-center gap-1 text-[#ff5b00] font-semibold hover:underline text-sm">
                   Chesterfield, MO <ArrowRight className="w-3.5 h-3.5" />
                 </span>
               </Link>
               <span className="text-[#d1d5db]">|</span>
-              <Link href="/handyman-ballwin-mo/">
+              <Link href="/handyman-ballwin-mo">
                 <span className="inline-flex items-center gap-1 text-[#ff5b00] font-semibold hover:underline text-sm">
                   Ballwin, MO <ArrowRight className="w-3.5 h-3.5" />
                 </span>

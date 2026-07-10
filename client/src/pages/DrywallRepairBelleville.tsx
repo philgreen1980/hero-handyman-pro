@@ -191,7 +191,7 @@ export default function DrywallRepairBelleville() {
             <Link href="/carpentry-services-belleville-il">
               <Button variant="outline" className="rounded-full border-gray-300 hover:border-teal-500 hover:text-teal-600">Carpentry in Belleville</Button>
             </Link>
-            <Link href="/drywall-repair">
+            <Link href="/handyman-services/drywall-repair/">
               <Button variant="outline" className="rounded-full border-gray-300 hover:border-teal-500 hover:text-teal-600">Regional Drywall Repair</Button>
             </Link>
             <Link href="/handyman-belleville-il">

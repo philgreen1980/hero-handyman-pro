@@ -194,7 +194,7 @@ export default function DrywallRepairBallwin() {
             <span className="text-gray-300">|</span>
             <Link href="/handyman-ballwin-mo"><span className="text-teal-700 hover:underline font-medium cursor-pointer">Ballwin Handyman Services</span></Link>
             <span className="text-gray-300">|</span>
-            <Link href="/drywall-repair"><span className="text-teal-700 hover:underline font-medium cursor-pointer">Drywall Repair (Regional)</span></Link>
+            <Link href="/handyman-services/drywall-repair/"><span className="text-teal-700 hover:underline font-medium cursor-pointer">Drywall Repair (Regional)</span></Link>
             <span className="text-gray-300">|</span>
             <Link href="/drywall-repair-chesterfield-mo"><span className="text-teal-700 hover:underline font-medium cursor-pointer">Drywall Repair in Chesterfield MO</span></Link>
           </div>

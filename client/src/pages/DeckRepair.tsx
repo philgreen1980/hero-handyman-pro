@@ -377,7 +377,7 @@ export default function DeckRepair() {
               <h3 className="font-semibold text-gray-800 mb-3 text-sm uppercase tracking-wide">Related Services</h3>
               <div className="flex flex-col gap-2 text-sm">
                 <Link href="/handyman-services/deck-repair/"><span className="text-teal-700 hover:underline cursor-pointer">Deck Repair & Restoration</span></Link>
-                <Link href="/handyman-services/exterior-carpentry/"><span className="text-teal-700 hover:underline cursor-pointer">Exterior Carpentry & Wood Rot Repair</span></Link>
+                <Link href="/carpentry-services/"><span className="text-teal-700 hover:underline cursor-pointer">Exterior Carpentry & Wood Rot Repair</span></Link>
                 <Link href="/handyman-services/porch-repair/"><span className="text-teal-700 hover:underline cursor-pointer">Porch & Exterior Stair Repair</span></Link>
                 <Link href="/handyman-services/deck-construction/"><span className="text-teal-700 hover:underline cursor-pointer">New Deck Construction</span></Link>
                 <Link href="/handyman-services/trim-carpentry/"><span className="text-teal-700 hover:underline cursor-pointer">Interior Trim & Finish Carpentry</span></Link>
@@ -387,8 +387,8 @@ export default function DeckRepair() {
             <div>
               <h3 className="font-semibold text-gray-800 mb-3 text-sm uppercase tracking-wide">Service Areas</h3>
               <div className="flex flex-col gap-2 text-sm">
-                <Link href="/service-areas/ofallon-handyman-services/"><span className="text-teal-700 hover:underline cursor-pointer">Deck Repair in O'Fallon, IL</span></Link>
-                <Link href="/service-areas/edwardsville-handyman-services/"><span className="text-teal-700 hover:underline cursor-pointer">handyman Edwardsville IL</span></Link>
+                <Link href="/gbp/ofallon-il/"><span className="text-teal-700 hover:underline cursor-pointer">Deck Repair in O'Fallon, IL</span></Link>
+                <Link href="/gbp/edwardsville-il/"><span className="text-teal-700 hover:underline cursor-pointer">handyman Edwardsville IL</span></Link>
                 <Link href="/handyman-belleville-il"><span className="text-teal-700 hover:underline cursor-pointer">handyman Belleville IL</span></Link>
                 <Link href="/service-areas/collinsville-handyman-services/"><span className="text-teal-700 hover:underline cursor-pointer">Deck Repair in Collinsville, IL</span></Link>
                 <Link href="/service-areas/glen-carbon-handyman-services/"><span className="text-teal-700 hover:underline cursor-pointer">Deck Repair in Glen Carbon, IL</span></Link>
@@ -399,7 +399,7 @@ export default function DeckRepair() {
               <h3 className="font-semibold text-gray-800 mb-3 text-sm uppercase tracking-wide">Helpful Articles</h3>
               <div className="flex flex-col gap-2 text-sm">
                 <Link href="/blog/signs-your-deck-needs-repair/"><span className="text-teal-700 hover:underline cursor-pointer">5 Signs Your Deck Needs Repair</span></Link>
-                <Link href="/blog/winter-home-repairs-illinois/"><span className="text-teal-700 hover:underline cursor-pointer">Most Common Home Repairs After Winter</span></Link>
+                <Link href="/blog/common-home-repairs-after-winter-illinois/"><span className="text-teal-700 hover:underline cursor-pointer">Most Common Home Repairs After Winter</span></Link>
                 <Link href="/blog/2026-handyman-costs-metro-east-il/"><span className="text-teal-700 hover:underline cursor-pointer">2026 Handyman Costs in Metro East IL</span></Link>
                 <Link href="/blog/handyman-vs-contractor-metro-east-il/"><span className="text-teal-700 hover:underline cursor-pointer">Handyman vs. Contractor: Which Do You Need?</span></Link>
                 <Link href="/projects/"><span className="text-teal-700 hover:underline cursor-pointer">View Completed Projects</span></Link>

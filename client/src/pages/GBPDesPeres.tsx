@@ -148,7 +148,7 @@ export default function GBPDesPeres() {
 
             <p className="text-lg mb-8 text-orange-100 max-w-2xl mx-auto">
               Hero Handyman Pro provides professional{' '}
-              <Link href="/handyman-services" className="underline underline-offset-2 hover:text-white">
+              <Link href="/handyman-services/" className="underline underline-offset-2 hover:text-white">
                 handyman services
               </Link>{' '}
               for drywall repair, door repair, deck repair, carpentry, fixture installation, and general home repairs throughout West St. Louis County. Our team makes home repair simple with clear communication, dependable scheduling, and quality workmanship.
@@ -360,11 +360,11 @@ export default function GBPDesPeres() {
             <div className="mt-10 text-center">
               <p className="text-gray-600 mb-4">
                 Ready to work with a handyman you can count on? Explore our{' '}
-                <Link href="/handyman-services" className="text-[#E85818] hover:text-[#E85818] underline underline-offset-2">
+                <Link href="/handyman-services/" className="text-[#E85818] hover:text-[#E85818] underline underline-offset-2">
                   handyman services
                 </Link>{' '}
                 or find a{' '}
-                <Link href="/handyman-near-me" className="text-[#E85818] hover:text-[#E85818] underline underline-offset-2">
+                <Link href="/handyman-near-me/" className="text-[#E85818] hover:text-[#E85818] underline underline-offset-2">
                   handyman near you
                 </Link>.
               </p>
@@ -449,15 +449,15 @@ export default function GBPDesPeres() {
                 Hero Handyman Pro home
               </Link>{' '}
               ·{' '}
-              <Link href="/handyman-services" className="text-[#E85818] hover:text-[#E85818] underline underline-offset-2">
+              <Link href="/handyman-services/" className="text-[#E85818] hover:text-[#E85818] underline underline-offset-2">
                 handyman services
               </Link>{' '}
               ·{' '}
-              <Link href="/handyman-near-me" className="text-[#E85818] hover:text-[#E85818] underline underline-offset-2">
+              <Link href="/handyman-near-me/" className="text-[#E85818] hover:text-[#E85818] underline underline-offset-2">
                 handyman near you
               </Link>{' '}
               ·{' '}
-              <Link href="/drywall-repair" className="text-[#E85818] hover:text-[#E85818] underline underline-offset-2">
+              <Link href="/handyman-services/drywall-repair/" className="text-[#E85818] hover:text-[#E85818] underline underline-offset-2">
                 drywall repair services
               </Link>{' '}
               ·{' '}
@@ -519,7 +519,7 @@ export default function GBPDesPeres() {
                   Handyman in Chesterfield MO
                 </Button>
               </Link>
-              <Link href="/handyman-near-me">
+              <Link href="/handyman-near-me/">
                 <Button variant="outline" className="rounded-full border-orange-300 text-[#E85818] hover:bg-orange-50">
                   Handyman near me
                 </Button>

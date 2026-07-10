@@ -160,10 +160,10 @@ export default function DeckRepairCollinsville() {
             <Link href="/carpentry-services-collinsville-il">
               <Button variant="outline" className="rounded-full border-gray-300 hover:border-teal-500 hover:text-teal-600">Carpentry in Collinsville</Button>
             </Link>
-            <Link href="/deck-repair">
+            <Link href="/handyman-services/deck-repair/">
               <Button variant="outline" className="rounded-full border-gray-300 hover:border-teal-500 hover:text-teal-600">Regional Deck Repair</Button>
             </Link>
-            <Link href="/handyman-collinsville-il">
+            <Link href="/service-areas/collinsville-handyman-services/">
               <Button variant="outline" className="rounded-full border-gray-300 hover:border-teal-500 hover:text-teal-600">Handyman Services Collinsville</Button>
             </Link>
           </div>

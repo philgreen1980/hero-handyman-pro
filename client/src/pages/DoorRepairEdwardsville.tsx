@@ -191,11 +191,11 @@ export default function DoorRepairEdwardsville() {
               <span className="text-teal-700 hover:underline font-medium cursor-pointer">Hero Handyman Pro Home</span>
             </Link>
             <span className="text-gray-300">|</span>
-            <Link href="/gbp/edwardsville">
+            <Link href="/gbp/edwardsville-il/">
               <span className="text-teal-700 hover:underline font-medium cursor-pointer">Edwardsville Handyman Services</span>
             </Link>
             <span className="text-gray-300">|</span>
-            <Link href="/door-installation">
+            <Link href="/handyman-services/door-repair/">
               <span className="text-teal-700 hover:underline font-medium cursor-pointer">Door Installation & Repair (Regional)</span>
             </Link>
             <span className="text-gray-300">|</span>

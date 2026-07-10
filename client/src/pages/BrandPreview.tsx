@@ -71,7 +71,7 @@ export default function BrandPreview() {
 
           {/* Desktop Nav — brand orange hover */}
           <nav className="hidden md:flex items-center gap-5">
-            <a href="/services/" className="text-sm font-medium text-gray-600 hover:text-[#E85818] transition-colors flex items-center gap-1">
+            <a href="/handyman-services/" className="text-sm font-medium text-gray-600 hover:text-[#E85818] transition-colors flex items-center gap-1">
               Services <ChevronRight className="h-3 w-3 rotate-90" />
             </a>
             <a href="/service-areas/" className="text-sm font-medium text-gray-600 hover:text-[#E85818] transition-colors flex items-center gap-1">

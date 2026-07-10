@@ -159,10 +159,10 @@ export default function DoorRepairCollinsville() {
         <div className="max-w-[1120px] mx-auto">
           <h3 className="text-xl font-bold text-gray-900 mb-6">More Services in Collinsville & Metro East</h3>
           <div className="flex flex-wrap gap-3">
-            <Link href="/handyman-collinsville-il">
+            <Link href="/service-areas/collinsville-handyman-services/">
               <Button variant="outline" className="rounded-full border-gray-300 hover:border-teal-500 hover:text-teal-600">Handyman Services Collinsville</Button>
             </Link>
-            <Link href="/door-installation">
+            <Link href="/handyman-services/door-repair/">
               <Button variant="outline" className="rounded-full border-gray-300 hover:border-teal-500 hover:text-teal-600">Regional Door Installation</Button>
             </Link>
             <Link href="/door-repair-belleville-il">

@@ -148,7 +148,7 @@ export default function DeckRepairEdwardsville() {
               <p className="text-gray-600 mb-6">
                 Hero Handyman Pro has been repairing decks in Edwardsville and the surrounding area for over 35 years. We know what holds up in this climate and what doesn't.
               </p>
-              <Link href="/gbp/edwardsville">
+              <Link href="/gbp/edwardsville-il/">
                 <span className="text-teal-700 hover:underline font-semibold cursor-pointer">
                   View our Edwardsville handyman services →
                 </span>

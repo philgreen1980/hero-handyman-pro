@@ -174,9 +174,9 @@ export default function WindowRepairCostOFallon() {
           </p>
           <p className="text-gray-600 leading-relaxed mt-3">
             At Hero Handyman Pro, we help homeowners throughout{" "}
-            <Link href="/service-areas/ofallon-handyman-services/" className="text-[#ff5b00] hover:underline">O'Fallon</Link>,{" "}
-            <Link href="/service-areas/belleville-handyman-services/" className="text-[#ff5b00] hover:underline">Belleville</Link>,{" "}
-            <Link href="/service-areas/edwardsville-handyman-services/" className="text-[#ff5b00] hover:underline">Edwardsville</Link>,{" "}
+            <Link href="/gbp/ofallon-il/" className="text-[#ff5b00] hover:underline">O'Fallon</Link>,{" "}
+            <Link href="/handyman-belleville-il" className="text-[#ff5b00] hover:underline">Belleville</Link>,{" "}
+            <Link href="/gbp/edwardsville-il/" className="text-[#ff5b00] hover:underline">Edwardsville</Link>,{" "}
             <Link href="/service-areas/collinsville-handyman-services/" className="text-[#ff5b00] hover:underline">Collinsville</Link>, and surrounding Metro East communities repair and replace windows efficiently — without unnecessary upselling to full replacement when targeted repairs will do the job.
           </p>
           <div className="flex items-center gap-3 mt-6 pt-6 border-t border-gray-100">
@@ -484,16 +484,16 @@ export default function WindowRepairCostOFallon() {
               <h3 className="text-sm font-bold text-[#0b1220] uppercase tracking-wide mb-3">Related Services</h3>
               <ul className="space-y-2">
                 <li><Link href="/services/window-installation" className="text-[#ff5b00] hover:underline text-sm">Door &amp; Window Repair Service</Link></li>
-                <li><Link href="/handyman-services/exterior-carpentry/" className="text-[#ff5b00] hover:underline text-sm">Exterior Carpentry &amp; Wood Rot Repair</Link></li>
+                <li><Link href="/carpentry-services/" className="text-[#ff5b00] hover:underline text-sm">Exterior Carpentry &amp; Wood Rot Repair</Link></li>
                 <li><Link href="/handyman-services/home-repair-services/" className="text-[#ff5b00] hover:underline text-sm">Home Repair &amp; Punch Lists</Link></li>
               </ul>
             </div>
             <div>
               <h3 className="text-sm font-bold text-[#0b1220] uppercase tracking-wide mb-3">Service Areas</h3>
               <ul className="space-y-2">
-                <li><Link href="/service-areas/ofallon-handyman-services/" className="text-[#ff5b00] hover:underline text-sm">Handyman in O'Fallon, IL</Link></li>
-                <li><Link href="/service-areas/belleville-handyman-services/" className="text-[#ff5b00] hover:underline text-sm">Handyman in Belleville, IL</Link></li>
-                <li><Link href="/service-areas/edwardsville-handyman-services/" className="text-[#ff5b00] hover:underline text-sm">Handyman in Edwardsville, IL</Link></li>
+                <li><Link href="/gbp/ofallon-il/" className="text-[#ff5b00] hover:underline text-sm">Handyman in O'Fallon, IL</Link></li>
+                <li><Link href="/handyman-belleville-il" className="text-[#ff5b00] hover:underline text-sm">Handyman in Belleville, IL</Link></li>
+                <li><Link href="/gbp/edwardsville-il/" className="text-[#ff5b00] hover:underline text-sm">Handyman in Edwardsville, IL</Link></li>
                 <li><Link href="/service-areas/collinsville-handyman-services/" className="text-[#ff5b00] hover:underline text-sm">Handyman in Collinsville, IL</Link></li>
               </ul>
             </div>

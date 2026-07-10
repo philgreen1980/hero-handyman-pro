@@ -417,7 +417,7 @@ export default function WindowInstallationPage() {
             
             <div className="grid md:grid-cols-2 gap-6">
               <Link 
-                href="/services/window-installation-ofallon-il"
+                href="/service-areas/window-installation-ofallon-il/"
                 className="group bg-gray-50 hover:bg-teal-50 border-2 border-gray-200 hover:border-teal-600 rounded-lg p-6 transition-all"
               >
                 <div className="flex items-center justify-between mb-3">

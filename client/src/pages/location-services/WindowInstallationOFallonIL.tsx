@@ -186,7 +186,7 @@ export default function WindowInstallationOFallonIL() {
                   <li><Link href="/handyman-services/window-installation/"><span className="text-primary hover:underline cursor-pointer">Window Installation Services</span></Link></li>
                   <li><Link href="/services/doors-windows/"><span className="text-primary hover:underline cursor-pointer">Door Installation & Repair</span></Link></li>
                   <li><Link href="/carpentry-services/"><span className="text-primary hover:underline cursor-pointer">Exterior Carpentry</span></Link></li>
-                  <li><Link href="/service-areas/ofallon-handyman-services/"><span className="text-primary hover:underline cursor-pointer">All O'Fallon Handyman Services</span></Link></li>
+                  <li><Link href="/gbp/ofallon-il/"><span className="text-primary hover:underline cursor-pointer">All O'Fallon Handyman Services</span></Link></li>
                 </ul>
               </div>
             </div>

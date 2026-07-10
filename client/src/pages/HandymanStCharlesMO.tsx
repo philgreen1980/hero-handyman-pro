@@ -271,7 +271,7 @@ export default function HandymanStCharlesMO() {
             We serve communities across the Greater St. Louis area and Metro East Illinois. Visit our{" "}
             <Link href="/" className="text-[#ff5b00] hover:underline font-medium">homepage</Link>{" "}
             to learn more, or explore our{" "}
-            <Link href="/gbp/edwardsville" className="text-[#ff5b00] hover:underline font-medium">Edwardsville handyman services</Link>{" "}
+            <Link href="/gbp/edwardsville-il/" className="text-[#ff5b00] hover:underline font-medium">Edwardsville handyman services</Link>{" "}
             page for our Metro East coverage.
           </p>
           <div className="flex flex-wrap justify-center gap-3">

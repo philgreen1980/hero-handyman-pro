@@ -152,12 +152,12 @@ export default function DrywallRepairEdwardsville() {
                 Also serving O'Fallon, Collinsville, Maryville, Glen Carbon, and the greater Metro East area.
               </p>
               <div className="space-y-3 pt-2">
-                <Link href="/gbp/edwardsville">
+                <Link href="/gbp/edwardsville-il/">
                   <span className="block text-teal-700 hover:underline font-semibold text-sm cursor-pointer">
                     View our Edwardsville handyman services →
                   </span>
                 </Link>
-                <Link href="/drywall-repair">
+                <Link href="/handyman-services/drywall-repair/">
                   <span className="block text-teal-700 hover:underline font-semibold text-sm cursor-pointer">
                     See all drywall repair services →
                   </span>

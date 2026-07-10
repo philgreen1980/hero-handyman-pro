@@ -252,8 +252,8 @@ export default function FenceRepairEdwardsville() {
             Send us a photo of the damage and we'll respond with a clear, written estimate within 24 hours. We also serve{" "}
             <Link href="/service-areas/glen-carbon-handyman-services/" className="text-[#ff5b00] hover:underline">Glen Carbon</Link>,{" "}
             <Link href="/service-areas/collinsville-handyman-services/" className="text-[#ff5b00] hover:underline">Collinsville</Link>,{" "}
-            <Link href="/service-areas/ofallon-handyman-services/" className="text-[#ff5b00] hover:underline">O'Fallon</Link>, and{" "}
-            <Link href="/service-areas/belleville-handyman-services/" className="text-[#ff5b00] hover:underline">Belleville</Link>.
+            <Link href="/gbp/ofallon-il/" className="text-[#ff5b00] hover:underline">O'Fallon</Link>, and{" "}
+            <Link href="/handyman-belleville-il" className="text-[#ff5b00] hover:underline">Belleville</Link>.
           </p>
           <InlineQuoteForm
             service="Fence Repair Edwardsville"

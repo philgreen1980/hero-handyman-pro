@@ -115,7 +115,7 @@ export default function CarpentryServicesEdwardsville() {
               <p className="text-gray-600 mb-6">
                 Newer construction often has trim that was installed quickly and needs adjustment or replacement. We bring the same level of care to every project regardless of the home's age.
               </p>
-              <Link href="/gbp/edwardsville">
+              <Link href="/gbp/edwardsville-il/">
                 <span className="text-teal-700 hover:underline font-semibold cursor-pointer">
                   View our Edwardsville handyman services →
                 </span>

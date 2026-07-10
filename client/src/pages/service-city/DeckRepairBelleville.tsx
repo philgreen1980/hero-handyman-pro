@@ -249,10 +249,10 @@ export default function DeckRepairBelleville() {
           <h2 className="text-2xl font-bold text-[#0b1220] mb-2">Request Your Free Deck Repair Estimate in Belleville</h2>
           <p className="text-gray-600 mb-6">
             Send us a photo of your deck and we'll respond with a clear, written estimate within 24 hours. We also serve{" "}
-            <Link href="/service-areas/ofallon-handyman-services/" className="text-[#ff5b00] hover:underline">O'Fallon</Link>,{" "}
-            <Link href="/service-areas/edwardsville-handyman-services/" className="text-[#ff5b00] hover:underline">Edwardsville</Link>,{" "}
+            <Link href="/gbp/ofallon-il/" className="text-[#ff5b00] hover:underline">O'Fallon</Link>,{" "}
+            <Link href="/gbp/edwardsville-il/" className="text-[#ff5b00] hover:underline">Edwardsville</Link>,{" "}
             <Link href="/service-areas/collinsville-handyman-services/" className="text-[#ff5b00] hover:underline">Collinsville</Link>, and{" "}
-            <Link href="/service-areas/handyman-swansea-il/" className="text-[#ff5b00] hover:underline">Swansea</Link>.
+            <Link href="/handyman-swansea-il/" className="text-[#ff5b00] hover:underline">Swansea</Link>.
           </p>
           <InlineQuoteForm
             service="Deck Repair Belleville"

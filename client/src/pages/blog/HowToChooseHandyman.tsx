@@ -185,9 +185,9 @@ export default function HowToChooseHandyman() {
           </p>
           <p className="text-gray-700 leading-relaxed">
             Hero Handyman Pro has 235+ verified Google reviews from homeowners in{" "}
-            <Link href="/service-areas/edwardsville-handyman-services/" className="text-[#ff5b00] hover:underline">Edwardsville</Link>,{" "}
-            <Link href="/service-areas/ofallon-handyman-services/" className="text-[#ff5b00] hover:underline">O'Fallon</Link>,{" "}
-            <Link href="/service-areas/belleville-handyman-services/" className="text-[#ff5b00] hover:underline">Belleville</Link>, and across the Metro East.
+            <Link href="/gbp/edwardsville-il/" className="text-[#ff5b00] hover:underline">Edwardsville</Link>,{" "}
+            <Link href="/gbp/ofallon-il/" className="text-[#ff5b00] hover:underline">O'Fallon</Link>,{" "}
+            <Link href="/handyman-belleville-il" className="text-[#ff5b00] hover:underline">Belleville</Link>, and across the Metro East.
           </p>
         </section>
 
@@ -249,7 +249,7 @@ export default function HowToChooseHandyman() {
           <p className="text-gray-700 leading-relaxed">
             This is especially important for jobs involving ladders, power tools, or work near plumbing and electrical — such as{" "}
             <Link href="/handyman-services/ceiling-fan-installation/" className="text-[#ff5b00] hover:underline">ceiling fan installation</Link> or{" "}
-            <Link href="/handyman-services/exterior-carpentry/" className="text-[#ff5b00] hover:underline">exterior carpentry</Link>.
+            <Link href="/carpentry-services/" className="text-[#ff5b00] hover:underline">exterior carpentry</Link>.
           </p>
         </section>
 
@@ -264,7 +264,7 @@ export default function HowToChooseHandyman() {
             <Link href="/handyman-services/drywall-repair/" className="text-[#ff5b00] hover:underline">drywall repair</Link>,{" "}
             <Link href="/handyman-services/deck-repair/" className="text-[#ff5b00] hover:underline">deck and porch repair</Link>,{" "}
             <Link href="/handyman-services/door-repair/" className="text-[#ff5b00] hover:underline">door installation and repair</Link>,{" "}
-            <Link href="/handyman-services/exterior-carpentry/" className="text-[#ff5b00] hover:underline">exterior carpentry</Link>, and general{" "}
+            <Link href="/carpentry-services/" className="text-[#ff5b00] hover:underline">exterior carpentry</Link>, and general{" "}
             <Link href="/handyman-services/home-repair-services/" className="text-[#ff5b00] hover:underline">home repair punch lists</Link> across St. Louis and Metro East.
           </p>
         </section>
@@ -284,10 +284,10 @@ export default function HowToChooseHandyman() {
           <h2 className="text-2xl font-bold text-[#0b1220] mb-2">Ready to Hire a Handyman You Can Trust?</h2>
           <p className="text-gray-600 mb-6">
             Hero Handyman Pro serves homeowners across{" "}
-            <Link href="/service-areas/st-louis-handyman-services/" className="text-[#ff5b00] hover:underline">St. Louis</Link>,{" "}
-            <Link href="/service-areas/edwardsville-handyman-services/" className="text-[#ff5b00] hover:underline">Edwardsville</Link>,{" "}
-            <Link href="/service-areas/ofallon-handyman-services/" className="text-[#ff5b00] hover:underline">O'Fallon</Link>,{" "}
-            <Link href="/service-areas/belleville-handyman-services/" className="text-[#ff5b00] hover:underline">Belleville</Link>, and surrounding Metro East communities.
+            <Link href="/service-areas/st-louis-mo-handyman/" className="text-[#ff5b00] hover:underline">St. Louis</Link>,{" "}
+            <Link href="/gbp/edwardsville-il/" className="text-[#ff5b00] hover:underline">Edwardsville</Link>,{" "}
+            <Link href="/gbp/ofallon-il/" className="text-[#ff5b00] hover:underline">O'Fallon</Link>,{" "}
+            <Link href="/handyman-belleville-il" className="text-[#ff5b00] hover:underline">Belleville</Link>, and surrounding Metro East communities.
             Send us a photo of your project and get a free, written estimate within 24 hours.
           </p>
           <InlineQuoteForm

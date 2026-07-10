@@ -250,10 +250,10 @@ export default function DoorRepairSwansea() {
           <h2 className="text-2xl font-bold text-[#0b1220] mb-2">Request Your Free Door Repair Estimate in Swansea</h2>
           <p className="text-gray-600 mb-6">
             Tell us what's happening with your door and we'll respond with a clear, written estimate within 24 hours. We also serve{" "}
-            <Link href="/service-areas/belleville-handyman-services/" className="text-[#ff5b00] hover:underline">Belleville</Link>,{" "}
-            <Link href="/service-areas/ofallon-handyman-services/" className="text-[#ff5b00] hover:underline">O'Fallon</Link>,{" "}
-            <Link href="/service-areas/handyman-fairview-heights-il/" className="text-[#ff5b00] hover:underline">Fairview Heights</Link>, and{" "}
-            <Link href="/service-areas/handyman-shiloh-il/" className="text-[#ff5b00] hover:underline">Shiloh</Link>.
+            <Link href="/handyman-belleville-il" className="text-[#ff5b00] hover:underline">Belleville</Link>,{" "}
+            <Link href="/gbp/ofallon-il/" className="text-[#ff5b00] hover:underline">O'Fallon</Link>,{" "}
+            <Link href="/handyman-fairview-heights-il/" className="text-[#ff5b00] hover:underline">Fairview Heights</Link>, and{" "}
+            <Link href="/handyman-shiloh-il/" className="text-[#ff5b00] hover:underline">Shiloh</Link>.
           </p>
           <InlineQuoteForm
             service="Door Repair Swansea"

@@ -292,11 +292,11 @@ function Router() {
         <Route path="/service-areas/ofallon-handyman-services/" component={OFallonHandyman} />
         <Route path="/service-areas/edwardsville-handyman-services/" component={EdwardsvilleHandyman} />
         <Route path="/edwardsville-il/">
-          <Redirect to="/service-areas/edwardsville-handyman-services/" />
+          <Redirect to="/gbp/edwardsville-il/" />
         </Route>
         <Route path="/service-areas/belleville-handyman-services/" component={BellevilleHandyman} />
         <Route path="/belleville-il/">
-          <Redirect to="/service-areas/belleville-handyman-services/" />
+          <Redirect to="/handyman-belleville-il" />
         </Route>
         <Route path="/service-areas/st-louis-mo-handyman/" component={StLouisHandyman} />
         <Route path="/service-areas/st-louis-handyman-services/">
@@ -308,22 +308,22 @@ function Router() {
           <Redirect to="/carpentry-services/" />
         </Route>
         <Route path="/service-areas/ofallon-il/">
-          <Redirect to="/service-areas/ofallon-handyman-services/" />
+          <Redirect to="/gbp/ofallon-il/" />
         </Route>
         <Route path="/service-areas/edwardsville-il/">
-          <Redirect to="/service-areas/edwardsville-handyman-services/" />
+          <Redirect to="/gbp/edwardsville-il/" />
         </Route>
         <Route path="/service-areas/chesterfield-mo/">
           <Redirect to="/handyman-chesterfield-mo" />
         </Route>
         <Route path="/service-areas/ofallon-il-handyman/">
-          <Redirect to="/service-areas/ofallon-handyman-services/" />
+          <Redirect to="/gbp/ofallon-il/" />
         </Route>
         <Route path="/service-areas/edwardsville-il-handyman/">
-          <Redirect to="/service-areas/edwardsville-handyman-services/" />
+          <Redirect to="/gbp/edwardsville-il/" />
         </Route>
         <Route path="/service-areas/belleville-il-handyman/">
-          <Redirect to="/service-areas/belleville-handyman-services/" />
+          <Redirect to="/handyman-belleville-il" />
         </Route>
         <Route path="/service-areas/collinsville-il-handyman/">
           <Redirect to="/service-areas/collinsville-handyman-services/" />

@@ -101,7 +101,7 @@ export default function CityPage() {
           <div className="bg-muted/30 p-6 rounded-lg border border-border">
             <h3 className="font-heading font-bold text-xl text-primary mb-4">Nearby Areas</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/service-areas/edwardsville-il-handyman/"><span className="hover:text-secondary cursor-pointer">Edwardsville, IL</span></Link></li>
+              <li><Link href="/gbp/edwardsville-il/"><span className="hover:text-secondary cursor-pointer">Edwardsville, IL</span></Link></li>
               <li><Link href="/service-areas/"><span className="hover:text-secondary cursor-pointer">Shiloh, IL</span></Link></li>
               <li><Link href="/service-areas/"><span className="hover:text-secondary cursor-pointer">Fairview Heights, IL</span></Link></li>
               <li><Link href="/service-areas/"><span className="hover:text-secondary cursor-pointer">Belleville, IL</span></Link></li>

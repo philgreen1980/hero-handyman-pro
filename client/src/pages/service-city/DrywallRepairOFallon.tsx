@@ -249,8 +249,8 @@ export default function DrywallRepairOFallon() {
           <h2 className="text-2xl font-bold text-[#0b1220] mb-2">Request Your Free Drywall Repair Estimate</h2>
           <p className="text-gray-600 mb-6">
             Send us a photo of the damage and we'll respond with a clear, written estimate within 24 hours. No pressure, no obligation. We also serve{" "}
-            <Link href="/service-areas/edwardsville-handyman-services/" className="text-[#ff5b00] hover:underline">Edwardsville</Link>,{" "}
-            <Link href="/service-areas/belleville-handyman-services/" className="text-[#ff5b00] hover:underline">Belleville</Link>,{" "}
+            <Link href="/gbp/edwardsville-il/" className="text-[#ff5b00] hover:underline">Edwardsville</Link>,{" "}
+            <Link href="/handyman-belleville-il" className="text-[#ff5b00] hover:underline">Belleville</Link>,{" "}
             <Link href="/service-areas/collinsville-handyman-services/" className="text-[#ff5b00] hover:underline">Collinsville</Link>, and{" "}
             <Link href="/service-areas/glen-carbon-handyman-services/" className="text-[#ff5b00] hover:underline">Glen Carbon</Link>.
           </p>

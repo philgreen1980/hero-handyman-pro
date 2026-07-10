@@ -177,7 +177,7 @@ export default function DoorInstallationBelleville() {
         <div className="max-w-[1120px] mx-auto text-center">
           <p className="text-gray-600 mb-4">
             Explore more Hero Handyman Pro services in Belleville, or visit our{" "}
-            <Link href="/service-areas/belleville-handyman-services/" className="text-orange-600 hover:underline font-medium">Belleville IL handyman services</Link>{" "}
+            <Link href="/handyman-belleville-il" className="text-orange-600 hover:underline font-medium">Belleville IL handyman services</Link>{" "}
             page for our full service offering.
           </p>
           <div className="flex flex-wrap justify-center gap-3">

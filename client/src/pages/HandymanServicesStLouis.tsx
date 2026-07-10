@@ -205,7 +205,7 @@ export default function HandymanServicesStLouis() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link href="/services/">
+            <Link href="/handyman-services/">
               <Button size="lg" className="font-bold uppercase tracking-wider">
                 View All Services <ArrowRight className="ml-2 h-5 w-5" />
               </Button>

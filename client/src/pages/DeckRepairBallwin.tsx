@@ -202,7 +202,7 @@ export default function DeckRepairBallwin() {
             <span className="text-gray-300">|</span>
             <Link href="/handyman-ballwin-mo"><span className="text-teal-700 hover:underline font-medium cursor-pointer">Ballwin Handyman Services</span></Link>
             <span className="text-gray-300">|</span>
-            <Link href="/deck-repair"><span className="text-teal-700 hover:underline font-medium cursor-pointer">Deck Repair (Regional)</span></Link>
+            <Link href="/handyman-services/deck-repair/"><span className="text-teal-700 hover:underline font-medium cursor-pointer">Deck Repair (Regional)</span></Link>
             <span className="text-gray-300">|</span>
             <Link href="/deck-repair-chesterfield-mo"><span className="text-teal-700 hover:underline font-medium cursor-pointer">Deck Repair in Chesterfield MO</span></Link>
           </div>

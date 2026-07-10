@@ -51,11 +51,11 @@ export default function GBPOFallon() {
               <MapPin className="w-4 h-4" />
               <span className="text-sm font-medium">Serving O'Fallon & Metro East Illinois</span>
             </div>
-
+            
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Your Trusted O'Fallon Handyman
             </h1>
-
+            
             <p className="text-lg mb-8 text-orange-100 max-w-2xl mx-auto">
               Reliable handyman service for O'Fallon, Belleville, Fairview Heights, and surrounding Metro East communities. Small jobs welcome — drywall, doors, decks, carpentry, and fixtures. Punch-list repairs and fast home repairs with same-week availability when possible.
             </p>
@@ -67,7 +67,7 @@ export default function GBPOFallon() {
                   Call Now: (618) 353-0955
                 </Button>
               </a>
-
+              
               <Link href="/#contact?city=O%27Fallon">
                 <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 border-white text-white text-lg px-8 py-6">
                   Get Free Estimate
@@ -114,7 +114,7 @@ export default function GBPOFallon() {
               <h3 className="font-semibold text-lg mb-2">35+ Years Experience</h3>
               <p className="text-gray-600">Trusted expertise in home repairs</p>
             </div>
-
+            
             <div className="flex flex-col items-center text-center">
               <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
                 <Clock className="w-8 h-8 text-orange-600" />
@@ -122,7 +122,7 @@ export default function GBPOFallon() {
               <h3 className="font-semibold text-lg mb-2">Immediate Response</h3>
               <p className="text-gray-600">We strive to respond immediately</p>
             </div>
-
+            
             <div className="flex flex-col items-center text-center">
               <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
                 <Award className="w-8 h-8 text-[#E85818]" />
@@ -141,7 +141,7 @@ export default function GBPOFallon() {
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
               O'Fallon Handyman Services
             </h2>
-
+            
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
               <div className="bg-white border border-gray-200 rounded-lg p-6">
                 <h3 className="font-semibold text-lg mb-3 text-[#E85818]">Home Repairs</h3>
@@ -152,7 +152,7 @@ export default function GBPOFallon() {
                   <li>• <Link href="/service-areas/deck-repair-st-louis-mo/" className="text-[#E85818] hover:underline">Deck repair & maintenance</Link></li>
                 </ul>
               </div>
-
+              
               <div className="bg-white border border-gray-200 rounded-lg p-6">
                 <h3 className="font-semibold text-lg mb-3 text-[#E85818]">Remodeling</h3>
                 <ul className="space-y-2 text-gray-700">
@@ -162,7 +162,7 @@ export default function GBPOFallon() {
                   <li>• <Link href="/service-areas/deck-building-ofallon-il/" className="text-[#E85818] hover:underline">Deck construction</Link></li>
                 </ul>
               </div>
-
+              
               <div className="bg-white border border-gray-200 rounded-lg p-6">
                 <h3 className="font-semibold text-lg mb-3 text-[#E85818]">Carpentry</h3>
                 <ul className="space-y-2 text-gray-700">
@@ -172,7 +172,7 @@ export default function GBPOFallon() {
                   <li>• Structural repairs</li>
                 </ul>
               </div>
-
+              
               <div className="bg-white border border-gray-200 rounded-lg p-6">
                 <h3 className="font-semibold text-lg mb-3 text-[#E85818]">Electrical & Plumbing</h3>
                 <ul className="space-y-2 text-gray-700">
@@ -215,7 +215,7 @@ export default function GBPOFallon() {
               <div>Mascoutah</div>
               <div>Lebanon</div>
             </div>
-
+            
             {/* Service Area Map */}
             <div className="mt-12">
               <h3 className="text-2xl font-bold mb-6 text-gray-800">Our Service Coverage Area</h3>
@@ -250,7 +250,7 @@ export default function GBPOFallon() {
             <p className="text-center text-gray-600 mb-12">
               Real reviews from your neighbors in O'Fallon and Metro East Illinois
             </p>
-
+            
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Testimonial 1 */}
               <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
@@ -267,7 +267,7 @@ export default function GBPOFallon() {
                   <p className="text-sm text-gray-600">O'Fallon, IL</p>
                 </div>
               </div>
-
+              
               {/* Testimonial 2 */}
               <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
                 <div className="flex mb-3">
@@ -283,7 +283,7 @@ export default function GBPOFallon() {
                   <p className="text-sm text-gray-600">Belleville, IL</p>
                 </div>
               </div>
-
+              
               {/* Testimonial 3 */}
               <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
                 <div className="flex mb-3">
@@ -374,7 +374,7 @@ export default function GBPOFallon() {
                 </div>
                 <h3 className="font-bold text-lg text-gray-900 mb-2">Door Installation & Repair</h3>
                 <p className="text-gray-600 text-sm mb-3">Entry doors, interior doors, patio doors, and storm doors. Installation, adjustment, and hardware replacement.</p>
-                <Link href="/handyman-services/door-installation/" className="text-[#E85818] font-semibold text-sm hover:underline">Learn More →</Link>
+                <Link href="/handyman-services/door-repair/" className="text-[#E85818] font-semibold text-sm hover:underline">Learn More →</Link>
               </div>
 
               {/* Carpentry */}
@@ -384,7 +384,7 @@ export default function GBPOFallon() {
                 </div>
                 <h3 className="font-bold text-lg text-gray-900 mb-2">Carpentry & Trim Work</h3>
                 <p className="text-gray-600 text-sm mb-3">Baseboard, crown molding, door casing, custom shelving, and finish carpentry. Precise, clean results.</p>
-                <Link href="/handyman-services/carpentry/" className="text-[#E85818] font-semibold text-sm hover:underline">Learn More →</Link>
+                <Link href="/carpentry-services/" className="text-[#E85818] font-semibold text-sm hover:underline">Learn More →</Link>
               </div>
 
               {/* Ceiling Fan */}

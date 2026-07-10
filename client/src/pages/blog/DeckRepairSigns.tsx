@@ -231,7 +231,7 @@ export default function DeckRepairSigns() {
             If you've recently purchased a home and don't know the maintenance history of the deck, have it professionally inspected before the summer season. This is especially important for homes built in the 1990s and early 2000s, when many decks were built with standard construction lumber rather than pressure-treated wood — and those decks are now well past their expected service life.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            A professional deck inspection takes 30–60 minutes and gives you a clear picture of the deck's condition, what repairs are needed, and whether repair or replacement is the more cost-effective path. We offer deck inspections as part of our <Link href="/handyman-service-packages/" className="text-[#ff5b00] hover:underline font-medium">service packages</Link> for homeowners in O'Fallon, Edwardsville, Belleville, and surrounding communities.
+            A professional deck inspection takes 30–60 minutes and gives you a clear picture of the deck's condition, what repairs are needed, and whether repair or replacement is the more cost-effective path. We offer deck inspections as part of our <Link href="/handyman-services/" className="text-[#ff5b00] hover:underline font-medium">service packages</Link> for homeowners in O'Fallon, Edwardsville, Belleville, and surrounding communities.
           </p>
         </section>
 

@@ -363,7 +363,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <Link href="/handyman-services/ceiling-fan-installation/" className="block hover:text-gray-300 transition-colors">
                   Ceiling Fan Install
                 </Link>
-                <Link href="/carpentry-services" className="block hover:text-gray-300 transition-colors">
+                <Link href="/carpentry-services/" className="block hover:text-gray-300 transition-colors">
                   Carpentry Services
                 </Link>
               </div>
@@ -373,7 +373,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div>
               <div className="text-white font-semibold mb-2">Resources</div>
               <div className="space-y-1">
-                <Link href="/handyman-near-me" className="block hover:text-gray-300 transition-colors">
+                <Link href="/handyman-near-me/" className="block hover:text-gray-300 transition-colors">
                   Handyman Near Me
                 </Link>
                 <Link href="/trusted-local-partners/" className="block hover:text-gray-300 transition-colors">
@@ -417,10 +417,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   <Link href="/blog/signs-your-deck-needs-repair/" className="block hover:text-gray-300 transition-colors">
                     5 Signs Deck Needs Repair
                   </Link>
-                  <Link href="/blog/handyman-vs-contractor-which-do-you-need/" className="block hover:text-gray-300 transition-colors">
+                  <Link href="/blog/handyman-vs-contractor-metro-east-il/" className="block hover:text-gray-300 transition-colors">
                     Handyman vs. Contractor
                   </Link>
-                  <Link href="/blog/edwardsville-il-home-repair-guide/" className="block hover:text-gray-300 transition-colors">
+                  <Link href="/gbp/edwardsville-il/" className="block hover:text-gray-300 transition-colors">
                     Edwardsville Home Repair Guide
                   </Link>
                   <Link href="/blog/home-maintenance-tips-metro-east-il/" className="block hover:text-gray-300 transition-colors">
@@ -459,25 +459,25 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div>
               <div className="text-white font-semibold mb-2">Service Areas</div>
               <div className="space-y-1.5">
-                <Link href="/service-areas/ofallon-handyman-services/">
+                <Link href="/gbp/ofallon-il/">
                   <span className="text-gray-400 hover:text-gray-200 cursor-pointer block">O'Fallon, IL</span>
                 </Link>
-                <Link href="/service-areas/edwardsville-handyman-services/">
+                <Link href="/gbp/edwardsville-il/">
                   <span className="text-gray-400 hover:text-gray-200 cursor-pointer block">Edwardsville, IL</span>
                 </Link>
                 <Link href="/service-areas/collinsville-handyman-services/">
                   <span className="text-gray-400 hover:text-gray-200 cursor-pointer block">Collinsville, IL</span>
                 </Link>
-                <Link href="/service-areas/belleville-handyman-services/">
+                <Link href="/handyman-belleville-il">
                   <span className="text-gray-400 hover:text-gray-200 cursor-pointer block">Belleville, IL</span>
                 </Link>
-                <Link href="/handyman-shiloh-il">
+                <Link href="/handyman-shiloh-il/">
                   <span className="text-gray-400 hover:text-gray-200 cursor-pointer block">Shiloh, IL</span>
                 </Link>
-                <Link href="/handyman-swansea-il">
+                <Link href="/handyman-swansea-il/">
                   <span className="text-gray-400 hover:text-gray-200 cursor-pointer block">Swansea, IL</span>
                 </Link>
-                <Link href="/handyman-fairview-heights-il">
+                <Link href="/handyman-fairview-heights-il/">
                   <span className="text-gray-400 hover:text-gray-200 cursor-pointer block">Fairview Heights, IL</span>
                 </Link>
                 <Link href="/handyman-st-louis-mo">

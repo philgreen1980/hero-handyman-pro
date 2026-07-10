@@ -174,10 +174,10 @@ export default function DrywallRepairCostOFallon() {
           </p>
           <p className="text-gray-600 leading-relaxed mt-3">
             At Hero Handyman Pro, we help homeowners throughout{" "}
-            <Link href="/service-areas/ofallon-il-handyman/" className="text-[#ff5b00] hover:underline">O'Fallon</Link>,{" "}
-            <Link href="/service-areas/belleville-il-handyman/" className="text-[#ff5b00] hover:underline">Belleville</Link>,{" "}
-            <Link href="/service-areas/swansea-il-handyman/" className="text-[#ff5b00] hover:underline">Swansea</Link>,{" "}
-            <Link href="/service-areas/shiloh-il-handyman/" className="text-[#ff5b00] hover:underline">Shiloh</Link>, and surrounding Metro East communities restore damaged drywall professionally and efficiently.
+            <Link href="/gbp/ofallon-il/" className="text-[#ff5b00] hover:underline">O'Fallon</Link>,{" "}
+            <Link href="/handyman-belleville-il" className="text-[#ff5b00] hover:underline">Belleville</Link>,{" "}
+            <Link href="/handyman-swansea-il/" className="text-[#ff5b00] hover:underline">Swansea</Link>,{" "}
+            <Link href="/handyman-shiloh-il/" className="text-[#ff5b00] hover:underline">Shiloh</Link>, and surrounding Metro East communities restore damaged drywall professionally and efficiently.
           </p>
           <div className="flex items-center gap-3 mt-6 pt-6 border-t border-gray-100">
             <div className="w-10 h-10 rounded-full bg-[#0f766e] flex items-center justify-center text-white font-bold text-sm">PG</div>
@@ -322,7 +322,7 @@ export default function DrywallRepairCostOFallon() {
           </div>
           <p className="text-gray-700 leading-relaxed">
             A professional inspection helps determine the best long-term solution. Learn more about our{" "}
-            <Link href="/services/drywall-repair/" className="text-[#ff5b00] hover:underline">drywall repair service</Link>.
+            <Link href="/handyman-services/drywall-repair/" className="text-[#ff5b00] hover:underline">drywall repair service</Link>.
           </p>
         </section>
 
@@ -429,19 +429,19 @@ export default function DrywallRepairCostOFallon() {
             <div>
               <h3 className="text-sm font-bold text-[#0b1220] uppercase tracking-wide mb-3">Related Services</h3>
               <ul className="space-y-2">
-                <li><Link href="/services/drywall-repair/" className="text-[#ff5b00] hover:underline text-sm">Drywall Repair Service</Link></li>
+                <li><Link href="/handyman-services/drywall-repair/" className="text-[#ff5b00] hover:underline text-sm">Drywall Repair Service</Link></li>
                 <li><Link href="/services/handyman-home-repair/" className="text-[#ff5b00] hover:underline text-sm">Home Repair &amp; Maintenance</Link></li>
-                <li><Link href="/services/interior-painting/" className="text-[#ff5b00] hover:underline text-sm">Interior Painting</Link></li>
-                <li><Link href="/services/ceiling-fan-installation/" className="text-[#ff5b00] hover:underline text-sm">Ceiling Fan Installation</Link></li>
+                <li><Link href="/handyman-services/" className="text-[#ff5b00] hover:underline text-sm">Interior Painting</Link></li>
+                <li><Link href="/handyman-services/ceiling-fan-installation/" className="text-[#ff5b00] hover:underline text-sm">Ceiling Fan Installation</Link></li>
               </ul>
             </div>
             <div>
               <h3 className="text-sm font-bold text-[#0b1220] uppercase tracking-wide mb-3">Service Areas</h3>
               <ul className="space-y-2">
-                <li><Link href="/service-areas/ofallon-il-handyman/" className="text-[#ff5b00] hover:underline text-sm">Handyman in O'Fallon, IL</Link></li>
-                <li><Link href="/service-areas/belleville-il-handyman/" className="text-[#ff5b00] hover:underline text-sm">Handyman in Belleville, IL</Link></li>
-                <li><Link href="/service-areas/swansea-il-handyman/" className="text-[#ff5b00] hover:underline text-sm">Handyman in Swansea, IL</Link></li>
-                <li><Link href="/service-areas/shiloh-il-handyman/" className="text-[#ff5b00] hover:underline text-sm">Handyman in Shiloh, IL</Link></li>
+                <li><Link href="/gbp/ofallon-il/" className="text-[#ff5b00] hover:underline text-sm">Handyman in O'Fallon, IL</Link></li>
+                <li><Link href="/handyman-belleville-il" className="text-[#ff5b00] hover:underline text-sm">Handyman in Belleville, IL</Link></li>
+                <li><Link href="/handyman-swansea-il/" className="text-[#ff5b00] hover:underline text-sm">Handyman in Swansea, IL</Link></li>
+                <li><Link href="/handyman-shiloh-il/" className="text-[#ff5b00] hover:underline text-sm">Handyman in Shiloh, IL</Link></li>
               </ul>
             </div>
             <div>
@@ -451,7 +451,7 @@ export default function DrywallRepairCostOFallon() {
                 <li><Link href="/blog/door-repair-cost-ofallon-il/" className="text-[#ff5b00] hover:underline text-sm font-medium">Door Repair Cost in O'Fallon IL (2026)</Link></li>
                 <li><Link href="/blog/window-repair-cost-ofallon-il/" className="text-[#ff5b00] hover:underline text-sm font-medium">Window Repair Cost in O'Fallon IL (2026)</Link></li>
                 <li><Link href="/blog/2026-handyman-costs-metro-east-il/" className="text-[#ff5b00] hover:underline text-sm">2026 Handyman Costs Guide</Link></li>
-                <li><Link href="/blog/home-maintenance-tips-metro-east/" className="text-[#ff5b00] hover:underline text-sm">Home Maintenance Tips: Metro East</Link></li>
+                <li><Link href="/blog/2026-handyman-costs-metro-east-il/" className="text-[#ff5b00] hover:underline text-sm">Home Maintenance Tips: Metro East</Link></li>
               </ul>
             </div>
           </div>

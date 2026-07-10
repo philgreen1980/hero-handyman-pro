@@ -371,9 +371,9 @@ export default function Home() {
         <div className="container max-w-[1120px] mx-auto">
           <div className="flex flex-wrap items-center gap-2 text-sm">
             <span className="font-semibold text-gray-700">Serving:</span>
-            <Link href="/service-areas/ofallon-handyman-services/" className="text-teal-800 hover:underline">O'Fallon IL</Link>
+            <Link href="/gbp/ofallon-il/" className="text-teal-800 hover:underline">O'Fallon IL</Link>
             <span className="text-gray-400">·</span>
-            <Link href="/service-areas/edwardsville-handyman-services/" className="text-teal-800 hover:underline">handyman Edwardsville IL</Link>
+            <Link href="/gbp/edwardsville-il/" className="text-teal-800 hover:underline">handyman Edwardsville IL</Link>
             <span className="text-gray-400">·</span>
             <Link href="/service-areas/collinsville-handyman-services/" className="text-teal-800 hover:underline">Collinsville IL</Link>
             <span className="text-gray-400">·</span>
@@ -410,7 +410,7 @@ export default function Home() {
             <div className="bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
               <div className="text-xs uppercase tracking-wider text-gray-500 mb-2">Carpentry & Exterior Repairs</div>
               <h3 className="text-lg font-bold mb-2">
-                <Link href="/deck-repair" className="hover:text-teal-700">
+                <Link href="/handyman-services/deck-repair/" className="hover:text-teal-700">
                   Deck & Carpentry Repairs
                 </Link>
               </h3>
@@ -418,8 +418,8 @@ export default function Home() {
                 Fix sagging decks, rotted trim, railings, steps, and other wood damage before it becomes a bigger problem.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link href="/deck-repair" className="text-sm font-semibold text-teal-800 hover:underline">Deck repair →</Link>
-                <Link href="/carpentry-services" className="text-sm font-semibold text-teal-800 hover:underline">Carpentry →</Link>
+                <Link href="/handyman-services/deck-repair/" className="text-sm font-semibold text-teal-800 hover:underline">Deck repair →</Link>
+                <Link href="/carpentry-services/" className="text-sm font-semibold text-teal-800 hover:underline">Carpentry →</Link>
                 <Link href="/deck-repair-edwardsville-il" className="text-sm font-semibold text-teal-600 hover:underline">Deck repair near you →</Link>
               </div>
             </div>
@@ -428,7 +428,7 @@ export default function Home() {
             <div className="bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
               <div className="text-xs uppercase tracking-wider text-gray-500 mb-2">Doors & Windows</div>
               <h3 className="text-lg font-bold mb-2">
-                <Link href="/door-installation" className="hover:text-teal-700">
+                <Link href="/handyman-services/door-repair/" className="hover:text-teal-700">
                   Door Repair & Replacement
                 </Link>
               </h3>
@@ -436,7 +436,7 @@ export default function Home() {
                 Sticking, drafty, or damaged doors? We repair or replace entry, patio, and interior doors for a smoother, safer home.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link href="/door-installation" className="text-sm font-semibold text-teal-800 hover:underline">Door services →</Link>
+                <Link href="/handyman-services/door-repair/" className="text-sm font-semibold text-teal-800 hover:underline">Door services →</Link>
                 <Link href="/door-repair-edwardsville-il" className="text-sm font-semibold text-teal-600 hover:underline">Door repair near you →</Link>
               </div>
             </div>
@@ -445,7 +445,7 @@ export default function Home() {
             <div className="bg-white rounded-xl p-5 border border-gray-200 shadow-sm">
               <div className="text-xs uppercase tracking-wider text-gray-500 mb-2">Walls & Ceilings</div>
               <h3 className="text-lg font-bold mb-2">
-                <Link href="/drywall-repair" className="hover:text-teal-700">
+                <Link href="/handyman-services/drywall-repair/" className="hover:text-teal-700">
                   Drywall & Ceiling Repair
                 </Link>
               </h3>
@@ -453,7 +453,7 @@ export default function Home() {
                 From small dings and nail pops to water damage and cracked ceilings, we restore your walls to a smooth, paint-ready finish.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link href="/drywall-repair" className="text-sm font-semibold text-teal-800 hover:underline">Drywall repair →</Link>
+                <Link href="/handyman-services/drywall-repair/" className="text-sm font-semibold text-teal-800 hover:underline">Drywall repair →</Link>
                 <Link href="/drywall-repair-edwardsville-il" className="text-sm font-semibold text-teal-600 hover:underline">Drywall repair near you →</Link>
               </div>
             </div>
@@ -536,7 +536,7 @@ export default function Home() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/handyman-services/trim-carpentry/" className="text-sm font-semibold text-teal-800 hover:underline">Trim carpentry →</Link>
-                <Link href="/handyman-services/exterior-carpentry/" className="text-sm font-semibold text-teal-600 hover:underline">Exterior carpentry →</Link>
+                <Link href="/carpentry-services/" className="text-sm font-semibold text-teal-600 hover:underline">Exterior carpentry →</Link>
               </div>
             </div>
 
@@ -561,8 +561,8 @@ export default function Home() {
           <div className="mt-8 bg-teal-50 border border-teal-100 rounded-xl px-5 py-4 flex flex-col sm:flex-row sm:items-center gap-3">
             <span className="text-sm text-teal-900 font-medium">
               Serving homeowners in{" "}
-              <Link href="/service-areas/ofallon-handyman-services/" className="font-semibold text-teal-700 hover:underline">O'Fallon</Link>,{" "}
-              <Link href="/service-areas/edwardsville-handyman-services/" className="font-semibold text-teal-700 hover:underline">handyman Edwardsville IL</Link>,{" "}
+              <Link href="/gbp/ofallon-il/" className="font-semibold text-teal-700 hover:underline">O'Fallon</Link>,{" "}
+              <Link href="/gbp/edwardsville-il/" className="font-semibold text-teal-700 hover:underline">handyman Edwardsville IL</Link>,{" "}
               <Link href="/service-areas/collinsville-handyman-services/" className="font-semibold text-teal-700 hover:underline">Collinsville</Link>,{" "}
               <Link href="/handyman-belleville-il" className="font-semibold text-teal-700 hover:underline">handyman Belleville IL</Link>, and across{" "}
               <Link href="/handyman-st-louis-mo" className="font-semibold text-teal-700 hover:underline">St. Louis</Link>.
@@ -584,7 +584,7 @@ export default function Home() {
             Flat-rate bundles designed for new homeowners, busy families, and anyone with a growing to-do list. Clear pricing, one-visit solutions, and no surprises.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/handyman-service-packages">
+            <Link href="/handyman-services/">
               <Button size="lg" className="bg-white text-teal-700 hover:bg-teal-50 font-bold text-lg h-14 px-8">
                 View Service Packages
               </Button>
@@ -1112,7 +1112,7 @@ export default function Home() {
                 <span className="text-teal-700 text-sm font-semibold mt-4 inline-block">Read more &rarr;</span>
               </div>
             </Link>
-            <Link href="/blog/winter-home-repairs-illinois/">
+            <Link href="/blog/common-home-repairs-after-winter-illinois/">
               <div className="bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-shadow cursor-pointer h-full flex flex-col">
                 <span className="text-xs bg-blue-50 text-blue-700 font-medium px-2 py-1 rounded-full w-fit mb-3">Seasonal Guide</span>
                 <h3 className="font-bold text-gray-900 text-base leading-snug mb-2">
@@ -1203,10 +1203,10 @@ export default function Home() {
           <div className="bg-white rounded-xl p-5 border border-gray-200">
             <p className="text-sm font-medium text-gray-700 mb-3">Metro East Illinois</p>
             <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm mb-5">
-              <Link href="/service-areas/ofallon-handyman-services/" className="text-teal-800 underline hover:text-teal-900">
+              <Link href="/gbp/ofallon-il/" className="text-teal-800 underline hover:text-teal-900">
                 O'Fallon, IL
               </Link>
-              <Link href="/service-areas/edwardsville-handyman-services/" className="text-teal-800 underline hover:text-teal-900">
+              <Link href="/gbp/edwardsville-il/" className="text-teal-800 underline hover:text-teal-900">
                 Edwardsville, IL
               </Link>
               <Link href="/service-areas/collinsville-handyman-services/" className="text-teal-800 underline hover:text-teal-900">

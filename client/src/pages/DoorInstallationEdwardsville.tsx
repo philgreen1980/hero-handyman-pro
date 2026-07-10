@@ -128,7 +128,7 @@ export default function DoorInstallationEdwardsville() {
                 ))}
               </div>
               <div className="mt-6">
-                <Link href="/gbp/edwardsville">
+                <Link href="/gbp/edwardsville-il/">
                   <span className="text-teal-700 hover:underline font-semibold cursor-pointer">
                     View our Edwardsville handyman services →
                   </span>

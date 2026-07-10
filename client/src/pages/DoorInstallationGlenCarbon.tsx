@@ -174,7 +174,7 @@ export default function DoorInstallationGlenCarbon() {
             <Link href="/carpentry-services-glen-carbon-il">
               <Button variant="outline" className="rounded-full border-gray-300 hover:border-teal-500 hover:text-teal-600">Carpentry in Glen Carbon</Button>
             </Link>
-            <Link href="/door-installation">
+            <Link href="/handyman-services/door-repair/">
               <Button variant="outline" className="rounded-full border-gray-300 hover:border-teal-500 hover:text-teal-600">Regional Door Installation</Button>
             </Link>
             <Link href="/service-areas/glen-carbon-handyman-services/">

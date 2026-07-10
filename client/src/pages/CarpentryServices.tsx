@@ -214,17 +214,17 @@ export default function CarpentryServices() {
         <div className="max-w-[1120px] mx-auto">
           <h3 className="font-semibold text-gray-800 mb-4">Related Services</h3>
           <div className="flex flex-wrap gap-3 text-sm">
-            <Link href="/deck-repair"><span className="text-teal-700 hover:underline cursor-pointer">Deck Repair</span></Link>
+            <Link href="/handyman-services/deck-repair/"><span className="text-teal-700 hover:underline cursor-pointer">Deck Repair</span></Link>
             <span className="text-gray-300">|</span>
-            <Link href="/drywall-repair"><span className="text-teal-700 hover:underline cursor-pointer">Drywall Repair</span></Link>
+            <Link href="/handyman-services/drywall-repair/"><span className="text-teal-700 hover:underline cursor-pointer">Drywall Repair</span></Link>
             <span className="text-gray-300">|</span>
-            <Link href="/door-installation"><span className="text-teal-700 hover:underline cursor-pointer">Door Installation & Repair</span></Link>
+            <Link href="/handyman-services/door-repair/"><span className="text-teal-700 hover:underline cursor-pointer">Door Installation & Repair</span></Link>
             <span className="text-gray-300">|</span>
-            <Link href="/service-areas/edwardsville-handyman-services/"><span className="text-teal-700 hover:underline cursor-pointer">handyman Edwardsville IL</span></Link>
+            <Link href="/gbp/edwardsville-il/"><span className="text-teal-700 hover:underline cursor-pointer">handyman Edwardsville IL</span></Link>
             <span className="text-gray-300">|</span>
             <Link href="/handyman-belleville-il"><span className="text-teal-700 hover:underline cursor-pointer">handyman Belleville IL</span></Link>
             <span className="text-gray-300">|</span>
-            <Link href="/handyman-near-me"><span className="text-teal-700 hover:underline cursor-pointer">Handyman Near Me</span></Link>
+            <Link href="/handyman-near-me/"><span className="text-teal-700 hover:underline cursor-pointer">Handyman Near Me</span></Link>
             <span className="text-gray-300">|</span>
             <Link href="/"><span className="text-teal-700 hover:underline cursor-pointer">Hero Handyman Pro Home</span></Link>
           </div>

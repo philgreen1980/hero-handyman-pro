@@ -236,7 +236,7 @@ export default function HomeMaintenanceTipsMetroEast() {
             The most effective way to reduce home maintenance costs is to bundle repairs into single visits. Trip fees and setup time are a significant portion of the cost for small jobs. If you have a drywall patch, a sticking door, and a ceiling fan installation, scheduling them all at once can reduce the per-repair cost by 20–30%.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Our <Link href="/handyman-service-packages/" className="text-[#ff5b00] hover:underline font-medium">service packages</Link> are designed for exactly this — a half-day or full-day block where we work through your repair list efficiently. Many homeowners use this approach twice a year (spring and fall) to stay ahead of maintenance needs.
+            Our <Link href="/handyman-services/" className="text-[#ff5b00] hover:underline font-medium">service packages</Link> are designed for exactly this — a half-day or full-day block where we work through your repair list efficiently. Many homeowners use this approach twice a year (spring and fall) to stay ahead of maintenance needs.
           </p>
           <p className="text-gray-700 leading-relaxed">
             For homeowners with ongoing maintenance needs, our <Link href="/membership/" className="text-[#ff5b00] hover:underline font-medium">membership plan</Link> provides priority scheduling, discounted rates, and a dedicated handyman who knows your home. Members typically save 15–20% on individual repairs and benefit from faster scheduling — which matters when you have an urgent repair need.

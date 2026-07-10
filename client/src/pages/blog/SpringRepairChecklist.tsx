@@ -264,9 +264,9 @@ export default function SpringRepairChecklist() {
           </ul>
           <p className="text-gray-700 leading-relaxed mt-3">
             Hero Handyman Pro serves homeowners throughout{" "}
-            <Link href="/service-areas/edwardsville-handyman-services/" className="text-[#ff5b00] hover:underline">Edwardsville</Link>,{" "}
-            <Link href="/service-areas/ofallon-handyman-services/" className="text-[#ff5b00] hover:underline">O'Fallon</Link>,{" "}
-            <Link href="/service-areas/belleville-handyman-services/" className="text-[#ff5b00] hover:underline">Belleville</Link>,{" "}
+            <Link href="/gbp/edwardsville-il/" className="text-[#ff5b00] hover:underline">Edwardsville</Link>,{" "}
+            <Link href="/gbp/ofallon-il/" className="text-[#ff5b00] hover:underline">O'Fallon</Link>,{" "}
+            <Link href="/handyman-belleville-il" className="text-[#ff5b00] hover:underline">Belleville</Link>,{" "}
             <Link href="/service-areas/collinsville-handyman-services/" className="text-[#ff5b00] hover:underline">Collinsville</Link>, and{" "}
             <Link href="/service-areas/glen-carbon-handyman-services/" className="text-[#ff5b00] hover:underline">Glen Carbon</Link>.
             Send us a photo and we'll tell you honestly whether it's a DIY fix or needs professional attention.
@@ -288,8 +288,8 @@ export default function SpringRepairChecklist() {
           <h2 className="text-2xl font-bold text-[#0b1220] mb-2">Get Your Spring Repairs Done Right</h2>
           <p className="text-gray-600 mb-6">
             Don't let your spring punch list pile up. Hero Handyman Pro offers same-day and next-day scheduling for homeowners in{" "}
-            <Link href="/service-areas/edwardsville-handyman-services/" className="text-[#ff5b00] hover:underline">Edwardsville</Link>,{" "}
-            <Link href="/service-areas/ofallon-handyman-services/" className="text-[#ff5b00] hover:underline">O'Fallon</Link>, and across Metro East IL.
+            <Link href="/gbp/edwardsville-il/" className="text-[#ff5b00] hover:underline">Edwardsville</Link>,{" "}
+            <Link href="/gbp/ofallon-il/" className="text-[#ff5b00] hover:underline">O'Fallon</Link>, and across Metro East IL.
             Send us a photo of your project and get a free written estimate within 24 hours.
           </p>
           <InlineQuoteForm

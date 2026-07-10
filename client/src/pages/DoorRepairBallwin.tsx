@@ -182,7 +182,7 @@ export default function DoorRepairBallwin() {
             <span className="text-gray-300">|</span>
             <Link href="/handyman-ballwin-mo"><span className="text-teal-700 hover:underline font-medium cursor-pointer">Ballwin Handyman Services</span></Link>
             <span className="text-gray-300">|</span>
-            <Link href="/door-installation"><span className="text-teal-700 hover:underline font-medium cursor-pointer">Door Installation & Repair (Regional)</span></Link>
+            <Link href="/handyman-services/door-repair/"><span className="text-teal-700 hover:underline font-medium cursor-pointer">Door Installation & Repair (Regional)</span></Link>
             <span className="text-gray-300">|</span>
             <Link href="/door-repair-ofallon-il"><span className="text-teal-700 hover:underline font-medium cursor-pointer">Door Repair in O'Fallon IL</span></Link>
             <span className="text-gray-300">|</span>

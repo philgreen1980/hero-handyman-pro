@@ -143,7 +143,7 @@ export default function OFallonHandyman() {
       <section className="py-10 px-6 bg-white border-b border-[#e5e7eb]">
         <div className="max-w-[1120px] mx-auto">
           <p className="text-[#374151] text-lg leading-relaxed">
-            From established neighborhoods near downtown O'Fallon to newer homes around Scott Air Force Base, homeowners throughout the area trust Hero Handyman Pro for reliable <a href="/handyman-services/drywall-repair/" className="text-[#ff5b00] hover:underline font-medium">drywall repair</a>, <a href="/handyman-services/carpentry/" className="text-[#ff5b00] hover:underline font-medium">carpentry</a>, door installation, <a href="/handyman-services/deck-repair/" className="text-[#ff5b00] hover:underline font-medium">deck repairs</a>, ceiling fan installation, and general home maintenance. We understand the unique repair needs common in Metro East homes and provide dependable service backed by decades of hands-on experience.
+            From established neighborhoods near downtown O'Fallon to newer homes around Scott Air Force Base, homeowners throughout the area trust Hero Handyman Pro for reliable <a href="/handyman-services/drywall-repair/" className="text-[#ff5b00] hover:underline font-medium">drywall repair</a>, <a href="/carpentry-services/" className="text-[#ff5b00] hover:underline font-medium">carpentry</a>, door installation, <a href="/handyman-services/deck-repair/" className="text-[#ff5b00] hover:underline font-medium">deck repairs</a>, ceiling fan installation, and general home maintenance. We understand the unique repair needs common in Metro East homes and provide dependable service backed by decades of hands-on experience.
           </p>
         </div>
       </section>
@@ -235,7 +235,7 @@ export default function OFallonHandyman() {
                 </li>
                 <li className="flex items-start gap-3 text-[#374151]">
                   <Check className="h-5 w-5 text-[#ff5b00] mt-0.5 flex-shrink-0" />
-                  <span><Link href="/services/window-installation-ofallon-il" className="text-[#ff5b00] hover:underline">Window installation in O'Fallon</Link></span>
+                  <span><Link href="/service-areas/window-installation-ofallon-il/" className="text-[#ff5b00] hover:underline">Window installation in O'Fallon</Link></span>
                 </li>
                 <li className="flex items-start gap-3 text-[#374151]">
                   <Check className="h-5 w-5 text-[#ff5b00] mt-0.5 flex-shrink-0" />
@@ -564,7 +564,7 @@ export default function OFallonHandyman() {
                 </div>
                 <div>
                   <h4 className="font-bold text-[#0b1220] mb-1">Bundle small repairs to save money</h4>
-                  <p className="text-[#4b5563] text-sm">Our <Link href="/handyman-service-packages/" className="text-[#ff5b00] hover:underline">service packages</Link> and <Link href="/membership/" className="text-[#ff5b00] hover:underline">membership plan</Link> are designed for homeowners who have multiple small jobs. Bundling repairs into one visit saves on trip fees and gets everything done at once.</p>
+                  <p className="text-[#4b5563] text-sm">Our <Link href="/handyman-services/" className="text-[#ff5b00] hover:underline">service packages</Link> and <Link href="/membership/" className="text-[#ff5b00] hover:underline">membership plan</Link> are designed for homeowners who have multiple small jobs. Bundling repairs into one visit saves on trip fees and gets everything done at once.</p>
                 </div>
               </div>
             </div>
@@ -706,7 +706,7 @@ export default function OFallonHandyman() {
         <div className="max-w-[1120px] mx-auto">
           <h2 className="text-2xl font-bold text-[#0b1220] mb-3">Also Serving Nearby Metro East Communities</h2>
           <p className="text-gray-600 mb-6 max-w-3xl">
-            Hero Handyman Pro covers all of Metro East Illinois. We frequently work in <Link href="/service-areas/edwardsville-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Edwardsville</Link> for deck repairs and carpentry near SIUE, in <Link href="/service-areas/belleville-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Belleville</Link> for drywall and door repairs in the historic homes near the courthouse square, and in <Link href="/service-areas/collinsville-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Collinsville</Link> for general home maintenance. We also serve <Link href="/service-areas/glen-carbon-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Glen Carbon</Link>, <Link href="/service-areas/shiloh-il-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Shiloh</Link>, <Link href="/service-areas/swansea-il-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Swansea</Link>, and <Link href="/service-areas/fairview-heights-il-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Fairview Heights</Link>.
+            Hero Handyman Pro covers all of Metro East Illinois. We frequently work in <Link href="/gbp/edwardsville-il/" className="text-[#ff5b00] hover:underline font-medium">Edwardsville</Link> for deck repairs and carpentry near SIUE, in <Link href="/handyman-belleville-il" className="text-[#ff5b00] hover:underline font-medium">Belleville</Link> for drywall and door repairs in the historic homes near the courthouse square, and in <Link href="/service-areas/collinsville-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Collinsville</Link> for general home maintenance. We also serve <Link href="/service-areas/glen-carbon-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Glen Carbon</Link>, <Link href="/handyman-shiloh-il/" className="text-[#ff5b00] hover:underline font-medium">Shiloh</Link>, <Link href="/handyman-swansea-il/" className="text-[#ff5b00] hover:underline font-medium">Swansea</Link>, and <Link href="/handyman-fairview-heights-il/" className="text-[#ff5b00] hover:underline font-medium">Fairview Heights</Link>.
           </p>
           <div className="flex flex-wrap gap-3">
             {[

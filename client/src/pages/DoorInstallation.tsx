@@ -319,19 +319,19 @@ export default function DoorInstallation() {
               <h3 className="font-semibold text-gray-800 mb-3 text-sm uppercase tracking-wide">Related Services</h3>
               <div className="flex flex-col gap-2 text-sm">
                 <Link href="/handyman-services/door-repair/"><span className="text-teal-700 hover:underline cursor-pointer">Door Repair & Replacement</span></Link>
-                <Link href="/drywall-repair"><span className="text-teal-700 hover:underline cursor-pointer">Drywall & Ceiling Repair</span></Link>
-                <Link href="/deck-repair"><span className="text-teal-700 hover:underline cursor-pointer">Deck Repair & Restoration</span></Link>
+                <Link href="/handyman-services/drywall-repair/"><span className="text-teal-700 hover:underline cursor-pointer">Drywall & Ceiling Repair</span></Link>
+                <Link href="/handyman-services/deck-repair/"><span className="text-teal-700 hover:underline cursor-pointer">Deck Repair & Restoration</span></Link>
                 <Link href="/handyman-services/trim-carpentry/"><span className="text-teal-700 hover:underline cursor-pointer">Interior Trim & Finish Carpentry</span></Link>
-                <Link href="/handyman-service-packages"><span className="text-teal-700 hover:underline cursor-pointer">Home Repair Service Packages</span></Link>
+                <Link href="/handyman-services/"><span className="text-teal-700 hover:underline cursor-pointer">Home Repair Service Packages</span></Link>
                 <Link href="/handyman-services/"><span className="text-teal-700 hover:underline cursor-pointer">All Handyman Services</span></Link>
               </div>
             </div>
             <div>
               <h3 className="font-semibold text-gray-800 mb-3 text-sm uppercase tracking-wide">Service Areas</h3>
               <div className="flex flex-col gap-2 text-sm">
-                <Link href="/service-areas/ofallon-handyman-services/"><span className="text-teal-700 hover:underline cursor-pointer">Door Installation in O'Fallon, IL</span></Link>
-                <Link href="/service-areas/edwardsville-handyman-services/"><span className="text-teal-700 hover:underline cursor-pointer">Door Installation in Edwardsville, IL</span></Link>
-                <Link href="/service-areas/belleville-handyman-services/"><span className="text-teal-700 hover:underline cursor-pointer">Door Installation in Belleville, IL</span></Link>
+                <Link href="/gbp/ofallon-il/"><span className="text-teal-700 hover:underline cursor-pointer">Door Installation in O'Fallon, IL</span></Link>
+                <Link href="/gbp/edwardsville-il/"><span className="text-teal-700 hover:underline cursor-pointer">Door Installation in Edwardsville, IL</span></Link>
+                <Link href="/handyman-belleville-il"><span className="text-teal-700 hover:underline cursor-pointer">Door Installation in Belleville, IL</span></Link>
                 <Link href="/service-areas/collinsville-handyman-services/"><span className="text-teal-700 hover:underline cursor-pointer">Door Installation in Collinsville, IL</span></Link>
                 <Link href="/handyman-swansea-il/"><span className="text-teal-700 hover:underline cursor-pointer">Door Installation in Swansea, IL</span></Link>
                 <Link href="/service-areas/"><span className="text-teal-700 hover:underline cursor-pointer">All Service Areas</span></Link>
@@ -341,7 +341,7 @@ export default function DoorInstallation() {
               <h3 className="font-semibold text-gray-800 mb-3 text-sm uppercase tracking-wide">Helpful Articles</h3>
               <div className="flex flex-col gap-2 text-sm">
                 <Link href="/blog/handyman-vs-contractor-metro-east-il/"><span className="text-teal-700 hover:underline cursor-pointer">Handyman vs. Contractor: Which Do You Need?</span></Link>
-                <Link href="/blog/winter-home-repairs-illinois/"><span className="text-teal-700 hover:underline cursor-pointer">Most Common Home Repairs After Winter</span></Link>
+                <Link href="/blog/common-home-repairs-after-winter-illinois/"><span className="text-teal-700 hover:underline cursor-pointer">Most Common Home Repairs After Winter</span></Link>
                 <Link href="/blog/home-maintenance-tips-metro-east-il/"><span className="text-teal-700 hover:underline cursor-pointer">Home Maintenance Tips for Metro East IL</span></Link>
                 <Link href="/blog/2026-handyman-costs-metro-east-il/"><span className="text-teal-700 hover:underline cursor-pointer">2026 Handyman Costs in Metro East IL</span></Link>
                 <Link href="/projects/"><span className="text-teal-700 hover:underline cursor-pointer">View Completed Projects</span></Link>

@@ -408,7 +408,7 @@ export default function SeniorAccessibilityService() {
                     <p className="text-[#9ca3af] text-xs">Transparent pricing for all services</p>
                   </div>
                 </Link>
-                <Link href="/service-areas/ofallon-handyman-services/" className="flex items-center gap-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl p-4 transition-colors">
+                <Link href="/gbp/ofallon-il/" className="flex items-center gap-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl p-4 transition-colors">
                   <ArrowRight className="h-5 w-5 text-[#ff5b00] flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-white text-sm">O'Fallon IL Handyman Services</p>

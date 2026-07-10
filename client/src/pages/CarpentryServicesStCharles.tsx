@@ -143,7 +143,7 @@ export default function CarpentryServicesStCharles() {
             <Link href="/door-repair-st-charles-mo">
               <Button variant="outline" className="rounded-full border-gray-300 hover:border-teal-500 hover:text-teal-600">Door Repair in St. Charles</Button>
             </Link>
-            <Link href="/carpentry-services">
+            <Link href="/carpentry-services/">
               <Button variant="outline" className="rounded-full border-gray-300 hover:border-teal-500 hover:text-teal-600">Regional Carpentry Services</Button>
             </Link>
             <Link href="/service-areas/st-charles-handyman-services/">

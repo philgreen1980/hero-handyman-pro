@@ -328,7 +328,7 @@ export default function HandymanShilohIL() {
                 </div>
                 <div>
                   <h4 className="font-bold text-[#0b1220] mb-1">Builder-grade doors are due for replacement</h4>
-                  <p className="text-[#4b5563] text-sm">Homes built in the 1990s and early 2000s often have hollow-core or thin steel entry doors that are now past their useful life. A new insulated steel door improves security, energy efficiency, and curb appeal. See our <a href="/handyman-services/door-installation/" className="text-[#ff5b00] hover:underline">door installation service</a>.</p>
+                  <p className="text-[#4b5563] text-sm">Homes built in the 1990s and early 2000s often have hollow-core or thin steel entry doors that are now past their useful life. A new insulated steel door improves security, energy efficiency, and curb appeal. See our <a href="/handyman-services/door-repair/" className="text-[#ff5b00] hover:underline">door installation service</a>.</p>
                 </div>
                 <div>
                   <h4 className="font-bold text-[#0b1220] mb-1">Settling cracks are cosmetic, but should be fixed</h4>
@@ -336,7 +336,7 @@ export default function HandymanShilohIL() {
                 </div>
                 <div>
                   <h4 className="font-bold text-[#0b1220] mb-1">Bundle repairs to save on trip fees</h4>
-                  <p className="text-[#4b5563] text-sm">Our <a href="/handyman-service-packages/" className="text-[#ff5b00] hover:underline">Honey-Do List Knockout package</a> and <a href="/membership/" className="text-[#ff5b00] hover:underline">membership plan</a> let you bundle multiple small repairs into one visit, saving on scheduling fees and getting everything done at once.</p>
+                  <p className="text-[#4b5563] text-sm">Our <a href="/handyman-services/" className="text-[#ff5b00] hover:underline">Honey-Do List Knockout package</a> and <a href="/membership/" className="text-[#ff5b00] hover:underline">membership plan</a> let you bundle multiple small repairs into one visit, saving on scheduling fees and getting everything done at once.</p>
                 </div>
               </div>
             </div>
@@ -394,7 +394,7 @@ export default function HandymanShilohIL() {
         <div className="max-w-[1120px] mx-auto">
           <h2 className="text-2xl font-bold text-[#0b1220] mb-3">Also Serving Nearby Metro East Communities</h2>
           <p className="text-gray-600 mb-6 max-w-3xl">
-            Hero Handyman Pro serves all of Metro East Illinois. We work regularly in <Link href="/service-areas/ofallon-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">O'Fallon</Link> for home maintenance near Scott Air Force Base, in <Link href="/service-areas/belleville-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Belleville</Link> for drywall and door repairs, and in <Link href="/service-areas/edwardsville-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Edwardsville</Link> for deck repairs and carpentry near SIUE. We also cover <Link href="/service-areas/collinsville-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Collinsville</Link>, <Link href="/service-areas/glen-carbon-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Glen Carbon</Link>, <Link href="/service-areas/swansea-il-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Swansea</Link>, and <Link href="/service-areas/fairview-heights-il-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Fairview Heights</Link>.
+            Hero Handyman Pro serves all of Metro East Illinois. We work regularly in <Link href="/gbp/ofallon-il/" className="text-[#ff5b00] hover:underline font-medium">O'Fallon</Link> for home maintenance near Scott Air Force Base, in <Link href="/handyman-belleville-il" className="text-[#ff5b00] hover:underline font-medium">Belleville</Link> for drywall and door repairs, and in <Link href="/gbp/edwardsville-il/" className="text-[#ff5b00] hover:underline font-medium">Edwardsville</Link> for deck repairs and carpentry near SIUE. We also cover <Link href="/service-areas/collinsville-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Collinsville</Link>, <Link href="/service-areas/glen-carbon-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Glen Carbon</Link>, <Link href="/handyman-swansea-il/" className="text-[#ff5b00] hover:underline font-medium">Swansea</Link>, and <Link href="/handyman-fairview-heights-il/" className="text-[#ff5b00] hover:underline font-medium">Fairview Heights</Link>.
           </p>
           <div className="flex flex-wrap gap-3">
             {[

@@ -175,7 +175,7 @@ export default function ServiceAreas() {
           </div>
 
           <div className="text-center mt-10">
-            <Link href="/services/">
+            <Link href="/handyman-services/">
               <Button className="bg-[#ff5b00] hover:bg-[#ff5b00]/90 text-white rounded-full px-8 py-6 text-lg font-semibold">
                 View All Services
               </Button>
@@ -206,7 +206,7 @@ export default function ServiceAreas() {
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 mt-0.5 flex-shrink-0" />
-                  <a href="/service-areas/edwardsville-handyman-services/" className="underline hover:no-underline">handyman Edwardsville IL</a>
+                  <a href="/gbp/edwardsville-il/" className="underline hover:no-underline">handyman Edwardsville IL</a>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 mt-0.5 flex-shrink-0" />

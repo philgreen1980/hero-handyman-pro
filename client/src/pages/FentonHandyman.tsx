@@ -174,7 +174,7 @@ export default function FentonHandyman() {
                 </li>
                 <li className="flex items-start gap-3 text-[#374151]">
                   <Check className="h-5 w-5 text-[#ff5b00] mt-0.5 flex-shrink-0" />
-                  <span><Link href="/handyman-services/exterior-carpentry/" className="text-[#ff5b00] hover:underline">Wood rot repair</Link> and exterior trim replacement</span>
+                  <span><Link href="/carpentry-services/" className="text-[#ff5b00] hover:underline">Wood rot repair</Link> and exterior trim replacement</span>
                 </li>
                 <li className="flex items-start gap-3 text-[#374151]">
                   <Check className="h-5 w-5 text-[#ff5b00] mt-0.5 flex-shrink-0" />

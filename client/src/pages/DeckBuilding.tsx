@@ -291,7 +291,7 @@ export default function DeckBuilding() {
           <p className="text-lg text-gray-600 mb-6">
             Read authentic reviews from homeowners who trusted us with their deck building projects.
           </p>
-          <Link href="/reviews/deck-building/">
+          <Link href="/reviews/">
             <Button 
               size="lg" 
               variant="outline" 
@@ -315,10 +315,10 @@ export default function DeckBuilding() {
             Professional deck builders serving the entire region
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <Link href="/service-areas/ofallon-handyman-services/"><span className="px-4 py-2 bg-white rounded-full hover:bg-teal-100 cursor-pointer">O'Fallon, IL</span></Link>
-            <Link href="/service-areas/edwardsville-handyman-services/"><span className="px-4 py-2 bg-white rounded-full hover:bg-teal-100 cursor-pointer">Edwardsville, IL</span></Link>
+            <Link href="/gbp/ofallon-il/"><span className="px-4 py-2 bg-white rounded-full hover:bg-teal-100 cursor-pointer">O'Fallon, IL</span></Link>
+            <Link href="/gbp/edwardsville-il/"><span className="px-4 py-2 bg-white rounded-full hover:bg-teal-100 cursor-pointer">Edwardsville, IL</span></Link>
             <Link href="/service-areas/collinsville-handyman-services/"><span className="px-4 py-2 bg-white rounded-full hover:bg-teal-100 cursor-pointer">Collinsville, IL</span></Link>
-            <Link href="/service-areas/belleville-handyman-services/"><span className="px-4 py-2 bg-white rounded-full hover:bg-teal-100 cursor-pointer">Belleville, IL</span></Link>
+            <Link href="/handyman-belleville-il"><span className="px-4 py-2 bg-white rounded-full hover:bg-teal-100 cursor-pointer">Belleville, IL</span></Link>
             <Link href="/service-areas/glen-carbon-handyman-services/"><span className="px-4 py-2 bg-white rounded-full hover:bg-teal-100 cursor-pointer">Glen Carbon, IL</span></Link>
             <Link href="/service-areas/st-louis-mo-handyman/"><span className="px-4 py-2 bg-white rounded-full hover:bg-teal-100 cursor-pointer">St. Louis, MO</span></Link>
             <Link href="/service-areas/st-charles-handyman-services/"><span className="px-4 py-2 bg-white rounded-full hover:bg-teal-100 cursor-pointer">St. Charles, MO</span></Link>

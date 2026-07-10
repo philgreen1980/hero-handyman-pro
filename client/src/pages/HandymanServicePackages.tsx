@@ -233,7 +233,7 @@ export default function HandymanServicePackages() {
                       <p className="text-xs text-gray-600 mt-4 leading-relaxed">
                         *Pricing applies to qualifying tasks and standard installations. Materials not included. Some restrictions apply. Final confirmation occurs before work begins.
                       </p>
-                      <Link href="/membership" className="block mt-3">
+                      <Link href="/membership/" className="block mt-3">
                         <p className="text-sm text-teal-700 font-medium hover:underline text-center">
                           Membership often pays for itself on the first visit. →
                         </p>
@@ -333,7 +333,7 @@ export default function HandymanServicePackages() {
             <p className="text-xl mb-8 text-teal-50">
               Members receive priority scheduling, discounted package pricing, and added convenience on every visit. In many cases, the membership pays for itself on the first service call.
             </p>
-            <Link href="/membership">
+            <Link href="/membership/">
               <Button size="lg" className="bg-white text-teal-700 hover:bg-teal-50 font-bold text-lg h-14 px-8">
                 View Membership Benefits
               </Button>
@@ -361,13 +361,13 @@ export default function HandymanServicePackages() {
               <Link href="/service-areas/ofallon-il-handyman">
                 <Button variant="outline" className="rounded-full">O'Fallon, IL</Button>
               </Link>
-              <Link href="/service-areas/edwardsville-il-handyman">
+              <Link href="/gbp/edwardsville-il/">
                 <Button variant="outline" className="rounded-full">Edwardsville, IL</Button>
               </Link>
               <Link href="/service-areas/st-louis-mo-handyman">
                 <Button variant="outline" className="rounded-full">St. Louis, MO</Button>
               </Link>
-              <Link href="/service-areas">
+              <Link href="/service-areas/">
                 <Button variant="outline" className="rounded-full">View All Areas</Button>
               </Link>
             </div>

@@ -137,7 +137,7 @@ export default function HandymanServices() {
         <div className="max-w-[1120px] mx-auto">
           <h2 className="text-xl font-bold mb-2 text-teal-900">Find Local Handyman Services Near You</h2>
           <p className="text-teal-800 text-sm mb-5 max-w-2xl">
-            We serve homeowners throughout St. Louis, MO and Metro East IL. Find the right service for your area, or explore our <Link href="/handyman-service-packages" className="text-teal-700 hover:underline font-semibold">home repair packages</Link> for bundled savings.
+            We serve homeowners throughout St. Louis, MO and Metro East IL. Find the right service for your area, or explore our <Link href="/handyman-services/" className="text-teal-700 hover:underline font-semibold">home repair packages</Link> for bundled savings.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link href="/drywall-repair-edwardsville-il">
@@ -269,17 +269,17 @@ export default function HandymanServices() {
         <div className="max-w-[1120px] mx-auto">
           <h3 className="font-semibold text-gray-800 mb-4 text-sm">Explore by Service</h3>
           <div className="flex flex-wrap gap-3 text-sm">
-            <Link href="/deck-repair"><span className="text-teal-700 hover:underline cursor-pointer">Deck Repair</span></Link>
+            <Link href="/handyman-services/deck-repair/"><span className="text-teal-700 hover:underline cursor-pointer">Deck Repair</span></Link>
             <span className="text-gray-300">|</span>
-            <Link href="/drywall-repair"><span className="text-teal-700 hover:underline cursor-pointer">Drywall Repair</span></Link>
+            <Link href="/handyman-services/drywall-repair/"><span className="text-teal-700 hover:underline cursor-pointer">Drywall Repair</span></Link>
             <span className="text-gray-300">|</span>
-            <Link href="/door-installation"><span className="text-teal-700 hover:underline cursor-pointer">Door Installation</span></Link>
+            <Link href="/handyman-services/door-repair/"><span className="text-teal-700 hover:underline cursor-pointer">Door Installation</span></Link>
             <span className="text-gray-300">|</span>
-            <Link href="/carpentry-services"><span className="text-teal-700 hover:underline cursor-pointer">Carpentry Services</span></Link>
+            <Link href="/carpentry-services/"><span className="text-teal-700 hover:underline cursor-pointer">Carpentry Services</span></Link>
             <span className="text-gray-300">|</span>
-            <Link href="/handyman-near-me"><span className="text-teal-700 hover:underline cursor-pointer">Handyman Near Me</span></Link>
+            <Link href="/handyman-near-me/"><span className="text-teal-700 hover:underline cursor-pointer">Handyman Near Me</span></Link>
             <span className="text-gray-300">|</span>
-            <Link href="/handyman-service-packages"><span className="text-teal-700 hover:underline cursor-pointer">Service Packages</span></Link>
+            <Link href="/handyman-services/"><span className="text-teal-700 hover:underline cursor-pointer">Service Packages</span></Link>
             <span className="text-gray-300">|</span>
             <Link href="/drywall-repair-edwardsville-il"><span className="text-teal-700 hover:underline cursor-pointer">Drywall Repair Edwardsville IL</span></Link>
             <span className="text-gray-300">|</span>

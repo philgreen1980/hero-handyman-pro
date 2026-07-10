@@ -292,12 +292,12 @@ export default function WindowInstallation() {
             Professional window installation services throughout the region
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <Link href="/service-areas/ofallon-handyman-services/"><span className="px-4 py-2 bg-gray-100 rounded-full hover:bg-teal-100 cursor-pointer">O'Fallon, IL</span></Link>
-            <Link href="/service-areas/edwardsville-handyman-services/"><span className="px-4 py-2 bg-gray-100 rounded-full hover:bg-teal-100 cursor-pointer">Edwardsville, IL</span></Link>
+            <Link href="/gbp/ofallon-il/"><span className="px-4 py-2 bg-gray-100 rounded-full hover:bg-teal-100 cursor-pointer">O'Fallon, IL</span></Link>
+            <Link href="/gbp/edwardsville-il/"><span className="px-4 py-2 bg-gray-100 rounded-full hover:bg-teal-100 cursor-pointer">Edwardsville, IL</span></Link>
             <Link href="/service-areas/collinsville-handyman-services/"><span className="px-4 py-2 bg-gray-100 rounded-full hover:bg-teal-100 cursor-pointer">Collinsville, IL</span></Link>
-            <Link href="/service-areas/belleville-handyman-services/"><span className="px-4 py-2 bg-gray-100 rounded-full hover:bg-teal-100 cursor-pointer">Belleville, IL</span></Link>
+            <Link href="/handyman-belleville-il"><span className="px-4 py-2 bg-gray-100 rounded-full hover:bg-teal-100 cursor-pointer">Belleville, IL</span></Link>
             <Link href="/service-areas/glen-carbon-handyman-services/"><span className="px-4 py-2 bg-gray-100 rounded-full hover:bg-teal-100 cursor-pointer">Glen Carbon, IL</span></Link>
-            <Link href="/service-areas/st-louis-handyman-services/"><span className="px-4 py-2 bg-gray-100 rounded-full hover:bg-teal-100 cursor-pointer">St. Louis, MO</span></Link>
+            <Link href="/service-areas/st-louis-mo-handyman/"><span className="px-4 py-2 bg-gray-100 rounded-full hover:bg-teal-100 cursor-pointer">St. Louis, MO</span></Link>
             <Link href="/service-areas/st-charles-handyman-services/"><span className="px-4 py-2 bg-gray-100 rounded-full hover:bg-teal-100 cursor-pointer">St. Charles, MO</span></Link>
             <Link href="/service-areas/fenton-handyman-services/"><span className="px-4 py-2 bg-gray-100 rounded-full hover:bg-teal-100 cursor-pointer">Fenton, MO</span></Link>
           </div>

@@ -189,7 +189,7 @@ export default function DeckBuildingEdwardsvilleIL() {
                   <li><Link href="/handyman-services/deck-repair/"><span className="text-primary hover:underline cursor-pointer">Deck Repair & Restoration</span></Link></li>
                   <li><Link href="/handyman-services/porch-repair/"><span className="text-primary hover:underline cursor-pointer">Porch & Stair Repair</span></Link></li>
                   <li><Link href="/carpentry-services/"><span className="text-primary hover:underline cursor-pointer">Exterior Carpentry</span></Link></li>
-                  <li><Link href="/service-areas/edwardsville-handyman-services/"><span className="text-primary hover:underline cursor-pointer">All Edwardsville Handyman Services</span></Link></li>
+                  <li><Link href="/gbp/edwardsville-il/"><span className="text-primary hover:underline cursor-pointer">All Edwardsville Handyman Services</span></Link></li>
                 </ul>
               </div>
             </div>

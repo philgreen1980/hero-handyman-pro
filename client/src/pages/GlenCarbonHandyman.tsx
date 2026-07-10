@@ -445,7 +445,7 @@ export default function GlenCarbonHandyman() {
                 </div>
                 <div>
                   <h4 className="font-bold text-[#0b1220] mb-1">Pre-sale punch lists are a smart investment</h4>
-                  <p className="text-[#4b5563] text-sm">Glen Carbon's active real estate market means homes sell faster when they're in top shape. We handle pre-sale punch lists — drywall repairs, door adjustments, fixture replacements — to help you maximize your sale price. See our <Link href="/handyman-services/home-repair/" className="text-[#ff5b00] hover:underline">home repair service</Link>.</p>
+                  <p className="text-[#4b5563] text-sm">Glen Carbon's active real estate market means homes sell faster when they're in top shape. We handle pre-sale punch lists — drywall repairs, door adjustments, fixture replacements — to help you maximize your sale price. See our <Link href="/handyman-services/" className="text-[#ff5b00] hover:underline">home repair service</Link>.</p>
                 </div>
                 <div>
                   <h4 className="font-bold text-[#0b1220] mb-1">Sticking doors are common in newer construction</h4>
@@ -453,7 +453,7 @@ export default function GlenCarbonHandyman() {
                 </div>
                 <div>
                   <h4 className="font-bold text-[#0b1220] mb-1">Bundle repairs to save on trip fees</h4>
-                  <p className="text-[#4b5563] text-sm">Our <Link href="/handyman-service-packages/" className="text-[#ff5b00] hover:underline">service packages</Link> and <Link href="/membership/" className="text-[#ff5b00] hover:underline">membership plan</Link> let you bundle multiple small repairs into one visit, saving on scheduling fees and getting everything done at once.</p>
+                  <p className="text-[#4b5563] text-sm">Our <Link href="/handyman-services/" className="text-[#ff5b00] hover:underline">service packages</Link> and <Link href="/membership/" className="text-[#ff5b00] hover:underline">membership plan</Link> let you bundle multiple small repairs into one visit, saving on scheduling fees and getting everything done at once.</p>
                 </div>
               </div>
             </div>
@@ -518,7 +518,7 @@ export default function GlenCarbonHandyman() {
         <div className="max-w-[1120px] mx-auto">
           <h2 className="text-2xl font-bold text-[#0b1220] mb-3">Also Serving Nearby Metro East Communities</h2>
           <p className="text-gray-600 mb-6 max-w-3xl">
-            Hero Handyman Pro serves all of Metro East Illinois. We work regularly in <Link href="/service-areas/edwardsville-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Edwardsville</Link> for deck repairs and carpentry near SIUE, in <Link href="/service-areas/ofallon-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">O'Fallon</Link> for home maintenance near Scott Air Force Base, and in <Link href="/service-areas/collinsville-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Collinsville</Link> for general home repairs. We also cover <Link href="/service-areas/belleville-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Belleville</Link>, <Link href="/service-areas/shiloh-il-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Shiloh</Link>, <Link href="/service-areas/swansea-il-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Swansea</Link>, and <Link href="/service-areas/fairview-heights-il-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Fairview Heights</Link>.
+            Hero Handyman Pro serves all of Metro East Illinois. We work regularly in <Link href="/gbp/edwardsville-il/" className="text-[#ff5b00] hover:underline font-medium">Edwardsville</Link> for deck repairs and carpentry near SIUE, in <Link href="/gbp/ofallon-il/" className="text-[#ff5b00] hover:underline font-medium">O'Fallon</Link> for home maintenance near Scott Air Force Base, and in <Link href="/service-areas/collinsville-handyman-services/" className="text-[#ff5b00] hover:underline font-medium">Collinsville</Link> for general home repairs. We also cover <Link href="/handyman-belleville-il" className="text-[#ff5b00] hover:underline font-medium">Belleville</Link>, <Link href="/handyman-shiloh-il/" className="text-[#ff5b00] hover:underline font-medium">Shiloh</Link>, <Link href="/handyman-swansea-il/" className="text-[#ff5b00] hover:underline font-medium">Swansea</Link>, and <Link href="/handyman-fairview-heights-il/" className="text-[#ff5b00] hover:underline font-medium">Fairview Heights</Link>.
           </p>
           <div className="flex flex-wrap gap-3">
             {[

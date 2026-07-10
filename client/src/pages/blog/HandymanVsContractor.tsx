@@ -252,7 +252,7 @@ export default function HandymanVsContractor() {
             One of the most effective ways to reduce your home repair costs is to bundle multiple small repairs into a single visit. Trip fees and setup time are a significant portion of the cost for small jobs. If you have a drywall patch, a sticking door, and a ceiling fan installation, scheduling them all at once can reduce the per-repair cost by 20–30%.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Our <Link href="/handyman-service-packages/" className="text-[#ff5b00] hover:underline font-medium">service packages</Link> are designed exactly for this — a half-day or full-day block where we work through your repair list efficiently. This approach is particularly popular with homeowners who have accumulated a list of deferred repairs.
+            Our <Link href="/handyman-services/" className="text-[#ff5b00] hover:underline font-medium">service packages</Link> are designed exactly for this — a half-day or full-day block where we work through your repair list efficiently. This approach is particularly popular with homeowners who have accumulated a list of deferred repairs.
           </p>
           <p className="text-gray-700 leading-relaxed">
             For homeowners with ongoing maintenance needs, our <Link href="/membership/" className="text-[#ff5b00] hover:underline font-medium">membership plan</Link> provides priority scheduling, discounted rates, and a dedicated handyman who knows your home. It's the most cost-effective option for homeowners who need regular attention.

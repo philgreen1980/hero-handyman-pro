@@ -153,7 +153,7 @@ export default function CarpentryServicesBallwin() {
             <span className="text-gray-300">|</span>
             <Link href="/handyman-ballwin-mo"><span className="text-teal-700 hover:underline font-medium cursor-pointer">Ballwin Handyman Services</span></Link>
             <span className="text-gray-300">|</span>
-            <Link href="/carpentry-services"><span className="text-teal-700 hover:underline font-medium cursor-pointer">Carpentry Services (Regional)</span></Link>
+            <Link href="/carpentry-services/"><span className="text-teal-700 hover:underline font-medium cursor-pointer">Carpentry Services (Regional)</span></Link>
             <span className="text-gray-300">|</span>
             <Link href="/handyman-chesterfield-mo"><span className="text-teal-700 hover:underline font-medium cursor-pointer">Handyman Services in Chesterfield MO</span></Link>
           </div>

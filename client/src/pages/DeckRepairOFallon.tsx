@@ -158,7 +158,7 @@ export default function DeckRepairOFallon() {
               <p className="text-gray-600 text-sm mb-6">
                 Also serving Edwardsville, Belleville, Shiloh, Swansea, and the greater Metro East area.
               </p>
-              <Link href="/gbp/ofallon">
+              <Link href="/gbp/ofallon-il/">
                 <span className="text-teal-700 hover:underline font-semibold text-sm cursor-pointer">
                   View our O'Fallon handyman services →
                 </span>
