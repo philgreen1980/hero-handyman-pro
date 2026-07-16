@@ -72,10 +72,11 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script
-      defer
-      src="%VITE_ANALYTICS_ENDPOINT%/umami"
-      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
+    <!-- Umami analytics removed: VITE_ANALYTICS_* env vars were never set, so
+         this shipped as literal %VITE_ANALYTICS_ENDPOINT% and threw a 503 on
+         every page load. GA4 above is the active analytics. To re-enable Umami,
+         restore this tag AND set VITE_ANALYTICS_ENDPOINT + VITE_ANALYTICS_WEBSITE_ID
+         in the build environment. -->
   </body>
 
 </html>
