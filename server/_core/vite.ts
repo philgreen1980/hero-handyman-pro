@@ -93,6 +93,10 @@ export function serveStatic(app: Express) {
   // Serve static assets with long-lived cache headers for images, fonts, JS, CSS
   app.use(
     express.static(distPath, {
+      // index:false so "/" falls through to the injectRouteMeta handler below
+      // (otherwise express.static serves the raw index.html for the homepage,
+      // skipping per-route <title>/description/H1 injection).
+      index: false,
       maxAge: "1y",
       immutable: true,
       setHeaders(res, filePath) {
