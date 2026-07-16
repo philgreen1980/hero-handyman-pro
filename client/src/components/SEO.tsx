@@ -42,7 +42,10 @@ export default function SEO({
   noindex = false
 }: SEOProps) {
   useEffect(() => {
-    const displayTitle = fullTitle ? title : `${title} | Hero Handyman Pro`;
+    const displayTitle =
+      fullTitle || title.includes('Hero Handyman Pro')
+        ? title
+        : `${title} | Hero Handyman Pro`;
 
     // Set page title
     document.title = displayTitle;
