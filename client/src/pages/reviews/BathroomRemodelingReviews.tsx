@@ -2,7 +2,6 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Star, Quote, Phone, ArrowLeft } from "lucide-react";
 import SEO from "@/components/SEO";
-import { ReviewSchema } from "@/components/ReviewSchema";
 import { trackPhoneClick, trackCTAClick } from "@/lib/analytics";
 import { useSeoRoute } from '@/hooks/useSeoRoute';
 
@@ -61,23 +60,7 @@ export default function BathroomRemodelingReviews() {
   return (
     <div className="min-h-screen bg-white">
       <SEO {...seo} />
-      <ReviewSchema 
-        serviceName="Bathroom Remodeling"
-        serviceUrl="/reviews/bathroom-remodeling/"
-        reviews={reviews.map(r => ({
-          author: r.name,
-          location: r.location,
-          rating: r.rating,
-          date: r.date,
-          reviewBody: r.review,
-          project: r.project
-        }))}
-        aggregateRating={{
-          ratingValue: 4.9,
-          reviewCount: 6
-        }}
-      />
-
+      
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-teal-700 to-teal-900 text-white py-16 px-6">
         <div className="container max-w-5xl mx-auto">
