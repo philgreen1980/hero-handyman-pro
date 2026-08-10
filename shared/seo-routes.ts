@@ -217,7 +217,7 @@ export const seoRoutes: Record<string, RouteSeoDef> = {
     description: "Flat-rate handyman service packages in St. Louis & Metro East. New home setup, safety checks, honey-do list help — all in one visit. Free quote in 24 hrs.",
     h1: "Handyman Service Packages — Flat-Rate Pricing",
     bodySnippet: "Hero Handyman Pro offers flat-rate handyman service packages in St. Louis, MO and Metro East Illinois. Call 800-741-6056.",
-    canonicalUrl: "https://www.herohandymanpro.com/handyman-service-packages",
+    canonicalUrl: "https://www.herohandymanpro.com/handyman-packages/",
     keywords: "handyman service packages, flat rate handyman",
   },
   "/handyman-pricing/": {

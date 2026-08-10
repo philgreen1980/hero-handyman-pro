@@ -14,6 +14,9 @@ const pages = [
   { url: '/gbp/ofallon', priority: '0.9', changefreq: 'weekly' },
   { url: '/gbp/edwardsville', priority: '0.9', changefreq: 'weekly' },
   
+  // Handyman Packages (canonical packages page)
+  { url: '/handyman-packages/', priority: '0.8', changefreq: 'monthly' },
+
   // Service Pages
   { url: '/services/deck-repair', priority: '0.9', changefreq: 'weekly' },
   { url: '/services/bathroom-remodeling', priority: '0.9', changefreq: 'weekly' },
