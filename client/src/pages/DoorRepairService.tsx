@@ -104,7 +104,7 @@ export default function DoorRepairService() {
                 Sticking doors, broken frames, new entry doors, storm doors, and interior door installations — done right the first time. Serving St. Louis, Edwardsville, O'Fallon, and all of Metro East IL.
               </p>
               <div className="flex flex-wrap gap-3 mb-8">
-                {["Free Quote in 24 hrs", "Same/Next-Day Available", "Licensed & Insured", "30+ Years Experience"].map((badge) => (
+                {["Free Quote in 24 hrs", "Same/Next-Day Available", "Insured & Bonded", "30+ Years Experience"].map((badge) => (
                   <span key={badge} className="bg-white/10 text-white text-sm px-3 py-1.5 rounded-full font-medium">{badge}</span>
                 ))}
               </div>

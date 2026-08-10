@@ -12,7 +12,7 @@ export default function EdwardsvilleHandyman() {
   const whyChooseUs = [
     { icon: Home, text: "Local pros who respect your home and time" },
     { icon: Wrench, text: "Experienced in decks, carpentry, drywall, doors, and home repairs" },
-    { icon: Shield, text: "Fully licensed and insured" },
+    { icon: Shield, text: "Fully insured and bonded" },
     { icon: MessageSquare, text: "Text and email updates throughout your project" },
     { icon: Clock, text: "Straightforward pricing with no surprises" }
   ];
@@ -65,7 +65,7 @@ export default function EdwardsvilleHandyman() {
       answer: "Absolutely. We regularly work on older homes near downtown Edwardsville, the Leclaire neighborhood, and around SIUE. Older homes often have plaster walls, original trim profiles, and aging decks that require a more careful approach — we have the experience to handle them correctly."
     },
     {
-      question: "Are you insured and licensed?",
+      question: "Are you insured and bonded?",
       answer: "Yes, fully. Hero Handyman Pro carries general liability insurance and all technicians are background-checked. Your home is always protected when we're on-site."
     },
     {
@@ -530,7 +530,7 @@ export default function EdwardsvilleHandyman() {
                   35+ Years Experience
                 </span>
                 <span className="inline-flex items-center gap-1.5 bg-[#0b1220]/5 text-[#0b1220] text-xs font-bold px-3 py-1.5 rounded-full border border-[#0b1220]/10">
-                  Licensed & Insured
+                  Insured & Bonded
                 </span>
               </div>
               <p className="text-[#4b5563] text-lg mb-4">

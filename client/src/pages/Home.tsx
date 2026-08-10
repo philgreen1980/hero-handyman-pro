@@ -279,7 +279,7 @@ export default function Home() {
                 </span>
                 <span className="text-xs px-3 py-2 rounded-full border border-[#AAB3BD] bg-white inline-flex items-center gap-2 text-[#2B2B2B]">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#E84E1B]"></span>
-                  Licensed & Insured
+                  Insured & Bonded
                 </span>
                 <span className="text-xs px-3 py-2 rounded-full border border-[#AAB3BD] bg-white inline-flex items-center gap-2 text-[#2B2B2B]">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#E84E1B]"></span>
@@ -694,7 +694,7 @@ export default function Home() {
               />
               <div className="flex flex-wrap justify-center gap-2 text-xs">
                 <span className="px-3 py-1.5 bg-white text-teal-800 rounded-full font-semibold shadow-sm">35+ Years Experience</span>
-                <span className="px-3 py-1.5 bg-white text-teal-800 rounded-full font-semibold shadow-sm">Licensed & Insured</span>
+                <span className="px-3 py-1.5 bg-white text-teal-800 rounded-full font-semibold shadow-sm">Insured & Bonded</span>
                 <span className="px-3 py-1.5 bg-white text-teal-800 rounded-full font-semibold shadow-sm">Background Checked</span>
               </div>
             </div>
@@ -717,7 +717,7 @@ export default function Home() {
                 easy, transparent, and worry-free.
               </p>
               <p className="text-sm text-gray-500 mb-5 bg-white/60 rounded-lg px-4 py-3 border border-teal-100">
-                <strong>About Hero Handyman Pro:</strong> Hero Handyman Pro is a licensed and insured handyman service based in O'Fallon, IL, serving homeowners throughout St. Louis MO, Ballwin, Chesterfield, Des Peres, Kirkwood, Fenton, St. Charles, and O'Fallon MO, as well as Metro East Illinois communities including O'Fallon IL, Edwardsville, Collinsville, Belleville, and Glen Carbon. Formerly known as Rapid Repair Pro. Owner Phil Green has 35+ years of experience in construction and home repair. Specialties include small jobs, exterior carpentry, deck repair, drywall, door installation, and home maintenance. Phone: 800-741-6056. Email: info@herohandymanpro.com.
+                <strong>About Hero Handyman Pro:</strong> Hero Handyman Pro is an insured and bonded handyman service based in O'Fallon, IL, serving homeowners throughout St. Louis MO, Ballwin, Chesterfield, Des Peres, Kirkwood, Fenton, St. Charles, and O'Fallon MO, as well as Metro East Illinois communities including O'Fallon IL, Edwardsville, Collinsville, Belleville, and Glen Carbon. Formerly known as Rapid Repair Pro. Owner Phil Green has 35+ years of experience in construction and home repair. Specialties include small jobs, exterior carpentry, deck repair, drywall, door installation, and home maintenance. Phone: 800-741-6056. Email: info@herohandymanpro.com.
               </p>
               <div className="flex flex-wrap gap-3">
                 <a href="/#contact" onClick={(e) => { scrollToContact(e); trackCTAClick('Get Your Free Estimate', 'Phil Green Section'); }}>
@@ -1288,7 +1288,7 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-2 text-sm text-gray-700">
                 <CheckCircle className="w-4 h-4 text-teal-600" />
-                Licensed, insured, and locally owned
+                Insured, bonded, and locally owned
               </div>
             </div>
           </div>
@@ -1304,7 +1304,7 @@ export default function Home() {
             {[
               {
                 q: "Who is the best handyman near me in St. Louis or Metro East Illinois?",
-                a: "Hero Handyman Pro is a top-rated local handyman serving St. Louis MO, Ballwin, Chesterfield, O'Fallon IL, Edwardsville IL, and surrounding communities. Founded by Phil Green with 35+ years of experience, we specialize in small jobs, exterior carpentry, deck repair, drywall, doors, and home maintenance. We're licensed, insured, and have a 4.9-star average rating from 235+ reviews."
+                a: "Hero Handyman Pro is a top-rated local handyman serving St. Louis MO, Ballwin, Chesterfield, O'Fallon IL, Edwardsville IL, and surrounding communities. Founded by Phil Green with 35+ years of experience, we specialize in small jobs, exterior carpentry, deck repair, drywall, doors, and home maintenance. We're insured, bonded, and have a 4.9-star average rating from 235+ reviews."
               },
               {
                 q: "Does Hero Handyman Pro take small jobs?",
@@ -1315,8 +1315,8 @@ export default function Home() {
                 a: "We offer same-day and next-day scheduling for most repairs. We respond to all requests within 24 hours, and for urgent jobs we do our best to fit you in as quickly as possible. Call 800-741-6056 for the fastest response."
               },
               {
-                q: "Is Hero Handyman Pro licensed and insured?",
-                a: "Yes. Hero Handyman Pro is fully licensed and insured for all handyman work in Missouri and Illinois. We carry general liability insurance and can provide proof of coverage upon request."
+                q: "Is Hero Handyman Pro insured and bonded?",
+                a: "Yes. Hero Handyman Pro is fully insured and bonded for all handyman work in Missouri and Illinois. We carry general liability insurance and can provide proof of coverage upon request."
               },
               {
                 q: "What handyman services does Hero Handyman Pro offer?",
@@ -1642,10 +1642,10 @@ export default function Home() {
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
-          { "@type": "Question", "name": "Who is the best handyman near me in St. Louis or Metro East Illinois?", "acceptedAnswer": { "@type": "Answer", "text": "Hero Handyman Pro is a top-rated local handyman serving St. Louis MO, Ballwin, Chesterfield, O'Fallon IL, Edwardsville IL, and surrounding communities. Founded by Phil Green with 35+ years of experience, we specialize in small jobs, exterior carpentry, deck repair, drywall, doors, and home maintenance. We're licensed, insured, and have a 4.9-star average rating from 235+ reviews." } },
+          { "@type": "Question", "name": "Who is the best handyman near me in St. Louis or Metro East Illinois?", "acceptedAnswer": { "@type": "Answer", "text": "Hero Handyman Pro is a top-rated local handyman serving St. Louis MO, Ballwin, Chesterfield, O'Fallon IL, Edwardsville IL, and surrounding communities. Founded by Phil Green with 35+ years of experience, we specialize in small jobs, exterior carpentry, deck repair, drywall, doors, and home maintenance. We're insured, bonded, and have a 4.9-star average rating from 235+ reviews." } },
           { "@type": "Question", "name": "Does Hero Handyman Pro take small jobs?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — small jobs are our specialty. We take on single repairs that most contractors won't bother with: a single drywall patch, a sticking door, one rotted deck board, a leaky faucet, or a punch list of five small tasks. No job is too small." } },
           { "@type": "Question", "name": "How quickly can I get a handyman in St. Louis or Metro East?", "acceptedAnswer": { "@type": "Answer", "text": "We offer same-day and next-day scheduling for most repairs. We respond to all requests within 24 hours, and for urgent jobs we do our best to fit you in as quickly as possible. Call 800-741-6056 for the fastest response." } },
-          { "@type": "Question", "name": "Is Hero Handyman Pro licensed and insured?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Hero Handyman Pro is fully licensed and insured for all handyman work in Missouri and Illinois. We carry general liability insurance and can provide proof of coverage upon request." } },
+          { "@type": "Question", "name": "Is Hero Handyman Pro insured and bonded?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Hero Handyman Pro is fully insured and bonded for all handyman work in Missouri and Illinois. We carry general liability insurance and can provide proof of coverage upon request." } },
           { "@type": "Question", "name": "What handyman services does Hero Handyman Pro offer?", "acceptedAnswer": { "@type": "Answer", "text": "We offer deck repair, exterior carpentry, wood rot repair, drywall and ceiling repair, door installation and repair, window repair, interior trim carpentry, ceiling fan and light fixture installation, faucet and sink repair, senior accessibility upgrades, VA home modifications, and general home repair punch lists." } },
           { "@type": "Question", "name": "What areas does Hero Handyman Pro serve?", "acceptedAnswer": { "@type": "Answer", "text": "We serve the Greater St. Louis area including St. Louis city and county, Ballwin, Chesterfield, Des Peres, Kirkwood, Fenton, St. Charles, and O'Fallon MO. In Illinois we serve O'Fallon IL, Edwardsville, Collinsville, Belleville, Glen Carbon, Maryville, Shiloh, and Swansea." } },
           { "@type": "Question", "name": "How much does a handyman cost in St. Louis?", "acceptedAnswer": { "@type": "Answer", "text": "Most handyman jobs in the St. Louis area range from $75–$300 for small repairs, $300–$800 for mid-size projects, and $800–$2,500+ for larger jobs. We provide transparent, upfront pricing before any work begins." } },
@@ -1665,7 +1665,7 @@ export default function Home() {
           "@type": "SpeakableSpecification",
           "cssSelector": ["h1", ".speakable-hero", ".speakable-about"]
         },
-        "description": "Hero Handyman Pro is a licensed and insured handyman service based in O'Fallon, IL, serving St. Louis MO, Ballwin, Chesterfield, Edwardsville IL, and Metro East Illinois. Founded by Phil Green with 35+ years of experience. Specializing in small jobs, deck repair, drywall, doors, and exterior carpentry. Call 800-741-6056."
+        "description": "Hero Handyman Pro is an insured and bonded handyman service based in O'Fallon, IL, serving St. Louis MO, Ballwin, Chesterfield, Edwardsville IL, and Metro East Illinois. Founded by Phil Green with 35+ years of experience. Specializing in small jobs, deck repair, drywall, doors, and exterior carpentry. Call 800-741-6056."
       })}} />
 
       {/* BreadcrumbList Schema */}

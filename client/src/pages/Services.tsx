@@ -129,7 +129,7 @@ export default function Services() {
           <div className="flex flex-wrap justify-center gap-6 mt-10">
             {[
               { icon: Star, text: "4.9★ Rated" },
-              { icon: Check, text: "Licensed & Insured" },
+              { icon: Check, text: "Insured & Bonded" },
               { icon: Phone, text: "We Answer the Phone" },
               { icon: Check, text: "Upfront Pricing" },
             ].map((badge, i) => (

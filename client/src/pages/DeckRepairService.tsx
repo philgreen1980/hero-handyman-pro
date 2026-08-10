@@ -104,7 +104,7 @@ export default function DeckRepairService() {
                 Rotted boards, loose railings, damaged stairs, and structural repairs — fixed right the first time. Serving St. Louis, Edwardsville, O'Fallon, and all of Metro East IL.
               </p>
               <div className="flex flex-wrap gap-3 mb-8">
-                {["Free Inspection", "Written Estimate", "Licensed & Insured", "30+ Years Experience"].map((badge) => (
+                {["Free Inspection", "Written Estimate", "Insured & Bonded", "30+ Years Experience"].map((badge) => (
                   <span key={badge} className="bg-white/10 text-white text-sm px-3 py-1.5 rounded-full font-medium">{badge}</span>
                 ))}
               </div>

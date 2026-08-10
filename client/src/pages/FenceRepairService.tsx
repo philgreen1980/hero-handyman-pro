@@ -244,7 +244,7 @@ export default function FenceRepairService() {
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <span className="bg-[#ff5b00] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Veteran-Owned</span>
-                  <span className="bg-white/10 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Licensed & Insured</span>
+                  <span className="bg-white/10 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Insured & Bonded</span>
                 </div>
                 <h2 className="text-2xl md:text-3xl font-bold mb-4">About Your Metro East Fence Repair Specialist</h2>
                 <p className="text-gray-300 mb-4 leading-relaxed">
@@ -258,7 +258,7 @@ export default function FenceRepairService() {
                 {[
                   { label: "35+ Years Experience", icon: "🏆" },
                   { label: "Veteran-Owned Business", icon: "🎖️" },
-                  { label: "Licensed & Insured", icon: "✅" },
+                  { label: "Insured & Bonded", icon: "✅" },
                   { label: "Same-Week Service Available", icon: "📅" },
                   { label: "Written Estimates", icon: "📋" },
                   { label: "Local Metro East Team", icon: "📍" },

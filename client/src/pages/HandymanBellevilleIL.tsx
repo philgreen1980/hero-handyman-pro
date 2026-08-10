@@ -16,7 +16,7 @@ export default function HandymanBellevilleIL() {
       a: "Yes — we offer same-day and next-day availability for most repairs in Belleville. For urgent repairs, call us directly at 800-741-6056 and we'll do our best to get to you quickly.",
     },
     {
-      q: "Are you licensed and insured to work in Illinois?",
+      q: "Are you insured and bonded to work in Illinois?",
       a: "Yes. Hero Handyman Pro is fully insured for residential work in Illinois and Missouri. We carry general liability insurance on every job, so you're protected if anything unexpected happens.",
     },
     {
@@ -61,7 +61,7 @@ export default function HandymanBellevilleIL() {
             </div>
             <div className="bg-white/10 rounded-xl p-6 text-center backdrop-blur-sm">
               <Shield className="h-10 w-10 text-[#ff5b00] mx-auto mb-3" />
-              <p className="text-white font-medium">Licensed, insured handyman professionals</p>
+              <p className="text-white font-medium">Insured, bonded handyman professionals</p>
             </div>
             <div className="bg-white/10 rounded-xl p-6 text-center backdrop-blur-sm">
               <MessageSquare className="h-10 w-10 text-[#ff5b00] mx-auto mb-3" />
@@ -102,7 +102,7 @@ export default function HandymanBellevilleIL() {
             {[
               { icon: Home, text: "Local professionals serving Belleville and St. Clair County families" },
               { icon: Wrench, text: "Experienced in decks, carpentry, drywall, doors, and home repairs" },
-              { icon: Shield, text: "Fully licensed and insured for your protection" },
+              { icon: Shield, text: "Fully insured and bonded for your protection" },
               { icon: MessageSquare, text: "Clear communication with text and email updates" },
               { icon: Clock, text: "Transparent pricing and flexible scheduling" },
               { icon: Star, text: "5-star rated service from real Belleville homeowners" },

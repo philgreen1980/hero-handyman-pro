@@ -372,7 +372,7 @@ export default function PricingHub() {
                 "Free estimates — always",
                 "No hourly surprises",
                 "Flat-rate project pricing",
-                "Licensed & insured",
+                "Insured & bonded",
                 "35+ years experience",
               ].map((t) => (
                 <span key={t} className="flex items-center gap-1.5">
@@ -644,7 +644,7 @@ export default function PricingHub() {
                 </div>
                 <ul className="space-y-3 text-sm text-white/80">
                   {[
-                    "Fully licensed and insured — protecting you if something goes wrong",
+                    "Fully insured and bonded — protecting you if something goes wrong",
                     "Background-checked technicians you can trust in your home",
                     "Proper tools and equipment for every job type",
                     "Warranty on labor — they come back if something fails",

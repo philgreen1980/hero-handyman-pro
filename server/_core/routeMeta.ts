@@ -33,7 +33,7 @@ export function getRouteMeta(pathname: string): RouteMeta {
     seoRoutes[pathname] || {
       title: 'Hero Handyman Pro | Handyman & Home Repair in St. Louis & Metro East',
       description:
-        'Hero Handyman Pro provides trusted handyman & home repair services in St. Louis & Metro East. Deck repair, carpentry, drywall, and more — licensed, insured, and easy to schedule.',
+        'Hero Handyman Pro provides trusted handyman & home repair services in St. Louis & Metro East. Deck repair, carpentry, drywall, and more — insured, bonded, and easy to schedule.',
       h1: 'Hero Handyman Pro — Trusted Local Handyman Services',
       bodySnippet:
         'Hero Handyman Pro provides trusted handyman and home repair services across St. Louis, MO and Metro East Illinois. Call 800-741-6056 for a free estimate.',

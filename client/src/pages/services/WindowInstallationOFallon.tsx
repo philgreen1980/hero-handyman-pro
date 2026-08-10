@@ -52,7 +52,7 @@ export default function WindowInstallationOFallon() {
           <div className="flex flex-wrap justify-center items-center gap-8 text-center">
             <div className="flex items-center gap-2">
               <Shield className="w-6 h-6 text-teal-600" />
-              <span className="font-semibold">Licensed & Insured</span>
+              <span className="font-semibold">Insured & Bonded</span>
             </div>
             <div className="flex items-center gap-2">
               <Award className="w-6 h-6 text-teal-600" />

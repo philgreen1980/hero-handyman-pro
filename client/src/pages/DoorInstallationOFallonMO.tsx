@@ -35,7 +35,7 @@ export default function DoorInstallationOFallonMO() {
             </div>
             <div className="flex flex-wrap gap-6 mt-8 text-sm text-gray-400">
               <span className="flex items-center gap-1"><Star className="w-4 h-4 text-yellow-400 fill-yellow-400" /> 4.9 Star Rated</span>
-              <span className="flex items-center gap-1"><Check className="w-4 h-4 text-orange-400" /> Licensed & Insured</span>
+              <span className="flex items-center gap-1"><Check className="w-4 h-4 text-orange-400" /> Insured & Bonded</span>
               <span className="flex items-center gap-1"><Check className="w-4 h-4 text-orange-400" /> Free Estimates</span>
               <span className="flex items-center gap-1"><Check className="w-4 h-4 text-orange-400" /> Serving O'Fallon MO</span>
             </div>

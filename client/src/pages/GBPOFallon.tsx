@@ -321,8 +321,8 @@ export default function GBPOFallon() {
             answer: "Absolutely! We provide free, no-obligation estimates for all projects in O'Fallon and Metro East Illinois. Simply call us at (618) 353-0955 or fill out our contact form, and we'll schedule a convenient time to assess your project and provide a detailed quote."
           },
           {
-            question: "Are you licensed and insured to work in O'Fallon?",
-            answer: "Yes, Hero Handyman Pro is fully licensed and insured to perform handyman and remodeling work throughout Metro East Illinois, including O'Fallon. We carry general liability insurance and workers' compensation coverage for your protection and peace of mind."
+            question: "Are you insured and bonded to work in O'Fallon?",
+            answer: "Yes, Hero Handyman Pro is fully insured and bonded to perform handyman and remodeling work throughout Metro East Illinois, including O'Fallon. We carry general liability insurance and workers' compensation coverage for your protection and peace of mind."
           },
           {
             question: "Do you work with Scott Air Force Base personnel?",

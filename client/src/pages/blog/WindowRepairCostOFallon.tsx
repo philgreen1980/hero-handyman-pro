@@ -422,7 +422,7 @@ export default function WindowRepairCostOFallon() {
             {[
               "Honest repair vs replace recommendations",
               "Upfront written estimates",
-              "Licensed and insured",
+              "Insured and bonded",
               "Veteran-owned and locally operated",
               "Glass unit ordering and installation",
               "Same-day and next-day availability"

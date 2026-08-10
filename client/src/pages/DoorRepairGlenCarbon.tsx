@@ -35,7 +35,7 @@ export default function DoorRepairGlenCarbon() {
             </div>
             <div className="flex flex-wrap gap-6 mt-8 text-sm text-gray-400">
               <span className="flex items-center gap-1"><Star className="w-4 h-4 text-yellow-400 fill-yellow-400" /> 4.9 Star Rated</span>
-              <span className="flex items-center gap-1"><Check className="w-4 h-4 text-teal-400" /> Licensed & Insured</span>
+              <span className="flex items-center gap-1"><Check className="w-4 h-4 text-teal-400" /> Insured & Bonded</span>
               <span className="flex items-center gap-1"><Check className="w-4 h-4 text-teal-400" /> Same-Day Available</span>
               <span className="flex items-center gap-1"><Check className="w-4 h-4 text-teal-400" /> Serving Glen Carbon IL</span>
             </div>
@@ -109,7 +109,7 @@ export default function DoorRepairGlenCarbon() {
             {[
               { title: "Honest Diagnosis", desc: "We tell you whether repair or replacement makes more sense — and why. No upselling." },
               { title: "Same-Day Service", desc: "For urgent door repairs, we strive to get to Glen Carbon the same day or next morning." },
-              { title: "Licensed & Insured", desc: "Fully licensed and insured for your protection on every job." },
+              { title: "Insured & Bonded", desc: "Fully insured and bonded for your protection on every job." },
               { title: "Transparent Pricing", desc: "Clear estimate before we start. No surprises when the job is done." }
             ].map((item, i) => (
               <div key={i} className="flex flex-col gap-2">

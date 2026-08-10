@@ -321,8 +321,8 @@ export default function GBPEdwardsville() {
             answer: "Absolutely! We provide free, no-obligation estimates for all projects in Edwardsville and surrounding areas. Simply call us at (618) 368-4335 or fill out our contact form, and we'll schedule a convenient time to assess your project and provide a detailed quote."
           },
           {
-            question: "Are you licensed and insured to work in Edwardsville?",
-            answer: "Yes, Hero Handyman Pro is fully licensed and insured to perform handyman and remodeling work throughout Metro East Illinois, including Edwardsville. We carry general liability insurance and workers' compensation coverage for your protection and peace of mind."
+            question: "Are you insured and bonded to work in Edwardsville?",
+            answer: "Yes, Hero Handyman Pro is fully insured and bonded to perform handyman and remodeling work throughout Metro East Illinois, including Edwardsville. We carry general liability insurance and workers' compensation coverage for your protection and peace of mind."
           },
           {
             question: "Do you work with SIUE students and faculty?",

@@ -21,7 +21,7 @@ export default function HandymanSwanseaIL() {
       a: "Yes — we offer same-day and next-day availability for most repairs in Swansea. For urgent repairs, call us directly at 800-741-6056 and we'll do our best to get to you quickly.",
     },
     {
-      q: "Are you licensed and insured to work in Swansea, IL?",
+      q: "Are you insured and bonded to work in Swansea, IL?",
       a: "Yes. Hero Handyman Pro is fully insured for residential work in Illinois and Missouri. We carry general liability insurance on every job.",
     },
     {
@@ -74,7 +74,7 @@ export default function HandymanSwanseaIL() {
             </div>
             <div className="bg-white/10 rounded-xl p-6 text-center backdrop-blur-sm">
               <Shield className="h-10 w-10 text-[#ff5b00] mx-auto mb-3" />
-              <p className="text-white font-medium">Licensed, insured handyman professionals</p>
+              <p className="text-white font-medium">Insured, bonded handyman professionals</p>
             </div>
             <div className="bg-white/10 rounded-xl p-6 text-center backdrop-blur-sm">
               <MessageSquare className="h-10 w-10 text-[#ff5b00] mx-auto mb-3" />
@@ -230,7 +230,7 @@ export default function HandymanSwanseaIL() {
                   35+ Years Experience
                 </span>
                 <span className="inline-flex items-center gap-1.5 bg-[#0b1220]/5 text-[#0b1220] text-xs font-bold px-3 py-1.5 rounded-full border border-[#0b1220]/10">
-                  Licensed & Insured
+                  Insured & Bonded
                 </span>
               </div>
               <p className="text-[#4b5563] text-lg mb-4">
