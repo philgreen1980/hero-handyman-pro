@@ -83,6 +83,33 @@ export function injectRouteMeta(html: string, pathname: string): string {
     }
   }
 
+  // Per-route Open Graph / Twitter tags (social & messaging link previews).
+  // Scrapers (Facebook, Nextdoor, iMessage, LinkedIn, X) don't run JS, so these
+  // MUST be in the raw HTML — the client SEO component sets them too late for unfurlers.
+  // The static index.html ships generic homepage OG tags; replace them with per-route values.
+  result = result.replace(
+    /<meta\s+property="og:title"\s+content="[^"]*"\s*\/?>/,
+    `<meta property="og:title" content="${escapeHtml(meta.title)}" />`
+  );
+  result = result.replace(
+    /<meta\s+property="og:description"\s+content="[^"]*"\s*\/?>/,
+    `<meta property="og:description" content="${escapeHtml(meta.description)}" />`
+  );
+  if (meta.canonicalUrl) {
+    result = result.replace(
+      /<meta\s+property="og:url"\s+content="[^"]*"\s*\/?>/,
+      `<meta property="og:url" content="${escapeHtml(meta.canonicalUrl)}" />`
+    );
+  }
+  result = result.replace(
+    /<meta\s+name="twitter:title"\s+content="[^"]*"\s*\/?>/,
+    `<meta name="twitter:title" content="${escapeHtml(meta.title)}" />`
+  );
+  result = result.replace(
+    /<meta\s+name="twitter:description"\s+content="[^"]*"\s*\/?>/,
+    `<meta name="twitter:description" content="${escapeHtml(meta.description)}" />`
+  );
+
   // Inject static content block before </body> for crawlers
   const staticBlock = `
 <!-- static-seo-content: visible to crawlers before JS executes -->
