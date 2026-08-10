@@ -36,8 +36,7 @@ const HomeRepairService = lazy(() => import("./pages/HomeRepairService"));
 const SeniorAccessibilityService = lazy(() => import("./pages/SeniorAccessibilityService"));
 const CeilingFanService = lazy(() => import("./pages/CeilingFanService"));
 const FaucetRepairService = lazy(() => import("./pages/FaucetRepairService"));
-const OFallonHandyman = lazy(() => import("./pages/OFallonHandyman"));
-const EdwardsvilleHandyman = lazy(() => import("./pages/EdwardsvilleHandyman"));
+// O'Fallon/Edwardsville service-area pages consolidated → canonical GBP city pages (see routes below)
 const BellevilleHandyman = lazy(() => import("./pages/BellevilleHandyman"));
 const StLouisHandyman = lazy(() => import("./pages/StLouisHandyman"));
 const CollinsvilleHandyman = lazy(() => import("./pages/CollinsvilleHandyman"));
@@ -286,8 +285,9 @@ function Router() {
         <Route path="/handyman-services-st-louis/" component={HandymanServicesStLouis} />
         
         {/* City Landing Pages */}
-        <Route path="/service-areas/ofallon-handyman-services/" component={OFallonHandyman} />
-        <Route path="/service-areas/edwardsville-handyman-services/" component={EdwardsvilleHandyman} />
+        {/* Consolidated to canonical GBP city pages — matches the server 301 and the GSC ranking winner. */}
+        <Route path="/service-areas/ofallon-handyman-services/"><Redirect to="/gbp/ofallon-il/" /></Route>
+        <Route path="/service-areas/edwardsville-handyman-services/"><Redirect to="/gbp/edwardsville-il/" /></Route>
         <Route path="/edwardsville-il/">
           <Redirect to="/gbp/edwardsville-il/" />
         </Route>

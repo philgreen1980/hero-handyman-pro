@@ -8,13 +8,13 @@ export default function ServiceAreas() {
   const cities = [
     {
       name: "O'Fallon, IL",
-      url: "/service-areas/ofallon-handyman-services/",
+      url: "/gbp/ofallon-il/",
       description: "Serving all O'Fallon neighborhoods including downtown, SWIC area, and surrounding communities with professional handyman services.",
       highlights: ["Deck repair", "Home repairs", "Carpentry work"]
     },
     {
       name: "Edwardsville, IL",
-      url: "/service-areas/edwardsville-handyman-services/",
+      url: "/gbp/edwardsville-il/",
       description: "Professional handyman services for Edwardsville including SIUE, downtown, and all surrounding neighborhoods.",
       highlights: ["Drywall repair", "Door installation", "Exterior repairs"]
     },

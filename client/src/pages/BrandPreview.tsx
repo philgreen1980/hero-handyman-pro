@@ -330,8 +330,8 @@ export default function BrandPreview() {
               <div className="text-gray-200 font-semibold mb-2">Service Areas</div>
               <div className="space-y-1">
                 {[
-                  ["O'Fallon, IL", "/service-areas/ofallon-handyman-services/"],
-                  ["Edwardsville, IL", "/edwardsville-il/"],
+                  ["O'Fallon, IL", "/gbp/ofallon-il/"],
+                  ["Edwardsville, IL", "/gbp/edwardsville-il/"],
                   ["Belleville, IL", "/belleville-il/"],
                   ["Collinsville, IL", "/service-areas/collinsville-handyman-services/"],
                   ["St. Louis, MO", "/handyman-services-st-louis/"],

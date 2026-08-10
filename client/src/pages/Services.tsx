@@ -79,9 +79,9 @@ const fixtureServices = [
 ];
 
 const serviceAreas = [
-  { city: "Edwardsville, IL", desc: "Premium interior updates and deck restorations", link: "/service-areas/edwardsville-handyman-services/" },
+  { city: "Edwardsville, IL", desc: "Premium interior updates and deck restorations", link: "/gbp/edwardsville-il/" },
   { city: "Belleville, IL", desc: "Historic home maintenance and plaster repair", link: "/service-areas/belleville-handyman-services/" },
-  { city: "O'Fallon, IL", desc: "Honey-do lists and fixture upgrades for busy professionals", link: "/service-areas/ofallon-il-handyman/" },
+  { city: "O'Fallon, IL", desc: "Honey-do lists and fixture upgrades for busy professionals", link: "/gbp/ofallon-il/" },
   { city: "Collinsville, IL", desc: "Established Metro East community with mature homes", link: "/service-areas/collinsville-handyman-services/" },
   { city: "Glen Carbon, IL", desc: "Quiet residential neighborhoods near Edwardsville", link: "/service-areas/glen-carbon-handyman-services/" },
   { city: "St. Louis, MO", desc: "Cross-river reliability for St. Louis homeowners", link: "/handyman-services-st-louis/" },
