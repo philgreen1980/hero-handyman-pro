@@ -89,7 +89,7 @@ const reviews = [
 
       <section className="bg-teal-800 text-white py-4 px-6">
         <div className="container max-w-5xl mx-auto flex flex-wrap gap-6 justify-center">
-          {["Licensed & Insured", "Free Deck Inspection", "Rot Repair Specialists", "Same-Week Scheduling"].map(item => (
+          {["Insured & Bonded", "Free Deck Inspection", "Rot Repair Specialists", "Same-Week Scheduling"].map(item => (
             <div key={item} className="flex items-center gap-2 text-sm font-medium">
               <CheckCircle className="w-4 h-4 text-teal-300" /> {item}
             </div>

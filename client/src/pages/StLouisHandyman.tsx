@@ -12,7 +12,7 @@ export default function StLouisHandyman() {
   const whyChooseUs = [
     { icon: Home, text: "Local professionals serving St. Louis families and businesses" },
     { icon: Wrench, text: "Skilled in decks, carpentry, drywall, doors, and all home repairs" },
-    { icon: Shield, text: "Fully licensed and insured for your peace of mind" },
+    { icon: Shield, text: "Fully insured and bonded for your peace of mind" },
     { icon: MessageSquare, text: "Clear updates via text and email throughout your project" },
     { icon: Clock, text: "Upfront pricing with no hidden fees or surprises" }
   ];
@@ -65,8 +65,8 @@ export default function StLouisHandyman() {
       answer: "We handle everything from small repairs and punch lists to larger projects. Common St. Louis jobs include drywall repair, deck board replacement, door installation, ceiling fan installation, exterior carpentry, wood rot repair, fence repair, and general home maintenance. If you have a repair project, contact us — we likely handle it."
     },
     {
-      question: "Are you licensed and insured in Missouri?",
-      answer: "Yes. Hero Handyman Pro is fully licensed and insured in Missouri and Illinois. We carry general liability insurance and workers' compensation coverage on every job. You can request proof of insurance before we begin work."
+      question: "Are you insured and bonded in Missouri?",
+      answer: "Yes. Hero Handyman Pro is fully insured and bonded in Missouri and Illinois. We carry general liability insurance and workers' compensation coverage on every job. You can request proof of insurance before we begin work."
     },
     {
       question: "How much does a handyman cost in St. Louis?",
@@ -118,7 +118,7 @@ export default function StLouisHandyman() {
             </div>
             <div className="bg-white/10 rounded-xl p-6 text-center backdrop-blur-sm">
               <Shield className="h-10 w-10 text-[#ff5b00] mx-auto mb-3" />
-              <p className="text-white font-medium">Licensed, insured handyman professionals</p>
+              <p className="text-white font-medium">Insured, bonded handyman professionals</p>
             </div>
             <div className="bg-white/10 rounded-xl p-6 text-center backdrop-blur-sm">
               <MessageSquare className="h-10 w-10 text-[#ff5b00] mx-auto mb-3" />
@@ -401,7 +401,7 @@ export default function StLouisHandyman() {
               <div className="flex flex-wrap gap-2 mb-4">
                 <span className="inline-flex items-center gap-1.5 bg-[#ff5b00]/10 text-[#ff5b00] text-xs font-bold px-3 py-1.5 rounded-full border border-[#ff5b00]/20">★ Veteran-Owned</span>
                 <span className="inline-flex items-center gap-1.5 bg-[#0b1220]/5 text-[#0b1220] text-xs font-bold px-3 py-1.5 rounded-full border border-[#0b1220]/10">35+ Years Experience</span>
-                <span className="inline-flex items-center gap-1.5 bg-[#0b1220]/5 text-[#0b1220] text-xs font-bold px-3 py-1.5 rounded-full border border-[#0b1220]/10">Licensed & Insured</span>
+                <span className="inline-flex items-center gap-1.5 bg-[#0b1220]/5 text-[#0b1220] text-xs font-bold px-3 py-1.5 rounded-full border border-[#0b1220]/10">Insured & Bonded</span>
               </div>
               <p className="text-[#4b5563] text-lg mb-4">
                 Hero Handyman Pro was founded by Coast Guard veteran and longtime remodeling professional Phil Green. After decades working in construction, remodeling, project management, and home repair across the St. Louis metro area, Phil built Hero Handyman Pro to solve the biggest frustration homeowners face: unreliable contractors who don't communicate, don't show up, or don't finish the job properly.

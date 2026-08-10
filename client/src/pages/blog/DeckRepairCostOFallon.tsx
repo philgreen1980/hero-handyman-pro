@@ -383,7 +383,7 @@ export default function DeckRepairCostOFallon() {
             {[
               "Honest repair vs replace recommendations",
               "Upfront written estimates",
-              "Licensed and insured",
+              "Insured and bonded",
               "Veteran-owned and locally operated",
               "Texture and material matching",
               "Same-day and next-day availability"

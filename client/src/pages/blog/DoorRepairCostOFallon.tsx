@@ -419,7 +419,7 @@ export default function DoorRepairCostOFallon() {
               { title: "We diagnose before we quote", desc: "We probe frames, test hinges, and check plumb before giving you a number — so the estimate reflects the actual job." },
               { title: "Small jobs welcome", desc: "A sticking door is worth fixing. We don't require a minimum job size or bundle unnecessary work." },
               { title: "Same-day availability for urgent issues", desc: "If your exterior door won't close or lock, we prioritize getting there. Call 800-741-6056 to check availability." },
-              { title: "Licensed & insured in Illinois", desc: "Fully licensed and insured in IL and MO. Proof of insurance available on request." },
+              { title: "Insured & bonded in Illinois", desc: "Fully insured and bonded in IL and MO. Proof of insurance available on request." },
               { title: "15% off with Hero Membership", desc: "Members save on every job. A single door repair can pay for the annual membership fee." },
             ].map((item, i) => (
               <div key={i} className="flex gap-3 p-5 bg-white rounded-xl border border-[#e5e7eb]">

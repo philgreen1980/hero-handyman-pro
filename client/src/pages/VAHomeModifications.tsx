@@ -59,7 +59,7 @@ const services = [
 // ─── TRUST BADGES ────────────────────────────────────────────────────────────
 const trustBadges = [
   { icon: <Award className="w-8 h-8 text-amber-500" />, label: "Veteran-Owned & Operated" },
-  { icon: <FileCheck className="w-8 h-8 text-teal-600" />, label: "Licensed & Insured" },
+  { icon: <FileCheck className="w-8 h-8 text-teal-600" />, label: "Insured & Bonded" },
   { icon: <Wrench className="w-8 h-8 text-teal-600" />, label: "Accessibility Modification Experience" },
   { icon: <Clock className="w-8 h-8 text-teal-600" />, label: "Fast VA-Ready Estimates" },
   { icon: <Heart className="w-8 h-8 text-red-500" />, label: "Respectful, Professional Service" },

@@ -35,7 +35,7 @@ export default function DrywallRepairStCharles() {
             </div>
             <div className="flex flex-wrap gap-6 mt-8 text-sm text-gray-400">
               <span className="flex items-center gap-1"><Star className="w-4 h-4 text-yellow-400 fill-yellow-400" /> 4.9 Star Rated</span>
-              <span className="flex items-center gap-1"><Check className="w-4 h-4 text-teal-400" /> Licensed & Insured</span>
+              <span className="flex items-center gap-1"><Check className="w-4 h-4 text-teal-400" /> Insured & Bonded</span>
               <span className="flex items-center gap-1"><Check className="w-4 h-4 text-teal-400" /> Same-Day Available</span>
               <span className="flex items-center gap-1"><Check className="w-4 h-4 text-teal-400" /> Serving St. Charles MO</span>
             </div>
@@ -112,7 +112,7 @@ export default function DrywallRepairStCharles() {
             {[
               { title: "Texture Matching", desc: "We match knockdown, orange peel, and smooth finishes so repairs are invisible — not just patched." },
               { title: "Same-Day Service", desc: "We strive to get to St. Charles the same day or next morning for urgent repairs." },
-              { title: "Licensed & Insured", desc: "Fully licensed and insured for your protection on every job." },
+              { title: "Insured & Bonded", desc: "Fully insured and bonded for your protection on every job." },
               { title: "Transparent Pricing", desc: "Clear estimate before we start. No surprises when the job is done." }
             ].map((item, i) => (
               <div key={i} className="flex flex-col gap-2">

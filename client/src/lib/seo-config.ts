@@ -183,7 +183,7 @@ export const seoConfig = {
   
   stLouisHandyman: {
     title: "Handyman in St. Louis MO | Trusted Local Handyman",
-    description: "St. Louis homeowners call Hero Handyman Pro for the repairs that pile up — drywall holes, sticking doors, deck boards, and fixture swaps. Licensed, insured, 35+ yrs. 800-741-6056.",
+    description: "St. Louis homeowners call Hero Handyman Pro for the repairs that pile up — drywall holes, sticking doors, deck boards, and fixture swaps. Insured, bonded, 35+ yrs. 800-741-6056.",
     keywords: "St Louis handyman, handyman St Louis Missouri, home repairs St Louis MO",
     canonicalUrl: "https://www.herohandymanpro.com/service-areas/st-louis-mo-handyman/"
   },
@@ -226,7 +226,7 @@ export const seoConfig = {
   
   serviceAreas: {
     title: "Service Areas | St. Louis & Metro East Illinois",
-    description: "Hero Handyman Pro serves 8+ cities across Metro East IL & St. Louis. Edwardsville, O'Fallon, Belleville, Collinsville & more. Licensed, insured, 4.9★ reviews. Call today.",
+    description: "Hero Handyman Pro serves 8+ cities across Metro East IL & St. Louis. Edwardsville, O'Fallon, Belleville, Collinsville & more. Insured, bonded, 4.9★ reviews. Call today.",
     keywords: "handyman service areas, St Louis service area, Metro East handyman coverage",
     canonicalUrl: "https://www.herohandymanpro.com/service-areas/"
   },

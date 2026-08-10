@@ -49,8 +49,8 @@ export default function HandymanStLouisMO() {
       answer: "Small repairs (1–2 hours) typically run $100–$250. Half-day jobs are $250–$500. Full-day projects are $500–$900. Specific services like deck repair ($300–$2,500+) or drywall repair ($75–$700+) vary based on scope. We provide a firm, written estimate before starting any work — no surprise charges."
     },
     {
-      question: "Are you licensed and insured in Missouri?",
-      answer: "Yes. Hero Handyman Pro is fully licensed and insured in Missouri and Illinois. We carry general liability insurance and workers' compensation coverage on every job. You can request proof of insurance before we begin work."
+      question: "Are you insured and bonded in Missouri?",
+      answer: "Yes. Hero Handyman Pro is fully insured and bonded in Missouri and Illinois. We carry general liability insurance and workers' compensation coverage on every job. You can request proof of insurance before we begin work."
     },
     {
       question: "Do you offer a warranty on your work?",
@@ -95,7 +95,7 @@ export default function HandymanStLouisMO() {
                 Fast, honest, local handyman services across St. Louis city and county. Drywall repair, deck repair, door installation, carpentry, and more — done right the first time.
               </p>
               <div className="flex flex-wrap gap-3 mb-8">
-                {["Free Quote in 24 hrs", "Same/Next-Day Available", "Licensed & Insured in MO", "30+ Years Experience"].map((badge) => (
+                {["Free Quote in 24 hrs", "Same/Next-Day Available", "Insured & Bonded in MO", "30+ Years Experience"].map((badge) => (
                   <span key={badge} className="bg-white/10 text-white text-sm px-3 py-1.5 rounded-full font-medium">{badge}</span>
                 ))}
               </div>
@@ -131,7 +131,7 @@ export default function HandymanStLouisMO() {
                   "Serving all of St. Louis city & county",
                   "Drywall, deck, doors, carpentry & more",
                   "Upfront pricing — no surprises",
-                  "Licensed & insured in Missouri",
+                  "Insured & bonded in Missouri",
                   "Same-day & next-day availability",
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3 mb-3">

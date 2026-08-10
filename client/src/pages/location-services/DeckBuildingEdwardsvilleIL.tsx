@@ -62,7 +62,7 @@ export default function DeckBuildingEdwardsvilleIL() {
             </div>
             <div>
               <Shield className="w-8 h-8 text-primary mx-auto mb-2" />
-              <div className="font-semibold text-foreground">Licensed & Insured</div>
+              <div className="font-semibold text-foreground">Insured & Bonded</div>
               <div className="text-sm text-muted-foreground">Fully Covered</div>
             </div>
             <div>

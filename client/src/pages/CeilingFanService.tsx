@@ -30,7 +30,7 @@ export default function CeilingFanService() {
   const faqs = [
     {
       question: "Do I need an electrician to install a ceiling fan?",
-      answer: "Not necessarily. If you're replacing an existing ceiling fan or light fixture on an existing circuit with a fan-rated electrical box, a licensed handyman can handle the installation. If you need new wiring run from the panel, that requires a licensed electrician. We'll assess your situation and let you know upfront which applies."
+      answer: "Not necessarily. If you're replacing an existing ceiling fan or light fixture on an existing circuit with a fan-rated electrical box, a handyman can handle the installation. If you need new wiring run from the panel, that requires a licensed electrician. We'll assess your situation and let you know upfront which applies."
     },
     {
       question: "How long does ceiling fan installation take?",
@@ -92,7 +92,7 @@ export default function CeilingFanService() {
                 New installs, fan replacements, wobble repairs, and smart fan setup — done safely and correctly. Serving St. Louis, Edwardsville, O'Fallon, and all of Metro East IL.
               </p>
               <div className="flex flex-wrap gap-3 mb-8">
-                {["Free Quote in 24 hrs", "Same/Next-Day Available", "Licensed & Insured", "30+ Years Experience"].map((badge) => (
+                {["Free Quote in 24 hrs", "Same/Next-Day Available", "Insured & Bonded", "30+ Years Experience"].map((badge) => (
                   <span key={badge} className="bg-white/10 text-white text-sm px-3 py-1.5 rounded-full font-medium">{badge}</span>
                 ))}
               </div>

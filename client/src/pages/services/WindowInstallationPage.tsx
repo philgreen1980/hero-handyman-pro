@@ -35,7 +35,7 @@ export default function WindowInstallationPage() {
             </h1>
             
             <p className="text-xl md:text-2xl mb-8 text-teal-50">
-              Energy-efficient window installation for your home. Reduce energy bills, improve comfort, and boost curb appeal. Licensed & insured with 35+ years experience.
+              Energy-efficient window installation for your home. Reduce energy bills, improve comfort, and boost curb appeal. Insured & bonded with 35+ years experience.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -61,7 +61,7 @@ export default function WindowInstallationPage() {
           <div className="flex flex-wrap justify-center items-center gap-8 text-center">
             <div className="flex items-center gap-2">
               <Shield className="w-6 h-6 text-teal-600" />
-              <span className="font-semibold">Licensed & Insured</span>
+              <span className="font-semibold">Insured & Bonded</span>
             </div>
             <div className="flex items-center gap-2">
               <Award className="w-6 h-6 text-teal-600" />

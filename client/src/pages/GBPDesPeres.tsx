@@ -486,7 +486,7 @@ export default function GBPDesPeres() {
             answer: "Absolutely. We provide free, no-obligation estimates for all projects in West St. Louis County. Call us at (314) 931-3732 or fill out our contact form and we will schedule a convenient time to assess your project."
           },
           {
-            question: "Are you licensed and insured to work in West St. Louis County?",
+            question: "Are you insured and bonded to work in West St. Louis County?",
             answer: "Yes. Hero Handyman Pro is fully insured with general liability coverage for all work performed throughout West St. Louis County, including Chesterfield, Ballwin, Des Peres, and Kirkwood."
           },
           {

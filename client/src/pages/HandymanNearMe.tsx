@@ -38,7 +38,7 @@ export default function HandymanNearMe() {
           <div className="flex flex-wrap justify-center gap-6 mt-10">
             {[
               { icon: Star, text: "4.9★ Rated" },
-              { icon: Shield, text: "Licensed & Insured" },
+              { icon: Shield, text: "Insured & Bonded" },
               { icon: Clock, text: "Same/Next-Day Available" },
               { icon: Check, text: "Transparent Pricing" },
             ].map((badge, i) => (
@@ -291,7 +291,7 @@ export default function HandymanNearMe() {
               </Button>
             </Link>
           </div>
-          <p className="text-[#9ca3af] text-sm mt-6">Same-day and next-day availability for most repairs. Licensed & insured.</p>
+          <p className="text-[#9ca3af] text-sm mt-6">Same-day and next-day availability for most repairs. Insured & bonded.</p>
         </div>
       </section>
 

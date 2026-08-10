@@ -12,7 +12,7 @@ export default function OFallonHandyman() {
   const whyChooseUs = [
     { icon: Home, text: "Local, professional techs who respect your home" },
     { icon: Wrench, text: "Skilled in carpentry, decks, doors, drywall, and general repairs" },
-    { icon: Shield, text: "Licensed and insured for your protection" },
+    { icon: Shield, text: "Insured and bonded for your protection" },
     { icon: MessageSquare, text: "Text and email updates so you're never wondering what's happening" },
     { icon: Clock, text: "Flexible scheduling and clear, written estimates" }
   ];
@@ -65,7 +65,7 @@ export default function OFallonHandyman() {
       answer: "No job is \"too small\" as long as we can schedule it efficiently. From a single door adjustment to a list of small repairs, we're happy to help. Our service packages are designed for homeowners with multiple small tasks."
     },
     {
-      question: "Are you insured and licensed?",
+      question: "Are you insured and bonded?",
       answer: "Yes. Hero Handyman Pro is fully insured for general liability and property damage. Our technicians are background-checked and trained to treat your home with care."
     },
     {
@@ -534,7 +534,7 @@ export default function OFallonHandyman() {
                   35+ Years Experience
                 </span>
                 <span className="inline-flex items-center gap-1.5 bg-[#0b1220]/5 text-[#0b1220] text-xs font-bold px-3 py-1.5 rounded-full border border-[#0b1220]/10">
-                  Licensed & Insured
+                  Insured & Bonded
                 </span>
               </div>
               <p className="text-[#4b5563] text-lg mb-4">

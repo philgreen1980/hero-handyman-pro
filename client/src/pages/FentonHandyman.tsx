@@ -9,7 +9,7 @@ export default function FentonHandyman() {
   const whyChooseUs = [
     { icon: Home, text: "Local professionals serving Fenton families" },
     { icon: Wrench, text: "Experienced in decks, carpentry, drywall, doors, and all home repairs" },
-    { icon: Shield, text: "Fully licensed and insured for your protection" },
+    { icon: Shield, text: "Fully insured and bonded for your protection" },
     { icon: MessageSquare, text: "Clear updates via text and email throughout your project" },
     { icon: Clock, text: "Upfront pricing with no hidden fees" }
   ];
@@ -53,8 +53,8 @@ export default function FentonHandyman() {
       a: "We handle everything from small repairs and punch lists to larger projects like deck construction, exterior carpentry, and complete home improvement work."
     },
     {
-      q: "Are you licensed and insured?",
-      a: "Yes, Hero Handyman is fully licensed and insured. Your home and property are protected whenever we're working."
+      q: "Are you insured and bonded?",
+      a: "Yes, Hero Handyman is fully insured and bonded. Your home and property are protected whenever we're working."
     }
   ];
 
@@ -85,7 +85,7 @@ export default function FentonHandyman() {
             </div>
             <div className="bg-white/10 rounded-xl p-6 text-center backdrop-blur-sm">
               <Shield className="h-10 w-10 text-[#ff5b00] mx-auto mb-3" />
-              <p className="text-white font-medium">Licensed, insured handyman professionals</p>
+              <p className="text-white font-medium">Insured, bonded handyman professionals</p>
             </div>
             <div className="bg-white/10 rounded-xl p-6 text-center backdrop-blur-sm">
               <MessageSquare className="h-10 w-10 text-[#ff5b00] mx-auto mb-3" />

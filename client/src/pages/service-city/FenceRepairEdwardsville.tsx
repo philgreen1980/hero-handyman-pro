@@ -62,7 +62,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "Are you licensed and insured for fence repair in Illinois?",
+      "name": "Are you insured and bonded for fence repair in Illinois?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes. Hero Handyman Pro is fully insured with general liability coverage. Phil Green, owner and master handyman, has 35+ years of experience and is a Coast Guard veteran. We provide proof of insurance on request."
@@ -227,7 +227,7 @@ export default function FenceRepairEdwardsville() {
                 Hero Handyman Pro was founded by Phil Green — a U.S. Coast Guard veteran with 35+ years in the trades. Phil built this company on a simple principle: homeowners deserve the same dependable communication and professional craftsmanship that military service demands. Every fence repair in Edwardsville is handled by our local Metro East team, not a subcontractor or franchise.
               </p>
               <div className="flex flex-wrap gap-3 text-sm">
-                {["35+ Years Experience", "Veteran-Owned", "Licensed & Insured", "Local Metro East Team"].map((b) => (
+                {["35+ Years Experience", "Veteran-Owned", "Insured & Bonded", "Local Metro East Team"].map((b) => (
                   <span key={b} className="bg-white/10 px-3 py-1 rounded-full text-white">{b}</span>
                 ))}
               </div>

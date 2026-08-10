@@ -78,7 +78,7 @@ export default function WindowInstallation() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
               <CheckCircle className="w-8 h-8 text-teal-700 mx-auto mb-2" />
-              <div className="font-semibold text-gray-900">Licensed & Insured</div>
+              <div className="font-semibold text-gray-900">Insured & Bonded</div>
               <div className="text-sm text-gray-600">Fully Certified</div>
             </div>
             <div>

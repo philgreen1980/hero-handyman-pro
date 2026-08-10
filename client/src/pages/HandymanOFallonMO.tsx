@@ -15,7 +15,7 @@ const faqs = [
     answer: "Yes — we offer same-day and next-day availability for most repairs in O'Fallon MO. For urgent repairs, call us directly at 800-741-6056 and we'll do our best to get to you quickly.",
   },
   {
-    question: "Are you licensed and insured to work in Missouri?",
+    question: "Are you insured and bonded to work in Missouri?",
     answer: "Yes. Hero Handyman Pro is fully insured for residential work in Missouri and Illinois. We carry general liability insurance on every job, so you're protected if anything unexpected happens.",
   },
   {
@@ -68,7 +68,7 @@ export default function HandymanOFallonMO() {
           <div className="flex flex-wrap justify-center gap-6 mt-10">
             {[
               { icon: Star, text: "4.9★ Rated" },
-              { icon: Shield, text: "Licensed & Insured" },
+              { icon: Shield, text: "Insured & Bonded" },
               { icon: Clock, text: "Same/Next-Day Available" },
               { icon: Check, text: "Transparent Pricing" },
             ].map((badge, i) => (

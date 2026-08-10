@@ -281,7 +281,7 @@ export default function EdwardsvilleHomeRepairs() {
         <div className="bg-[#0b1220] rounded-2xl p-8 text-white text-center mb-10">
           <h2 className="text-2xl font-bold mb-3">Reliable Handyman Service in Edwardsville, IL</h2>
           <p className="text-gray-300 mb-2">Hero Handyman Pro serves Edwardsville homeowners throughout the city — from established neighborhoods near SIUE and downtown to newer subdivisions along Route 157 and Governors' Parkway.</p>
-          <p className="text-gray-400 text-sm mb-6">Founded by Coast Guard veteran Phil Green · 35+ Years Experience · Licensed & Insured · Veteran-Owned</p>
+          <p className="text-gray-400 text-sm mb-6">Founded by Coast Guard veteran Phil Green · 35+ Years Experience · Insured & Bonded · Veteran-Owned</p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="tel:800-741-6056">
               <Button className="bg-[#ff5b00] hover:bg-[#ff5b00]/90 text-white rounded-full px-8 py-6 text-base font-semibold">

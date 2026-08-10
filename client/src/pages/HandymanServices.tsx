@@ -97,7 +97,7 @@ export default function HandymanServices() {
             </div>
             <div className="flex flex-wrap gap-6 mt-8 text-sm text-gray-400">
               <span className="flex items-center gap-1"><Star className="w-4 h-4 text-yellow-400 fill-yellow-400" /> 4.9 Star Rated</span>
-              <span className="flex items-center gap-1"><Check className="w-4 h-4 text-teal-400" /> Licensed & Insured</span>
+              <span className="flex items-center gap-1"><Check className="w-4 h-4 text-teal-400" /> Insured & Bonded</span>
               <span className="flex items-center gap-1"><Check className="w-4 h-4 text-teal-400" /> 30+ Years Experience</span>
               <span className="flex items-center gap-1"><Check className="w-4 h-4 text-teal-400" /> Free Estimates</span>
             </div>
@@ -213,7 +213,7 @@ export default function HandymanServices() {
                   { title: "No Subcontractors", desc: "Phil does the work himself — consistent quality, no surprises." },
                   { title: "Upfront Pricing", desc: "You'll know the cost before we start. No hidden fees." },
                   { title: "Same-Day Availability", desc: "Urgent repairs? We offer same-day and next-day appointments." },
-                  { title: "Licensed & Insured", desc: "Fully insured for your protection and peace of mind." },
+                  { title: "Insured & Bonded", desc: "Fully insured for your protection and peace of mind." },
                   { title: "30+ Years Experience", desc: "Hundreds of homes across Metro East and West County." },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-3">

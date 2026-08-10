@@ -12,7 +12,7 @@ export default function CollinsvilleHandyman() {
   const whyChooseUs = [
     { icon: Home, text: "Local, professional techs serving Collinsville families" },
     { icon: Wrench, text: "Experienced in decks, carpentry, drywall, doors, and home repairs" },
-    { icon: Shield, text: "Fully licensed and insured for your protection" },
+    { icon: Shield, text: "Fully insured and bonded for your protection" },
     { icon: MessageSquare, text: "Clear communication with text and email updates" },
     { icon: Clock, text: "Transparent pricing and flexible scheduling" }
   ];
@@ -60,7 +60,7 @@ export default function CollinsvilleHandyman() {
       answer: "We handle everything from single repairs to comprehensive punch lists and larger projects like deck construction and exterior carpentry. No job is too small as long as we can schedule it efficiently."
     },
     {
-      question: "Are you insured and licensed?",
+      question: "Are you insured and bonded?",
       answer: "Yes, Hero Handyman Pro is fully insured for general liability and property damage. Our technicians are background-checked and trained to treat your home with care."
     },
     {
@@ -109,7 +109,7 @@ export default function CollinsvilleHandyman() {
             </div>
             <div className="bg-white/10 rounded-xl p-6 text-center backdrop-blur-sm">
               <Shield className="h-10 w-10 text-[#ff5b00] mx-auto mb-3" />
-              <p className="text-white font-medium">Licensed, insured handyman professionals</p>
+              <p className="text-white font-medium">Insured, bonded handyman professionals</p>
             </div>
             <div className="bg-white/10 rounded-xl p-6 text-center backdrop-blur-sm">
               <MessageSquare className="h-10 w-10 text-[#ff5b00] mx-auto mb-3" />
@@ -380,7 +380,7 @@ export default function CollinsvilleHandyman() {
                   35+ Years Experience
                 </span>
                 <span className="inline-flex items-center gap-1.5 bg-[#0b1220]/5 text-[#0b1220] text-xs font-bold px-3 py-1.5 rounded-full border border-[#0b1220]/10">
-                  Licensed & Insured
+                  Insured & Bonded
                 </span>
               </div>
               <p className="text-[#4b5563] text-lg mb-4">
@@ -529,10 +529,10 @@ export default function CollinsvilleHandyman() {
           },
           {
             "@type": "Question",
-            "name": "Are you insured and licensed to work in Collinsville, IL?",
+            "name": "Are you insured and bonded to work in Collinsville, IL?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, Hero Handyman Pro is fully insured and licensed for residential work in Illinois and Missouri. Your home and property are always protected when we work."
+              "text": "Yes, Hero Handyman Pro is fully insured and bonded for residential work in Illinois and Missouri. Your home and property are always protected when we work."
             }
           },
           {
