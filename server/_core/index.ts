@@ -394,8 +394,9 @@ async function startServer() {
     "/carpentry-services": "/carpentry-services/",
     // Task 3: /service-areas → /service-areas/
     "/service-areas": "/service-areas/",
-    // Task 3: /handyman-service-packages → /handyman-services/
-    "/handyman-service-packages": "/handyman-services/",
+    // Consolidate the old packages URL onto the canonical packages page.
+    // (Previously → /handyman-services/, which orphaned the "handyman packages" search intent.)
+    "/handyman-service-packages": "/handyman-packages/",
     // Task 3: /services/window-installation-ofallon-il → /handyman-services/window-installation/
     "/services/window-installation-ofallon-il": "/service-areas/window-installation-ofallon-il/",
     "/services/window-installation-ofallon-il/": "/service-areas/window-installation-ofallon-il/",
@@ -413,7 +414,7 @@ async function startServer() {
     "/handyman-services/door-repair": "/handyman-services/door-repair/",
     "/handyman-chesterfield-mo/": "/handyman-chesterfield-mo",
     "/handyman-services/deck-repair": "/handyman-services/deck-repair/",
-    "/handyman-service-packages/": "/handyman-services/",
+    "/handyman-service-packages/": "/handyman-packages/",
     "/handyman-ballwin-mo/": "/handyman-ballwin-mo",
     "/service-areas/edwardsville-il-handyman": "/gbp/edwardsville-il/",
     "/service-areas/ofallon-handyman-services/": "/gbp/ofallon-il/",
