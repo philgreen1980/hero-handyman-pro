@@ -333,6 +333,9 @@ async function startServer() {
     "/blog/5-signs-your-deck-needs-repair/": "/blog/signs-your-deck-needs-repair/",
     "/blog/5-signs-deck-needs-repair": "/blog/signs-your-deck-needs-repair/",
     "/blog/5-signs-deck-needs-repair/": "/blog/signs-your-deck-needs-repair/",
+    // Oct 2026: /blog/deck-repair-signs/ served a 200 but the router rendered 404.
+    "/blog/deck-repair-signs": "/blog/signs-your-deck-needs-repair/",
+    "/blog/deck-repair-signs/": "/blog/signs-your-deck-needs-repair/",
     "/blog/handyman-vs-contractor-which-do-you-need": "/blog/handyman-vs-contractor-metro-east-il/",
     "/blog/handyman-vs-contractor-which-do-you-need/": "/blog/handyman-vs-contractor-metro-east-il/",
     "/blog/winter-home-repairs-illinois": "/blog/common-home-repairs-after-winter-illinois/",
@@ -394,6 +397,8 @@ async function startServer() {
     "/carpentry-services": "/carpentry-services/",
     // Task 3: /service-areas → /service-areas/
     "/service-areas": "/service-areas/",
+    // Oct 2026: /booking returned 404 while /booking/ served the page.
+    "/booking": "/booking/",
     // Consolidate the old packages URL onto the canonical packages page.
     // (Previously → /handyman-services/, which orphaned the "handyman packages" search intent.)
     "/handyman-service-packages": "/handyman-packages/",
